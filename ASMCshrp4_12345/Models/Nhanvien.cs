@@ -15,6 +15,10 @@ public partial class Nhanvien
     [StringLength(100, ErrorMessage = "Họ tên không được vượt quá 100 ký tự.")]
     public string HoTen { get; set; }
 
+
+    public string? Avatar { get; set; }
+
+
     [Required(ErrorMessage = "Giới tính không được để trống")]
     public string GioiTinh { get; set; }
 

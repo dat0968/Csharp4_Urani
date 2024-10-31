@@ -4,6 +4,7 @@ using ASMCshrp4_12345.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASMCshrp4_12345.Migrations
 {
     [DbContext(typeof(Csharp4Context))]
-    partial class Csharp4ContextModelSnapshot : ModelSnapshot
+    [Migration("20241031105653_editNullable_KhachHang")]
+    partial class editNullable_KhachHang
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

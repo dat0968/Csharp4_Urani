@@ -4,6 +4,7 @@ using ASMCshrp4_12345.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASMCshrp4_12345.Migrations
 {
     [DbContext(typeof(Csharp4Context))]
-    partial class Csharp4ContextModelSnapshot : ModelSnapshot
+    [Migration("20241031031853_editColumn_KhachHang_NhanVien")]
+    partial class editColumn_KhachHang_NhanVien
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -230,10 +233,12 @@ namespace ASMCshrp4_12345.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("GioiTinh")
+                        .IsRequired()
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<string>("HoTen")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
@@ -241,6 +246,7 @@ namespace ASMCshrp4_12345.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("MatKhau")
+                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -248,6 +254,7 @@ namespace ASMCshrp4_12345.Migrations
                         .HasColumnType("date");
 
                     b.Property<string>("Sdt")
+                        .IsRequired()
                         .HasMaxLength(12)
                         .HasColumnType("nvarchar(12)");
 

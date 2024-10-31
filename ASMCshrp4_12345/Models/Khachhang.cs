@@ -9,15 +9,17 @@ public partial class Khachhang
     [Key]
     [Required(ErrorMessage = "Mã khách hàng không được để trống")]
     [StringLength(5, ErrorMessage = "Mã khách hàng không được vượt quá 5 ký tự.")]
-    public string MaKh { get; set; } 
+    public string MaKh { get; set; }
 
-    [Required(ErrorMessage = "Họ tên không được để trống")]
+    //[Required(ErrorMessage = "Họ tên không được để trống")]
     [StringLength(50, ErrorMessage = "Họ tên không được vượt quá 50 ký tự.")]
-    public string HoTen { get; set; }
+    public string? HoTen { get; set; }
 
-    [Required(ErrorMessage = "Giới tính không được để trống")]
+    public string? Avatar { get; set; }
+
+    //[Required(ErrorMessage = "Giới tính không được để trống")]
     [StringLength(5, ErrorMessage = "Giới tính không được vượt quá 5 ký tự.")]
-    public string GioiTinh { get; set; } 
+    public string? GioiTinh { get; set; } 
 
     public DateOnly? NgaySinh { get; set; }
 
@@ -27,9 +29,9 @@ public partial class Khachhang
     [StringLength(12, ErrorMessage = "CCCD không được vượt quá 12 ký tự.")]
     public string? Cccd { get; set; }
 
-    [Required(ErrorMessage = "Số điện thoại không được để trống")]
+    //[Required(ErrorMessage = "Số điện thoại không được để trống")]
     [StringLength(12, ErrorMessage = "Số điện thoại không được vượt quá 12 ký tự.")]
-    public string Sdt { get; set; }
+    public string? Sdt { get; set; }
 
     [Required(ErrorMessage = "Email không được để trống")]
     [EmailAddress(ErrorMessage = "Địa chỉ email không hợp lệ")]
@@ -38,9 +40,9 @@ public partial class Khachhang
     [StringLength(15, ErrorMessage = "Tên tài khoản không được vượt quá 15 ký tự.")]
     public string? TenTaiKhoan { get; set; }
 
-    [Required(ErrorMessage = "Mật khẩu không được để trống")]
+    //[Required(ErrorMessage = "Mật khẩu không được để trống")]
     [StringLength(100, ErrorMessage = "Mật khẩu không được vượt quá 100 ký tự.")]
-    public string MatKhau { get; set; }
+    public string? MatKhau { get; set; }
 
     [StringLength(30, ErrorMessage = "Tình trạng không được vượt quá 30 ký tự.")]
     public string TinhTrang { get; set; } = "Đang hoạt động";
