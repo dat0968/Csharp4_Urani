@@ -69,5 +69,9 @@ public partial class Sanpham
     public virtual Nhacungcap? MaNhaCcNavigation { get; set; } 
 
    
-    public virtual Thuonghieu? MaThuongHieuNavigation { get; set; } 
+    public virtual Thuonghieu? MaThuongHieuNavigation { get; set; }
+    [NotMapped] 
+    public IFormFile? HinhFile { get; set; }
+    [NotMapped]
+    public ICollection<IFormFile>? HinhAnhFiles { get; set; }
 }

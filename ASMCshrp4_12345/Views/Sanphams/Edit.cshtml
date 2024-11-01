@@ -1,0 +1,127 @@
+﻿@model ASMCshrp4_12345.Models.Sanpham
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Sản phẩm</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaSp" />
+
+            <div class="form-group">
+                <label asp-for="TenSp" class="control-label">Tên sản phẩm</label>
+                <input asp-for="TenSp" class="form-control" />
+                <span asp-validation-for="TenSp" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SoLuongBan" class="control-label">Số lượng bán</label>
+                <input asp-for="SoLuongBan" class="form-control" />
+                <span asp-validation-for="SoLuongBan" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DonGiaBan" class="control-label">Đơn giá bán</label>
+                <input asp-for="DonGiaBan" class="form-control" />
+                <span asp-validation-for="DonGiaBan" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaThuongHieu" class="control-label">Thương hiệu</label>
+                <select asp-for="MaThuongHieu" class="form-control" asp-items="ViewBag.MaThuongHieu"></select>
+                <span asp-validation-for="MaThuongHieu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Hình ảnh hiện tại:</label>
+                <br />
+                <img src="~/HinhAnh/SanPham/@Model.Hinh" alt="Hình ảnh sản phẩm" style="width:100px; height:auto;" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="HinhFile" class="control-label">Hình ảnh mới</label>
+                <input asp-for="HinhFile" type="file" class="form-control" />
+                <span asp-validation-for="HinhFile" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MoTa" class="control-label">Mô tả</label>
+                <input asp-for="MoTa" class="form-control" />
+                <span asp-validation-for="MoTa" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NgaySanXuat" class="control-label">Ngày sản xuất</label>
+                <input asp-for="NgaySanXuat" class="form-control" type="date" />
+                <span asp-validation-for="NgaySanXuat" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaNhaCc" class="control-label">Nhà cung cấp</label>
+                <select asp-for="MaNhaCc" class="form-control" asp-items="ViewBag.MaNhaCc"></select>
+                <span asp-validation-for="MaNhaCc" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaChatLieu" class="control-label">Chất liệu</label>
+                <select asp-for="MaChatLieu" class="form-control" asp-items="ViewBag.MaChatLieu"></select>
+                <span asp-validation-for="MaChatLieu" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaMau" class="control-label">Màu sắc</label>
+                <select asp-for="MaMau" class="form-control" asp-items="ViewBag.MaMau"></select>
+                <span asp-validation-for="MaMau" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaKichThuoc" class="control-label">Kích thước</label>
+                <select asp-for="MaKichThuoc" class="form-control" asp-items="ViewBag.MaKichThuoc"></select>
+                <span asp-validation-for="MaKichThuoc" class="text-danger"></span>
+            </div>
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsDelete" /> @Html.DisplayNameFor(model => model.IsDelete)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="HinhAnhFiles" class="control-label">Hình ảnh phụ mới</label>
+                <input asp-for="HinhAnhFiles" type="file" class="form-control" multiple />
+                <span asp-validation-for="HinhAnhFiles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Chọn hình ảnh để xóa:</label>
+                <div>
+                    @foreach (var image in Model.Hinhanhs)
+                    {
+                        <div>
+                            <input type="checkbox" name="selectedImages" value="@image.MaHinhAnh" />
+                            <img src="@Url.Content("~/HinhAnh/SanPham/" + image.HinhAnh1)" alt="Hình ảnh" style="width:50px; height:auto;" />
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

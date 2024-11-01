@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj": {}
+    "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj": {}
   },
   "projects": {
-    "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj": {
+    "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
+        "projectUniqueName": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
         "projectName": "ASMCshrp4_12345",
-        "projectPath": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
+        "projectPath": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\obj\\",
+        "outputPath": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +28,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,9 +46,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -63,6 +66,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.6, )"
             }
           },
           "imports": [
@@ -84,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

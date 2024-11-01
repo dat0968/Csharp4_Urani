@@ -1,0 +1,95 @@
+﻿@model ASMCshrp4_12345.Models.Sanpham
+
+@{
+    ViewData["Title"] = "Thêm Sản Phẩm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Thêm Sản Phẩm</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" asp-controller="Sanphams" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="TenSp" class="control-label">Tên Sản Phẩm</label>
+                <input asp-for="TenSp" class="form-control" />
+                <span asp-validation-for="TenSp" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SoLuongBan" class="control-label">Số Lượng Bán</label>
+                <input asp-for="SoLuongBan" class="form-control" />
+                <span asp-validation-for="SoLuongBan" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DonGiaBan" class="control-label">Đơn Giá Bán</label>
+                <input asp-for="DonGiaBan" class="form-control" />
+                <span asp-validation-for="DonGiaBan" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaThuongHieu" class="control-label">Thương Hiệu</label>
+                <select asp-for="MaThuongHieu" class="form-control" asp-items="ViewBag.MaThuongHieu"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="HinhFile" class="control-label">Hình Ảnh Chính</label>
+                <input asp-for="HinhFile" class="form-control" type="file" multiple />
+                <span asp-validation-for="HinhFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HinhAnhFiles" class="control-label">Hình Ảnh Sản Phẩm</label>
+                <input asp-for="HinhAnhFiles" class="form-control" type="file" multiple />
+                <span asp-validation-for="HinhAnhFiles" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MoTa" class="control-label">Mô Tả</label>
+                <textarea asp-for="MoTa" class="form-control"></textarea>
+                <span asp-validation-for="MoTa" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NgaySanXuat" class="control-label">Ngày Sản Xuất</label>
+                <input asp-for="NgaySanXuat" class="form-control" type="date" />
+                <span asp-validation-for="NgaySanXuat" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaNhaCc" class="control-label">Nhà Cung Cấp</label>
+                <select asp-for="MaNhaCc" class="form-control" asp-items="ViewBag.MaNhaCc"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaChatLieu" class="control-label">Chất Liệu</label>
+                <select asp-for="MaChatLieu" class="form-control" asp-items="ViewBag.MaChatLieu"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaMau" class="control-label">Màu Sắc</label>
+                <select asp-for="MaMau" class="form-control" asp-items="ViewBag.MaMau"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaKichThuoc" class="control-label">Kích Thước</label>
+                <select asp-for="MaKichThuoc" class="form-control" asp-items="ViewBag.MaKichThuoc"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Thêm Mới" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
