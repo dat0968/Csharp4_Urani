@@ -7,6 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASMCshrp4_12345.Models;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Data.SqlClient;
+using System.Drawing.Printing;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Extensions;
 
 namespace ASMCshrp4_12345.Controllers
 {
@@ -21,15 +26,62 @@ namespace ASMCshrp4_12345.Controllers
         }
 
         // GET: Sanphams
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string tim, string mucgia, string sapxep, int page = 1, int pagesize = 5)
         {
-            var csharp4Context = _context.Sanphams.Where(s => s.IsDelete == false)
-                                                  .Include(s => s.MaChatLieuNavigation)
-                                                  .Include(s => s.MaKichThuocNavigation)
-                                                  .Include(s => s.MaMauNavigation)
-                                                  .Include(s => s.MaNhaCcNavigation)
-                                                  .Include(s => s.MaThuongHieuNavigation);
-            return View(await csharp4Context.ToListAsync());
+            // vì nếu dùng where sau sẽ bị lỗi khi dùng include nên xài cái này
+            IQueryable<Sanpham> csharp4Context = _context.Sanphams.Where(s => s.IsDelete == false)
+                                                                  .Include(s => s.MaChatLieuNavigation)
+                                                                  .Include(s => s.MaKichThuocNavigation)
+                                                                  .Include(s => s.MaMauNavigation)
+                                                                  .Include(s => s.MaNhaCcNavigation)
+                                                                  .Include(s => s.MaThuongHieuNavigation);
+                                                                  
+            //tìm kiếm
+            if (!string.IsNullOrEmpty(tim))
+            {
+                csharp4Context = csharp4Context.Where(s => s.TenSp.Contains(tim) ||
+                                                      s.MaChatLieuNavigation.TenChatLieu.Contains(tim) ||
+                                                      s.MaKichThuocNavigation.TenKichThuoc.Contains(tim) ||
+                                                      s.MaMauNavigation.TenMau.Contains(tim) ||
+                                                      s.MaNhaCcNavigation.TenNhaCc.Contains(tim) ||
+                                                      s.MaThuongHieuNavigation.TenThuongHieu.Contains(tim));
+            }
+
+            // lọc theo giá
+            if (!string.IsNullOrEmpty(mucgia))
+            {
+                switch (mucgia)
+                {
+                    case "1":
+                        csharp4Context = csharp4Context.Where(s => s.DonGiaBan < 500000);
+                        break;
+                    case "2":
+                        csharp4Context = csharp4Context.Where(s => s.DonGiaBan >= 500000 && s.DonGiaBan <= 1000000);
+                        break;
+                    case "3":
+                        csharp4Context = csharp4Context.Where(s => s.DonGiaBan > 1000000);
+                        break;
+                }
+            }
+
+            // sắp xếp tăng giảm theo các mục
+            csharp4Context = sapxep switch
+            {
+                "tenTang" => csharp4Context.OrderBy(s => s.TenSp),
+                "tenGiam" => csharp4Context.OrderByDescending(s => s.TenSp),
+                "giaTang" => csharp4Context.OrderBy(s => s.DonGiaBan),
+                "giaGiam" => csharp4Context.OrderByDescending(s => s.DonGiaBan),
+                "ngayTang" => csharp4Context.OrderBy(s => s.NgaySanXuat),
+                "ngayGiam" => csharp4Context.OrderByDescending(s => s.NgaySanXuat),
+                _ => csharp4Context.OrderBy(s => s.TenSp) // này là cái mặc định theo tên tăng dần
+            };
+
+            // truyền qua thôi
+            ViewData["tim"] = tim;
+            ViewData["mucgia"] = mucgia;
+            ViewData["sapxep"] = sapxep;
+            var pagedResult = csharp4Context.ToPagedList(page, pagesize);
+            return View(pagedResult);
         }
 
         // GET: Sanphams/Details/5
