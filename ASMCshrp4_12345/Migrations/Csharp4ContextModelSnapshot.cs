@@ -214,8 +214,10 @@ namespace ASMCshrp4_12345.Migrations
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
+
                     b.Property<string>("Avatar")
                         .HasColumnType("nvarchar(max)");
+
 
                     b.Property<string>("Cccd")
                         .HasMaxLength(12)
@@ -230,10 +232,12 @@ namespace ASMCshrp4_12345.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("GioiTinh")
+
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<string>("HoTen")
+
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
@@ -241,6 +245,7 @@ namespace ASMCshrp4_12345.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("MatKhau")
+
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -248,6 +253,7 @@ namespace ASMCshrp4_12345.Migrations
                         .HasColumnType("date");
 
                     b.Property<string>("Sdt")
+
                         .HasMaxLength(12)
                         .HasColumnType("nvarchar(12)");
 
@@ -402,8 +408,10 @@ namespace ASMCshrp4_12345.Migrations
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
+
                     b.Property<string>("Avatar")
                         .HasColumnType("nvarchar(max)");
+
 
                     b.Property<string>("Cccd")
                         .HasMaxLength(20)

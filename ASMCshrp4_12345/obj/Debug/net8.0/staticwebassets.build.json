@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PRhfk0tYpT/mcCX4hTjQJK+e5A8hNwA6tiEKh78uHIQ=",
+  "Hash": "vdrXQpeKysWFJsat2VaOCu8tVhSI+ZK6GoI4VZRElb8=",
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -1443,6 +1443,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\HinhAnh\\NhanVien\\tao-dang-chup-anh-chan-dung-01.jpg"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/gucci_bag#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zxdvmtcgzw",
+      "Integrity": "qX21fQv9XOOX1IeeLdfdtrF1Kavc5jI0wSHC/heyrIo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\gucci_bag.jpg"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag2.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/gucci_bag2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "810i9e2xmo",
+      "Integrity": "VC7Ni94vfv/hnH5i94wrs/EmzzIu0RiKALZ/7V0Hu1k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\gucci_bag2.jpg"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag3.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/gucci_bag3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4l28pb65dq",
+      "Integrity": "6NttC45ojSPbiOD67a9N9m39bB/ceyPpfUG3hEjXdqM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\gucci_bag3.jpg"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag4.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/gucci_bag4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "049m9cby1n",
+      "Integrity": "oGANZ46/AxFq+8g9mhrZT0dnFE5DiTJ/61OekH/fJZU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\gucci_bag4.jpg"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\landing_page\\stack-of-three-black-hot-stones-spa-salon-vector-16122479.jpg",
@@ -12263,7 +12347,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 11:44:41 GMT"
+          "Value": "Mon, 04 Nov 2024 03:46:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12308,7 +12392,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 11:44:41 GMT"
+          "Value": "Mon, 04 Nov 2024 03:46:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12353,7 +12437,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 11:44:41 GMT"
+          "Value": "Mon, 04 Nov 2024 03:46:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12390,7 +12474,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 11:44:41 GMT"
+          "Value": "Mon, 04 Nov 2024 03:46:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16855,7 +16939,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 15:10:36 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16900,7 +16984,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 15:10:36 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16937,7 +17021,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 15:09:57 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16982,7 +17066,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 15:09:57 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17019,7 +17103,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 15:09:40 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17056,7 +17140,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 15:09:40 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17101,7 +17185,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 15:10:17 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17146,7 +17230,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 15:10:17 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17183,7 +17267,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 15:10:27 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17220,7 +17304,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 15:10:27 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17265,7 +17349,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 04:25:48 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17310,7 +17394,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 04:25:48 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17347,7 +17431,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:04:38 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17392,7 +17476,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:04:38 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17429,7 +17513,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:27:34 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17474,7 +17558,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:27:34 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17511,7 +17595,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:27:42 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17556,7 +17640,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:27:42 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17593,7 +17677,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:23:37 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17630,7 +17714,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:23:37 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17675,7 +17759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:27:16 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17720,7 +17804,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:27:16 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17757,7 +17841,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:27:25 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17794,7 +17878,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Nov 2024 08:27:25 GMT"
+          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17813,6 +17897,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-QlUlS3wJEVozbjOqUMPor1lMi5rERhrBxiSlT/U14XA="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/gucci_bag.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7890"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qX21fQv9XOOX1IeeLdfdtrF1Kavc5jI0wSHC/heyrIo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 03:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qX21fQv9XOOX1IeeLdfdtrF1Kavc5jI0wSHC/heyrIo="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/gucci_bag.zxdvmtcgzw.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7890"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qX21fQv9XOOX1IeeLdfdtrF1Kavc5jI0wSHC/heyrIo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 03:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zxdvmtcgzw"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/gucci_bag.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qX21fQv9XOOX1IeeLdfdtrF1Kavc5jI0wSHC/heyrIo="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/gucci_bag2.810i9e2xmo.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VC7Ni94vfv/hnH5i94wrs/EmzzIu0RiKALZ/7V0Hu1k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 03:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "810i9e2xmo"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/gucci_bag2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VC7Ni94vfv/hnH5i94wrs/EmzzIu0RiKALZ/7V0Hu1k="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/gucci_bag2.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VC7Ni94vfv/hnH5i94wrs/EmzzIu0RiKALZ/7V0Hu1k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 03:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VC7Ni94vfv/hnH5i94wrs/EmzzIu0RiKALZ/7V0Hu1k="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/gucci_bag3.4l28pb65dq.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6871"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6NttC45ojSPbiOD67a9N9m39bB/ceyPpfUG3hEjXdqM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 03:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4l28pb65dq"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/gucci_bag3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6NttC45ojSPbiOD67a9N9m39bB/ceyPpfUG3hEjXdqM="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/gucci_bag3.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6871"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6NttC45ojSPbiOD67a9N9m39bB/ceyPpfUG3hEjXdqM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 03:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6NttC45ojSPbiOD67a9N9m39bB/ceyPpfUG3hEjXdqM="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/gucci_bag4.049m9cby1n.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oGANZ46/AxFq+8g9mhrZT0dnFE5DiTJ/61OekH/fJZU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 03:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "049m9cby1n"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/gucci_bag4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oGANZ46/AxFq+8g9mhrZT0dnFE5DiTJ/61OekH/fJZU="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/gucci_bag4.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oGANZ46/AxFq+8g9mhrZT0dnFE5DiTJ/61OekH/fJZU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 03:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oGANZ46/AxFq+8g9mhrZT0dnFE5DiTJ/61OekH/fJZU="
         }
       ]
     },

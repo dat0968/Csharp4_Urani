@@ -1,0 +1,21 @@
+﻿@model IEnumerable<ASMCshrp4_12345.Models.Thuonghieu>
+
+<form id="brandFilterForm" method="get" asp-action="Index">
+    
+    <div class="bg-light p-4 mb-30">
+        @foreach (var item in Model)
+        {
+            <div class="navbar-nav w-100">
+                <a href="javascript:void(0);" class="nav-item nav-link" onclick="submitBrandForm('@item.MaThuongHieu')">@item.TenThuongHieu</a>
+            </div>
+        }
+    </div>
+    <input type="hidden" name="selectedBrand" id="selectedBrand" value="">
+</form>
+
+<script>
+    function submitBrandForm(brandId) {
+        document.getElementById('selectedBrand').value = brandId;
+        document.getElementById('brandFilterForm').submit(); 
+    }
+</script>

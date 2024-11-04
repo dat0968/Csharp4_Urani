@@ -1,6 +1,8 @@
 using System.Diagnostics;
 using ASMCshrp4_12345.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace ASMCshrp4_12345.Controllers
 {
@@ -8,14 +10,25 @@ namespace ASMCshrp4_12345.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly Csharp4Context _context;
+        public HomeController(ILogger<HomeController> logger, Csharp4Context context)
         {
             _logger = logger;
+            _context = context;
+
         }
 
         public IActionResult Index()
         {
-            return View();
+
+            var sanPhamNoiBat = _context.Sanphams
+                            .Include(sp => sp.Hinhanhs)
+                            .Where(sp => sp.SoLuongBan > 1)
+                            .OrderByDescending(sp => sp.SoLuongBan)
+                            .Take(8)                          
+                            .ToList();
+            return View(sanPhamNoiBat);
+
         }
 
         public IActionResult Privacy()

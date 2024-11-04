@@ -53,6 +53,22 @@
       "PackagePath": "staticwebassets\\HinhAnh\\NhanVien\\tao-dang-chup-anh-chan-dung-01.jpg"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\gucci_bag.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag2.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\gucci_bag2.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag3.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\gucci_bag3.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag4.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\gucci_bag4.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
       "PackagePath": "staticwebassets\\LayoutAdmin.html"
     },
