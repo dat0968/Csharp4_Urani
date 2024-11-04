@@ -215,8 +215,10 @@ namespace ASMCshrp4_12345.Migrations
                         .HasColumnType("nvarchar(5)");
 
 
+
                     b.Property<string>("Avatar")
                         .HasColumnType("nvarchar(max)");
+
 
 
                     b.Property<string>("Cccd")
@@ -407,6 +409,7 @@ namespace ASMCshrp4_12345.Migrations
                     b.Property<string>("MaNv")
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
+
 
 
                     b.Property<string>("Avatar")

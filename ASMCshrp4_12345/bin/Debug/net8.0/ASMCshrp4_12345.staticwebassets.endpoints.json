@@ -28,7 +28,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 03:46:51 GMT"
+          "Value": "Mon, 04 Nov 2024 10:51:52 GMT"
         }
       ],
       "EndpointProperties": [
@@ -73,7 +73,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 03:46:51 GMT"
+          "Value": "Mon, 04 Nov 2024 10:51:52 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1720,6 +1720,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-jNADfCRmsI4OLWCqoy2ct34ePivBNiNRg2GlpYhTX4A="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.css",
+      "AssetFile": "css/Login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "694"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 07:22:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.kxhixgv9za.css",
+      "AssetFile": "css/Login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "694"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 07:22:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kxhixgv9za"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Login.css"
         }
       ]
     },

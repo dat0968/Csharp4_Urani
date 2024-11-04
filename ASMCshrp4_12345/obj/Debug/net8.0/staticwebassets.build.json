@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vdrXQpeKysWFJsat2VaOCu8tVhSI+ZK6GoI4VZRElb8=",
+  "Hash": "0p7uesoTKamt6yylbC6javs6msZdr0Cd/uDd5pqty1w=",
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -624,6 +624,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\jquery.fancybox.min.css"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\css\\Login.css",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "css/Login#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kxhixgv9za",
+      "Integrity": "SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Login.css"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\css\\owl.carousel.css",
@@ -12347,7 +12368,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 03:46:51 GMT"
+          "Value": "Mon, 04 Nov 2024 10:51:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12392,7 +12413,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 03:46:51 GMT"
+          "Value": "Mon, 04 Nov 2024 10:51:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12437,7 +12458,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 03:46:51 GMT"
+          "Value": "Mon, 04 Nov 2024 10:51:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12474,7 +12495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 03:46:51 GMT"
+          "Value": "Mon, 04 Nov 2024 10:51:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14699,6 +14720,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-9vPVPdIkAmHxV2la3zhqXAgBQpjBn2LM9jzRYploktA="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.css",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\css\\Login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "694"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 07:22:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.kxhixgv9za.css",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\css\\Login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "694"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 04 Nov 2024 07:22:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kxhixgv9za"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Login.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps="
         }
       ]
     },

@@ -35,16 +35,34 @@
                 <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Tài khoản của tôi</button>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <button class="dropdown-item" type="button">Đăng nhập</button>
-                        <button class="dropdown-item" type="button">Đăng ký</button>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="dropdown-item">
+                                <button type="submit" class="btn btn-link">Đăng xuất</button>
+                            </form>
+                        }
+                        else
+                        {
+                            
+                            <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Đăng Nhập</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-controller="Account" asp-action="Index">Tài Khoản Khách Hàng</a>
+                                <a class="dropdown-item" asp-action="LoginStaff" asp-controller="Account_Staff" >Tài Khoản Nhân Viên</a>
+                            </div>
+                            <a asp-controller="Account" asp-action="Register" class="dropdown-item">Đăng ký</a>
+                        }
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
         <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
             <div class="col-lg-4">
 
+
                 <a asp-controller="Home" asp-action="Index" class="text-decoration-none">
+
 
                     <span class="h1 text-uppercase text-primary bg-dark px-2">Urani</span>
                     <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Team</span>
@@ -79,7 +97,9 @@
                 </a>
                 <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
 
+
                     <vc:thuong-hieus></vc:thuong-hieus>
+
 
                 </nav>
             </div>
@@ -97,6 +117,7 @@
 
                             <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">TRANG CHỦ</a>
                             <a asp-controller="CuaHang" asp-action="Index" class="nav-item nav-link">CỬA HÀNG</a>
+
 
                             @* <a href="contact.html" class="nav-item nav-link">Contact</a> *@
                         </div>
@@ -119,6 +140,8 @@
     <div>
         @RenderBody()
     </div>
+
+
 
 
     <!-- Footer Start -->

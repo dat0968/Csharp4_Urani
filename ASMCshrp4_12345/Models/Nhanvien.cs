@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations;
 
 using System.ComponentModel.DataAnnotations.Schema;
 
-
 namespace ASMCshrp4_12345.Models;
 
 public partial class Nhanvien
@@ -19,12 +18,12 @@ public partial class Nhanvien
     public string HoTen { get; set; }
 
 
-
     public string? Avatar { get; set; }
 
 
     [Required(ErrorMessage = "Giới tính không được để trống")]
     public string GioiTinh { get; set; }
+
     [Required(ErrorMessage = "Ngày sinh không được để trống")]
     public DateOnly? NgaySinh { get; set; }
     [Required(ErrorMessage = "Địa chỉ không được để trống")]
@@ -68,6 +67,7 @@ public partial class Nhanvien
 
     [NotMapped]
     public IFormFile? fileAvatar { get; set; }
+
 
     public virtual ICollection<Hoadon>? Hoadons { get; set; } = new List<Hoadon>();
 }

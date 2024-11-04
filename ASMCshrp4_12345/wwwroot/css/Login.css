@@ -1,0 +1,29 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.account-container {
+    background-image: url('../images/bff44aed-a88c-4147-aa96-d5e5a19701b2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh; /* Thêm chiều cao 100vh */
+    width: 100%; /* Đảm bảo toàn màn hình rộng */
+}
+
+
+.account-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    opacity: .9;
+}
