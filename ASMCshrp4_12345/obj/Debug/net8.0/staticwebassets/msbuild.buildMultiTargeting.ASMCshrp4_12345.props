@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ASMCshrp4_12345.props" />
+</Project>

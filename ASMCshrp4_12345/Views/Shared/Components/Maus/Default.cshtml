@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ASMCshrp4_12345.Models.Mausac>
+
+@{
+    var selectedColor = Context.Request.Query["selectedColors"].ToString();
+}
+
+<form id="colorFilterForm" method="get" asp-action="Index">
+    <h5 class="section-title position-relative text-uppercase mb-3">
+        <span class="bg-secondary pr-3">LỌC THEO MÀU SẮC</span>
+    </h5>
+    <div class="bg-light p-4 mb-30">
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input type="radio" class="custom-control-input" name="selectedColors" value="all" id="color-all" onchange="submitColorForm()"
+            @(selectedColor == "all" ? "checked" : "")>
+            <label class="custom-control-label" for="color-all">TẤT CẢ MÀU SẮC</label>
+        </div>
+        @foreach (var item in Model)
+        {
+            <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+                <input type="radio" class="custom-control-input" name="selectedColors" value="@item.MaMau" id="color-@item.MaMau" onchange="submitColorForm()"
+                @(selectedColor == item.MaMau ? "checked" : "")>
+                <label class="custom-control-label" for="color-@item.MaMau">@item.TenMau</label>
+            </div>
+        }
+    </div>
+</form>
+
+<script>
+    function submitColorForm() {
+        document.getElementById('colorFilterForm').submit();
+    }
+</script>

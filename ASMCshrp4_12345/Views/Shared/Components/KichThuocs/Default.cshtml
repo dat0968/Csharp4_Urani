@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Kichthuoc>
+
+@{
+    var selectedSize = Context.Request.Query["selectedSizes"].ToString();
+}
+
+<form id="sizeFilterForm" method="get" asp-action="Index">
+    <h5 class="section-title position-relative text-uppercase mb-3">
+        <span class="bg-secondary pr-3">LỌC THEO KÍCH THƯỚC</span>
+    </h5>
+    <div class="bg-light p-4 mb-30">
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input type="radio" class="custom-control-input" name="selectedSizes" value="all" id="size-all" onchange="submitSizeForm()"
+            @(selectedSize == "all" ? "checked" : "")>
+            <label class="custom-control-label" for="size-all">TẤT CẢ KÍCH THƯỚC</label>
+        </div>
+        @foreach (var item in Model)
+        {
+                <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+                    <input type="radio" class="custom-control-input" name="selectedSizes" value="@item.MaKichThuoc" id="size-@item.MaKichThuoc" onchange="submitSizeForm()"
+                @(selectedSize == item.MaKichThuoc ? "checked" : "")>
+                    <label class="custom-control-label" for="size-@item.MaKichThuoc">@item.TenKichThuoc</label>
+                </div>
+        }
+    </div>
+</form>
+
+<script>
+    function submitSizeForm() {
+        document.getElementById('sizeFilterForm').submit();
+    }
+</script>

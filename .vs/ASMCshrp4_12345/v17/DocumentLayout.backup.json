@@ -1,0 +1,318 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Hung\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\views\\cuahang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\cuahang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\views\\cuahang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\cuahang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\views\\shared\\components\\kichthuocs\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\shared\\components\\kichthuocs\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\views\\shared\\_sidebarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\shared\\_sidebarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\controllers\\cuahangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\cuahangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\repository\\components\\thuonghieusviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\repository\\components\\thuonghieusviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\repository\\components\\mausviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\repository\\components\\mausviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\repository\\components\\kichthuocsviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\repository\\components\\kichthuocsviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\models\\kichthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\kichthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\wwwroot\\shop.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\wwwroot\\shop.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|g:\\hung\\asmcshrp4_12345\\wwwroot\\layoutadmin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\wwwroot\\layoutadmin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 252,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T04:13:59.95Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_SidebarPartial.cshtml",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Views\\Shared\\_SidebarPartial.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Shared\\_SidebarPartial.cshtml",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Views\\Shared\\_SidebarPartial.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Shared\\_SidebarPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T10:00:44.857Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CuaHangController.cs",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Controllers\\CuaHangController.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\CuaHangController.cs",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Controllers\\CuaHangController.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\CuaHangController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T04:12:03.743Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Views\\Shared\\Components\\KichThuocs\\Default.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Shared\\Components\\KichThuocs\\Default.cshtml",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Views\\Shared\\Components\\KichThuocs\\Default.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Shared\\Components\\KichThuocs\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T13:00:13.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MausViewComponent.cs",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Repository\\Components\\MausViewComponent.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Repository\\Components\\MausViewComponent.cs",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Repository\\Components\\MausViewComponent.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Repository\\Components\\MausViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T12:25:21.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "KichThuocsViewComponent.cs",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Repository\\Components\\KichThuocsViewComponent.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Repository\\Components\\KichThuocsViewComponent.cs",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Repository\\Components\\KichThuocsViewComponent.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Repository\\Components\\KichThuocsViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T12:25:14.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ThuongHieusViewComponent.cs",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Repository\\Components\\ThuongHieusViewComponent.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Repository\\Components\\ThuongHieusViewComponent.cs",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Repository\\Components\\ThuongHieusViewComponent.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Repository\\Components\\ThuongHieusViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T12:25:12.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\_ViewImports.cshtml",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T11:44:52.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwCQAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T11:31:11.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T11:31:02.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Kichthuoc.cs",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Models\\Kichthuoc.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Kichthuoc.cs",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Models\\Kichthuoc.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Kichthuoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T11:24:54.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Program.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Program.cs",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Program.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T10:48:01.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAE8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T03:40:48.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "shop.html",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\wwwroot\\shop.html",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\wwwroot\\shop.html",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\wwwroot\\shop.html",
+              "RelativeToolTip": "ASMCshrp4_12345\\wwwroot\\shop.html",
+              "ViewState": "AgIAABICAAAAAAAAAAAwwCUCAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-31T03:21:07.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAHYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T02:47:33.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T02:45:31.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\appsettings.json",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\appsettings.json",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\appsettings.json*",
+              "RelativeToolTip": "ASMCshrp4_12345\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-31T02:41:31.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LayoutAdmin.html",
+              "DocumentMoniker": "G:\\Hung\\ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
+              "ToolTip": "G:\\Hung\\ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
+              "RelativeToolTip": "ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
+              "ViewState": "AgIAAIMAAAAAAAAAAABRwEIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-30T16:19:57.01Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
