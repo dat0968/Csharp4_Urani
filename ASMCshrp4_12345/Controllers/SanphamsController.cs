@@ -12,7 +12,8 @@ using System.Drawing.Printing;
 using X.PagedList;
 using X.PagedList.Mvc.Core;
 using X.PagedList.Extensions;
-
+using ClosedXML;
+using ClosedXML.Excel;
 namespace ASMCshrp4_12345.Controllers
 {
     public class SanphamsController : Controller
@@ -26,8 +27,9 @@ namespace ASMCshrp4_12345.Controllers
         }
 
         // GET: Sanphams
-        public async Task<IActionResult> Index(string tim, string mucgia, string sapxep, int page = 1, int pagesize = 5)
+        public async Task<IActionResult> Index(string tim, string mucgia, string sapxep, int page = 1, int pagesize = 7)
         {
+            
             // vì nếu dùng where sau sẽ bị lỗi khi dùng include nên xài cái này
             IQueryable<Sanpham> csharp4Context = _context.Sanphams.Where(s => s.IsDelete == false)
                                                                   .Include(s => s.MaChatLieuNavigation)
@@ -35,7 +37,9 @@ namespace ASMCshrp4_12345.Controllers
                                                                   .Include(s => s.MaMauNavigation)
                                                                   .Include(s => s.MaNhaCcNavigation)
                                                                   .Include(s => s.MaThuongHieuNavigation);
-                                                                  
+            ViewData["tim"] = tim;
+            ViewData["mucgia"] = mucgia;
+            ViewData["sapxep"] = sapxep;
             //tìm kiếm
             if (!string.IsNullOrEmpty(tim))
             {
@@ -364,7 +368,55 @@ namespace ASMCshrp4_12345.Controllers
             ViewData["MaThuongHieu"] = new SelectList(_context.Thuonghieus, "MaThuongHieu", "TenThuongHieu", sanpham.MaThuongHieu);
             return View(sanpham);
         }
+        public  IActionResult XuatExcel()
+        {
+            var sanpham = _context.Sanphams
+                .Include(s => s.Hinhanhs)
+                .Include(s => s.MaChatLieuNavigation)
+                .Include(s => s.MaKichThuocNavigation)
+                .Include(s => s.MaMauNavigation)
+                .Include(s => s.MaNhaCcNavigation)
+                .Include(s => s.MaThuongHieuNavigation).ToList();
+            using (var workbook = new XLWorkbook())
+            {
+                var hanghientai = 1;
+                var wooksheet = workbook.Worksheets.Add("DanhSachSanPham");
+                wooksheet.Cell(hanghientai, 1).Value = "Mã Sản phẩm";
+                wooksheet.Cell(hanghientai, 2).Value = "Tên Sản phẩm";
+                wooksheet.Cell(hanghientai, 3).Value = "Số lượng";
+                wooksheet.Cell(hanghientai, 4).Value = "Đơn giá";
+                wooksheet.Cell(hanghientai, 5).Value = "Ngày sản xuất";
+                wooksheet.Cell(hanghientai, 6).Value = "Thương hiệu";
+                wooksheet.Cell(hanghientai, 7).Value = "Chất liệu";
+                wooksheet.Cell(hanghientai, 8).Value = "Nhà cung cấp";
+                wooksheet.Cell(hanghientai, 9).Value = "Kích thước";
+                wooksheet.Cell(hanghientai, 10).Value = "Màu sắc";
+                wooksheet.Cell(hanghientai, 11).Value = "Mô tả";
+                foreach (var sp in sanpham)
+                {
+                    hanghientai++;
+                    wooksheet.Cell(hanghientai, 1).Value = sp.MaSp;
+                    wooksheet.Cell(hanghientai, 2).Value = sp.TenSp;
+                    wooksheet.Cell(hanghientai, 3).Value = sp.SoLuongBan;
+                    wooksheet.Cell(hanghientai, 4).Value = sp.DonGiaBan;
+                    wooksheet.Cell(hanghientai, 5).Value = sp.NgaySanXuat.ToString();
+                    wooksheet.Cell(hanghientai, 6).Value = sp.MaThuongHieuNavigation.TenThuongHieu;
+                    wooksheet.Cell(hanghientai, 7).Value = sp.MaChatLieuNavigation.TenChatLieu;
+                    wooksheet.Cell(hanghientai, 8).Value = sp.MaNhaCcNavigation.TenNhaCc;
+                    wooksheet.Cell(hanghientai, 9).Value = sp.MaKichThuocNavigation.TenKichThuoc;
+                    wooksheet.Cell(hanghientai, 10).Value = sp.MaMauNavigation.TenMau;
+                    wooksheet.Cell(hanghientai, 11).Value = sp.MoTa;
 
+                }
+                using (var stream = new MemoryStream())
+                {
+                    workbook.SaveAs(stream);
+                    var content = stream.ToArray();
+                    return File(content.ToArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "DanhSachSanPham.xlsx");
+                }
+            }
+            
+        }
         // GET: Sanphams/Delete/5
         public async Task<IActionResult> Delete(string id)
         {

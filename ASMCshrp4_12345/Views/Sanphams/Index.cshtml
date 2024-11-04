@@ -35,6 +35,11 @@
         </select>
     </div>
     <button type="submit" class="btn btn-primary mb-2">Tìm kiếm</button>
+    <div class="form-group mx-sm-3 mb-2">
+        <a asp-action="XuatExcel" class="btn btn-success">
+        <i class="bi bi-file-earmark-excel"></i> Xuất Excel
+    </a>
+    </div>
 </form>
 <table class="table table-striped table-bordered">
     <thead class="thead-dark">
@@ -80,16 +85,22 @@
 <div class="row">
     <div class="col-md-12">
         <div class="pagination-wrap d-flex justify-content-center">
-            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
-       {
-           DisplayLinkToFirstPage = PagedListDisplayMode.Always,
-           DisplayLinkToLastPage = PagedListDisplayMode.Always,
-           DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
-           DisplayLinkToNextPage = PagedListDisplayMode.Always,
-           LinkToPreviousPageFormat = "<i class='bi bi-chevron-left'></i>",
-           LinkToNextPageFormat = "<i class='bi bi-chevron-right'></i>",
+            @Html.PagedListPager(Model, page => Url.Action("Index", new
+                {
+                    page,
+                    tim = ViewData["tim"],
+                    mucgia = ViewData["mucgia"],
+                    sapxep = ViewData["sapxep"]
+               }), new PagedListRenderOptions
+               {
+                   DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+                   DisplayLinkToLastPage = PagedListDisplayMode.Always,
+                   DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+                   DisplayLinkToNextPage = PagedListDisplayMode.Always,
+                   LinkToPreviousPageFormat = "<i class='bi bi-chevron-left'></i>",
+                   LinkToNextPageFormat = "<i class='bi bi-chevron-right'></i>",
 
-       })
+               })
         </div>
     </div>
 </div>

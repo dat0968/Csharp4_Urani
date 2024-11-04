@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\FPT\\C#4\\ASM\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\models\\hinhanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\hinhanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\sanphams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\sanphams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\sanphams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -29,18 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\models\\chatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\chatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\models\\hinhanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\hinhanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\sanphams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -122,39 +122,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
-              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
-              "ViewState": "AQIAADwAAAAAAAAAAAAowEcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-01T10:22:42.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Index.cshtml",
               "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Sanphams\\Index.cshtml",
               "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Index.cshtml",
               "RelativeToolTip": "ASMCshrp4_12345\\Views\\Sanphams\\Index.cshtml",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAowF8AAAAAAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAYwGQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-01T09:43:28.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "SanphamsController.cs",
               "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\SanphamsController.cs",
               "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\SanphamsController.cs",
               "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\SanphamsController.cs",
               "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\SanphamsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAeAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAiwB0AAAB3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T06:31:02.196Z",
               "EditorCaption": ""
@@ -162,6 +149,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Create.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Sanphams\\Create.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Create.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Sanphams\\Create.cshtml",
+              "ViewState": "AQIAABkAAAAAAAAAAAAowCgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T06:41:43.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAIBJwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T06:29:31.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Hinhanh.cs",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Hinhanh.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Hinhanh.cs",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Hinhanh.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Hinhanh.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T10:16:07.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T10:41:21.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sanpham.cs",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Sanpham.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Sanpham.cs",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Sanpham.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Sanpham.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAmwEkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T06:28:27.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Chatlieu.cs",
               "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Chatlieu.cs",
               "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Chatlieu.cs",
@@ -175,45 +227,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Sanpham.cs",
-              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Sanpham.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Sanpham.cs",
-              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Sanpham.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Sanpham.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAA8wEsAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T06:28:27.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Create.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Sanphams\\Create.cshtml",
-              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Create.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Sanphams\\Create.cshtml",
-              "ViewState": "AQIAABkAAAAAAAAAAAAowCgAAAAyAAAA",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAowEcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-01T06:41:43.088Z",
+              "WhenOpened": "2024-11-01T10:22:42.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_LayoutAdmin.cshtml",
-              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAACYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-01T06:29:31.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Edit.cshtml",
               "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Sanphams\\Edit.cshtml",
@@ -222,32 +248,6 @@
               "ViewState": "AQIAAFgAAAAAAAAAAAAowF8AAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-01T09:43:25.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Hinhanh.cs",
-              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Hinhanh.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Hinhanh.cs",
-              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Hinhanh.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Hinhanh.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T10:16:07.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T10:41:21.465Z",
               "EditorCaption": ""
             },
             {
@@ -375,7 +375,7 @@
               "RelativeDocumentMoniker": "ASMCshrp4_12345\\Migrations\\20241031105653_editNullable_KhachHang.cs",
               "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Migrations\\20241031105653_editNullable_KhachHang.cs",
               "RelativeToolTip": "ASMCshrp4_12345\\Migrations\\20241031105653_editNullable_KhachHang.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAIBQwAAAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T10:56:54.114Z",
               "EditorCaption": ""

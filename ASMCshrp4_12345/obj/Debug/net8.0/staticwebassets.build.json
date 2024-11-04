@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iDCNqmKg/dbjF5/H/zSkjZIJ5Z6FOg1/rsHm2Lcvprc=",
+  "Hash": "uswKEizgmeiAXPjDCU4nYtQDvCCGfbfuUdPGdQDQuBs=",
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -1119,6 +1119,25 @@
       "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\30945889-6338-495b-85d8-83a8c8d21bfc_sp014c.png"
     },
     {
+      "Identity": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\402726512_7219891304741656_7325059180673705942_n.mp4",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/402726512_7219891304741656_7325059180673705942_n.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\402726512_7219891304741656_7325059180673705942_n.mp4"
+    },
+    {
       "Identity": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\d8a4cfcd-8103-44d9-a3c5-dc006e65da34_sp015c.png",
       "SourceId": "ASMCshrp4_12345",
       "SourceType": "Discovered",
@@ -1136,6 +1155,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\d8a4cfcd-8103-44d9-a3c5-dc006e65da34_sp015c.png"
+    },
+    {
+      "Identity": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\f5792f67-9cdc-4b10-a9ee-f531b311a515.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/f5792f67-9cdc-4b10-a9ee-f531b311a515.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\f5792f67-9cdc-4b10-a9ee-f531b311a515.jpg"
     },
     {
       "Identity": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp001.png",
@@ -1345,6 +1383,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\sp015c.png"
+    },
+    {
+      "Identity": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Tháng Tư Là Lời Nói Dối Của Em.mp3",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/Tháng Tư Là Lời Nói Dối Của Em.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\Tháng Tư Là Lời Nói Dối Của Em.mp3"
     },
     {
       "Identity": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\wwwroot\\images\\landing_page\\stack-of-three-black-hot-stones-spa-salon-vector-16122479.jpg",
