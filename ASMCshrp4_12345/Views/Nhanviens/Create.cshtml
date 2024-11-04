@@ -1,0 +1,198 @@
+﻿@model ASMCshrp4_12345.Models.Nhanvien
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>THÊM NHÂN VIÊN MỚI</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form id="employeeForm" asp-action="Create" enctype="multipart/form-data" >
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="HoTen" class="control-label">Họ tên</label>
+                <input asp-for="HoTen" class="form-control" required />
+                <span asp-validation-for="HoTen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avatar" class="control-label">Avatar</label>
+                <input asp-for="Avatar" class="form-control" name="fileAvatar" type="file" required />
+                <span asp-validation-for="Avatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GioiTinh" class="control-label">Giới tính</label>               
+                <select asp-for="GioiTinh" class="form-control" required>
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                    <option value="Khác">Khác</option>
+                </select>
+                <span asp-validation-for="GioiTinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgaySinh" class="control-label">Ngày sinh</label>
+                <input asp-for="NgaySinh" type="date" class="form-control" required />
+                <span asp-validation-for="NgaySinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiaChi" class="control-label">Địa chỉ</label>
+                <input asp-for="DiaChi" class="form-control" required />
+                <span asp-validation-for="DiaChi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cccd" class="control-label">CCCD</label>
+                <input id="cccd" asp-for="Cccd" type="number" class="form-control" required />
+                <span asp-validation-for="Cccd" class="text-danger"></span>
+                <span id="cccdError" class="text-danger"></span> 
+            </div>
+            <div class="form-group">
+                <label asp-for="Sdt" class="control-label">SĐT</label>
+                <input id="sdt" asp-for="Sdt" type="number" class="form-control" required />
+                <span asp-validation-for="Sdt" class="text-danger"></span>
+                <span id="sdtError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input id="email" asp-for="Email" type="email" class="form-control" required />
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <span id="emailError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgayVaoLam" class="control-label">Ngày vào làm</label>
+                <input asp-for="NgayVaoLam" type="date" class="form-control" required />
+                <span asp-validation-for="NgayVaoLam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Luong" class="control-label">Lương</label>
+                <input asp-for="Luong" type="number" class="form-control" required />
+                <span asp-validation-for="Luong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VaiTro" class="control-label">Vai trò</label>
+                <select asp-for="VaiTro" class="form-control" required >
+                    <option value="Nhân viên">Nhân viên</option>
+                    <option value="Admin">Admin</option>                  
+                </select>
+                <span asp-validation-for="VaiTro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenTaiKhoan" class="control-label">Tên tài khoản</label>
+                <input id="tentaikhoan" asp-for="TenTaiKhoan" class="form-control" required />
+                
+                <span id="tenTaiKhoanError" class="text-danger"></span> 
+            </div>
+            <div class="form-group">
+                <label asp-for="MatKhau" class="control-label">Mật khẩu</label>
+                <input asp-for="MatKhau" class="form-control" required />
+                <span asp-validation-for="MatKhau" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TinhTrang" class="control-label">Tình trạng</label>
+               
+                <select asp-for="TinhTrang" class="form-control" required>
+                    <option value="Đang hoạt động">Đang hoạt động</option>
+                    <option value="Tạm thời khóa">Tạm thời khóa</option>
+                    
+                </select>
+                <span asp-validation-for="TinhTrang" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Tạo mới</button>
+                <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+
+}
+<script>
+    const employeeForm = document.getElementById("employeeForm");
+    const tentaikhoan = document.getElementById("tentaikhoan");
+    const tenTaiKhoanError = document.getElementById("tenTaiKhoanError");
+    const cccd = document.getElementById("cccd"); 
+    const cccdError = document.getElementById("cccdError");
+    const email = document.getElementById("email");
+    const emailError = document.getElementById("emailError");
+    const sdt = document.getElementById("sdt");
+    const sdtError = document.getElementById("sdtError");
+        employeeForm.addEventListener("submit", async function(e) {
+        e.preventDefault(); 
+        
+        tenTaiKhoanError.innerHTML = "";
+        cccdError.innerHTML = "";
+        emailError.innerHTML = "";
+        sdtError.innerHTML = "";
+        if (tentaikhoan.value.trim() === "") {
+            tenTaiKhoanError.innerHTML = "Tên tài khoản không được để trống";
+            e.preventDefault();
+            return; 
+        }
+
+
+        const usernameExists = await checkIfUsernameExists(tentaikhoan.value);
+        if (usernameExists) {
+            tenTaiKhoanError.innerHTML = "Tên tài khoản đã tồn tại";
+            
+            return;
+        }
+
+
+        const cccdExists = await checkIfCccdExists(cccd.value);
+        if (cccdExists) {
+            cccdError.innerHTML = "CCCD đã tồn tại";
+            
+            return;
+        }
+
+        const emailExists = await checkIfEmailExists(email.value);
+        if (emailExists) {
+            emailError.innerHTML = "Email đã tồn tại";
+            return;
+        }
+
+        const sdtExists = await checkIfsdtExists(sdt.value);
+        if (sdtExists) {
+            sdtError.innerHTML = "SĐT đã tồn tại";
+            return;
+        }
+
+        const confirmSubmit = confirm('Bạn có muốn thêm nhân viên này không?');
+        if (confirmSubmit) {
+            employeeForm.submit(); 
+        }
+
+
+    });
+    async function checkIfUsernameExists(username) {
+        const response = await fetch(`/Nhanviens/CheckUsernameExists?username=${username}`);
+        return await response.json(); 
+    }
+
+
+    async function checkIfCccdExists(cccd) {
+        const response = await fetch(`/Nhanviens/CheckCccdExists?cccd=${cccd}`);
+        return await response.json(); 
+    }
+
+    async function checkIfEmailExists(email) {
+        const response = await fetch(`/Nhanviens/CheckEmailExists?email=${email}`);
+        return await response.json();
+    }
+
+    async function checkIfsdtExists(sdt) {
+        const response = await fetch(`/Nhanviens/CheckSDTExists?sdt=${sdt}`);
+        return await response.json();
+    }
+</script>
+
+
+

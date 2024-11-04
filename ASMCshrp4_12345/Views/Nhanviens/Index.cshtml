@@ -1,0 +1,153 @@
+﻿@* @model IEnumerable<ASMCshrp4_12345.Models.Nhanvien> *@
+@model X.PagedList.IPagedList<ASMCshrp4_12345.Models.Nhanvien>
+@using X.PagedList.Mvc.Core
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<form method="get" asp-action="Index" style="margin-top: 20px">
+    <div class="form-row">
+        <!-- Tìm kiếm theo tên nhân viên -->
+        <div class="col-md-4 mb-3">
+            <input type="text" name="keywords" class="form-control" placeholder="Tìm kiếm nhân viên theo mã hoặc họ tên...">
+        </div>
+
+        <!-- Filter theo vai trò -->
+        <div class="col-md-3 mb-3">
+            <select name="roleFilter" class="form-control">
+                <option value="" selected="@(string.IsNullOrEmpty(ViewData["CurrentRoleFilter"]?.ToString()))">Tất cả vai trò</option>
+                <option value="Admin" selected="@(ViewData["CurrentRoleFilter"]?.ToString() == "Admin")">Admin</option>
+                <option value="Nhân Viên" selected="@(ViewData["CurrentRoleFilter"]?.ToString() == "Nhân Viên")">Nhân Viên</option>
+            </select>
+
+        </div>
+
+        <!-- Lọc theo tình trạng -->
+        <div class="col-md-3 mb-3">
+            <select name="statusFilter" class="form-control">
+                <option value="" selected="@(string.IsNullOrEmpty(ViewData["CurrentStatusFilter"]?.ToString()))">Tất cả tình trạng</option>
+                <option value="Đang hoạt động" selected="@(ViewData["CurrentStatusFilter"]?.ToString() == "Đang hoạt động")">Đang hoạt động</option>
+                <option value="Tạm thời khóa" selected="@(ViewData["CurrentStatusFilter"]?.ToString() == "Tạm thời khóa")">Tạm thời khóa</option>
+            </select>
+        </div>
+
+
+
+        <!-- Button Tìm kiếm -->
+        <div class="col-md-2 mb-3">
+            <button type="submit" class="btn btn-primary w-100">Tìm kiếm</button>
+        </div>
+
+        <!-- Tùy chọn sắp xếp -->
+        <div class="col-md-3 mt-3">
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="sortMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-sort"></i> Sắp xếp theo
+                </button>
+                <div class="dropdown-menu" aria-labelledby="sortMenuButton">
+                    <button type="submit" name="sortOrder" value="date_asc" class="dropdown-item @(ViewData["CurrentSortOrder"]?.ToString() == "date_asc" ? "active" : "")">
+                        <i class="fa fa-arrow-up"></i> Ngày vào làm (cũ - mới)
+                    </button>
+                    <button type="submit" name="sortOrder" value="date_desc" class="dropdown-item @(ViewData["CurrentSortOrder"]?.ToString() == "date_desc" ? "active" : "")">
+                        <i class="fa fa-arrow-down"></i> Ngày vào làm (mới - cũ)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+<p style="margin-top: 20px">
+    <a asp-action="Create" class="btn btn-success" >THÊM NHÂN VIÊN MỚI</a>
+    <a style="color: green" href="@Url.Action("ExportToExcel")" class="btn btn-label-success btn-round btn-sm me-2">
+        <span class="btn-label">
+            <i class="fa fa-download"></i>
+        </span>
+        Xuất danh sách nhân viên
+    </a>
+</p>
+
+<style>
+    .table #_email, .table #_ngayvaolam, .table #_luong, .table #_vaitro, .table th {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+
+    .avatar-cell img {
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 50%;
+    }
+</style>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Mã nhân viên</th>
+            <th>Họ tên</th>
+            <th>Avatar</th>
+            <th>Giới tính</th>
+            <th>Ngày sinh</th>
+            <th>SĐT</th>
+            <th>Email</th>
+            <th>Ngày vào làm</th>
+            <th>Lương</th>
+            <th>Vai trò</th>
+            <th>Thao Tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.MaNv)</td>
+                <td>@Html.DisplayFor(modelItem => item.HoTen)</td>
+                <td class="avatar-cell">
+                    @if (!string.IsNullOrEmpty(item.Avatar))
+                    {
+                        <img class="img-fluid rounded-circle" style="width: 50px; height: 50px;" src="~/HinhAnh/NhanVien/@item.Avatar" alt="Avatar">
+                    }
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.GioiTinh)</td>
+                <td>
+                    @if (item.NgaySinh.HasValue)
+                    {
+                        @item.NgaySinh.Value.ToString("dd/MM/yyyy")
+                    }
+                    else
+                    {
+                        @:N/A 
+                    }
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.Sdt)</td>
+                <td id="_email">@Html.DisplayFor(modelItem => item.Email)</td>
+                <td id="_ngayvaolam">
+                    @item.NgayVaoLam.ToString("dd/MM/yyyy")
+                </td>
+                <td id="_luong" >@Html.DisplayFor(modelItem => item.Luong)</td>
+                <td id="_vaitro" >@Html.DisplayFor(modelItem => item.VaiTro)</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Nhanviens", new { id = item.MaNv })" class="btn btn-primary">Sửa</a>
+                    <a href="@Url.Action("Details", "Nhanviens", new { id = item.MaNv })" class="btn btn-info">Chi tiết</a>
+                    <form asp-action="Delete" asp-route-id="@item.MaNv" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn xóa nhân viên này không?');">
+                        <button type="submit" class="btn btn-danger">Xóa</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, keywords = ViewData["CurrentKeywords"], roleFilter = ViewData["CurrentRoleFilter"], statusFilter = ViewData["CurrentStatusFilter"], sortOrder = ViewData["CurrentSortOrder"] }), new PagedListRenderOptions
+{
+    LiElementClasses = new List<string> { "page-item" },
+    PageClasses = new List<string> { "page-link" }
+})
+

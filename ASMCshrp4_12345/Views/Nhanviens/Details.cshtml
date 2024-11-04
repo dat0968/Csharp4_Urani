@@ -1,0 +1,71 @@
+﻿@model ASMCshrp4_12345.Models.Nhanvien
+
+@{
+    ViewData["Title"] = "Chi Tiết Nhân Viên";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="text-center">Thông Tin Chi Tiết Nhân Viên</h1>
+
+<div class="card my-4 shadow-sm">
+    <div class="card-header">
+        <h4>@Model.HoTen</h4>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4 font-weight-bold mb-3">Mã Nhân Viên:</div>
+            <div class="col-md-8 mb-3">@Model.MaNv</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Avatar:</div>
+            <div class="col-md-8 mb-3">
+                @if (!string.IsNullOrEmpty(Model.Avatar))
+                {
+                    <img src="~/HinhAnh/NhanVien/@Model.Avatar" alt="Avatar" class="img-thumbnail" style="width: 150px;">
+                }
+                else
+                {
+                    <span>Không có ảnh</span>
+                }
+            </div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Giới Tính:</div>
+            <div class="col-md-8 mb-3">@Model.GioiTinh</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Ngày Sinh:</div>
+            <div class="col-md-8 mb-3">@Model.NgaySinh?.ToString("dd/MM/yyyy")</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Địa Chỉ:</div>
+            <div class="col-md-8 mb-3">@Model.DiaChi</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">CCCD:</div>
+            <div class="col-md-8 mb-3">@Model.Cccd</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Số Điện Thoại:</div>
+            <div class="col-md-8 mb-3">@Model.Sdt</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Email:</div>
+            <div class="col-md-8 mb-3">@Model.Email</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Ngày Vào Làm:</div>
+            <div class="col-md-8 mb-3">@Model.NgayVaoLam.ToString("dd/MM/yyyy")</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Lương:</div>
+            <div class="col-md-8 mb-3">@Model.Luong.ToString("N0") đ</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Vai Trò:</div>
+            <div class="col-md-8 mb-3">@Model.VaiTro</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Tên Tài Khoản:</div>
+            <div class="col-md-8 mb-3">@Model.TenTaiKhoan</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Mật Khẩu:</div>
+            <div class="col-md-8 mb-3">@Model.MatKhau</div> 
+
+            <div class="col-md-4 font-weight-bold mb-3">Tình Trạng:</div>
+            <div class="col-md-8 mb-3">@Model.TinhTrang</div>
+        </div>
+    </div>
+    <div class="card-footer text-center">
+        <a asp-action="Index" class="btn btn-secondary">Quay Lại</a>
+    </div>
+</div>

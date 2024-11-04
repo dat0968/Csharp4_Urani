@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ASMCshrp4_12345.Models;
 
@@ -21,12 +22,13 @@ public partial class Nhanvien
 
     [Required(ErrorMessage = "Giới tính không được để trống")]
     public string GioiTinh { get; set; }
-
+    [Required(ErrorMessage = "Ngày sinh không được để trống")]
     public DateOnly? NgaySinh { get; set; }
-
+    [Required(ErrorMessage = "Địa chỉ không được để trống")]
     public string? DiaChi { get; set; }
 
     [StringLength(20, ErrorMessage = "CCCD không được vượt quá 20 ký tự.")]
+    [Required(ErrorMessage = "CCCD không được để trống")]
     public string? Cccd { get; set; }
 
     [Required(ErrorMessage = "Số điện thoại không được để trống")]
@@ -56,7 +58,10 @@ public partial class Nhanvien
 
     public string TinhTrang { get; set; } = "Đang hoạt động";
 
-    public bool IsDelete { get; set; } = false; 
+    public bool IsDelete { get; set; } = false;
 
+
+    [NotMapped]
+    public IFormFile? fileAvatar { get; set; }
     public virtual ICollection<Hoadon>? Hoadons { get; set; } = new List<Hoadon>();
 }

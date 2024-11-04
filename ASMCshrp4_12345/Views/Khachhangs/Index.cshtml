@@ -1,0 +1,148 @@
+﻿@* @model IEnumerable<ASMCshrp4_12345.Models.Khachhang> *@
+@model X.PagedList.IPagedList<ASMCshrp4_12345.Models.Khachhang>
+@using X.PagedList.Mvc.Core
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style>
+    .table #_hoten, .table #_sdt, .table #_email, .table th {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+
+    .avatar-cell img {
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 50%;
+    }
+</style>
+
+<form method="get" asp-action="Index" style="margin-top: 20px">
+    <div class="form-row">
+
+        <div class="col-md-4 mb-3">
+            <input type="text" name="keywords" class="form-control" placeholder="Tìm kiếm khách hàng theo mã hoặc họ tên...">
+        </div>
+
+        <!-- Filter theo giới tính -->
+        <div class="col-md-3 mb-3">
+            <select name="filterGender" class="form-control">
+                <option value="" selected="@(string.IsNullOrEmpty(ViewData["CurrentGenderFilter"]?.ToString()))">Tất cả</option>
+                <option value="Nam" selected="@(ViewData["CurrentGenderFilter"]?.ToString() == "Nam")">Nam</option>
+                <option value="Nữ" selected="@(ViewData["CurrentGenderFilter"]?.ToString() == "Nữ")">Nữ</option>
+                <option value="Khác" selected="@(ViewData["CurrentGenderFilter"]?.ToString() == "Khác")">Khác</option>
+            </select>
+
+        </div>
+
+        <!-- Lọc theo tình trạng -->
+        <div class="col-md-3 mb-3">
+            <select name="statusFilter" class="form-control">
+                <option value="" selected="@(string.IsNullOrEmpty(ViewData["CurrentStatusFilter"]?.ToString()))">Tất cả tình trạng</option>
+                <option value="Đang hoạt động" selected="@(ViewData["CurrentStatusFilter"]?.ToString() == "Đang hoạt động")">Đang hoạt động</option>
+                <option value="Tạm thời khóa" selected="@(ViewData["CurrentStatusFilter"]?.ToString() == "Tạm thời khóa")">Tạm thời khóa</option>
+            </select>
+        </div>
+
+
+
+        <!-- Button Tìm kiếm -->
+        <div class="col-md-2 mb-3">
+            <button type="submit" class="btn btn-primary w-100">Tìm kiếm</button>
+        </div>
+
+        <!-- Tùy chọn sắp xếp -->
+        <div class="col-md-3 mt-3">
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="sortMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-sort"></i> Sắp xếp theo
+                </button>
+                <div class="dropdown-menu" aria-labelledby="sortMenuButton">
+                    <button type="submit" name="sortOrder" value="name_asc" class="dropdown-item @(ViewData["CurrentSortOrder"]?.ToString() == "name_asc" ? "active" : "")">
+                        <i class="fa fa-arrow-up"></i> Họ tên tăng dần
+                    </button>
+                    <button type="submit" name="sortOrder" value="name_desc" class="dropdown-item @(ViewData["CurrentSortOrder"]?.ToString() == "name_desc" ? "active" : "")">
+                        <i class="fa fa-arrow-down"></i> Họ tên giảm dần
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<p style="margin-top: 20px">
+    <a asp-action="Create" class="btn btn-success">THÊM KHÁCH HÀNG MỚI</a>
+    <a style="color: green" href="@Url.Action("ExportToExcel")" class="btn btn-label-success btn-round btn-sm me-2">
+        <span class="btn-label">
+            <i class="fa fa-download"></i>
+        </span>
+        Xuất danh sách khách hàng
+    </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã khách hàng</th>
+            <th>Họ tên</th>
+            <th>Avatar</th>
+            <th>Giới tính</th>
+            <th>Ngày sinh</th>
+            <th>SĐT</th>
+            <th>Email</th>
+            <th>Thao Tác</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaKh)
+                </td>
+            <td id="_hoten" >
+                @Html.DisplayFor(modelItem => item.HoTen)
+            </td>
+                <td class="avatar-cell">
+                    @if (!string.IsNullOrEmpty(item.Avatar))
+                    {
+                        <img class="img-fluid rounded-circle" style="width: 50px; height: 50px;" src="~/HinhAnh/KhachHang/@item.Avatar" alt="Avatar">
+                    }
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GioiTinh)
+            </td>
+            <td>
+                    @if (item.NgaySinh.HasValue)
+                    {
+                        @item.NgaySinh.Value.ToString("dd/MM/yyyy")
+                    }
+                    else
+                    {
+                        @:N/A
+                    }
+            </td>
+            <td id="_sdt" >
+                @Html.DisplayFor(modelItem => item.Sdt)
+            </td>
+            <td id="_email">
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+                <td>
+                    <a href="@Url.Action("Edit", "Khachhangs", new { id = item.MaKh })" class="btn btn-primary">Sửa</a>
+                    <a href="@Url.Action("Details", "Khachhangs", new { id = item.MaKh })" class="btn btn-info">Chi tiết</a>
+                    <form asp-action="Delete" asp-route-id="@item.MaKh" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn xóa khách hàng này không?');">
+                        <button type="submit" class="btn btn-danger">Xóa</button>
+                    </form>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, keywords = ViewData["CurrentKeywords"], filterGender = ViewData["CurrentGenderFilter"], statusFilter = ViewData["CurrentStatusFilter"], sortOrder = ViewData["CurrentSortOrder"] }), new PagedListRenderOptions
+{
+    LiElementClasses = new List<string> { "page-item" },
+    PageClasses = new List<string> { "page-link" }
+})

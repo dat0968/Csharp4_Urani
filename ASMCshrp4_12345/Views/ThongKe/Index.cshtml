@@ -1,0 +1,234 @@
+﻿@model ASMCshrp4_12345.ViewModels.DoanhThuThangViewModel
+@{
+    ViewData["Title"] = "Thống Kê Doanh Thu";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
+    <!-- Hàng đầu tiên: Hai biểu đồ cột -->
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <div style="width: 48%;">
+            <canvas id="doanhThuChart" width="400" height="300"></canvas>
+        </div>
+        <div style="width: 48%;">
+            <canvas id="donThanhToanChart" width="400" height="300"></canvas>
+        </div>
+    </div>
+
+    <!-- Hàng thứ hai: Hai biểu đồ tròn -->
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <div style="width: 48%;">
+            <canvas id="nhanVienChart" width="400" height="300"></canvas>
+        </div>
+        <div style="width: 48%;">
+            <canvas id="khachHangChart" width="400" height="300"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- Bảng thống kê -->
+<div style="display: flex; justify-content: flex-end; width: 100%; margin-top: 30px;">
+    <div style="width: 300px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); padding: 15px;">
+        <h3 style="text-align: center; color: #333;">Ghi Chép Thống Kê</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr style="background-color: #f1f1f1;">
+                    <th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Thông Tin</th>
+                    <th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Giá Trị</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Tổng Doanh Thu Tháng Này</td>
+                    <td style="padding: 10px; border: 1px solid #ddd; color: #ff6347;">@Model.DoanhThuThang VNĐ</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Tổng Số Đơn Đã Thanh Toán</td>
+                    <td style="padding: 10px; border: 1px solid #ddd; color: #ff6347;">@Model.SoLuongDonThanhToan</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Tổng Số Nhân Viên</td>
+                    <td style="padding: 10px; border: 1px solid #ddd; color: #ff6347;">@Model.SoLuongNhanVien</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Tổng Số Khách Hàng</td>
+                    <td style="padding: 10px; border: 1px solid #ddd; color: #ff6347;">@Model.SoLuongKhachHang</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Lấy dữ liệu từ Model truyền vào JavaScript
+        const doanhThuThang = @Model.DoanhThuThang;
+        const soLuongNhanVien = @Model.SoLuongNhanVien;
+        const soLuongKhachHang = @Model.SoLuongKhachHang;
+        const soLuongDonDaThanhToan = @Model.SoLuongDonThanhToan;
+        const soLuongNhanVienNam = @Model.SoLuongNhanVienNam;
+        const soLuongNhanVienNu = @Model.SoLuongNhanVienNu;
+        const soLuongKhachHangNam = @Model.SoLuongKhachHangNam;
+        const soLuongKhachHangNu = @Model.SoLuongKhachHangNu;
+        // Cấu hình chung cho các biểu đồ
+        const chartConfig = {
+            plugins: {
+                legend: {
+                    display: true,
+                    labels: {
+                        color: '#333',
+                        font: {
+                            size: 14,
+                            family: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+                            weight: 'bold'
+                        }
+                    }
+                }
+            },
+            animation: {
+                duration: 1500,
+                easing: 'easeInOutBounce'
+            }
+        };
+
+        // Khởi tạo biểu đồ doanh thu
+        new Chart(document.getElementById('doanhThuChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Doanh Thu Tháng Này'],
+                datasets: [{
+                    label: 'Doanh Thu (VNĐ)',
+                    data: [doanhThuThang],
+                    backgroundColor: ['rgba(54, 162, 235, 0.7)'],
+                    borderColor: ['rgba(54, 162, 235, 1)'],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                ...chartConfig,
+                plugins: {
+                    ...chartConfig.plugins,
+                    title: {
+                        display: true,
+                        text: 'Doanh Thu Tháng Này',
+                        font: {
+                            size: 18
+                        },
+                        color: '#222'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#555' },
+                        grid: { color: '#ddd' }
+                    },
+                    x: {
+                        ticks: { color: '#555' },
+                        grid: { color: '#ddd' }
+                    }
+                }
+            }
+        });
+
+        // Biểu đồ số lượng đơn đã thanh toán
+        new Chart(document.getElementById('donThanhToanChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Số Lượng Đơn Đã Thanh Toán'],
+                datasets: [{
+                    label: 'Đơn Đã Thanh Toán',
+                    data: [soLuongDonDaThanhToan],
+                    backgroundColor: ['rgba(255, 99, 132, 0.7)'],
+                    borderColor: ['rgba(255, 99, 132, 1)'],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                ...chartConfig,
+                plugins: {
+                    ...chartConfig.plugins,
+                    title: {
+                        display: true,
+                        text: 'Số Lượng Đơn Đã Thanh Toán',
+                        font: {
+                            size: 18
+                        },
+                        color: '#222'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#555' },
+                        grid: { color: '#ddd' }
+                    },
+                    x: {
+                        ticks: { color: '#555' },
+                        grid: { color: '#ddd' }
+                    }
+                }
+            }
+        });
+
+        // Biểu đồ số lượng nhân viên
+        new Chart(document.getElementById('nhanVienChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Nam', 'Nữ'],
+                datasets: [{
+                    label: 'Số Lượng Nhân Viên',
+                    data: [soLuongNhanVienNam, soLuongNhanVienNu],
+                    backgroundColor: ['rgba(75, 192, 192, 0.7)', 'rgba(255, 159, 64, 0.7)'],
+                    borderColor: ['rgba(75, 192, 192, 1)', 'rgba(255, 159, 64, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                ...chartConfig,
+                plugins: {
+                    ...chartConfig.plugins,
+                    title: {
+                        display: true,
+                        text: 'Số Lượng Nhân Viên',
+                        font: {
+                            size: 18
+                        },
+                        color: '#222'
+                    }
+                }
+            }
+        });
+
+        // Biểu đồ số lượng khách hàng
+        new Chart(document.getElementById('khachHangChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Nam', 'Nữ'],
+                datasets: [{
+                    label: 'Số Lượng Khách Hàng',
+                    data: [soLuongKhachHangNam, soLuongKhachHangNu],
+                    backgroundColor: ['rgba(153, 102, 255, 0.7)', 'rgba(255, 206, 86, 0.7)'],
+                    borderColor: ['rgba(153, 102, 255, 1)', 'rgba(255, 206, 86, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                ...chartConfig,
+                plugins: {
+                    ...chartConfig.plugins,
+                    title: {
+                        display: true,
+                        text: 'Số Lượng Khách Hàng',
+                        font: {
+                            size: 18
+                        },
+                        color: '#222'
+                    }
+                }
+            }
+        });
+    });
+</script>

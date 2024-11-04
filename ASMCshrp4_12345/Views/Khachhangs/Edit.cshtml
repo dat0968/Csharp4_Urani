@@ -1,0 +1,188 @@
+﻿@model ASMCshrp4_12345.ViewModels.KhachHangViewModel
+
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>SỬA THÔNG TIN KHÁCH HÀNG</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form id="customerForm" asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaKh" />
+            <div class="form-group">
+                <label asp-for="MaKh" class="control-label">Mã khách hàng</label>
+                <input asp-for="MaKh" class="form-control" readonly />
+                <span asp-validation-for="MaKh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HoTen" class="control-label">Họ tên</label>
+                <input asp-for="HoTen" class="form-control" />
+                <span asp-validation-for="HoTen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avatar" class="control-label">Avatar</label>
+                <input asp-for="Avatar" class="form-control" name="fileAvatar" type="file" />
+                <span asp-validation-for="Avatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GioiTinh" class="control-label">Giới tính</label>
+                <select asp-for="GioiTinh" class="form-control" required>
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                    <option value="Khác">Khác</option>
+                </select>
+                <span asp-validation-for="GioiTinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgaySinh" class="control-label">Ngày sinh</label>
+                <input asp-for="NgaySinh" type="date" class="form-control" required />
+                <span asp-validation-for="NgaySinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiaChi" class="control-label">Địa chỉ</label>
+                <input asp-for="DiaChi" class="form-control" required />
+                <span asp-validation-for="DiaChi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cccd" class="control-label">CCCD</label>
+                <input id="cccd" asp-for="Cccd" type="number" class="form-control" required />
+                <span asp-validation-for="Cccd" class="text-danger"></span>
+                <span id="cccdError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sdt" class="control-label">SĐT</label>
+                <input id="sdt" asp-for="Sdt" type="number" class="form-control" required />
+                <span asp-validation-for="Sdt" class="text-danger"></span>
+                <span id="sdtError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input id="email" asp-for="Email" type="email" class="form-control" required />
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <span id="emailError" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TenTaiKhoan" class="control-label">Tên tài khoản</label>
+                <input id="tentaikhoan" asp-for="TenTaiKhoan" class="form-control" required />
+
+                <span id="tenTaiKhoanError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MatKhau" class="control-label">Mật khẩu</label>
+                <input asp-for="MatKhau" class="form-control" required />
+                <span asp-validation-for="MatKhau" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TinhTrang" class="control-label">Tình trạng</label>
+
+                <select asp-for="TinhTrang" class="form-control" required>
+                    <option value="Đang hoạt động">Đang hoạt động</option>
+                    <option value="Tạm thời khóa">Tạm thời khóa</option>
+
+                </select>
+                <span asp-validation-for="TinhTrang" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Cập nhật</button>
+                <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+<script>
+    const customerForm = document.getElementById("customerForm");
+    const tentaikhoan = document.getElementById("tentaikhoan");
+    const tenTaiKhoanError = document.getElementById("tenTaiKhoanError");
+    const cccd = document.getElementById("cccd");
+    const cccdError = document.getElementById("cccdError");
+    const email = document.getElementById("email");
+    const emailError = document.getElementById("emailError");
+    const sdt = document.getElementById("sdt");
+    const sdtError = document.getElementById("sdtError");
+
+    const initialUsername = '@Model.TenTaiKhoan';
+    const initialCccd = '@Model.Cccd';
+    const initialEmail = '@Model.Email';
+    const initialSdt = '@Model.Sdt';
+
+    customerForm.addEventListener('submit', async function(e){
+        e.preventDefault();
+        tenTaiKhoanError.innerHTML = "";
+        cccdError.innerHTML = "";
+        emailError.innerHTML = "";
+        sdtError.innerHTML = "";
+        if (tentaikhoan.value.trim() === "") {
+            tenTaiKhoanError.innerHTML = "Tên tài khoản không được để trống";
+            e.preventDefault();
+            return;
+        }
+
+
+        if (tentaikhoan.value !== initialUsername) {
+            const usernameExists = await checktentaikhoan(tentaikhoan.value);
+            if (usernameExists) {
+                tenTaiKhoanError.innerHTML = "Tên tài khoản đã tồn tại";
+                return;
+            }
+        }
+        if (cccd.value !== initialCccd) {
+            const cccdExists = await checkcccd(cccd.value);
+            if (cccdExists) {
+                cccdError.innerHTML = "CCCD đã tồn tại";
+                return;
+            }
+        }
+        if (email.value !== initialEmail) {
+            const emailExists = await checkemail(email.value);
+            if (emailExists) {
+                emailError.innerHTML = "Email đã tồn tại";
+                return;
+            }
+        }
+        if (sdt.value !== initialSdt) {
+            const sdtExists = await checksdt(sdt.value);
+            if (sdtExists) {
+                sdtError.innerHTML = "SĐT đã tồn tại";
+                return;
+            }
+        }
+
+        const confirmSubmit = confirm('Bạn có muốn sửa thông tin khách hàng này không?');
+        if (confirmSubmit) {
+            customerForm.submit();
+        }
+    })
+
+
+    async function checktentaikhoan(tentaikhoan) {
+        const response = await fetch(`/Khachhangs/checkTenTaiKhoan?tentaikhoan=${tentaikhoan}`);
+        return await response.json();
+    }
+
+    async function checkcccd(cccd){
+        const response = await fetch(`/Khachhangs/checkCCCD?cccd=${cccd}`);
+        return await response.json();
+    }
+
+    async function checkemail(email) {
+        const response = await fetch(`/Khachhangs/checkEmail?email=${email}`);
+        return await response.json();
+    }
+
+    async function checksdt(sdt) {
+        const response = await fetch(`/Khachhangs/checkEmail?sdt=${sdt}`);
+        return await response.json();
+    }
+</script>
