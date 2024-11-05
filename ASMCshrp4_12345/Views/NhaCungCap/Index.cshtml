@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ASMCshrp4_12345.Models.Nhacungcap>
+@{Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<h1>Nhà Cung Cấp</h1>
+<form asp-action="Index" method="get">
+    <div class="form-group d-flex justify-content-between">
+    <div class="input-group mb-3" style="width:600px;height:33px;margin-top:20px;">
+
+        <input type="text" name="searchString" class="form-control" placeholder="Tìm kiếm theo tên hoặc mã nhà cung cấp" />
+        <div class="input-group-append">
+
+            <button class="btn btn-outline-secondary" type="submit">Tìm kiếm</button>
+        </div>
+    </div>
+
+        <div class="form-group" style="margin-right:350px;margin-top:20px;width:200px;height:40px;">
+         <select name="sortOrder" id="sortOrder" class="form-control" onchange="this.form.submit()">
+             <option value="">Sắp xếp theo tên nhà cung cấp</option>
+             <option value="AZ" >Từ A đến Z</option>
+             <option value="ZA">Từ Z đến A</option>
+         </select>
+     </div>
+    </div>
+</form>
+<p>
+    <button class="Tao" style="background-color:aqua;padding:8px;border:solid 1px aqua; border-radius:5px;"><a asp-action="Create">Tạo Nhà Cung Cấp Mới</a></button>
+
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã Nhà Cung Cấp</th>
+            <th>Tên Nhà Cung Cấp</th>
+            <th>Địa Chỉ</th>
+            <th>Email</th>
+            <th>Số Điện Thoại</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaNhaCc</td>
+                <td>@item.TenNhaCc</td>
+                <td>@item.DiaChi</td>
+                <td>@item.Email</td>
+                <td>@item.Sdt</td>
+                <td>
+                    <button class="btn btn-primary" type="submit" style="width:70px;"><a asp-action="Edit" asp-route-id="@item.MaNhaCc">Sửa</a></button>
+
+                    <form asp-action="Delete" asp-asp-controller="NhaCungCap" asp-route-id="@item.MaNhaCc" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn xóa nhà cung cấp này không?');">
+                        <button type="submit" class="btn btn-danger">Xóa</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,65 +1,177 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\CSHARP_4\\ASMCshrp4_12345\\",
+  "WorkspaceRootPath": "D:\\FPT\\C#\\C#4\\ASM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\thuonghieu\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\thuonghieu\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\thuonghieu\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\thuonghieu\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\thuonghieu\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\thuonghieu\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\nhacungcap\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\nhacungcap\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\account_staff\\loginstaff.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\account_staff\\loginstaff.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\nhacungcap\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\nhacungcap\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\controllers\\redirectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\redirectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\nhacungcap\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\nhacungcap\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\controllers\\account_staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\account_staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\thuonghieu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\thuonghieu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\models\\thuonghieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\thuonghieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\nhacungcap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\nhacungcap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\nhanviens\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\nhanviens\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\controllers\\thuonghieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\thuonghieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\controllers\\khachhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\khachhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\controllers\\nhacungcapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\nhacungcapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\controllers\\cuahangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\cuahangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\khachhangs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\khachhangs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\khachhangs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\models\\nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\models\\csharp4context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\csharp4context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\khachhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\khachhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\khachhangs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\khachhangs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\nhanviens\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\cuahang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\cuahang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\wwwroot\\layoutadmin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\wwwroot\\layoutadmin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\cuahang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\cuahang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\account_staff\\loginstaff.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\account_staff\\loginstaff.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\viewmodels\\khachhangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\viewmodels\\khachhangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\viewmodels\\doanhthuthangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\viewmodels\\doanhthuthangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\models\\hinhanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\hinhanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\models\\chitietphieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\chitietphieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\models\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\models\\chatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\models\\chatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\controllers\\khachhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\khachhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\migrations\\20241030160740_createdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\migrations\\20241030160740_createdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\migrations\\20241031031853_editcolumn_khachhang_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\migrations\\20241031031853_editcolumn_khachhang_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\controllers\\redirectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\redirectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\controllers\\account_staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\account_staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\nhanviens\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\nhanviens\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\nhanviens\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\nhanviens\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\khachhangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#\\c#4\\asm\\asmcshrp4_12345\\views\\khachhangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\khachhangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -69,213 +181,540 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 307,
+          "DockedWidth": 310,
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Thuonghieu.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Thuonghieu.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Thuonghieu.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Thuonghieu.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Thuonghieu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T16:35:20.918Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RedirectController.cs",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\RedirectController.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\RedirectController.cs",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\RedirectController.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\RedirectController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T13:00:01.668Z",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\ThuongHieu\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\ThuongHieu\\Delete.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\ThuongHieu\\Delete.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\ThuongHieu\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T16:33:48.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\ThuongHieu\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\ThuongHieu\\Edit.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\ThuongHieu\\Edit.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\ThuongHieu\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T16:33:16.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\ThuongHieu\\Create.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\ThuongHieu\\Create.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\ThuongHieu\\Create.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\ThuongHieu\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T16:32:36.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\ThuongHieu\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\ThuongHieu\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\ThuongHieu\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\ThuongHieu\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T16:31:56.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\NhaCungCap\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\NhaCungCap\\Edit.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\NhaCungCap\\Edit.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\NhaCungCap\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T15:19:19.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\NhaCungCap\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\NhaCungCap\\Delete.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\NhaCungCap\\Delete.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\NhaCungCap\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T15:19:56.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\NhaCungCap\\Create.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\NhaCungCap\\Create.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\NhaCungCap\\Create.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\NhaCungCap\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T15:17:27.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "_LayoutAdmin.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml*",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml*",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAewGMAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEUAAAB1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-04T12:48:01.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginStaff.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Account_Staff\\LoginStaff.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Account_Staff\\LoginStaff.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Account_Staff\\LoginStaff.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Account_Staff\\LoginStaff.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T12:15:47.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Account_StaffController.cs",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\Account_StaffController.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\Account_StaffController.cs",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\Account_StaffController.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\Account_StaffController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDcAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "NhaCungCapController.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\NhaCungCapController.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\NhaCungCapController.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\NhaCungCapController.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\NhaCungCapController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowGgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T12:15:02.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "KhachhangsController.cs",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\KhachhangsController.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\KhachhangsController.cs",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\KhachhangsController.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\KhachhangsController.cs",
-              "ViewState": "AgIAAAwBAAAAAAAAAAAqwDkBAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T11:50:58.176Z",
+              "WhenOpened": "2024-11-04T14:59:21.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Khachhangs\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Khachhangs\\Edit.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Khachhangs\\Edit.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Khachhangs\\Edit.cshtml",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAH8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T11:46:01.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Khachhangs\\Create.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Khachhangs\\Create.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Khachhangs\\Create.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Khachhangs\\Create.cshtml",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T11:45:41.592Z",
+              "Title": "ThongKeController.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\ThongKeController.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\ThongKeController.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\ThongKeController.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\ThongKeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T16:24:14.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Nhanviens\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Nhanviens\\Edit.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Nhanviens\\Edit.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Nhanviens\\Edit.cshtml",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T11:45:31.106Z",
+              "Title": "CuaHangController.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\CuaHangController.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\CuaHangController.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\CuaHangController.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\CuaHangController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T16:25:35.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Nhanviens\\Create.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Nhanviens\\Create.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Nhanviens\\Create.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Nhanviens\\Create.cshtml",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T11:45:16.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Nhanviens\\Index.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Nhanviens\\Index.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Nhanviens\\Index.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Nhanviens\\Index.cshtml",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\NhaCungCap\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\NhaCungCap\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\NhaCungCap\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\NhaCungCap\\Index.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwCMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T11:45:10.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADEAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T11:14:42.056Z",
+              "WhenOpened": "2024-11-04T15:16:45.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "ThuongHieuController.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\ThuongHieuController.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\ThuongHieuController.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\ThuongHieuController.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\ThuongHieuController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAA5wE0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T13:57:26.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Khachhangs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Khachhangs\\Delete.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Khachhangs\\Delete.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Khachhangs\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T15:33:29.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Nhacungcap.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Nhacungcap.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Nhacungcap.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Nhacungcap.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Nhacungcap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:48:31.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Program.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Program.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Program.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T03:16:36.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Csharp4Context.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Csharp4Context.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Csharp4Context.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Csharp4Context.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Csharp4Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:35:09.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Khachhangs\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Khachhangs\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Khachhangs\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Khachhangs\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAACAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T15:28:56.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Khachhangs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Khachhangs\\Edit.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Khachhangs\\Edit.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Khachhangs\\Edit.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAH8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T11:46:01.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T11:03:03.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Nhanviens\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Nhanviens\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Nhanviens\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Nhanviens\\Index.cshtml",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T11:45:10.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T11:03:03.863Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 93,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T12:17:59.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:52:09.531Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Account\\Index.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Account\\Index.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Account\\Index.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Account\\Index.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "LayoutAdmin.html",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
+              "RelativeToolTip": "ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-04T14:56:02.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T11:14:14.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:52:08.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\AccountController.cs",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAuwJkAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "KhachHangViewModel.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\ViewModels\\KhachHangViewModel.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\ViewModels\\KhachHangViewModel.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\ViewModels\\KhachHangViewModel.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\ViewModels\\KhachHangViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:58:48.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:40:04.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DoanhThuThangViewModel.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\ViewModels\\DoanhThuThangViewModel.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\ViewModels\\DoanhThuThangViewModel.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\ViewModels\\DoanhThuThangViewModel.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\ViewModels\\DoanhThuThangViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:51:52.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Hinhanh.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Hinhanh.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Hinhanh.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Hinhanh.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Hinhanh.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:48:26.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginStaff.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Account_Staff\\LoginStaff.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Account_Staff\\LoginStaff.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Account_Staff\\LoginStaff.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Account_Staff\\LoginStaff.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T12:15:47.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Chitietphieunhap.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Chitietphieunhap.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Chitietphieunhap.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Chitietphieunhap.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Chitietphieunhap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:48:25.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Chitiethoadon.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Chitiethoadon.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Chitiethoadon.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Chitiethoadon.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Chitiethoadon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:48:23.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Chatlieu.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Chatlieu.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Models\\Chatlieu.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Models\\Chatlieu.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Models\\Chatlieu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:48:20.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:39:42.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20241030160740_createDatabase.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Migrations\\20241030160740_createDatabase.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Migrations\\20241030160740_createDatabase.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Migrations\\20241030160740_createDatabase.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Migrations\\20241030160740_createDatabase.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:34:55.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\appsettings.json",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\appsettings.json",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\appsettings.json",
+              "RelativeToolTip": "ASMCshrp4_12345\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-04T14:28:38.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20241031031853_editColumn_KhachHang_NhanVien.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Migrations\\20241031031853_editColumn_KhachHang_NhanVien.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Migrations\\20241031031853_editColumn_KhachHang_NhanVien.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Migrations\\20241031031853_editColumn_KhachHang_NhanVien.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Migrations\\20241031031853_editColumn_KhachHang_NhanVien.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:34:54.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "KhachhangsController.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\KhachhangsController.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\KhachhangsController.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\KhachhangsController.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\KhachhangsController.cs",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAiwDkBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T11:50:58.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "RedirectController.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\RedirectController.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\RedirectController.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\RedirectController.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\RedirectController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T13:00:01.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Account_StaffController.cs",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\Account_StaffController.cs",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\Account_StaffController.cs",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Controllers\\Account_StaffController.cs",
+              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\Account_StaffController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T12:15:02.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Khachhangs\\Create.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Khachhangs\\Create.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Khachhangs\\Create.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Khachhangs\\Create.cshtml",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T11:45:41.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Nhanviens\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Nhanviens\\Edit.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Nhanviens\\Edit.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Nhanviens\\Edit.cshtml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T11:45:31.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Nhanviens\\Create.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Nhanviens\\Create.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Nhanviens\\Create.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Nhanviens\\Create.cshtml",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T11:45:16.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\FPT\\C#\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADEAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T11:14:42.056Z"
             }
           ]
         }
