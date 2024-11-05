@@ -53,6 +53,30 @@
       "PackagePath": "staticwebassets\\HinhAnh\\NhanVien\\tao-dang-chup-anh-chan-dung-01.jpg"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\16a74714-9f25-4adf-a4fd-6a2080dc01f2_sp014b.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\16a74714-9f25-4adf-a4fd-6a2080dc01f2_sp014b.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\30945889-6338-495b-85d8-83a8c8d21bfc_sp014c.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\30945889-6338-495b-85d8-83a8c8d21bfc_sp014c.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\402726512_7219891304741656_7325059180673705942_n.mp4",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\402726512_7219891304741656_7325059180673705942_n.mp4"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Tháng Tư Là Lời Nói Dối Của Em.mp3",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\Tháng Tư Là Lời Nói Dối Của Em.mp3"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\d8a4cfcd-8103-44d9-a3c5-dc006e65da34_sp015c.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\d8a4cfcd-8103-44d9-a3c5-dc006e65da34_sp015c.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\f5792f67-9cdc-4b10-a9ee-f531b311a515.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\f5792f67-9cdc-4b10-a9ee-f531b311a515.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag.jpg",
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\gucci_bag.jpg"
     },
@@ -67,6 +91,50 @@
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag4.jpg",
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\gucci_bag4.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp001.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp001.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp001a.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp001a.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp001b.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp001b.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp001c.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp001c.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp002d.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp002d.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp003.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp003.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp014b.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp014b.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp014c.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp014c.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp015.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp015.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp015a.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp015a.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp015c.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp015c.png"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",

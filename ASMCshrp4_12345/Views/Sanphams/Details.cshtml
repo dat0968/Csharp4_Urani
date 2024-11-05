@@ -1,0 +1,114 @@
+﻿@model ASMCshrp4_12345.Models.Sanpham
+
+@{
+    ViewData["Title"] = "Chi Tiết Sản Phẩm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h4>Thông tin Sản phẩm</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Tên Sản Phẩm</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.TenSp)</dd>
+
+                <dt class="col-sm-3">Số Lượng Bán</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.SoLuongBan)</dd>
+
+                <dt class="col-sm-3">Đơn Giá Bán</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.DonGiaBan)</dd>
+
+                <dt class="col-sm-3">Hình Ảnh</dt>
+                <dd class="col-sm-9">
+                <!-- Carousel for product images -->
+                <div id="productImageCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Main Image as first item -->
+                        <div class="carousel-item active">
+                            <img src="~/HinhAnh/SanPham/@Model.Hinh" class="d-block w-50 img-thumbnail" alt="Ảnh chính sản phẩm" style="">
+                        </div>
+                        <!-- Additional Images from Hinhanh collection -->
+                        @foreach (var image in Model.Hinhanhs)
+                        {
+                            <div class="carousel-item">
+                                    <img src="~/HinhAnh/SanPham/@image.HinhAnh1" class="d-block w-50 img-thumbnail" alt="Ảnh phụ sản phẩm" style="">
+                            </div>
+                        }
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#productImageCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#productImageCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- End of Carousel -->
+                </dd>
+                <dt class="col-sm-3">Mô Tả</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.MoTa)</dd>
+
+                <dt class="col-sm-3">Ngày Sản Xuất</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.NgaySanXuat)</dd>
+
+                <dt class="col-sm-3">Trạng Thái Xóa</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.IsDelete)</dd>
+
+                <dt class="col-sm-3">Chất Liệu</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.MaChatLieuNavigation.TenChatLieu)</dd>
+
+                <dt class="col-sm-3">Kích Thước</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.MaKichThuocNavigation.TenKichThuoc)</dd>
+
+                <dt class="col-sm-3">Màu Sắc</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.MaMauNavigation.TenMau)</dd>
+
+                <dt class="col-sm-3">Nhà Cung Cấp</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.MaNhaCcNavigation.TenNhaCc)</dd>
+
+                <dt class="col-sm-3">Thương Hiệu</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.MaThuongHieuNavigation.TenThuongHieu)</dd>
+            </dl>
+        </div>
+        <div class="card-footer text-right">
+            <a asp-action="Edit" asp-route-id="@Model.MaSp" class="btn btn-warning">Chỉnh Sửa</a>
+            <a asp-action="Index" class="btn btn-secondary">Quay Lại Danh Sách</a>
+        </div>
+    </div>
+</div>
+<style>
+    /* Đặt chiều rộng của carousel theo chiều rộng của ảnh */
+    .carousel-inner,
+    .carousel-item img {
+        max-width: 50%; /* Hoặc điều chỉnh để vừa với ảnh */
+        margin: auto; /* Căn giữa ảnh trong carousel */
+    }
+
+    .custom-control-icon {
+        background-color: black !important;
+        background-size: 100%, 100%; /* Đảm bảo biểu tượng có kích thước đầy đủ */
+    }
+
+    /* Đưa các nút điều hướng sát vào ảnh hơn */
+    .custom-carousel-control {
+        width: 5%; /* Giảm kích thước của khu vực điều hướng để sát hơn với ảnh */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        filter: invert(100%); /* Thay đổi màu thành đen */
+    }
+    /* Đặt chiều cao tự động theo kích thước của ảnh */
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>

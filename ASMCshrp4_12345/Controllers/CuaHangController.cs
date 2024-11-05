@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Drawing.Printing;
 using X.PagedList;
 using X.PagedList.Extensions;
+using System.Linq;
 
 namespace ASMCshrp4_12345.Controllers
 {
