@@ -206,6 +206,21 @@ namespace ASMCshrp4_12345.Migrations
                     b.HasIndex("MaNv");
 
                     b.ToTable("Hoadons");
+
+                    b.HasData(
+                        new
+                        {
+                            MaHoaDon = "HD001",
+                            DiaChiNhanHang = "123 Đường A, Quận B, Thành phố C",
+                            Hoten = "Nguyễn Văn A",
+                            Httt = "Tiền mặt",
+                            MaKh = "KH425",
+                            MaNv = "NV001",
+                            NgayTao = new DateOnly(2024, 1, 10),
+                            Sdt = "0123456789",
+                            ThoiGianDat = new DateOnly(2024, 1, 9),
+                            TinhTrang = "Đang xử lý"
+                        });
                 });
 
             modelBuilder.Entity("ASMCshrp4_12345.Models.Khachhang", b =>
@@ -214,12 +229,8 @@ namespace ASMCshrp4_12345.Migrations
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
-
-
                     b.Property<string>("Avatar")
                         .HasColumnType("nvarchar(max)");
-
-
 
                     b.Property<string>("Cccd")
                         .HasMaxLength(12)
@@ -234,12 +245,10 @@ namespace ASMCshrp4_12345.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("GioiTinh")
-
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<string>("HoTen")
-
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
@@ -247,7 +256,6 @@ namespace ASMCshrp4_12345.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("MatKhau")
-
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -255,7 +263,6 @@ namespace ASMCshrp4_12345.Migrations
                         .HasColumnType("date");
 
                     b.Property<string>("Sdt")
-
                         .HasMaxLength(12)
                         .HasColumnType("nvarchar(12)");
 
@@ -410,17 +417,16 @@ namespace ASMCshrp4_12345.Migrations
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
-
-
                     b.Property<string>("Avatar")
                         .HasColumnType("nvarchar(max)");
 
-
                     b.Property<string>("Cccd")
+                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("DiaChi")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
@@ -448,6 +454,7 @@ namespace ASMCshrp4_12345.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<DateOnly?>("NgaySinh")
+                        .IsRequired()
                         .HasColumnType("date");
 
                     b.Property<DateOnly>("NgayVaoLam")
