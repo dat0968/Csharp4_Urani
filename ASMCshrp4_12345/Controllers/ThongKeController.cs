@@ -1,11 +1,13 @@
 ﻿using ASMCshrp4_12345.Models;
 using ASMCshrp4_12345.ViewModels;
 using DocumentFormat.OpenXml.InkML;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace ASMCshrp4_12345.Controllers
 {
+    
     public class ThongKeController : Controller
     {
         private readonly Csharp4Context _context;
@@ -13,9 +15,13 @@ namespace ASMCshrp4_12345.Controllers
         {
             _context = db;
         }
+        [Authorize(Roles = "Admin")]
         public IActionResult Index()
         {
-
+            if (!User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Index", "Home"); // Trang NotFound của bạn
+            }
             var model = new DoanhThuThangViewModel()
             {
 
