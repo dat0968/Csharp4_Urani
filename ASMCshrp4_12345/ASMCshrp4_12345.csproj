@@ -39,6 +39,7 @@
 
 
   <ItemGroup>
+    <Folder Include="Migrations\" />
     <Folder Include="wwwroot\HinhAnh\SanPham\" />
   
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

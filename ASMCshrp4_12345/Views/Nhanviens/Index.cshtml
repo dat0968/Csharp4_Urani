@@ -134,11 +134,17 @@
                 <td id="_luong" >@Html.DisplayFor(modelItem => item.Luong)</td>
                 <td id="_vaitro" >@Html.DisplayFor(modelItem => item.VaiTro)</td>
                 <td>
-                    <a href="@Url.Action("Edit", "Nhanviens", new { id = item.MaNv })" class="btn btn-primary">Sửa</a>
+                    @if (item.VaiTro.Contains("Admin") == false)
+                    {
+                        <a href="@Url.Action("Edit", "Nhanviens", new { id = item.MaNv })" class="btn btn-primary">Sửa</a>
+                    }
                     <a href="@Url.Action("Details", "Nhanviens", new { id = item.MaNv })" class="btn btn-info">Chi tiết</a>
-                    <form asp-action="Delete" asp-route-id="@item.MaNv" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn xóa nhân viên này không?');">
-                        <button type="submit" class="btn btn-danger">Xóa</button>
-                    </form>
+                    @if (item.VaiTro.Contains("Admin") == false)
+                    {
+                        <form asp-action="Delete" asp-route-id="@item.MaNv" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn xóa nhân viên này không?');">
+                            <button type="submit" class="btn btn-danger">Xóa</button>
+                        </form>
+                    }                 
                 </td>
             </tr>
         }

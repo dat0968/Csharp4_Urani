@@ -42,10 +42,11 @@ public partial class Hoadon
     [StringLength(50, ErrorMessage = "Họ tên không được vượt quá 50 ký tự.")]
     public string? Hoten { get; set; }
 
-    
+
     [StringLength(12, ErrorMessage = "Số điện thoại không được vượt quá 12 ký tự.")]
     public string? Sdt { get; set; }
 
+    
     [Required(ErrorMessage = "Thời gian đặt không được để trống")]
     public DateOnly ThoiGianDat { get; set; }
 

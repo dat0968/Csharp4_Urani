@@ -40,12 +40,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudF9TdGFmZlxMb2dpblN0YWZmLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/CuaHang/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VhSGFuZ1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/CuaHang/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VhSGFuZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/Hoadons/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hZG9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/Hoadons/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hZG9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/Hoadons/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hZG9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/Hoadons/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hZG9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/Hoadons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hZG9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/Home/Index.cshtml]

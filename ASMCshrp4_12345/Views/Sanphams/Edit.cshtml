@@ -14,7 +14,11 @@
         <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="MaSp" />
-
+            <div class="form-group">
+                <label asp-for="MaSp" class="control-label">Mã Sản Phẩm</label>
+                <input readonly asp-for="MaSp" class="form-control" />
+                <span asp-validation-for="MaSp" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="TenSp" class="control-label">Tên sản phẩm</label>
                 <input asp-for="TenSp" class="form-control" />
@@ -69,28 +73,58 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="MaChatLieu" class="control-label">Chất liệu</label>
-                <select asp-for="MaChatLieu" class="form-control" asp-items="ViewBag.MaChatLieu"></select>
-                <span asp-validation-for="MaChatLieu" class="text-danger"></span>
+                <label>Chất liệu</label>
+                <div>
+                    <label>Chọn chất liệu:</label>
+                    <div class="checkbox-list mb-3">
+                        @foreach (var chatlieu in ViewBag.MaChatLieu)
+                        {
+                            <label>
+                                <input name="SelectedChatLieuIds" type="checkbox" value="@chatlieu.Value"
+                                @(Model.SelectedChatLieuIds.Contains(int.Parse(chatlieu.Value)) ? "checked" : "") />
+                                @chatlieu.Text
+                            </label>
+                        }
+                    </div>
+                </div>
             </div>
 
             <div class="form-group">
-                <label asp-for="MaMau" class="control-label">Màu sắc</label>
-                <select asp-for="MaMau" class="form-control" asp-items="ViewBag.MaMau"></select>
-                <span asp-validation-for="MaMau" class="text-danger"></span>
+                <label>Màu Sắc</label>
+                <div>
+                    <label>Chọn màu sắc:</label>
+                    <div class="checkbox-list mb-3">
+                        @foreach (var mau in ViewBag.MaMau)
+                        {
+                            <label>
+                                <input name="SelectedMauIds" type="checkbox" value="@mau.Value"
+                                @(Model.SelectedMauIds.Contains(int.Parse(mau.Value)) ? "checked" : "") />
+                                @mau.Text
+                            </label>
+                        }
+                    </div>
+                </div>
             </div>
 
             <div class="form-group">
-                <label asp-for="MaKichThuoc" class="control-label">Kích thước</label>
-                <select asp-for="MaKichThuoc" class="form-control" asp-items="ViewBag.MaKichThuoc"></select>
-                <span asp-validation-for="MaKichThuoc" class="text-danger"></span>
+                <label>Kích Thước</label>
+                <div>
+                    <label>Chọn kích thước:</label>
+                    <div class="checkbox-list mb-3">
+                        @foreach (var kichthuoc in ViewBag.MaKichThuoc)
+                        {
+                            <label>
+                                <input name="SelectedKichThuocIds" type="checkbox" value="@kichthuoc.Value"
+                                @(Model.SelectedKichThuocIds.Contains(int.Parse(kichthuoc.Value)) ? "checked" : "") />
+                                @kichthuoc.Text
+                            </label>
+                        }
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsDelete" /> @Html.DisplayNameFor(model => model.IsDelete)
-                </label>
-            </div>
+
+
             <div class="form-group">
                 <label asp-for="HinhAnhFiles" class="control-label">Hình ảnh phụ mới</label>
                 <input asp-for="HinhAnhFiles" type="file" class="form-control" multiple />
@@ -110,14 +144,14 @@
             </div>
 
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Cập Nhật" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Quay Lại</a>
 </div>
 
 @section Scripts {

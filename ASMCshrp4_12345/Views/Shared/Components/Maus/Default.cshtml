@@ -16,7 +16,7 @@
         {
             <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                 <input type="radio" class="custom-control-input" name="selectedColors" value="@item.MaMau" id="color-@item.MaMau" onchange="submitColorForm()"
-                @(selectedColor == item.MaMau ? "checked" : "")>
+                @(selectedColor == item.MaMau.ToString() ? "checked" : "")>
                 <label class="custom-control-label" for="color-@item.MaMau">@item.TenMau</label>
             </div>
         }

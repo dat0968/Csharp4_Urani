@@ -1,0 +1,143 @@
+﻿@model X.PagedList.IPagedList<ASMCshrp4_12345.Models.Hoadon>
+@using X.PagedList.Mvc.Core
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<style>
+    .table #_hoten, .table #_sdt, .table #_email, .table th {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+
+    .avatar-cell img {
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 50%;
+    }
+</style>
+<form method="get" asp-action="Index" style="margin-top: 20px">
+    <div class="form-row">
+
+        <div class="col-md-4 mb-3">
+            <input type="text" name="searchString" class="form-control" placeholder="Tìm kiếm " id="searchInput">
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <select name="filterPaymentMethod" class="form-control">
+                <option value="" selected="@(string.IsNullOrEmpty(ViewData["CurrentPaymentFilter"]?.ToString()))">Tất cả</option>
+                <option value="Tiền mặt" selected="@(ViewData["CurrentPaymentFilter"]?.ToString() == "Tiền mặt")">Tiền mặt</option>
+                <option value="bank" selected="@(ViewData["CurrentPaymentFilter"]?.ToString() == "bank")">bank</option>
+            </select>
+        </div>
+
+        <!-- Lọc theo tình trạng -->
+        <div class="col-md-3 mb-3">
+            <select name="statusFilter" class="form-control">
+                <option value="" selected="@(string.IsNullOrEmpty(ViewData["CurrentStatusFilter"]?.ToString()))">Tất cả tình trạng</option>
+                <option value="Chờ xác nhận" selected="@(ViewData["CurrentStatusFilter"]?.ToString() == "Chờ xác nhận")">Chờ xác nhận</option>
+                <option value="Đã xác nhận" selected="@(ViewData["CurrentStatusFilter"]?.ToString() == "Đã xác nhận")">Đã xác nhận</option>
+                <option value="Đang giao hàng" selected="@(ViewData["CurrentStatusFilter"]?.ToString() == "Đang giao hàng")">Đang giao hàng</option>
+                <option value="Đã giao hàng" selected="@(ViewData["CurrentStatusFilter"]?.ToString() == "Đã giao hàng")">Đã giao hàng</option>
+                <option value="Đã hủy" selected="@(ViewData["CurrentStatusFilter"]?.ToString() == "Đã hủy")">Đã hủy</option>
+                <option value="Hoàn tiền" selected="@(ViewData["CurrentStatusFilter"]?.ToString() == "Hoàn tiền")">Hoàn tiền</option>
+            </select>
+        </div>
+
+
+
+        <!-- Button Tìm kiếm -->
+        <div class="col-md-2 mb-3">
+            <button type="submit" class="btn btn-primary w-100">Tìm kiếm</button>
+        </div>
+
+        <!-- Tùy chọn sắp xếp -->
+        <div class="col-md-3 mt-3">
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="sortMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-sort"></i> Sắp xếp theo
+                </button>
+                <div class="dropdown-menu" aria-labelledby="sortMenuButton">
+                    <button type="submit" name="sortOrder" value="name_asc" class="dropdown-item @(ViewData["CurrentSortOrder"]?.ToString() == "name_asc" ? "active" : "")">
+                        <i class="fa fa-arrow-up"></i> Họ tên tăng dần
+                    </button>
+                    <button type="submit" name="sortOrder" value="name_desc" class="dropdown-item @(ViewData["CurrentSortOrder"]?.ToString() == "name_desc" ? "active" : "")">
+                        <i class="fa fa-arrow-down"></i> Họ tên giảm dần
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<p style="margin-top: 20px">
+    <a style="color: green" href="@Url.Action("ExportToExcel")" class="btn btn-label-success btn-round btn-sm me-2">
+        <span class="btn-label">
+            <i class="fa fa-download"></i>
+        </span>
+        Xuất danh sách hóa đơn
+    </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã hóa đơn</th>
+            <th>Họ tên</th>
+            <th>Địa chỉ nhận hàng</th>
+            <th>Ngày tạo</th>
+            <th>HTTT</th>
+            <th>Tình trạng</th>
+            <th>SDT</th>
+
+        </tr>
+    </thead>
+    @if (Model != null && Model.Any())
+    {
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.MaHoaDon)</td>
+                    <td id="_hoten">@Html.DisplayFor(modelItem => item.Hoten)</td>
+                    <td>@Html.DisplayFor(modelItem => item.DiaChiNhanHang)</td>
+                    <td>@Html.DisplayFor(modelItem => item.NgayTao)</td>
+                    <td id="_sdt">@Html.DisplayFor(modelItem => item.Httt)</td>
+                    <td id="_email">@Html.DisplayFor(modelItem => item.TinhTrang)</td>
+                    <td id="_sdt">@Html.DisplayFor(modelItem => item.Sdt)</td>
+                </tr>
+
+            <td>
+                <a href="@Url.Action("Edit", "Hoadons", new { id = item.MaHoaDon })" class="btn btn-primary">Sửa</a>
+                <a href="@Url.Action("Details", "Hoadons", new { id = item.MaHoaDon })" class="btn btn-info">Chi tiết</a>
+            </td>
+            }
+
+        </tbody>
+
+    }
+    else
+    {
+        <p>Không có dữ liệu để hiển thị.</p>
+    }
+</table>
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, keywords = ViewData["CurrentKeywords"], filterGender = ViewData["CurrentGenderFilter"], statusFilter = ViewData["CurrentStatusFilter"], sortOrder = ViewData["CurrentSortOrder"] }), new PagedListRenderOptions
+{
+    LiElementClasses = new List<string> { "page-item" },
+    PageClasses = new List<string> { "page-link" }
+})
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $("#searchInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("table tbody tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

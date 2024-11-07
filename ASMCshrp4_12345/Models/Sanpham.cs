@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Drawing;
 
 namespace ASMCshrp4_12345.Models;
 
@@ -13,7 +14,7 @@ public partial class Sanpham
     public string MaSp { get; set; }
 
     [Required(ErrorMessage = "Tên sản phẩm không được để trống")]
-    [StringLength(40, ErrorMessage ="Tên sản phẩm không vượt quá 40 kí tự")]
+    [StringLength(40, ErrorMessage = "Tên sản phẩm không vượt quá 40 kí tự")]
     public string TenSp { get; set; }
 
     [Required(ErrorMessage = "Số lượng bán không được để trống")]
@@ -38,40 +39,37 @@ public partial class Sanpham
     [ForeignKey("MaNhaCcNavigation")]
     [Required(ErrorMessage = "Nhà cung cấp không được để trống")]
     public string MaNhaCc { get; set; }
-    [ForeignKey("MaChatLieuNavigation")]
-    [Required(ErrorMessage = "Chất liệu không được để trống")]
-    public string MaChatLieu { get; set; }
-    [ForeignKey("MaMauNavigation")]
-    [Required(ErrorMessage = "Màu không được để trống")]
-    public string MaMau { get; set; }
-    [ForeignKey("MaKichThuocNavigation")]
-    [Required(ErrorMessage = "Kích thước không được để trống")]
-    public string MaKichThuoc { get; set; }
+
+
+
+
 
     public bool IsDelete { get; set; } = false;
-
-   
+    public virtual ICollection<Chitietchatlieu>? Chitietchatlieus { get; set; } = new List<Chitietchatlieu>();
+    public virtual ICollection<Chitietmausac>? Chitietmausacs { get; set; } = new List<Chitietmausac>();
+    public virtual ICollection<Chitietkichthuoc>? Chitietkichthuocs { get; set; } = new List<Chitietkichthuoc>();
     public virtual ICollection<Chitiethoadon>? Chitiethoadons { get; set; } = new List<Chitiethoadon>();
 
     public virtual ICollection<Chitietphieunhap>? Chitietphieunhaps { get; set; } = new List<Chitietphieunhap>();
 
     public virtual ICollection<Hinhanh>? Hinhanhs { get; set; } = new List<Hinhanh>();
 
-  
-    public virtual Chatlieu? MaChatLieuNavigation { get; set; }
+    public virtual Nhacungcap? MaNhaCcNavigation { get; set; }
 
-    public virtual Kichthuoc? MaKichThuocNavigation { get; set; }
 
- 
-    public virtual Mausac? MaMauNavigation { get; set; }
-
-   
-    public virtual Nhacungcap? MaNhaCcNavigation { get; set; } 
-
-   
     public virtual Thuonghieu? MaThuongHieuNavigation { get; set; }
-    [NotMapped] 
+
+    // Các thuộc tính không lưu vào cơ sở dữ liệu
+
+    [NotMapped]
     public IFormFile? HinhFile { get; set; }
     [NotMapped]
     public ICollection<IFormFile>? HinhAnhFiles { get; set; }
+
+    [NotMapped]
+    public List<int> SelectedChatLieuIds { get; set; } = new List<int>();
+    [NotMapped]
+    public List<int> SelectedMauIds { get; set; } = new List<int>();
+    [NotMapped]
+    public List<int> SelectedKichThuocIds { get; set; } = new List<int>();
 }

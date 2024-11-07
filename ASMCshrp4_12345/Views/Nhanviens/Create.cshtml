@@ -174,7 +174,7 @@
     });
     async function checkIfUsernameExists(username) {
         const response = await fetch(`/Nhanviens/CheckUsernameExists?username=${username}`);
-        return await response.json(); 
+        return await response.json(); // trẩ về true false
     }
 
 

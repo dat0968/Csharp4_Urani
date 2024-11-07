@@ -63,19 +63,70 @@
                 <select asp-for="MaNhaCc" class="form-control" asp-items="ViewBag.MaNhaCc"></select>
             </div>
 
-            <div class="form-group">
-                <label asp-for="MaChatLieu" class="control-label">Chất Liệu</label>
-                <select asp-for="MaChatLieu" class="form-control" asp-items="ViewBag.MaChatLieu"></select>
+            <!-- Thêm thông tin Chất liệu -->
+            <div class="form-group mb-4">
+                <label>Chất Liệu</label>
+                <div>
+                    <!-- Lựa chọn từ danh sách có sẵn -->
+                    <label>Chọn chất liệu:</label>
+                    <div class="checkbox-list mb-3">
+                        @foreach (var chatLieu in ViewBag.MaChatLieu)
+                        {
+                            <label>
+                                <input name="SelectedChatLieuIds" type="checkbox" value="@chatLieu.Value" />
+                                @chatLieu.Text
+                            </label>
+                        }
+                    </div>
+
+                    <!-- Nhập chất liệu mới -->
+                    <label>Chất liệu mới:</label>
+                    <input type="text" name="NewMaterial" class="form-control" placeholder="Nhập chất liệu mới (nếu có)" />
+                </div>
             </div>
 
-            <div class="form-group">
-                <label asp-for="MaMau" class="control-label">Màu Sắc</label>
-                <select asp-for="MaMau" class="form-control" asp-items="ViewBag.MaMau"></select>
+            <!-- Thêm thông tin Màu sắc -->
+            <div class="form-group mb-4">
+                <label>Màu Sắc</label>
+                <div>
+                    <!-- Lựa chọn từ danh sách có sẵn -->
+                    <label>Chọn màu:</label>
+                    <div class="checkbox-list mb-3">
+                        @foreach (var mau in ViewBag.MaMau)
+                        {
+                            <label>
+                                <input type="checkbox" name="SelectedMauIds" value="@mau.Value" />
+                                @mau.Text
+                            </label>
+                        }
+                    </div>
+
+                    <!-- Nhập màu sắc mới -->
+                    <label>Màu mới:</label>
+                    <input type="text" name="NewColor" class="form-control" placeholder="Nhập màu mới (nếu có)" />
+                </div>
             </div>
 
-            <div class="form-group">
-                <label asp-for="MaKichThuoc" class="control-label">Kích Thước</label>
-                <select asp-for="MaKichThuoc" class="form-control" asp-items="ViewBag.MaKichThuoc"></select>
+            <!-- Thêm thông tin Kích thước -->
+            <div class="form-group mb-4">
+                <label>Kích Thước</label>
+                <div>
+                    <!-- Lựa chọn từ danh sách có sẵn -->
+                    <label>Chọn kích thước:</label>
+                    <div class="checkbox-list mb-3">
+                        @foreach (var kichThuoc in ViewBag.MaKichThuoc)
+                        {
+                            <label>
+                                <input type="checkbox" name="SelectedKichThuocIds" value="@kichThuoc.Value" />
+                                @kichThuoc.Text
+                            </label>
+                        }
+                    </div>
+
+                    <!-- Nhập kích thước mới -->
+                    <label>Kích thước mới:</label>
+                    <input type="text" name="NewSize" class="form-control" placeholder="Nhập kích thước mới (nếu có)" />
+                </div>
             </div>
             <div class="form-group">
                 <input type="submit" value="Thêm Mới" class="btn btn-primary" />
@@ -92,4 +143,5 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+
 }

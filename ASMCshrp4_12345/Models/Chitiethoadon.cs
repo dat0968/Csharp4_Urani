@@ -18,8 +18,13 @@ public partial class Chitiethoadon
     [ForeignKey("MaSpNavigation")]
     [Required(ErrorMessage = "Mã sản phẩm không được để trống.")]
     [StringLength(5, ErrorMessage = "Mã sản phẩm không được vượt quá 5 ký tự.")]
-    public string MaSp { get; set; } 
+    public string MaSp { get; set; }
 
+    public string? MauSac_ThuocTinhSuyDien { get; set; }
+
+    public string? KichThuoc_ThuocTinhSuyDien { get; set; }
+
+    public string? ChatLieu_ThuocTinhSuyDien { get; set; }
     [Required(ErrorMessage = "Số lượng mua không được để trống.")]
     [RegularExpression(@"^\d+$", ErrorMessage = "Số lượng mua phải lớn hơn 0 và không được chứa ký tự đặc biệt ")]
     public int SoLuongMua { get; set; }

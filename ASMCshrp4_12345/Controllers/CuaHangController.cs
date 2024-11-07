@@ -19,8 +19,11 @@ namespace ASMCshrp4_12345.Controllers
         {
             ViewBag.PriceSortParam = sortOrder == "price_asc" ? "price_desc" : "price_asc";
 
-            var sanPhamQuery = _context.Sanphams
+            var sanPhamQuery = _context.Sanphams.Where(p => p.IsDelete == false)
                 .Include(sp => sp.Hinhanhs)
+                .Include(p => p.Chitietchatlieus)
+                .Include(a => a.Chitietkichthuocs)
+                .Include(b => b.Chitietmausacs)
                 .AsQueryable();
 
             // Lọc theo thương hiệu
@@ -28,18 +31,18 @@ namespace ASMCshrp4_12345.Controllers
             {
                 sanPhamQuery = sanPhamQuery.Where(sp => sp.MaThuongHieu == selectedBrand);
             }
-            // Lọc theo màu sắc
+            //Lọc theo màu sắc
             if (selectedColors != null && selectedColors.Length > 0 && !selectedColors.Contains("all"))
             {
-                sanPhamQuery = sanPhamQuery.Where(sp => selectedColors.Contains(sp.MaMau));
+                sanPhamQuery = sanPhamQuery.Where(sp => sp.Chitietmausacs.Any(p => selectedColors.Contains(p.MaMau.ToString())));
             }
             // Lọc theo kích thước
             if (selectedSizes != null && selectedSizes.Length > 0 && !selectedSizes.Contains("all"))
             {
-                sanPhamQuery = sanPhamQuery.Where(sp => selectedSizes.Contains(sp.MaKichThuoc));
+                sanPhamQuery = sanPhamQuery.Where(sp => sp.Chitietkichthuocs.Any(p => selectedSizes.Contains(p.MaKichThuoc.ToString())));
             }
-            // Lọc theo khoảng giá
-            if (minPrice.HasValue && maxPrice.HasValue)
+                // Lọc theo khoảng giá
+                if (minPrice.HasValue && maxPrice.HasValue)
             {
                 sanPhamQuery = sanPhamQuery.Where(sp => (decimal)sp.DonGiaBan >= minPrice.Value && (decimal)sp.DonGiaBan <= maxPrice.Value);
             }

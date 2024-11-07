@@ -81,7 +81,7 @@ namespace ASMCshrp4_12345.Controllers
         public JsonResult CheckUsernameExists(string username)
         {
             var exists = _context.Nhanviens.Any(nv => nv.TenTaiKhoan == username);
-            return Json(exists);
+            return Json(exists); // trả về true false
         }
 
         [HttpGet]
@@ -234,6 +234,9 @@ namespace ASMCshrp4_12345.Controllers
             if (nhanvien != null)
             {
                 nhanvien.IsDelete = true;
+                nhanvien.TenTaiKhoan = null;
+                nhanvien.Cccd = "";
+                nhanvien.Email = "";
             }
             _context.Update(nhanvien);
             await _context.SaveChangesAsync();

@@ -15,8 +15,8 @@
         @foreach (var item in Model)
         {
                 <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
-                    <input type="radio" class="custom-control-input" name="selectedSizes" value="@item.MaKichThuoc" id="size-@item.MaKichThuoc" onchange="submitSizeForm()"
-                @(selectedSize == item.MaKichThuoc ? "checked" : "")>
+                    <input type="radio" class="custom-control-input" name="selectedSizes" value="@item.MaKichThuoc" id="size-@item.MaKichThuoc" onchange="submitSizeForm()" *@
+                @(selectedSize == item.MaKichThuoc.ToString() ? "checked" : "")>
                     <label class="custom-control-label" for="size-@item.MaKichThuoc">@item.TenKichThuoc</label>
                 </div>
         }

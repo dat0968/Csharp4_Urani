@@ -253,6 +253,9 @@ namespace ASMCshrp4_12345.Controllers
             if (khachhang != null)
             {
                 khachhang.IsDelete = true;
+                khachhang.TenTaiKhoan = null;
+                khachhang.Cccd = null;
+                khachhang.Email = "";
             }
             _context.Update(khachhang);
             await _context.SaveChangesAsync();

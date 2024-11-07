@@ -53,8 +53,20 @@
       "PackagePath": "staticwebassets\\HinhAnh\\NhanVien\\tao-dang-chup-anh-chan-dung-01.jpg"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\10-cuon-sach-ban-nen-doc-neu-muon-trang-diem-dep-achaubooks-vn__2__f1f2ec48d6b0459588ad67f7ed2cd2c2_grande.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\10-cuon-sach-ban-nen-doc-neu-muon-trang-diem-dep-achaubooks-vn__2__f1f2ec48d6b0459588ad67f7ed2cd2c2_grande.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\123.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\123.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\16a74714-9f25-4adf-a4fd-6a2080dc01f2_sp014b.png",
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\16a74714-9f25-4adf-a4fd-6a2080dc01f2_sp014b.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\17-copy.webp",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\17-copy.webp"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\30945889-6338-495b-85d8-83a8c8d21bfc_sp014c.png",
@@ -65,8 +77,20 @@
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\402726512_7219891304741656_7325059180673705942_n.mp4"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\5142c18d042f33912aa14b8340f1db20.jfif",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\5142c18d042f33912aa14b8340f1db20.jfif"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Tháng Tư Là Lời Nói Dối Của Em.mp3",
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\Tháng Tư Là Lời Nói Dối Của Em.mp3"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\chup-anh-san-pham-my-pham.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\chup-anh-san-pham-my-pham.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\cosmetic.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\cosmetic.jpg"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\d8a4cfcd-8103-44d9-a3c5-dc006e65da34_sp015c.png",
