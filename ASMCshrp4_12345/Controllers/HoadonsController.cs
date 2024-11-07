@@ -69,6 +69,8 @@ namespace ASMCshrp4_12345.Controllers
             }
 
             var hoadon = await _context.Hoadons
+                .Include(h => h.Chitiethoadons)
+                    .ThenInclude(h => h.MaSpNavigation)
                 .Include(h => h.MaKhNavigation)
                 .Include(h => h.MaNvNavigation)
                 .FirstOrDefaultAsync(m => m.MaHoaDon == id);

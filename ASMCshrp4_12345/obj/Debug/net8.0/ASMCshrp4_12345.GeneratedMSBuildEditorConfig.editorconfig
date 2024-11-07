@@ -100,6 +100,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/NhaCungCap/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/NhaCungCap/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/NhaCungCap/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/NhaCungCap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/Nhanviens/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -170,6 +186,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/ThongKe/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdLZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/ThuongHieu/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b25nSGlldVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/ThuongHieu/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b25nSGlldVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/ThuongHieu/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b25nSGlldVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/ThuongHieu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b25nSGlldVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/CSHARP_4/ASMCshrp4_12345/ASMCshrp4_12345/Views/_ViewImports.cshtml]

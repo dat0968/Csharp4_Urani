@@ -5,46 +5,81 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1 class="text-center">Thông Tin Chi Tiết Hóa Đơn</h1>
 
-<div class="card my-4 shadow-sm">
-    <div class="card-header">
-        <h4>@Model.Hoten</h4>
-    </div>
-    <div class="card-body">
-        <div class="row">
-            <div class="col-md-4 font-weight-bold mb-3">Mã hóa đơn:</div>
-            <div class="col-md-8 mb-3">@Model.MaHoaDon</div>
+<h1>Chi Tiết Hóa Đơn @Model.MaHoaDon</h1>
 
-            <div class="col-md-4 font-weight-bold mb-3">Địa chỉ nhận hàng:</div>
-            <div class="col-md-8 mb-3">@Model.DiaChiNhanHang</div>
+<div>
+    <h4>Thông tin Hóa Đơn</h4>
+    <dl class="row">
+        <dt class="col-sm-2">Mã Hóa Đơn</dt>
+        <dd class="col-sm-10">@Model.MaHoaDon</dd>
 
-            <div class="col-md-4 font-weight-bold mb-3">Ngày tạo:</div>
-            <div class="col-md-8 mb-3">@Model.NgayTao.ToString("dd/MM/yyyy")</div>
+        <dt class="col-sm-2">Địa Chỉ Nhận Hàng</dt>
+        <dd class="col-sm-10">@Model.DiaChiNhanHang</dd>
 
-            <div class="col-md-4 font-weight-bold mb-3">Hình thức thanh toán:</div>
-            <div class="col-md-8 mb-3">@Model.Httt</div>
-
-            <div class="col-md-4 font-weight-bold mb-3">Tình trạng:</div>
-            <div class="col-md-8 mb-3">@Model.TinhTrang</div>
-
-            <div class="col-md-4 font-weight-bold mb-3">Số Điện Thoại:</div>
-            <div class="col-md-8 mb-3">@Model.Sdt</div>
-
-            <div class="col-md-4 font-weight-bold mb-3">Mã nhân viên:</div>
-            <div class="col-md-8 mb-3">@Model.MaNv</div>
-
-            <div class="col-md-4 font-weight-bold mb-3">Mã khách hàng:</div>
-            <div class="col-md-8 mb-3">@Model.MaKh</div>
-
-            <div class="col-md-4 font-weight-bold mb-3">Thời gian đặt:</div>
-            <div class="col-md-8 mb-3">@Model.ThoiGianDat</div>
-
-            <div class="col-md-4 font-weight-bold mb-3">Thời gian giao:</div>
-            <div class="col-md-8 mb-3">@Model.ThoiGianGiao</div>
-        </div>
-    </div>
-    <div class="card-footer text-center">
-        <a asp-action="Index" class="btn btn-secondary">Quay Lại</a>
-    </div>
+        <dt class="col-sm-2">Ngày Tạo</dt>
+        <dd class="col-sm-10">@Model.NgayTao.ToString("dd/MM/yyyy")</dd>
+        <dt class="col-sm-2">HTTT</dt>
+        <dd class="col-sm-10">@Model.Httt</dd>
+        <dt class="col-sm-2">Mã Khách hàng</dt>
+        <dd class="col-sm-10">@Model.MaKh</dd>
+        <dt class="col-sm-2">Mã Nhân Viên</dt>
+        <dd class="col-sm-10">@Model.MaNv</dd>
+        <dt class="col-sm-2">Mô tả</dt>
+        <dd class="col-sm-10">@Model.MoTa</dd>
+        <dt class="col-sm-2">Họ tên</dt>
+        <dd class="col-sm-10">@Model.Hoten</dd>
+        <dt class="col-sm-2">SĐT</dt>
+        <dd class="col-sm-10">@Model.Sdt</dd>
+        <dt class="col-sm-2">Thời Gian Đặt</dt>
+        <dd class="col-sm-10">@Model.ThoiGianDat.ToString("dd/MM/yyyy")</dd>
+        <dt class="col-sm-2">Thời Gian Giao</dt>
+        <dd class="col-sm-10">@Model.ThoiGianGiao?.ToString("dd/MM/yyyy")</dd>
+        <dt class="col-sm-2">Tình Trạng</dt>
+        <dd class="col-sm-10">@Model.TinhTrang</dd>
+    </dl>
 </div>
+
+<div>
+    <h4>Chi Tiết Hóa Đơn</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mã Sản Phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Số Lượng Mua</th>
+                <th>Đơn Giá</th>
+                <th>Chất Liệu</th>
+                <th>Màu Sắc</th>
+                <th>Chất Liệu</th>
+                <th>Tổng Tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Chitiethoadons)
+            {
+                <tr>
+                    <td>@item.MaSp</td>
+                    <td>@(item.MaSpNavigation != null ? item.MaSpNavigation.TenSp : "N/A")</td>
+                    <td>@item.SoLuongMua</td>
+                    <td>@item.DonGia.ToString("N2")</td>
+
+                    <td>
+                        @item.ChatLieu_ThuocTinhSuyDien
+                    </td>
+                    <td>
+                        @item.MauSac_ThuocTinhSuyDien
+                    </td>
+                    <td>
+                        @item.KichThuoc_ThuocTinhSuyDien
+                    </td>
+                    <td>
+                        @(item.SoLuongMua * item.DonGia)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<a asp-action="Index" class="btn btn-info">Quay lại</a>
