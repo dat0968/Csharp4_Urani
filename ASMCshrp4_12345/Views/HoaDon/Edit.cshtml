@@ -1,0 +1,94 @@
+﻿@model ASMCshrp4_12345.Models.Hoadon
+
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>SỬA THÔNG TIN HÓA ĐƠN</h1>
+
+<form id="customerForm" asp-action="Edit" enctype="multipart/form-data">
+<div class="row">
+    <div class="col-md-4">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaHoaDon" />
+            <div class="form-group">
+                <label asp-for="MaHoaDon" class="control-label">Mã hóa đơn</label>
+                <input asp-for="MaHoaDon" class="form-control" readonly />
+                <span asp-validation-for="MaHoaDon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiaChiNhanHang" class="control-label">Địa chỉ nhận hàng</label>
+                <input asp-for="DiaChiNhanHang" class="form-control" readonly />
+                <span asp-validation-for="DiaChiNhanHang" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgayTao" class="control-label">Ngày tạo</label>
+                <input asp-for="NgayTao" class="form-control" readonly />
+                <span asp-validation-for="NgayTao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Httt" class="control-label">Hình thức thanh toán</label>
+                <input asp-for="Httt" class="form-control" readonly />
+                <span asp-validation-for="Httt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TinhTrang" class="control-label">Tình trạng</label>
+                <select asp-for="TinhTrang" class="form-control" required>
+                    <option value="Đã xác nhận">Đã xác nhận</option>
+                    <option value="Đang giao hàng">Đang giao hàng</option>
+                    <option value="Đã Giao"> Đã Giao</option>
+                    <option value="Đã Hủy">Đã Hủy</option>
+                    <option value="Hoàn Tiền"> Hoàn Tiền</option>
+                </select>
+                <span asp-validation-for="TinhTrang" class="text-danger"></span>
+            </div>
+    </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="MaNv" class="control-label">Mã nhân viên</label>
+                <input asp-for="MaNv" type="date" class="form-control" required readonly/>
+                <span asp-validation-for="MaNv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaKh" class="control-label">Mã khách hàng</label>
+                <input asp-for="MaKh" class="form-control" required readonly />
+                <span asp-validation-for="MaKh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MoTa" class="control-label">Mô tả</label>
+                <input asp-for="MoTa" type="text" class="form-control" required readonly />
+                <span asp-validation-for="MoTa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hoten" class="control-label">Họ tên</label>
+                <input  asp-for="Hoten" type="text" class="form-control" required readonly />
+                <span asp-validation-for="Hoten" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThoiGianDat" class="control-label">Thời gian đặt</label>
+                <input asp-for="ThoiGianDat"  class="form-control" required readonly/>
+                <span asp-validation-for="ThoiGianDat" class="text-danger"></span>
+            </div>   
+            <div class="form-group">
+                <label asp-for="ThoiGianGiao" class="control-label">Thời gian giao</label>
+                <input asp-for="ThoiGianGiao"  class="form-control" required readonly />
+                <span asp-validation-for="ThoiGianGiao" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Cập nhật</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </div>
+</div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

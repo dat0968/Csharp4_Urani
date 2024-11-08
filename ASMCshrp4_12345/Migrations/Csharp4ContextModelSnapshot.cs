@@ -595,6 +595,7 @@ namespace ASMCshrp4_12345.Migrations
                         new
                         {
                             MaHoaDon = "HD001",
+<<<<<<< HEAD
                             DiaChiNhanHang = "123 Đường A, Quận 1",
                             Hoten = "Nguyễn Văn A",
                             Httt = "COD",
@@ -891,6 +892,17 @@ namespace ASMCshrp4_12345.Migrations
                             ThoiGianDat = new DateOnly(2024, 11, 7),
                             ThoiGianGiao = new DateOnly(2024, 11, 10),
                             TinhTrang = "Đã thanh toán"
+=======
+                            DiaChiNhanHang = "123 Đường A, Quận B, Thành phố C",
+                            Hoten = "Nguyễn Văn A",
+                            Httt = "Tiền mặt",
+                            MaKh = "KH425",
+                            MaNv = "NV001",
+                            NgayTao = new DateOnly(2024, 1, 10),
+                            Sdt = "0123456789",
+                            ThoiGianDat = new DateOnly(2024, 1, 9),
+                            TinhTrang = "Đang xử lý"
+>>>>>>> 68a5f30f1bbf35c0e3a090c4589dcda1ba530797
                         });
                 });
 

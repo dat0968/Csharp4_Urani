@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "aX1rE6qLWO4d0BPgPB+Y1SBsFKp+yv6WregsVMI6KkY=",
+=======
+  "Hash": "zBtUKlbFOyVdqmyOF5prmh9uKiEWyw1a/ampLaYfcLM=",
+>>>>>>> 68a5f30f1bbf35c0e3a090c4589dcda1ba530797
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -1328,16 +1332,25 @@
       "OriginalItemSpec": "wwwroot\\HinhAnh\\NhanVien\\tao-dang-chup-anh-chan-dung-01.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\10-cuon-sach-ban-nen-doc-neu-muon-trang-diem-dep-achaubooks-vn__2__f1f2ec48d6b0459588ad67f7ed2cd2c2_grande.jpg",
+=======
+      "Identity": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag.jpg",
+>>>>>>> 68a5f30f1bbf35c0e3a090c4589dcda1ba530797
       "SourceId": "ASMCshrp4_12345",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\wwwroot\\",
       "BasePath": "_content/ASMCshrp4_12345",
+<<<<<<< HEAD
       "RelativePath": "HinhAnh/SanPham/10-cuon-sach-ban-nen-doc-neu-muon-trang-diem-dep-achaubooks-vn__2__f1f2ec48d6b0459588ad67f7ed2cd2c2_grande.jpg",
+=======
+      "RelativePath": "HinhAnh/SanPham/gucci_bag.jpg",
+>>>>>>> 68a5f30f1bbf35c0e3a090c4589dcda1ba530797
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
       "AssetMergeBehavior": "PreferTarget",
+<<<<<<< HEAD
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
@@ -1547,6 +1560,8 @@
       "AssetMode": "All",
       "AssetRole": "Primary",
       "AssetMergeBehavior": "PreferTarget",
+=======
+>>>>>>> 68a5f30f1bbf35c0e3a090c4589dcda1ba530797
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
@@ -1613,16 +1628,25 @@
       "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\gucci_bag4.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp001.png",
+=======
+      "Identity": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\wwwroot\\images\\landing_page\\stack-of-three-black-hot-stones-spa-salon-vector-16122479.jpg",
+>>>>>>> 68a5f30f1bbf35c0e3a090c4589dcda1ba530797
       "SourceId": "ASMCshrp4_12345",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\wwwroot\\",
       "BasePath": "_content/ASMCshrp4_12345",
+<<<<<<< HEAD
       "RelativePath": "HinhAnh/SanPham/sp001.png",
+=======
+      "RelativePath": "images/landing_page/stack-of-three-black-hot-stones-spa-salon-vector-16122479.jpg",
+>>>>>>> 68a5f30f1bbf35c0e3a090c4589dcda1ba530797
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
       "AssetMergeBehavior": "PreferTarget",
+<<<<<<< HEAD
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
@@ -1851,6 +1875,8 @@
       "AssetMode": "All",
       "AssetRole": "Primary",
       "AssetMergeBehavior": "PreferTarget",
+=======
+>>>>>>> 68a5f30f1bbf35c0e3a090c4589dcda1ba530797
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",

@@ -1,0 +1,50 @@
+﻿@model ASMCshrp4_12345.Models.Hoadon
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="text-center">Thông Tin Chi Tiết Hóa Đơn</h1>
+
+<div class="card my-4 shadow-sm">
+    <div class="card-header">
+        <h4>@Model.Hoten</h4>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4 font-weight-bold mb-3">Mã hóa đơn:</div>
+            <div class="col-md-8 mb-3">@Model.MaHoaDon</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Địa chỉ nhận hàng:</div>
+            <div class="col-md-8 mb-3">@Model.DiaChiNhanHang</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Ngày tạo:</div>
+            <div class="col-md-8 mb-3">@Model.NgayTao.ToString("dd/MM/yyyy")</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Hình thức thanh toán:</div>
+            <div class="col-md-8 mb-3">@Model.Httt</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Tình trạng:</div>
+            <div class="col-md-8 mb-3">@Model.TinhTrang</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Số Điện Thoại:</div>
+            <div class="col-md-8 mb-3">@Model.Sdt</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Mã nhân viên:</div>
+            <div class="col-md-8 mb-3">@Model.MaNv</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Mã khách hàng:</div>
+            <div class="col-md-8 mb-3">@Model.MaKh</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Thời gian đặt:</div>
+            <div class="col-md-8 mb-3">@Model.ThoiGianDat</div>
+
+            <div class="col-md-4 font-weight-bold mb-3">Thời gian giao:</div>
+            <div class="col-md-8 mb-3">@Model.ThoiGianGiao</div>
+        </div>
+    </div>
+    <div class="card-footer text-center">
+        <a asp-action="Index" class="btn btn-secondary">Quay Lại</a>
+    </div>
+</div>

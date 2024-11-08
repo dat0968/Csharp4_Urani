@@ -1088,6 +1088,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\HinhAnh\NhanVien\tao-dang-chup-anh-chan-dung-01.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\HinhAnh\SanPham\10-cuon-sach-ban-nen-doc-neu-muon-trang-diem-dep-achaubooks-vn__2__f1f2ec48d6b0459588ad67f7ed2cd2c2_grande.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>ASMCshrp4_12345</SourceId>
@@ -1264,6 +1265,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\HinhAnh\SanPham\f5792f67-9cdc-4b10-a9ee-f531b311a515.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> 68a5f30f1bbf35c0e3a090c4589dcda1ba530797
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\HinhAnh\SanPham\gucci_bag.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>ASMCshrp4_12345</SourceId>
@@ -1328,6 +1331,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\HinhAnh\SanPham\gucci_bag4.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\HinhAnh\SanPham\sp001.png))">
       <SourceType>Package</SourceType>
       <SourceId>ASMCshrp4_12345</SourceId>
@@ -1520,6 +1524,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\HinhAnh\SanPham\Tháng Tư Là Lời Nói Dối Của Em.mp3))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> 68a5f30f1bbf35c0e3a090c4589dcda1ba530797
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\landing_page\stack-of-three-black-hot-stones-spa-salon-vector-16122479.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>ASMCshrp4_12345</SourceId>

@@ -672,7 +672,22 @@ public partial class Csharp4Context : DbContext
         );
 
 
-        base.OnModelCreating(modelBuilder);
+        modelBuilder.Entity<Hoadon>().HasData(
+       new Hoadon
+       {
+           MaHoaDon = "HD001",
+           DiaChiNhanHang = "123 Đường A, Quận B, Thành phố C",
+           NgayTao = new DateOnly(2024, 1, 10),
+           Httt = "Tiền mặt",
+           TinhTrang = "Đang xử lý",
+           MaNv = "NV001",
+           MaKh = "KH425",
+           Hoten = "Nguyễn Văn A",
+           Sdt = "0123456789",
+           ThoiGianDat = new DateOnly(2024, 1, 9)
+       });
+
+       base.OnModelCreating(modelBuilder);
     }
 
 }
