@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ASMCshrp4_12345.Models;
 using X.PagedList.Extensions;
 using ClosedXML.Excel;
+using System.Security.Claims;
 
 namespace ASMCshrp4_12345.Controllers
 {
@@ -118,6 +119,13 @@ namespace ASMCshrp4_12345.Controllers
             {
                 try
                 {
+                    string currentEmployeeId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+                    if (!string.IsNullOrEmpty(currentEmployeeId))
+                    {
+                        hoadon.MaNv = currentEmployeeId;
+                    }
+
                     _context.Update(hoadon);
                     await _context.SaveChangesAsync();
                 }
