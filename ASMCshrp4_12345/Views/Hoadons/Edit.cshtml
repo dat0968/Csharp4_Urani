@@ -40,9 +40,10 @@
                     <option value="Chờ xác nhận">Chờ xác nhận</option>
                     <option value="Đã xác nhận">Đã xác nhận</option>
                     <option value="Đang giao hàng">Đang giao hàng</option>
-                    <option value="Đã Giao"> Đã Giao</option>
-                    <option value="Đã Hủy">Đã Hủy</option>
-                    <option value="Hoàn Tiền"> Hoàn Tiền</option>
+                    <option value="Đã giao"> Đã giao</option>
+                    <option value="Đã thanh toán"> Đã thanh toán</option>
+                    <option value="Đã hủy">Đã hủy</option>
+                    <option value="Hoàn tiền"> Hoàn tiền</option>
                 </select>
                 <span asp-validation-for="TinhTrang" class="text-danger"></span>
             </div>
@@ -50,7 +51,7 @@
         <div class="col-md-4">
             <div class="form-group">
                 <label asp-for="MaNv" class="control-label">Mã nhân viên</label>
-                <input asp-for="MaNv" type="date" class="form-control" required readonly />
+                <input asp-for="MaNv" type="text" class="form-control" required readonly />
                 <span asp-validation-for="MaNv" class="text-danger"></span>
             </div>
             <div class="form-group">
