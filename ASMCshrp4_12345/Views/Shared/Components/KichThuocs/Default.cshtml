@@ -1,30 +1,46 @@
 ﻿@model IEnumerable<Kichthuoc>
 
 @{
-    var selectedSize = Context.Request.Query["selectedSizes"].ToString();
+    var selectedSizes = Context.Request.Query["selectedSizes"].ToArray() as string[];
 }
 
 <form id="sizeFilterForm" method="get" asp-action="Index">
-   
     <div class="bg-light p-4 mb-30">
-        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
-            <input type="radio" class="custom-control-input" name="selectedSizes" value="all" id="size-all" onchange="submitSizeForm()"
-            @(selectedSize == "all" ? "checked" : "")>
+        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+            <input type="checkbox" class="custom-control-input" name="selectedSizes" value="all" id="size-all" onchange="submitSizeForm('all')"
+            @(selectedSizes.Contains("all") ? "checked" : "")>
             <label class="custom-control-label" for="size-all">TẤT CẢ KÍCH THƯỚC</label>
         </div>
         @foreach (var item in Model)
         {
-                <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
-                    <input type="radio" class="custom-control-input" name="selectedSizes" value="@item.MaKichThuoc" id="size-@item.MaKichThuoc" onchange="submitSizeForm()" *@
-                @(selectedSize == item.MaKichThuoc.ToString() ? "checked" : "")>
-                    <label class="custom-control-label" for="size-@item.MaKichThuoc">@item.TenKichThuoc</label>
-                </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                <input type="checkbox" class="custom-control-input" name="selectedSizes" value="@item.MaKichThuoc" id="size-@item.MaKichThuoc" onchange="submitSizeForm('specific')"
+                @(selectedSizes.Contains(item.MaKichThuoc.ToString()) ? "checked" : "")>
+                <label class="custom-control-label" for="size-@item.MaKichThuoc">@item.TenKichThuoc</label>
+            </div>
         }
     </div>
 </form>
 
 <script>
-    function submitSizeForm() {
+    function submitSizeForm(type) {
+        const allCheckbox = document.getElementById('size-all');
+        const checkboxes = document.querySelectorAll('input[name="selectedSizes"]:not(#size-all)');
+
+        if (type === 'specific') {
+            // Bỏ chọn "TẤT CẢ KÍCH THƯỚC" nếu chọn kích thước cụ thể
+            allCheckbox.checked = false;
+        } else if (type === 'all') {
+            // Bỏ chọn tất cả các kích thước cụ thể nếu chọn "TẤT CẢ KÍCH THƯỚC"
+            checkboxes.forEach(checkbox => checkbox.checked = false);
+        }
+
+        // Kiểm tra nếu không có checkbox nào được chọn, tự động chọn lại "TẤT CẢ KÍCH THƯỚC"
+        let anyChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+        if (!anyChecked) {
+            allCheckbox.checked = true;
+        }
+
         document.getElementById('sizeFilterForm').submit();
     }
 </script>

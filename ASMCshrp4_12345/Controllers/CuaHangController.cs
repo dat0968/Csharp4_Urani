@@ -20,10 +20,13 @@ namespace ASMCshrp4_12345.Controllers
             ViewBag.PriceSortParam = sortOrder == "price_asc" ? "price_desc" : "price_asc";
 
             var sanPhamQuery = _context.Sanphams.Where(p => p.IsDelete == false)
-                .Include(sp => sp.Hinhanhs)
-                .Include(p => p.Chitietchatlieus)
-                .Include(a => a.Chitietkichthuocs)
-                .Include(b => b.Chitietmausacs)
+                .Include(s => s.Hinhanhs)
+                .Include(s => s.Chitietkichthuocs)
+                .ThenInclude(s => s.MaKichThuocNavigation)
+                .Include(s => s.Chitietmausacs)
+                .ThenInclude(s => s.MaMauNavigation)
+                .Include(s => s.Chitietchatlieus)
+                .ThenInclude(s => s.MaChatLieuNavigation)
                 .AsQueryable();
 
             // Lọc theo thương hiệu
@@ -71,17 +74,30 @@ namespace ASMCshrp4_12345.Controllers
             {
                 return NotFound();
             }
+
             var sanPham = await _context.Sanphams
                 .Include(s => s.Hinhanhs)
+                .Include(s => s.Chitietkichthuocs)
+                    .ThenInclude(kt => kt.MaKichThuocNavigation)
+                .Include(s => s.Chitietmausacs)
+                    .ThenInclude(ms => ms.MaMauNavigation)
+                .Include(s => s.Chitietchatlieus)
+                    .ThenInclude(cl => cl.MaChatLieuNavigation)
                 .FirstOrDefaultAsync(m => m.MaSp == id);
+
             if (sanPham == null)
             {
                 return NotFound();
             }
-            // Bọc sản phẩm vào một danh sách
+
+            var sanPhamTuongTu = await _context.Sanphams
+                .Where(s => s.MaThuongHieu == sanPham.MaThuongHieu && s.MaSp != sanPham.MaSp)
+                .ToListAsync();
+
+            ViewBag.SanPhamTuongTu = sanPhamTuongTu;
             var sanPhams = new List<Sanpham> { sanPham };
+
             return View(sanPhams);
         }
-
     }
 }
