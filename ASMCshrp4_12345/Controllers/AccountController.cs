@@ -38,9 +38,11 @@ namespace ASMCshrp4_12345.Controllers
                 {
                     var claims = new List<Claim>
                     {
+                        
                         new Claim(ClaimTypes.Name, user.TenTaiKhoan),
                         new Claim("FullName", user.HoTen),
-                        new Claim(ClaimTypes.Email, user.Email)
+                        new Claim(ClaimTypes.Email, user.Email),
+                        new Claim("MaKh", user.MaKh)
                     };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
