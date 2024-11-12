@@ -69,9 +69,9 @@
                 </a>
             </div>
             <div class="col-lg-4 col-6 text-left">
-                <form action="">
+                <form action="/CuaHang/Index" method="get" id="searchForm">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm sản phẩm" name="searchTerm" oninput="submitSearchForm()">
                         <div class="input-group-append">
                             <span class="input-group-text bg-transparent text-primary">
                                 <i class="fa fa-search"></i>
@@ -80,6 +80,13 @@
                     </div>
                 </form>
             </div>
+
+            <script>
+                function submitSearchForm() {
+                    document.getElementById("searchForm").submit();
+                }
+            </script>
+
             <div class="col-lg-4 col-6 text-right">
                 <p class="m-0">Dịch vụ khách hàng</p>
                 <h5 class="m-0">+0889661245</h5>
