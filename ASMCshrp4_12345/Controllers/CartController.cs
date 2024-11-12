@@ -24,6 +24,7 @@ namespace ASMCshrp4_12345.Controllers
         public List<CartViewModel> Cart => HttpContext.Session.Get<List<CartViewModel>>(CART_KEY) ?? new List<CartViewModel>();
         public IActionResult Index()
         {
+             
             return View(Cart);
         }
 
@@ -311,6 +312,35 @@ namespace ASMCshrp4_12345.Controllers
                 Console.WriteLine($"Error: {ex.Message}, Inner: {ex.InnerException?.Message}");
                 return BadRequest("Có lỗi xảy ra.");
             }
+
+        }
+
+        public IActionResult ThongTinDonHang()
+        {
+            var maKh = HttpContext.User.Claims.FirstOrDefault(p => p.Type == "CustomerID").Value;
+
+            if (string.IsNullOrEmpty(maKh))
+            {
+                // Nếu không có mã khách hàng trong Claims, có thể redirect về trang đăng nhập
+                return RedirectToAction("Index", "Account");
+            }
+
+            // Lấy các đơn hàng theo các trạng thái
+            var donHangsChuaXacNhan = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Chờ xác nhận").ToList();
+            var donHangsDaXacNhan = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đã xác nhận").ToList();
+            var donHangsDangGiao = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đang giao hàng").ToList();
+            var donHangsDaTT = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đã thanh toán").ToList();
+
+            // Truyền các danh sách đơn hàng vào View
+            var model = new
+            {
+                DonHangsChuaXacNhan = donHangsChuaXacNhan,
+                DonHangsDaXacNhan = donHangsDaXacNhan,
+                DonHangsDangGiao = donHangsDangGiao,
+                DonHangsDaTT = donHangsDaTT
+            };
+
+            return View(model);
 
         }
     }

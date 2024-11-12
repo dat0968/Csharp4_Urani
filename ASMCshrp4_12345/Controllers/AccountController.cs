@@ -38,6 +38,7 @@ namespace ASMCshrp4_12345.Controllers
                 {
                     var claims = new List<Claim>
                     {
+                        
                         new Claim(ClaimTypes.Name, user.TenTaiKhoan),
                         new Claim("FullName", user.HoTen),
                         new Claim(ClaimTypes.Email, user.Email),
