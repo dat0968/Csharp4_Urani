@@ -189,14 +189,15 @@
                         <div class="product-img position-relative overflow-hidden">
                             <img class="img-fluid w-100 h-50" src="~/HinhAnh/SanPham/@item.Hinh" alt="">
                             <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                                <a asp-action="Details" asp-controller="CuaHang" asp-route-id="@item.MaSp" class="btn btn-outline-dark btn-square">Xem Thêm</a>
+                                @* <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                                 <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
                                 <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
-                                <a asp-action="Details" asp-controller="CuaHang" asp-route-id="@item.MaSp" class="btn btn-outline-dark btn-square"><i class="fa fa-search"></i></a>
+                                <a asp-action="Details" asp-controller="CuaHang" asp-route-id="@item.MaSp" class="btn btn-outline-dark btn-square"><i class="fa fa-search"></i></a> *@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">@item.TenSp</a>
+                            <a asp-action="Details" asp-controller="CuaHang" asp-route-id="@item.MaSp" class="h6 text-decoration-none text-truncate">@item.TenSp</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
                                 <h5>@item.DonGiaBan.ToString("#,##0") đ</h5>
                             </div>
