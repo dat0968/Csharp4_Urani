@@ -62,6 +62,16 @@ namespace ASMCshrp4_12345.Controllers
             {
                 item.SoLuong += quantity;
             }
+            if(item.SoLuong > item.SoluongAvailable)
+            {
+                
+                return RedirectToAction("index");
+            }
+            if (item.SoLuong < 1)
+            {
+                item.SoLuong = 1;
+                return RedirectToAction("index");
+            }
             HttpContext.Session.Set(CART_KEY, giohang);
             return RedirectToAction("index");
         }
