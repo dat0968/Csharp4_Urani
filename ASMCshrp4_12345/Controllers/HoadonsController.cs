@@ -123,7 +123,10 @@ namespace ASMCshrp4_12345.Controllers
                 {
                     hoadon.MaNv = currentEmployeeId;
                 }
-
+                if(hoadon.TinhTrang == "Đã giao")
+                {
+                    hoadon.ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now);
+                }
                 try
                 {
                     _context.Update(hoadon);

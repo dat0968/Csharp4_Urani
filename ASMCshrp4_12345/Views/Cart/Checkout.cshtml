@@ -1,0 +1,149 @@
+﻿@model IEnumerable<ASMCshrp4_12345.ViewModels.CartViewModel>
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="#">TRANG CHỦ</a>
+                <span class="breadcrumb-item active">THANH TOÁN</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+<!-- Checkout Start -->
+<div class="container-fluid">
+    <form id="checkoutForm" method="post" action="@Url.Action("Checkout", "Cart")">
+        <div class="row px-xl-5">
+            <!-- Thông tin người mua -->
+            <div class="col-lg-8">
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">THÔNG TIN THANH TOÁN</span></h5>
+                <div class="bg-light p-30 mb-5">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label>Họ và tên</label>
+                            <input class="form-control" value="@ViewBag.HoTen" type="text" placeholder="John" readonly />
+                        </div>
+
+                        <div class="col-md-6 form-group">
+                            <label>SĐT</label>
+                            <input class="form-control" value="@ViewBag.Sdt" type="text" placeholder="+123 456 789" readonly />
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Địa chỉ nhận hàng</label>
+                            <input class="form-control" value="@ViewBag.DiaChi" type="text" placeholder="123 Street" readonly />
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Mô tả</label>
+                            <input class="form-control" name="MoTa_GuiToiDiaChiKhacfalse" type="text" placeholder="123 Street" />
+                        </div>
+
+                        <!-- Checkbox gửi đến địa chỉ khác -->
+                        <div class="col-md-12">
+                            <div class="custom-control custom-checkbox">
+                                <input name="GuiToiDiaChiKhac" value="false" type="checkbox" class="GuiToiDiaChiKhac custom-control-input" id="shipto" />
+                                <label class="custom-control-label" for="shipto" data-toggle="collapse" data-target="#shipping-address">GỬI TỚI ĐỊA CHỈ KHÁC</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Địa chỉ nhận hàng khác -->
+                <div class="collapse mb-5" id="shipping-address">
+                    <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">THÔNG TIN NGƯỜI NHẬN</span></h5>
+                    <div class="bg-light p-30">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label>Họ và tên</label>
+                                <input class="form-control" name="HoTen" type="text" placeholder="John"  />
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label>SĐT</label>
+                                <input class="form-control" name="DienThoai" type="text" placeholder="+123 456 789"  />
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>Địa chỉ nhận hàng</label>
+                                <input class="form-control" name="DiaChi" type="text" placeholder="123 Street"  />
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>Mô tả</label>
+                                <input class="form-control" name="MoTa_GuiToiDiaChiKhactrue" type="text" placeholder="123 Street" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tổng giá trị đơn hàng -->
+            <div class="col-lg-4">
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">TỔNG GIÁ TRỊ ĐƠN HÀNG</span></h5>
+                <div class="bg-light p-30 mb-5">
+                    <div class="border-bottom">
+                        <h6 class="mb-3">SẢN PHẨM</h6>
+                        @foreach (var item in Model)
+                        {
+                            <div class="d-flex justify-content-between">
+                                <p>@item.TenHh (<span>@item.Mau, @item.ChatLieu, @item.KichThuoc</span>)</p>
+                                <p>@item.ThanhTien đ</p>
+                            </div>
+                        }
+                    </div>
+
+                    <div class="pt-2">
+                        <div class="d-flex justify-content-between mt-2">
+                            <h5>TỔNG TIỀN</h5>
+                            <h5>@Model.Sum(p => p.ThanhTien) đ</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phương thức thanh toán -->
+                <div class="mb-5">
+                    <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">PHƯƠNG THỨC THANH TOÁN</span></h5>
+                    <div class="bg-light p-30">
+                        <div class="form-group">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" name="paymentMethod" id="vnpay" value="VNPAY">
+                                <label class="custom-control-label" for="vnpay">VNPAY</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" name="paymentMethod" id="cod" value="COD" checked>
+                                <label class="custom-control-label" for="cod">COD (Thanh toán khi nhận hàng)</label>
+                            </div>
+                        </div>
+                        <button id="checkoutButton" type="submit" class="btn btn-block btn-primary font-weight-bold py-3">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Checkout End -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const checkbox = document.getElementById("shipto"); 
+        const descriptionInput = document.querySelector('input[name="MoTa_GuiToiDiaChiKhacfalse"]'); 
+        const nameInput = document.querySelector('input[name="HoTen"]');
+        const phoneInput = document.querySelector('input[name="DienThoai"]'); 
+        const addressInput = document.querySelector('input[name="DiaChi"]'); 
+
+        checkbox.addEventListener("change", function() {
+            if (checkbox.checked) {
+               
+                nameInput.setAttribute("required", "required");
+                phoneInput.setAttribute("required", "required");
+                addressInput.setAttribute("required", "required");
+                
+                descriptionInput.setAttribute("readonly", "readonly");
+            } else {
+          
+                nameInput.removeAttribute("required");
+                phoneInput.removeAttribute("required");
+                addressInput.removeAttribute("required");
+                descriptionInput.removeAttribute("readonly");
+            }
+        });
+    });
+</script>

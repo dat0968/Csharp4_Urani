@@ -5,8 +5,12 @@
         public string MaHh { get; set; }
         public string Hinh { get; set; }
         public string TenHh { get; set; }
-        public float Gia { get; set; }
+        public string Mau { get; set; }
+        public string ChatLieu { get; set; }
+        public string KichThuoc { get; set; }
+        public decimal? Gia { get; set; }
         public int SoLuong { get; set; }
-        public float ThanhTien => Gia * SoLuong;
+        public int SoluongAvailable { get; set; }
+        public decimal ThanhTien => (decimal)(Gia * SoLuong);
     }
 }

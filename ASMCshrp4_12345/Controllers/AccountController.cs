@@ -40,7 +40,8 @@ namespace ASMCshrp4_12345.Controllers
                     {
                         new Claim(ClaimTypes.Name, user.TenTaiKhoan),
                         new Claim("FullName", user.HoTen),
-                        new Claim(ClaimTypes.Email, user.Email)
+                        new Claim(ClaimTypes.Email, user.Email),
+                        new Claim("CustomerID", user.MaKh)
                     };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -136,10 +137,23 @@ namespace ASMCshrp4_12345.Controllers
                 _db.SaveChanges();
             }
             // Đăng nhập người dùng với Cookie Authentication
-            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, result.Principal);
+            //await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, result.Principal);
 
-            HttpContext.Session.SetString("CustomerID", existingUser.MaKh);
+            //HttpContext.Session.SetString("CustomerID", existingUser.MaKh);
             // return Json(claims);
+            // Tạo danh sách các claim (bao gồm cả MaKh)
+            var claims = new List<Claim>
+            {
+                new Claim("CustomerID", existingUser.MaKh) 
+            };
+
+            // Tạo principal với các claim mới
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+
+            // Đăng nhập người dùng với Cookie Authentication
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal);
+
             TempData["SuccessMessage"] = "Đăng nhập thành công!";
             return RedirectToAction("Index", "Home", new { area = "" });
         }

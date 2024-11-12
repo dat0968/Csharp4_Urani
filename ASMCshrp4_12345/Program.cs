@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using ASMCshrp4_12345.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -57,6 +58,7 @@ builder.Services.AddDbContext<Csharp4Context>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Csharp4_connectstring"));
 });
+builder.Services.AddSingleton<IVnPayService, VnPayService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

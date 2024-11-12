@@ -3,6 +3,21 @@
 @{
     ViewData["Title"] = "Details";
 }
+<style>
+    /* Thêm lớp CSS để thay đổi màu nút tăng giảm */
+    .btn-yellow {
+        background-color: rgb(255, 211, 51);
+        border-color: rgb(255, 211, 51);
+    color: black;
+    }
+
+    .btn-yellow:hover {
+            background-color: rgb(255, 211, 51); /* Màu vàng đậm hơn khi hover */
+            border-color: rgb(255, 211, 51);
+    color: black;
+    }
+
+</style>
 <!-- Breadcrumb Start -->
 <div class="container-fluid">
     <div class="row px-xl-5">
@@ -67,66 +82,66 @@
                         </div>
                         <small class="pt-1">(99 Reviews)</small>
                     </div>
-                    <div class="d-flex mb-3">
-                        <strong class="text-dark mr-3">Kích Thước:</strong>
-                        @foreach (var kichthuc in item.Chitietkichthuocs)
+                    <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaSp" >
+                        <div class="d-flex mb-3">
+                            <strong class="text-dark mr-3">Kích Thước:</strong>
+                            @foreach (var kichthuoc in item.Chitietkichthuocs)
+                            {
+                                <div class="custom-control custom-radio custom-control-inline mr-3">
+                                    <input type="radio" class="custom-control-input" id="size-@kichthuoc.MaKichThuoc" name="size" value="@kichthuoc.MaKichThuocNavigation.KichThuoc1" required>
+                                    <label class="custom-control-label" for="size-@kichthuoc.MaKichThuoc">
+                                        @(kichthuoc.MaKichThuocNavigation?.KichThuoc1 ?? "N/A")
+                                    </label>
+                                </div>
+                            }
+                        </div>
+                        <div class="d-flex mb-4">
+                            <strong class="text-dark mr-3">Màu:</strong>
+                            @foreach (var mausac in item.Chitietmausacs)
+                            {                        
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="color-@mausac.MaMau" name="color" value="@mausac.MaMauNavigation.TenMau" required >
+                                    <label class="custom-control-label" for="color-@mausac.MaMau">
+                                        @(mausac.MaMauNavigation?.TenMau ?? "N/A")
+                                    </label>
+                                </div>                   
+                            }
+                        </div>
+                        <div class="d-flex mb-4">
+                        <strong class="text-dark mr-3">Chất liệu:</strong>
+                        @foreach (var chatlieu in item.Chitietchatlieus)
                         {
-                            <div class="custom-control custom-radio custom-control-inline mr-3">
-                                <input type="radio" class="custom-control-input" id="size-@kichthuc.MaKichThuoc" name="size">
-                                <label class="custom-control-label" for="size-@kichthuc.MaKichThuoc">
-                                    @(kichthuc.MaKichThuocNavigation?.TenKichThuoc ?? "N/A")
+                            <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="chat-@chatlieu.MaChatLieu" name="chatlieu" value="@chatlieu.MaChatLieuNavigation.TenChatLieu" required>
+                                <label class="custom-control-label" for="chat-@chatlieu.MaChatLieu">
+                                    @(chatlieu.MaChatLieuNavigation?.TenChatLieu ?? "N/A")
                                 </label>
                             </div>
                         }
-                    </div>
-                    <div class="d-flex mb-4">
-                        <strong class="text-dark mr-3">Màu:</strong>
-                        @foreach (var mausac in item.Chitietmausacs)
-                        {                        
-                                <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="color-@mausac.MaMau" name="color">
-                                <label class="custom-control-label" for="color-@mausac.MaMau">
-                                    @(mausac.MaMauNavigation?.TenMau ?? "N/A")
-                                </label>
-                            </div>                   
-                        }
-                    </div>
-                    <div class="d-flex mb-4">
-                    <strong class="text-dark mr-3">Chất liệu:</strong>
-                    @foreach (var chatlieu in item.Chitietchatlieus)
-                    {
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" class="custom-control-input" id="chat-@chatlieu.MaChatLieu" name="chatlieu">
-                            <label class="custom-control-label" for="chat-@chatlieu.MaChatLieu">
-                                @(chatlieu.MaChatLieuNavigation?.TenChatLieu ?? "N/A")
-                            </label>
                         </div>
-                    }
-                    </div>
 
-                    <div class="d-flex align-items-center mb-4 pt-2">
-                        <div class="input-group quantity mr-3" style="width: 130px;">
-                            <div class="input-group-btn">
-                                <button class="btn btn-primary btn-minus">
-                                    <i class="fa fa-minus"></i>
-                                </button>
+                        <!--Nút tăng giảm số lượng-->
+           
+                        <div class="input-group" style="width: 120px;">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-yellow" type="button" onclick="decreaseQuantity()">-</button>
                             </div>
-                            <input type="text" class="form-control bg-secondary border-0 text-center" value="1">
-                            <div class="input-group-btn">
-                                <button class="btn btn-primary btn-plus">
-                                    <i class="fa fa-plus"></i>
-                                </button>
+                            <input type="number" id="quantity" name="quantity" class="form-control text-center" value="1" min="1" max="@item.SoLuongBan">
+                            <div class="input-group-append">
+                                <button class="btn btn-yellow" type="button" onclick="increaseQuantity()">+</button>
                             </div>
                         </div>
-                        <button class="btn btn-primary px-3">
-                            <i class="fa fa-shopping-cart mr-1"></i> Thêm giỏ hàng
-                        </button>
-                        <br />
 
-                    </div>
-                    <div class="tab-content">
+
+
+
+
+
+
+                    </form>
+                    <div  class="tab-content">
                         <div class="nav nav-tabs mb-4">
-                            <a class="nav-item nav-link text-dark active" data-toggle="tab" href="#tab-pane-1">MÔ TẢ SẢN PHẨM</a>
+                            <a style="margin-top: 35px" class="nav-item nav-link text-dark active" data-toggle="tab" href="#tab-pane-1">MÔ TẢ SẢN PHẨM</a>
 
                         </div>
                         <div class="tab-pane fade show active" id="tab-pane-1">
@@ -201,3 +216,40 @@
     </div>
 </div>
 <!-- Products End -->
+
+<script>
+    function increaseQuantity() {
+        var quantityInput = document.getElementById("quantity");
+        var currentQuantity = parseInt(quantityInput.value);
+        var maxQuantity = parseInt(quantityInput.getAttribute("max"));
+
+        if (currentQuantity < maxQuantity) {
+            quantityInput.value = currentQuantity + 1;
+        }
+    }
+
+    function decreaseQuantity() {
+        var quantityInput = document.getElementById("quantity");
+        var currentQuantity = parseInt(quantityInput.value);
+
+        if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+        }
+    }
+
+    // Kiểm tra giá trị nhập tay để đảm bảo không vượt quá số lượng tối đa
+    document.getElementById("quantity").addEventListener("input", function() {
+        var quantityInput = document.getElementById("quantity");
+        var currentQuantity = parseInt(quantityInput.value);
+        var maxQuantity = parseInt(quantityInput.getAttribute("max"));
+        var minQuantity = parseInt(quantityInput.getAttribute("min"));
+
+        // Nếu số lượng nhập vào vượt quá tối đa hoặc tối thiểu, chỉnh sửa lại
+        if (currentQuantity > maxQuantity) {
+            quantityInput.value = maxQuantity;
+        } else if (currentQuantity < minQuantity) {
+            quantityInput.value = minQuantity;
+        }
+    });
+</script>
+
