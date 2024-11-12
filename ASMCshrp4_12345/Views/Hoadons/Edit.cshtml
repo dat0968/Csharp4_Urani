@@ -35,8 +35,8 @@
                 <span asp-validation-for="Httt" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TinhTrang" class="control-label">Tình trạng</label>
-                <select asp-for="TinhTrang" class="form-control" required>
+                <label asp-for="TinhTrang"  class="control-label">Tình trạng</label>
+                <select asp-for="TinhTrang" id="TinhTrangSelect" class="form-control" required>
                     <option value="Chờ xác nhận">Chờ xác nhận</option>
                     <option value="Đã xác nhận">Đã xác nhận</option>
                     <option value="Đang giao hàng">Đang giao hàng</option>
@@ -70,6 +70,11 @@
                 <span asp-validation-for="Hoten" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Sdt" class="control-label">SĐT</label>
+                <input asp-for="Sdt" type="text" class="form-control" required readonly />
+                <span asp-validation-for="Sdt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="ThoiGianDat" class="control-label">Thời gian đặt</label>
                 <input asp-for="ThoiGianDat" class="form-control" required readonly />
                 <span asp-validation-for="ThoiGianDat" class="text-danger"></span>
@@ -94,3 +99,24 @@
     }
 }
 
+<script>
+    document.getElementById('customerForm').addEventListener('submit', function(event) {
+        var tinhTrang = document.getElementById('TinhTrangSelect').value;
+        var currentStatus = '@Model.TinhTrang'; 
+        var ngayGiaoHang = new Date('@Model.ThoiGianGiao'); // Lấy ngày giao hàng từ Model
+        var currentDate = new Date(); // Ngày hiện tại
+
+       
+        if (tinhTrang === 'Đã hủy' && currentStatus !== 'Chờ xác nhận' && currentStatus !== 'Đã hủy') {
+            toastr.error("Không thể hủy đơn hàng với tình trạng hiện tại");
+            event.preventDefault();
+        }
+        // Kiểm tra nếu muốn chuyển từ 'Đã thanh toán' sang 'Hoàn tiền'
+        // if (newStatus === 'Hoàn tiền' && currentStatus === 'Đã thanh toán') {
+        //     if (daysDifference > 3) {
+        //         toastr.error("Trạng thái chỉ có hiệu lực với những đơn hàng 'Đã thanh toán' và thời gian hàng đã được giao tới tay người dùng không quá 3 ngày ");
+        //         this.value = currentStatus; 
+        //     }
+        // }
+    });
+</script>

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using ASMCshrp4_12345.Services;
+using ASMCshrp4_12345.MiddleWare;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +24,7 @@ builder.Services.AddAuthentication(options =>
         options.SlidingExpiration = true;
         options.LoginPath = "/Account/Index";  // Đường dẫn để đăng nhập
         options.LogoutPath = "/Account/Logout"; // Đường dẫn để đăng xuất
-        options.AccessDeniedPath = "/Account/AccessDenied";
+        options.AccessDeniedPath = "/Home/Error404";
     }
     )
 
@@ -75,11 +76,15 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthentication();
-
+app.UseAuthorization();
+app.UseMiddleware<CustomAuthenticationMiddleware>();
 app.UseSession();
 
 
-app.UseAuthorization();
+
+
+
+
 
 app.MapControllerRoute(
     name: "default",

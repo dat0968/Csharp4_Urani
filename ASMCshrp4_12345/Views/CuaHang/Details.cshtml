@@ -121,21 +121,28 @@
                         </div>
 
                         <!--Nút tăng giảm số lượng-->
-           
-                        <div class="input-group" style="width: 120px;">
-                            <div class="input-group-prepend">
-                                <button class="btn btn-yellow" type="button" onclick="decreaseQuantity()">-</button>
+
+                        <div class="d-flex align-items-center mb-4">
+                       
+                            <div class="input-group" style="width: 120px;">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-yellow" type="button" onclick="decreaseQuantity()">-</button>
+                                </div>
+                                <input type="number" id="quantity" name="quantity" class="form-control text-center" value="1" min="1" max="@item.SoLuongBan">
+                                <div class="input-group-append">
+                                    <button class="btn btn-yellow" type="button" onclick="increaseQuantity()">+</button>
+                                </div>
                             </div>
-                            <input type="number" id="quantity" name="quantity" class="form-control text-center" value="1" min="1" max="@item.SoLuongBan">
-                            <div class="input-group-append">
-                                <button class="btn btn-yellow" type="button" onclick="increaseQuantity()">+</button>
-                            </div>
+
+                        
+                            <button type="submit" class="btn btn-primary px-3 ml-3">
+                                <i class="fa fa-shopping-cart mr-1"></i> Thêm giỏ hàng
+                            </button>
                         </div>
 
 
 
-
-
+                        
 
 
                     </form>

@@ -15,7 +15,7 @@ namespace ASMCshrp4_12345.Controllers
             }
             else
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Hoadons");
             }
 
 

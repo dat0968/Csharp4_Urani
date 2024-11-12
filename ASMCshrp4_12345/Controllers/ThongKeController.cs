@@ -16,13 +16,9 @@ namespace ASMCshrp4_12345.Controllers
         {
             _context = db;
         }
-        [Authorize(Roles = "Admin")]
         public IActionResult Index()
         {
-            if (!User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Index", "Home"); // Trang NotFound của bạn
-            }
+
             var model = new DoanhThuThangViewModel()
             {
 

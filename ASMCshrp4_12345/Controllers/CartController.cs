@@ -78,7 +78,7 @@ namespace ASMCshrp4_12345.Controllers
             return RedirectToAction("index");
         }
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles = "User" )]
         public IActionResult Checkout()
         {
             if (Cart.Count == 0)

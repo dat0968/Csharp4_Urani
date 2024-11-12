@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
 using Microsoft.EntityFrameworkCore;
+using DocumentFormat.OpenXml.InkML;
 
 namespace ASMCshrp4_12345.Controllers
 {
@@ -21,8 +22,14 @@ namespace ASMCshrp4_12345.Controllers
 
         public IActionResult Index()
         {
-
-
+            if(User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Index", "ThongKe");
+            }
+            if (User.Identity.IsAuthenticated && User.IsInRole("Nhân viên"))
+            {
+                return RedirectToAction("Index", "Hoadons");
+            }
             var sanPhamNoiBat = _context.Sanphams
                             .Include(sp => sp.Hinhanhs)
                             .Where(sp => sp.SoLuongBan > 1)
@@ -35,6 +42,11 @@ namespace ASMCshrp4_12345.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult Error404()
         {
             return View();
         }

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using System.Security.Claims
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -10,7 +11,7 @@
     <!-- mobile metas -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>QUẢN LÝ CỬA HÀNG - ADMIN</title>
+    <title>QUẢN LÝ CỬA HÀNG</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -66,7 +67,7 @@
                             <div class="user_img"><img class="img-responsive" src="~/images/layout_img/user_img.jpg" alt="#" /></div>
 
                             <div class="user_info">
-                                <h6>ADMIN</h6>
+                                <h6>Xin chào, @(User.Claims.FirstOrDefault(p => p.Type == ClaimTypes.Name).Value) </h6>
                                 <p><span class="online_animation"></span>Online</p>
                             </div>
                         </div>
@@ -74,14 +75,21 @@
                 </div>
                 <div class="sidebar_blog_2">
                     <ul class="list-unstyled components">
-                        <li><a asp-action="Index" asp-controller="Sanphams" > <span>QUẢN LÝ SẢN PHẨM</span></a></li>
-
-                        <li><a asp-action="Index" asp-controller="Khachhangs" ><span>QUẢN LÝ KHÁCH HÀNG</span></a></li>
-                        <li><a asp-action="Index" asp-controller="Nhanviens"> <span>QUẢN LÝ NHÂN VIÊN</span></a></li>
-                        <li><a asp-action="InDex" asp-controller="NhaCungCap"> <span>QUẢN LÝ NHÀ CUNG CẤP</span></a></li>
-                        <li><a asp-action="Index" asp-controller="ThuongHieu"> <span>QUẢN LÝ THƯƠNG HIỆU</span></a></li>
-                        <li><a asp-action="Index" asp-controller="Hoadons" ><span>QUẢN LÝ ĐƠN HÀNG</span></a></li>
-                        <li><a asp-action="Index" asp-controller="ThongKe" > <span>THỐNG KÊ</span></a></li>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li><a asp-action="Index" asp-controller="Sanphams"> <span>QUẢN LÝ SẢN PHẨM</span></a></li>
+                            <li><a asp-action="Index" asp-controller="Khachhangs"><span>QUẢN LÝ KHÁCH HÀNG</span></a></li>
+                            <li><a asp-action="Index" asp-controller="Nhanviens"> <span>QUẢN LÝ NHÂN VIÊN</span></a></li>
+                            <li><a asp-action="InDex" asp-controller="NhaCungCap"> <span>QUẢN LÝ NHÀ CUNG CẤP</span></a></li>
+                            <li><a asp-action="Index" asp-controller="ThuongHieu"> <span>QUẢN LÝ THƯƠNG HIỆU</span></a></li>
+                            <li><a asp-action="Index" asp-controller="Hoadons"><span>QUẢN LÝ ĐƠN HÀNG</span></a></li>
+                            <li><a asp-action="Index" asp-controller="ThongKe"> <span>THỐNG KÊ</span></a></li>
+                        }
+                        else
+                        {
+                            <li><a asp-action="Index" asp-controller="Khachhangs"><span>QUẢN LÝ KHÁCH HÀNG</span></a></li>
+                            <li><a asp-action="Index" asp-controller="Hoadons"><span>QUẢN LÝ ĐƠN HÀNG</span></a></li>
+                        }
 
                     </ul>
                 </div>
@@ -97,26 +105,28 @@
 
                             <div class="right_topbar">
                                 <div class="icon_info">
-
                                     <ul class="user_profile_dd">
-                                        <li>
-                                            <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="images/layout_img/user_img.jpg" alt="#" /><span class="name_user">ADMIN</span></a>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                                <img class="img-responsive rounded-circle" src="~/images/layout_img/user_img.jpg" alt="#" />
+                                                <span class="name_user">
+                                                    @(User.Claims.FirstOrDefault(p => p.Type == ClaimTypes.Name).Value)
+                                                </span>
+                                            </a>
                                             <div class="dropdown-menu">
-
                                                 <form asp-action="Logout" asp-controller="Account_Staff" method="post">
                                                     <button type="submit" class="dropdown-item btn btn-light text-dark">
                                                         ĐĂNG XUẤT <i class="fa fa-sign-out"></i>
                                                     </button>
                                                 </form>
                                             </div>
-
-
-
-
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+
+
+
                         </div>
                     </nav>
                 </div>
@@ -131,8 +141,11 @@
 
     <!-- jQuery -->
     @await RenderSectionAsync("Scripts", required: false)
+   
 
-    <script src="~/js/jquery.min.js"></script>
+
+
+
     <script src="~/js/popper.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
     <!-- wow animation -->
@@ -176,6 +189,14 @@
                 toastr.success(successMessage);
             }
         });
+        $(document).ready(function() {
+            var ErrorMessage = '@TempData["ErrorMessage"]';
+            if (ErrorMessage) {
+                toastr.error(ErrorMessage);
+            }
+        });
+ 
+
     </script>
 
     <script src="/js/chart_custom_style1.js"></script>

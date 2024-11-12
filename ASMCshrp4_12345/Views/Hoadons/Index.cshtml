@@ -110,7 +110,10 @@
                 </tr>
 
             <td>
-                <a href="@Url.Action("Edit", "Hoadons", new { id = item.MaHoaDon })" class="btn btn-primary">Sửa</a>
+                 @if (item.TinhTrang != "Đã hủy" && item.TinhTrang != "Hoàn tiền")
+                 {
+                    <a href="@Url.Action("Edit", "Hoadons", new { id = item.MaHoaDon })" class="btn btn-primary">Sửa</a>
+                 }
                 <a href="@Url.Action("Details", "Hoadons", new { id = item.MaHoaDon })" class="btn btn-info">Chi tiết</a>
             </td>
             }

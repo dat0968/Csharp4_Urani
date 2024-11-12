@@ -22,14 +22,16 @@ namespace ASMCshrp4_12345.Controllers
             _db = db;
            
         }
-        public IActionResult Index()
+        public IActionResult Index(string? returnURL)
         {
+            ViewBag.returnURL = returnURL;
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Index(LoginViewModel model)
+        public async Task<IActionResult> Index(LoginViewModel model, string? returnURL)
         {
+            ViewBag.returnURL = returnURL;
             if (ModelState.IsValid)
             {
                 var user = _db.Khachhangs.FirstOrDefault(u => u.TenTaiKhoan == model.TenTaiKhoan && u.MatKhau == model.MatKhau);
@@ -42,7 +44,8 @@ namespace ASMCshrp4_12345.Controllers
                         new Claim(ClaimTypes.Name, user.TenTaiKhoan),
                         new Claim("FullName", user.HoTen),
                         new Claim(ClaimTypes.Email, user.Email),
-                        new Claim("CustomerID", user.MaKh)
+                        new Claim("CustomerID", user.MaKh),
+                        new Claim(ClaimTypes.Role, "User")
                     };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -55,7 +58,14 @@ namespace ASMCshrp4_12345.Controllers
 
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
                     TempData["SuccessMessage"] = "Đăng nhập thành công!";
-                    return RedirectToAction("Index", "Home");
+                    if (Url.IsLocalUrl(returnURL))
+                    {
+                        return Redirect(returnURL);
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
                 else
                 {
@@ -145,7 +155,8 @@ namespace ASMCshrp4_12345.Controllers
             // Tạo danh sách các claim (bao gồm cả MaKh)
             var claims = new List<Claim>
             {
-                new Claim("CustomerID", existingUser.MaKh) 
+                new Claim("CustomerID", existingUser.MaKh),
+                new Claim(ClaimTypes.Role, "User")
             };
 
             // Tạo principal với các claim mới

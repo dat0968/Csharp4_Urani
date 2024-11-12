@@ -9,6 +9,7 @@ using ASMCshrp4_12345.Models;
 using X.PagedList.Extensions;
 using ClosedXML.Excel;
 using System.Security.Claims;
+using DocumentFormat.OpenXml.Drawing.Charts;
 
 namespace ASMCshrp4_12345.Controllers
 {
@@ -118,6 +119,29 @@ namespace ASMCshrp4_12345.Controllers
             if (ModelState.IsValid)
             {
                 string currentEmployeeId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var order = _context.Hoadons.AsNoTracking().FirstOrDefault(p => p.MaHoaDon == id);
+
+                DateOnly? ngayGiaoHang = order.ThoiGianGiao;
+                string currentStatus = order.TinhTrang;
+                DateTime currentDate = DateTime.Now;
+                DateTime? ngayGiaoHangDateTime = ngayGiaoHang.HasValue ? ngayGiaoHang.Value.ToDateTime(new TimeOnly(0, 0)) : (DateTime?)null;
+                if (ngayGiaoHangDateTime.HasValue)
+                {
+                    
+                    var daysDifference = (currentDate - ngayGiaoHangDateTime.Value).TotalDays;
+
+                    
+                    if (hoadon.TinhTrang == "Hoàn tiền" && currentStatus == "Đã thanh toán")
+                    {
+                        if (daysDifference > 3)
+                        {
+                            
+                            TempData["ErrorMessage"] = "Trạng thái chỉ có hiệu lực với những đơn hàng 'Đã thanh toán' và thời gian hàng đã được giao tới tay người dùng không quá 3 ngày";
+                            return View(hoadon);
+                        }
+                    }
+                }
+                hoadon.TinhTrang = hoadon.TinhTrang;
 
                 if (!string.IsNullOrEmpty(currentEmployeeId))
                 {
