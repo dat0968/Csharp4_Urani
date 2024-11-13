@@ -20,6 +20,10 @@
 
 
 
+    <PackageReference Include="EcoWebMVC" Version="7.2.0.16140" />
+
+
+
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.10" />
 
 

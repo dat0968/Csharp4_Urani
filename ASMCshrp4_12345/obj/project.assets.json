@@ -112,6 +112,29 @@
           }
         }
       },
+      "EcoCore/7.2.0.16140": {
+        "type": "package",
+        "compile": {
+          "lib/net40/MDriven.Net.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MDriven.Net.Http.dll": {}
+        }
+      },
+      "EcoWebMVC/7.2.0.16140": {
+        "type": "package",
+        "dependencies": {
+          "EcoCore": "7.2.0.16140"
+        },
+        "compile": {
+          "lib/net40/Eco.MVC.dll": {},
+          "lib/net40/MDriven.Persistence.WebApi.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Eco.MVC.dll": {},
+          "lib/net40/MDriven.Persistence.WebApi.dll": {}
+        }
+      },
       "ExcelNumberFormat/1.1.0": {
         "type": "package",
         "compile": {
@@ -3026,6 +3049,33 @@
         "lib/net8.0/DocumentFormat.OpenXml.Framework.xml",
         "lib/netstandard2.0/DocumentFormat.OpenXml.Framework.dll",
         "lib/netstandard2.0/DocumentFormat.OpenXml.Framework.xml"
+      ]
+    },
+    "EcoCore/7.2.0.16140": {
+      "sha512": "fQK+YMZjHiEQqnl0Hf6NRER65T0GqbUGJ26W/eOjtZn+pUqm6kNwuIuJKau+VVz2wsrfjwCT9oSfXkyqbjDQ8g==",
+      "type": "package",
+      "path": "ecocore/7.2.0.16140",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "EcoCore.nuspec.org",
+        "ecocore.7.2.0.16140.nupkg.sha512",
+        "ecocore.nuspec",
+        "lib/net40/MDriven.Net.Http.dll"
+      ]
+    },
+    "EcoWebMVC/7.2.0.16140": {
+      "sha512": "dkMMf6/bvd4Dlu8TVENhMx3j0uvha9O4LTNeRBZ1AgTV5u7hq6CkT2hO2Z504noI6X1yneS8XSukmO6qL5lH+A==",
+      "type": "package",
+      "path": "ecowebmvc/7.2.0.16140",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "EcoWebMVC.nuspec.org",
+        "ecowebmvc.7.2.0.16140.nupkg.sha512",
+        "ecowebmvc.nuspec",
+        "lib/net40/Eco.MVC.dll",
+        "lib/net40/MDriven.Persistence.WebApi.dll"
       ]
     },
     "ExcelNumberFormat/1.1.0": {
@@ -8085,6 +8135,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "ClosedXML >= 0.104.1",
+      "EcoWebMVC >= 7.2.0.16140",
       "Microsoft.AspNetCore.Authentication.Google >= 8.0.10",
       "Microsoft.EntityFrameworkCore >= 8.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
@@ -8096,23 +8147,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
+      "projectUniqueName": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
       "projectName": "ASMCshrp4_12345",
-      "projectPath": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\obj\\",
+      "projectPath": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8121,6 +8172,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8133,13 +8185,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -8148,6 +8194,10 @@
           "ClosedXML": {
             "target": "Package",
             "version": "[0.104.1, )"
+          },
+          "EcoWebMVC": {
+            "target": "Package",
+            "version": "[7.2.0.16140, )"
           },
           "Microsoft.AspNetCore.Authentication.Google": {
             "target": "Package",
@@ -8203,77 +8253,27 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
     {
-      "code": "NU1902",
+      "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
-      "libraryId": "Azure.Identity",
+      "message": "Package 'EcoCore 7.2.0.16140' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EcoCore",
       "targetGraphs": [
         "net8.0"
       ]
     },
     {
-      "code": "NU1902",
+      "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-wvxc-855f-jvrv",
-      "libraryId": "Azure.Identity",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Identity.Client' 4.56.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
-      "libraryId": "Microsoft.Identity.Client",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1901",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Identity.Client' 4.56.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw",
-      "libraryId": "Microsoft.Identity.Client",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.IO.Packaging' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-f32c-w444-8ppv",
-      "libraryId": "System.IO.Packaging",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.IO.Packaging' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-qj66-m88j-hmgj",
-      "libraryId": "System.IO.Packaging",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Text.Json' 7.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
-      "libraryId": "System.Text.Json",
+      "message": "Package 'EcoWebMVC 7.2.0.16140' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EcoWebMVC",
       "targetGraphs": [
         "net8.0"
       ]

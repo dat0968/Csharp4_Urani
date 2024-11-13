@@ -38,9 +38,12 @@
                     <div class="dropdown-menu dropdown-menu-right">
                         @if (User.Identity.IsAuthenticated)
                         {
+                            <form asp-controller="Profile" asp-action="Editprofile" method="get" class="dropdown-item">
+                                <button type="submit" class="btn btn-link">Thông tin cá nhân</button>
+                            </form>
                             <form asp-controller="Account" asp-action="Logout" method="post" class="dropdown-item">
                                 <button type="submit" class="btn btn-link">Đăng xuất</button>
-                            </form>
+                            </form>  
                         }
                         else
                         {
