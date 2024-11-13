@@ -161,6 +161,10 @@
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp015c.png"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\vn-11134201-7qukw-lescmnup06dz29.jfif",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\vn-11134201-7qukw-lescmnup06dz29.jfif"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
       "PackagePath": "staticwebassets\\LayoutAdmin.html"
     },

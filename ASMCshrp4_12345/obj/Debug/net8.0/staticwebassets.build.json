@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bSfcTRB7YTyHLkZNDkkKoPnNwrY4iS/E/lHBO5YpQs8=",
+  "Hash": "6sCouHCB3qqzOaCz7faxzujNw8difp4lrR4psC1trfM=",
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -2031,6 +2031,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\Tháng Tư Là Lời Nói Dối Của Em.mp3"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\vn-11134201-7qukw-lescmnup06dz29.jfif",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/vn-11134201-7qukw-lescmnup06dz29#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1c9tm43tty",
+      "Integrity": "gapS4L22ma4PqDB1za/0KvwiELC4VEPesOauUD7lyxg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\vn-11134201-7qukw-lescmnup06dz29.jfif"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\landing_page\\stack-of-three-black-hot-stones-spa-salon-vector-16122479.jpg",
@@ -12851,7 +12872,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 12:34:30 GMT"
+          "Value": "Wed, 13 Nov 2024 03:48:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12896,7 +12917,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 12:34:30 GMT"
+          "Value": "Wed, 13 Nov 2024 03:48:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12941,7 +12962,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 12:34:30 GMT"
+          "Value": "Wed, 13 Nov 2024 03:48:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12978,7 +12999,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 12:34:30 GMT"
+          "Value": "Wed, 13 Nov 2024 03:48:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20697,6 +20718,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-+D01JpAd3ETD5I1ZNE1jaUt7apBg7EYtyOvT+L2sL+0="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/vn-11134201-7qukw-lescmnup06dz29.1c9tm43tty.jfif",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\vn-11134201-7qukw-lescmnup06dz29.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152821"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gapS4L22ma4PqDB1za/0KvwiELC4VEPesOauUD7lyxg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 03:27:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1c9tm43tty"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/vn-11134201-7qukw-lescmnup06dz29.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gapS4L22ma4PqDB1za/0KvwiELC4VEPesOauUD7lyxg="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/vn-11134201-7qukw-lescmnup06dz29.jfif",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\vn-11134201-7qukw-lescmnup06dz29.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152821"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gapS4L22ma4PqDB1za/0KvwiELC4VEPesOauUD7lyxg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 03:27:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gapS4L22ma4PqDB1za/0KvwiELC4VEPesOauUD7lyxg="
         }
       ]
     },

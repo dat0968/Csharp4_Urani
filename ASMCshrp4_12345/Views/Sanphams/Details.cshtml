@@ -4,7 +4,73 @@
     ViewData["Title"] = "Chi Tiết Sản Phẩm";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<style>
+    .carousel-inner,
+    .carousel-item img {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    ;
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ;
+    max-width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    }
+
+    ;
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.5s ease;
+    }
+
+    ;
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+    }
+
+        ;
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+
+    ;
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+    ;
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    ;
+</style>
 <div class="container mt-5">
     <h1 class="mb-4">@ViewData["Title"]</h1>
 
@@ -130,71 +196,5 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-<style>
-    .carousel-inner,
-    .carousel-item img {
-        max-width: 50%;
-        margin: auto;
-    }
-
-    .carousel {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    /* Đảm bảo carousel có chiều rộng 100% và hiển thị đẹp */
-    .carousel-inner {
-        max-width: 100%;
-        max-height: 400px; /* Giới hạn chiều cao cho carousel */
-        overflow: hidden;
-        position: relative;
-    }
-
-    .carousel-item img {
-        width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
-        height: auto;
-        border-radius: 8px; /* Bo góc cho hình ảnh */
-        transition: transform 0.5s ease; /* Hiệu ứng chuyển động mượt mà khi chuyển ảnh */
-    }
-
-    /* Định dạng nút điều khiển (Previous & Next) */
-    .carousel-control-prev,
-    .carousel-control-next {
-        background-color: rgba(0, 0, 0, 0.5); /* Màu nền bán trong suốt */
-        border: none;
-        color: white;
-        font-size: 30px; /* Tăng kích thước nút */
-        padding: 10px; /* Khoảng cách bên trong */
-        border-radius: 50%; /* Tạo nút tròn */
-        transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
-    }
-
-    /* Thêm hiệu ứng hover khi di chuột vào nút */
-    .carousel-control-prev:hover,
-    .carousel-control-next:hover {
-        background-color: rgba(0, 0, 0, 0.75); /* Đậm hơn khi hover */
-    }
-
-    /* Định dạng các biểu tượng mũi tên */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        background-color: white; /* Màu của mũi tên */
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-    }
-
-    /* Căn giữa nút điều khiển theo chiều dọc */
-    .carousel-control-prev,
-    .carousel-control-next {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-
-
- 
-
-  
-</style>

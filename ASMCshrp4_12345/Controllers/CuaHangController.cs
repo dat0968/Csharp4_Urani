@@ -15,7 +15,9 @@ namespace ASMCshrp4_12345.Controllers
         {
             _context = context;
         }
-        public IActionResult Index(int page = 1, int pageSize = 6, string sortOrder = "", string selectedBrand = null, string[] selectedColors = null, string[] selectedSizes = null, decimal? minPrice = null, decimal? maxPrice = null)
+        public IActionResult Index(int page = 1, int pageSize = 6,
+            string sortOrder = "", string selectedBrand = null, string[] selectedColors = null,
+            string[] selectedSizes = null, decimal? minPrice = null, decimal? maxPrice = null, string searchTerm = null)
         {
             ViewBag.PriceSortParam = sortOrder == "price_asc" ? "price_desc" : "price_asc";
 
@@ -28,7 +30,11 @@ namespace ASMCshrp4_12345.Controllers
                 .Include(s => s.Chitietchatlieus)
                 .ThenInclude(s => s.MaChatLieuNavigation)
                 .AsQueryable();
-
+            // Tìm kiếm theo tên sản phẩm
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                sanPhamQuery = sanPhamQuery.Where(sp => sp.TenSp.Contains(searchTerm));
+            }
             // Lọc theo thương hiệu
             if (!string.IsNullOrEmpty(selectedBrand))
             {
