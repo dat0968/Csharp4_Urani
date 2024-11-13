@@ -6,15 +6,15 @@
 
 <form id="colorFilterForm" method="get" asp-action="Index">
     <div class="bg-light p-4 mb-30">
-        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-            <input type="checkbox" class="custom-control-input" name="selectedColors" value="all" id="color-all" onchange="submitColorForm('all')"
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input type="radio" class="custom-control-input" name="selectedColors" value="all" id="color-all" onchange="submitColorForm('all')"
             @(selectedColors.Contains("all") ? "checked" : "")>
             <label class="custom-control-label" for="color-all">TẤT CẢ MÀU SẮC</label>
         </div>
         @foreach (var item in Model)
         {
-            <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                <input type="checkbox" class="custom-control-input" name="selectedColors" value="@item.MaMau" id="color-@item.MaMau" onchange="submitColorForm('specific')"
+            <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+                <input type="radio" class="custom-control-input" name="selectedColors" value="@item.MaMau" id="color-@item.MaMau" onchange="submitColorForm('specific')"
                 @(selectedColors.Contains(item.MaMau.ToString()) ? "checked" : "")>
                 <label class="custom-control-label" for="color-@item.MaMau">@item.TenMau</label>
             </div>
@@ -24,21 +24,21 @@
 
 <script>
     function submitColorForm(type) {
-        const allCheckbox = document.getElementById('color-all');
-        const checkboxes = document.querySelectorAll('input[name="selectedColors"]:not(#color-all)');
+        const allradio = document.getElementById('color-all');
+        const radioes = document.querySelectorAll('input[name="selectedColors"]:not(#color-all)');
 
         if (type === 'specific') {
             // Bỏ chọn "TẤT CẢ MÀU SẮC" nếu chọn một màu cụ thể
-            allCheckbox.checked = false;
+            allradio.checked = false;
         } else if (type === 'all') {
             // Bỏ chọn tất cả các màu cụ thể nếu chọn "TẤT CẢ MÀU SẮC"
-            checkboxes.forEach(checkbox => checkbox.checked = false);
+            radioes.forEach(radio => radio.checked = false);
         }
 
-        // Kiểm tra nếu không có checkbox nào được chọn, tự động chọn lại "TẤT CẢ MÀU SẮC"
-        let anyChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+        // Kiểm tra nếu không có radio nào được chọn, tự động chọn lại "TẤT CẢ MÀU SẮC"
+        let anyChecked = Array.from(radioes).some(radio => radio.checked);
         if (!anyChecked) {
-            allCheckbox.checked = true;
+            allradio.checked = true;
         }
 
         document.getElementById('colorFilterForm').submit();
