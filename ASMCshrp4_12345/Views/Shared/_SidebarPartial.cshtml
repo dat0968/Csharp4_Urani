@@ -8,28 +8,28 @@
         <input type="hidden" name="minPrice" id="minPrice" value="@Context.Request.Query["minPrice"]">
         <input type="hidden" name="maxPrice" id="maxPrice" value="@Context.Request.Query["maxPrice"]">
 
-        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-            <input type="checkbox" class="custom-control-input" name="priceRange" value="all" id="price-all" onchange="handleAllPriceSelection()">
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input type="radio" class="custom-control-input" name="priceRange" value="all" id="price-all" onchange="handleAllPriceSelection()">
             <label class="custom-control-label" for="price-all">TẤT CẢ KHOẢNG GIÁ</label>
         </div>
-        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-            <input type="checkbox" class="custom-control-input" name="priceRange" value="100000-10000000" id="price-1" onchange="submitPriceForm()">
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input type="radio" class="custom-control-input" name="priceRange" value="100000-10000000" id="price-1" onchange="submitPriceForm()">
             <label class="custom-control-label" for="price-1">100,000 đ - 10,000,000 đ</label>
         </div>
-        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-            <input type="checkbox" class="custom-control-input" name="priceRange" value="10000000-20000000" id="price-2" onchange="submitPriceForm()">
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input type="radio" class="custom-control-input" name="priceRange" value="10000000-20000000" id="price-2" onchange="submitPriceForm()">
             <label class="custom-control-label" for="price-2">10,000,000 đ - 20,000,000 đ</label>
         </div>
-        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-            <input type="checkbox" class="custom-control-input" name="priceRange" value="20000000-30000000" id="price-3" onchange="submitPriceForm()">
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input type="radio" class="custom-control-input" name="priceRange" value="20000000-30000000" id="price-3" onchange="submitPriceForm()">
             <label class="custom-control-label" for="price-3">20,000,000 đ - 30,000,000 đ</label>
         </div>
-        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-            <input type="checkbox" class="custom-control-input" name="priceRange" value="30000000-40000000" id="price-4" onchange="submitPriceForm()">
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input type="radio" class="custom-control-input" name="priceRange" value="30000000-40000000" id="price-4" onchange="submitPriceForm()">
             <label class="custom-control-label" for="price-4">30,000,000 đ - 40,000,000 đ</label>
         </div>
-        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
-            <input type="checkbox" class="custom-control-input" name="priceRange" value="40000000-50000000" id="price-5" onchange="submitPriceForm()">
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between">
+            <input type="radio" class="custom-control-input" name="priceRange" value="40000000-50000000" id="price-5" onchange="submitPriceForm()">
             <label class="custom-control-label" for="price-5">40,000,000 đ - 50,000,000 đ</label>
         </div>
     </form>
@@ -47,14 +47,14 @@
         minPrice.forEach(function (min, index) {
             var max = maxPrice[index];
             if (min && max) {
-                var rangeCheckbox = document.querySelector(`input[name="priceRange"][value="${min}-${max}"]`);
-                if (rangeCheckbox) {
-                    rangeCheckbox.checked = true;
+                var rangeradio = document.querySelector(`input[name="priceRange"][value="${min}-${max}"]`);
+                if (rangeradio) {
+                    rangeradio.checked = true;
                 }
             }
         });
 
-        // Nếu không có checkbox nào được chọn, chọn "TẤT CẢ KHOẢNG GIÁ"
+        // Nếu không có radio nào được chọn, chọn "TẤT CẢ KHOẢNG GIÁ"
         var selectedRanges = document.querySelectorAll('input[name="priceRange"]:checked');
         if (selectedRanges.length === 0) {
             document.getElementById("price-all").checked = true;
@@ -62,22 +62,22 @@
     });
 
     function handleAllPriceSelection() {
-        var allPriceCheckbox = document.getElementById("price-all");
-        var otherCheckboxes = document.querySelectorAll('input[name="priceRange"]:not(#price-all)');
+        var allPriceradio = document.getElementById("price-all");
+        var otherradioes = document.querySelectorAll('input[name="priceRange"]:not(#price-all)');
 
-        if (allPriceCheckbox.checked) {
-            otherCheckboxes.forEach(function (checkbox) {
-                checkbox.checked = false;
+        if (allPriceradio.checked) {
+            otherradioes.forEach(function (radio) {
+                radio.checked = false;
             });
             submitPriceForm(); // Gửi form khi chọn "Tất cả khoảng giá"
-        } else if (!Array.from(otherCheckboxes).some(checkbox => checkbox.checked)) {
-            allPriceCheckbox.checked = true; // Chọn lại "Tất cả khoảng giá" nếu không có khoảng giá nào khác được chọn
+        } else if (!Array.from(otherradioes).some(radio => radio.checked)) {
+            allPriceradio.checked = true; // Chọn lại "Tất cả khoảng giá" nếu không có khoảng giá nào khác được chọn
             submitPriceForm();
         }
     }
 
     function submitPriceForm() {
-        var allPriceCheckbox = document.getElementById("price-all");
+        var allPriceradio = document.getElementById("price-all");
         var selectedRanges = document.querySelectorAll('input[name="priceRange"]:checked');
         var selectedText = [];
         var minPrice = [];
@@ -85,23 +85,23 @@
 
         // Nếu chọn bất kỳ khoảng giá nào khác, bỏ chọn "Tất cả khoảng giá"
         if (selectedRanges.length > 0) {
-            allPriceCheckbox.checked = false;
+            allPriceradio.checked = false;
         }
 
-        selectedRanges.forEach(function (checkbox) {
-            if (checkbox.value !== "all") {
-                var rangeValues = checkbox.value.split('-');
+        selectedRanges.forEach(function (radio) {
+            if (radio.value !== "all") {
+                var rangeValues = radio.value.split('-');
                 if (rangeValues.length === 2) {
                     minPrice.push(rangeValues[0]);
                     maxPrice.push(rangeValues[1]);
-                    selectedText.push(checkbox.nextElementSibling.innerText);
+                    selectedText.push(radio.nextElementSibling.innerText);
                 }
             }
         });
 
         // Nếu không có khoảng giá nào khác được chọn, giữ "Tất cả khoảng giá"
         if (selectedText.length === 0) {
-            allPriceCheckbox.checked = true;
+            allPriceradio.checked = true;
             selectedText.push("TẤT CẢ KHOẢNG GIÁ");
         }
 
