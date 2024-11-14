@@ -46,12 +46,14 @@ namespace ASMCshrp4_12345.Controllers
                     khachhang.DiaChi = updatedKhachhang.DiaChi;
                     khachhang.Cccd = updatedKhachhang.Cccd;
                     khachhang.Sdt = updatedKhachhang.Sdt;
+                    khachhang.Email = updatedKhachhang.Email;
+
 
        
                     if (Avatar != null && Avatar.Length > 0)
                     {
                         var fileName = Guid.NewGuid().ToString() + Path.GetExtension(Avatar.FileName);
-                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/HinhAnh/KhachHang", fileName);
 
        
                         using (var stream = new FileStream(filePath, FileMode.Create))
@@ -59,8 +61,17 @@ namespace ASMCshrp4_12345.Controllers
                             Avatar.CopyTo(stream);
                         }
 
-       
-                        khachhang.Avatar = "/images/" + fileName;
+                        if (!string.IsNullOrEmpty(khachhang.Avatar))
+                        {
+                            var oldAvatarPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/HinhAnh/KhachHang", khachhang.Avatar.TrimStart('/'));
+                            if (System.IO.File.Exists(oldAvatarPath))
+                            {
+                                System.IO.File.Delete(oldAvatarPath);
+                            }
+                        }
+
+
+                        khachhang.Avatar = "/HinhAnh/KhachHang/" + fileName;
                     }
 
                     _context.SaveChanges();

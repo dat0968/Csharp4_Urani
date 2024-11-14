@@ -26,7 +26,13 @@
             @if (!string.IsNullOrEmpty(Model.Avatar))
             {
                 <div class="form-group">
-                    <img src="~/HinhAnh/KhachHang/@Model.Avatar" alt="Avatar" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;" />
+                    <img src="@Model.Avatar" alt="Avatar" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;" />
+                </div>
+            }
+            else
+            {
+                <div class="form-group">
+                    <img src="/path/to/default/avatar.jpg" alt="Default Avatar" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;" />
                 </div>
             }
             <div class="form-group">
