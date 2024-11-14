@@ -50,8 +50,7 @@ public partial class Csharp4Context : DbContext
     {
 
         // Thêm 2 khóa chính cho bảng chi tiết hóa đơn
-        modelBuilder.Entity<Chitiethoadon>()
-           .HasKey(c => new { c.MaHoaDon, c.MaSp });
+        
         //Thêm 2 khóa chính cho bảng chi tiết màu sắc
         modelBuilder.Entity<Chitietmausac>()
           .HasKey(c => new { c.MaMau, c.MaSp });
@@ -532,6 +531,7 @@ public partial class Csharp4Context : DbContext
         modelBuilder.Entity<Chitiethoadon>().HasData(
             new Chitiethoadon
             {
+                MaChiTietHoaDon = 1,
                 MaHoaDon = "HD001",
                 MaSp = "SP001",
                 MauSac_ThuocTinhSuyDien = "Đỏ",
@@ -542,6 +542,7 @@ public partial class Csharp4Context : DbContext
             },
             new Chitiethoadon
             {
+                MaChiTietHoaDon = 2,
                 MaHoaDon = "HD002",
                 MaSp = "SP002",
                 MauSac_ThuocTinhSuyDien = "Xanh",
@@ -552,6 +553,7 @@ public partial class Csharp4Context : DbContext
             },
             new Chitiethoadon
             {
+                MaChiTietHoaDon = 3,
                 MaHoaDon = "HD003",
                 MaSp = "SP003",
                 MauSac_ThuocTinhSuyDien = "Vàng",
@@ -562,6 +564,7 @@ public partial class Csharp4Context : DbContext
             },
             new Chitiethoadon
             {
+                MaChiTietHoaDon = 4,
                 MaHoaDon = "HD004",
                 MaSp = "SP004",
                 MauSac_ThuocTinhSuyDien = "Trắng",
@@ -572,6 +575,7 @@ public partial class Csharp4Context : DbContext
             },
             new Chitiethoadon
             {
+                MaChiTietHoaDon = 5,
                 MaHoaDon = "HD005",
                 MaSp = "SP005",
                 MauSac_ThuocTinhSuyDien = "Đen",
@@ -582,6 +586,7 @@ public partial class Csharp4Context : DbContext
             },
             new Chitiethoadon
             {
+                MaChiTietHoaDon = 6,
                 MaHoaDon = "HD006",
                 MaSp = "SP006",
                 MauSac_ThuocTinhSuyDien = "Đỏ",
@@ -592,6 +597,7 @@ public partial class Csharp4Context : DbContext
             },
             new Chitiethoadon
             {
+                MaChiTietHoaDon = 7,
                 MaHoaDon = "HD007",
                 MaSp = "SP007",
                 MauSac_ThuocTinhSuyDien = "Xanh",
@@ -602,6 +608,7 @@ public partial class Csharp4Context : DbContext
             },
             new Chitiethoadon
             {
+                MaChiTietHoaDon = 8,
                 MaHoaDon = "HD008",
                 MaSp = "SP008",
                 MauSac_ThuocTinhSuyDien = "Vàng",
@@ -612,6 +619,7 @@ public partial class Csharp4Context : DbContext
             },
             new Chitiethoadon
             {
+                MaChiTietHoaDon = 9,
                 MaHoaDon = "HD009",
                 MaSp = "SP009",
                 MauSac_ThuocTinhSuyDien = "Trắng",
@@ -622,6 +630,7 @@ public partial class Csharp4Context : DbContext
             },
             new Chitiethoadon
             {
+                MaChiTietHoaDon = 10, 
                 MaHoaDon = "HD010",
                 MaSp = "SP010",
                 MauSac_ThuocTinhSuyDien = "Đen",
@@ -662,13 +671,12 @@ public partial class Csharp4Context : DbContext
             new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP001" },
             new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP002" },
             new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP003" },
-            new Chitietchatlieu { MaChatLieu = 4, MaSp = "SP004" },
-            new Chitietchatlieu { MaChatLieu = 5, MaSp = "SP005" },
+            
             new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP006" },
             new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP007" },
-            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP008" },
-            new Chitietchatlieu { MaChatLieu = 4, MaSp = "SP009" },
-            new Chitietchatlieu { MaChatLieu = 5, MaSp = "SP010" }
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP008" }
+            
+            
         );
 
 

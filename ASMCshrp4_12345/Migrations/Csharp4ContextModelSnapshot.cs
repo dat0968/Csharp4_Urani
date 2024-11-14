@@ -132,13 +132,11 @@ namespace ASMCshrp4_12345.Migrations
 
             modelBuilder.Entity("ASMCshrp4_12345.Models.Chitiethoadon", b =>
                 {
-                    b.Property<string>("MaHoaDon")
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                    b.Property<int>("MaChiTietHoaDon")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.Property<string>("MaSp")
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaChiTietHoaDon"));
 
                     b.Property<string>("ChatLieu_ThuocTinhSuyDien")
                         .HasColumnType("nvarchar(max)");
@@ -149,13 +147,25 @@ namespace ASMCshrp4_12345.Migrations
                     b.Property<string>("KichThuoc_ThuocTinhSuyDien")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MaHoaDon")
+                        .IsRequired()
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)");
+
+                    b.Property<string>("MaSp")
+                        .IsRequired()
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)");
+
                     b.Property<string>("MauSac_ThuocTinhSuyDien")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SoLuongMua")
                         .HasColumnType("int");
 
-                    b.HasKey("MaHoaDon", "MaSp");
+                    b.HasKey("MaChiTietHoaDon");
+
+                    b.HasIndex("MaHoaDon");
 
                     b.HasIndex("MaSp");
 
@@ -164,101 +174,111 @@ namespace ASMCshrp4_12345.Migrations
                     b.HasData(
                         new
                         {
-                            MaHoaDon = "HD001",
-                            MaSp = "SP001",
+                            MaChiTietHoaDon = 1,
                             ChatLieu_ThuocTinhSuyDien = "Da Thật",
                             DonGia = 150000.0,
                             KichThuoc_ThuocTinhSuyDien = "Nhỏ",
+                            MaHoaDon = "HD001",
+                            MaSp = "SP001",
                             MauSac_ThuocTinhSuyDien = "Đỏ",
                             SoLuongMua = 2
                         },
                         new
                         {
-                            MaHoaDon = "HD002",
-                            MaSp = "SP002",
+                            MaChiTietHoaDon = 2,
                             ChatLieu_ThuocTinhSuyDien = "Vải",
                             DonGia = 200000.0,
                             KichThuoc_ThuocTinhSuyDien = "Trung Bình",
+                            MaHoaDon = "HD002",
+                            MaSp = "SP002",
                             MauSac_ThuocTinhSuyDien = "Xanh",
                             SoLuongMua = 1
                         },
                         new
                         {
-                            MaHoaDon = "HD003",
-                            MaSp = "SP003",
+                            MaChiTietHoaDon = 3,
                             ChatLieu_ThuocTinhSuyDien = "Nhựa",
                             DonGia = 250000.0,
                             KichThuoc_ThuocTinhSuyDien = "Lớn",
+                            MaHoaDon = "HD003",
+                            MaSp = "SP003",
                             MauSac_ThuocTinhSuyDien = "Vàng",
                             SoLuongMua = 3
                         },
                         new
                         {
-                            MaHoaDon = "HD004",
-                            MaSp = "SP004",
+                            MaChiTietHoaDon = 4,
                             ChatLieu_ThuocTinhSuyDien = "Vải",
                             DonGia = 120000.0,
                             KichThuoc_ThuocTinhSuyDien = "Nhỏ",
+                            MaHoaDon = "HD004",
+                            MaSp = "SP004",
                             MauSac_ThuocTinhSuyDien = "Trắng",
                             SoLuongMua = 5
                         },
                         new
                         {
-                            MaHoaDon = "HD005",
-                            MaSp = "SP005",
+                            MaChiTietHoaDon = 5,
                             ChatLieu_ThuocTinhSuyDien = "Cotton",
                             DonGia = 175000.0,
                             KichThuoc_ThuocTinhSuyDien = "Trung Bình",
+                            MaHoaDon = "HD005",
+                            MaSp = "SP005",
                             MauSac_ThuocTinhSuyDien = "Đen",
                             SoLuongMua = 2
                         },
                         new
                         {
-                            MaHoaDon = "HD006",
-                            MaSp = "SP006",
+                            MaChiTietHoaDon = 6,
                             ChatLieu_ThuocTinhSuyDien = "Vải",
                             DonGia = 300000.0,
                             KichThuoc_ThuocTinhSuyDien = "Lớn",
+                            MaHoaDon = "HD006",
+                            MaSp = "SP006",
                             MauSac_ThuocTinhSuyDien = "Đỏ",
                             SoLuongMua = 1
                         },
                         new
                         {
-                            MaHoaDon = "HD007",
-                            MaSp = "SP007",
+                            MaChiTietHoaDon = 7,
                             ChatLieu_ThuocTinhSuyDien = "Da Thật",
                             DonGia = 250000.0,
                             KichThuoc_ThuocTinhSuyDien = "Nhỏ",
+                            MaHoaDon = "HD007",
+                            MaSp = "SP007",
                             MauSac_ThuocTinhSuyDien = "Xanh",
                             SoLuongMua = 3
                         },
                         new
                         {
-                            MaHoaDon = "HD008",
-                            MaSp = "SP008",
+                            MaChiTietHoaDon = 8,
                             ChatLieu_ThuocTinhSuyDien = "Cotton",
                             DonGia = 220000.0,
                             KichThuoc_ThuocTinhSuyDien = "Trung Bình",
+                            MaHoaDon = "HD008",
+                            MaSp = "SP008",
                             MauSac_ThuocTinhSuyDien = "Vàng",
                             SoLuongMua = 4
                         },
                         new
                         {
-                            MaHoaDon = "HD009",
-                            MaSp = "SP009",
+                            MaChiTietHoaDon = 9,
                             ChatLieu_ThuocTinhSuyDien = "Nhựa",
                             DonGia = 275000.0,
                             KichThuoc_ThuocTinhSuyDien = "Lớn",
+                            MaHoaDon = "HD009",
+                            MaSp = "SP009",
                             MauSac_ThuocTinhSuyDien = "Trắng",
                             SoLuongMua = 2
                         },
                         new
                         {
-                            MaHoaDon = "HD010",
-                            MaSp = "SP010",
+                            MaChiTietHoaDon = 10,
                             ChatLieu_ThuocTinhSuyDien = "Vải",
                             DonGia = 180000.0,
                             KichThuoc_ThuocTinhSuyDien = "Nhỏ",
+                            MaHoaDon = "HD010",
+                            MaSp = "SP010",
                             MauSac_ThuocTinhSuyDien = "Đen",
                             SoLuongMua = 1
                         });
@@ -601,10 +621,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH001",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn đầu tiên",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 12),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 15),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -616,10 +636,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH002",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ hai",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 13),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 16),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -631,10 +651,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH003",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ ba",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 11),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 14),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -646,10 +666,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH004",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ tư",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 15),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 18),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -661,10 +681,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH005",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ năm",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 12),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 15),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -676,10 +696,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH006",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ sáu",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 13),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 16),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -691,10 +711,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH007",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ bảy",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 14),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 17),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -706,10 +726,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH008",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ tám",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 12),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 15),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -721,10 +741,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH009",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ chín",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 15),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 18),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -736,10 +756,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH010",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ mười",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 13),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 16),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -751,10 +771,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH011",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ mười một",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 12),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 15),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -766,10 +786,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH012",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ mười hai",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 15),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 18),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -781,10 +801,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ mười ba",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 12),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 15),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -796,10 +816,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ mười bốn",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 13),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 16),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -811,10 +831,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ mười lăm",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 14),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 17),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -826,10 +846,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ mười sáu",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 12),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 15),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -841,10 +861,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ mười bảy",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 13),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 16),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -856,10 +876,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ mười tám",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 14),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 17),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -871,10 +891,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ mười chín",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 12),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 15),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -886,10 +906,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ hai mươi",
-                            NgayTao = new DateOnly(2024, 11, 10),
+                            NgayTao = new DateOnly(2024, 11, 13),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 10),
-                            ThoiGianGiao = new DateOnly(2024, 11, 13),
+                            ThoiGianDat = new DateOnly(2024, 11, 13),
+                            ThoiGianGiao = new DateOnly(2024, 11, 16),
                             TinhTrang = "Đã thanh toán"
                         });
                 });

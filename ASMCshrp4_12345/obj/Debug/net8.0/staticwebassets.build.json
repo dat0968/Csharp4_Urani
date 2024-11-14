@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6sCouHCB3qqzOaCz7faxzujNw8difp4lrR4psC1trfM=",
+  "Hash": "696xHdbwwMaB4e93Lx58/q3/gSij9UhYposUj7Jrigo=",
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -1611,6 +1611,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\5142c18d042f33912aa14b8340f1db20.jfif"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\anh-my-pham-02.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/anh-my-pham-02#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hxs7l1ufhy",
+      "Integrity": "NQfdSraS4cNyblHZYV+gA1RljU2vdn6FtGugI5jJqyQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\anh-my-pham-02.jpg"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\chup-anh-my-pham2.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/chup-anh-my-pham2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nqx6lrnecl",
+      "Integrity": "sZ6vJ5XTodanvOuzJlrKXECFIM2tqkRkJN0u6LY6vbU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\chup-anh-my-pham2.jpg"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\chup-anh-san-pham-my-pham.jpg",
@@ -18530,7 +18572,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 02:41:28 GMT"
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18567,7 +18609,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 02:41:28 GMT"
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19022,7 +19064,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 02:41:28 GMT"
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19059,7 +19101,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 02:41:28 GMT"
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19078,6 +19120,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-b16dr0OoFnbEKzbJ/zCgCIBmo+U2XMhSaCfssNfGYCY="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/anh-my-pham-02.hxs7l1ufhy.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\anh-my-pham-02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NQfdSraS4cNyblHZYV+gA1RljU2vdn6FtGugI5jJqyQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hxs7l1ufhy"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/anh-my-pham-02.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NQfdSraS4cNyblHZYV+gA1RljU2vdn6FtGugI5jJqyQ="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/anh-my-pham-02.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\anh-my-pham-02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NQfdSraS4cNyblHZYV+gA1RljU2vdn6FtGugI5jJqyQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NQfdSraS4cNyblHZYV+gA1RljU2vdn6FtGugI5jJqyQ="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/chup-anh-my-pham2.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\chup-anh-my-pham2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51836"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sZ6vJ5XTodanvOuzJlrKXECFIM2tqkRkJN0u6LY6vbU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sZ6vJ5XTodanvOuzJlrKXECFIM2tqkRkJN0u6LY6vbU="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/chup-anh-my-pham2.nqx6lrnecl.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\chup-anh-my-pham2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51836"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sZ6vJ5XTodanvOuzJlrKXECFIM2tqkRkJN0u6LY6vbU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nqx6lrnecl"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/chup-anh-my-pham2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sZ6vJ5XTodanvOuzJlrKXECFIM2tqkRkJN0u6LY6vbU="
         }
       ]
     },

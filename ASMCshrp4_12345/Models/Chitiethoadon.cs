@@ -7,8 +7,9 @@ namespace ASMCshrp4_12345.Models;
 
 public partial class Chitiethoadon
 {
-
-    
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int MaChiTietHoaDon { get; set; }
     [ForeignKey("MaHoaDonNavigation")]
     [Required(ErrorMessage = "Mã hóa đơn không được để trống.")]
     [StringLength(5, ErrorMessage = "Mã hóa đơn không được vượt quá 5 ký tự.")]

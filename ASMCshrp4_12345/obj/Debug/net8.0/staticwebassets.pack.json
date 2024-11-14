@@ -85,6 +85,14 @@
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\Tháng Tư Là Lời Nói Dối Của Em.mp3"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\anh-my-pham-02.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\anh-my-pham-02.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\chup-anh-my-pham2.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\chup-anh-my-pham2.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\chup-anh-san-pham-my-pham.jpg",
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\chup-anh-san-pham-my-pham.jpg"
     },

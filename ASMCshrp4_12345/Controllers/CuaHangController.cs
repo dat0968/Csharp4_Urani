@@ -21,7 +21,7 @@ namespace ASMCshrp4_12345.Controllers
         {
             ViewBag.PriceSortParam = sortOrder == "price_asc" ? "price_desc" : "price_asc";
 
-            var sanPhamQuery = _context.Sanphams.Where(p => p.IsDelete == false)
+            var sanPhamQuery = _context.Sanphams.Where(p => p.IsDelete == false && p.Chitietchatlieus.Any() && p.Chitietkichthuocs.Any() && p.Chitietmausacs.Any() )
                 .Include(s => s.Hinhanhs)
                 .Include(s => s.Chitietkichthuocs)
                 .ThenInclude(s => s.MaKichThuocNavigation)

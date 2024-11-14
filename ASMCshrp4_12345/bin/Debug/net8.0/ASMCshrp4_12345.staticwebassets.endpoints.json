@@ -1094,7 +1094,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 02:41:28 GMT"
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1131,7 +1131,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 02:41:28 GMT"
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1586,7 +1586,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 02:41:28 GMT"
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1623,7 +1623,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 02:41:28 GMT"
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1720,6 +1720,170 @@
         {
           "Name": "label",
           "Value": "HinhAnh/SanPham/Tháng Tư Là Lời Nói Dối Của Em.mp3"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/anh-my-pham-02.hxs7l1ufhy.jpg",
+      "AssetFile": "HinhAnh/SanPham/anh-my-pham-02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NQfdSraS4cNyblHZYV+gA1RljU2vdn6FtGugI5jJqyQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hxs7l1ufhy"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NQfdSraS4cNyblHZYV+gA1RljU2vdn6FtGugI5jJqyQ="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/anh-my-pham-02.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/anh-my-pham-02.jpg",
+      "AssetFile": "HinhAnh/SanPham/anh-my-pham-02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NQfdSraS4cNyblHZYV+gA1RljU2vdn6FtGugI5jJqyQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NQfdSraS4cNyblHZYV+gA1RljU2vdn6FtGugI5jJqyQ="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/chup-anh-my-pham2.jpg",
+      "AssetFile": "HinhAnh/SanPham/chup-anh-my-pham2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51836"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sZ6vJ5XTodanvOuzJlrKXECFIM2tqkRkJN0u6LY6vbU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sZ6vJ5XTodanvOuzJlrKXECFIM2tqkRkJN0u6LY6vbU="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/chup-anh-my-pham2.nqx6lrnecl.jpg",
+      "AssetFile": "HinhAnh/SanPham/chup-anh-my-pham2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51836"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sZ6vJ5XTodanvOuzJlrKXECFIM2tqkRkJN0u6LY6vbU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 05:53:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nqx6lrnecl"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sZ6vJ5XTodanvOuzJlrKXECFIM2tqkRkJN0u6LY6vbU="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/chup-anh-my-pham2.jpg"
         }
       ]
     },

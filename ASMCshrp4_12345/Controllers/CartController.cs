@@ -6,6 +6,7 @@ using DocumentFormat.OpenXml.InkML;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
 namespace ASMCshrp4_12345.Controllers
@@ -33,7 +34,7 @@ namespace ASMCshrp4_12345.Controllers
         {
             var giohang = Cart;
             var item = giohang.SingleOrDefault(p => p.MaHh.Equals(id) && (p.Mau.Equals(color) && p.KichThuoc.Equals(size) && p.ChatLieu.Equals(chatlieu)));
-            var sanpham = db.Sanphams.SingleOrDefault(p => p.MaSp.Equals(id));
+            var sanpham = db.Sanphams.AsNoTracking().SingleOrDefault(p => p.MaSp.Equals(id));
             if (item == null)
             {
                 if (sanpham == null)
@@ -61,25 +62,27 @@ namespace ASMCshrp4_12345.Controllers
             else
             {
                 item.SoLuong += quantity;
+                if (item.SoLuong > item.SoluongAvailable)
+                {
+                    TempData["ErrorMessage"] = $"Số lượng không đủ, chỉ còn {item.SoluongAvailable} sản phẩm";
+                    item.SoLuong = item.SoluongAvailable;
+                    
+                }
+                else if (item.SoLuong < 1)
+                {
+                    item.SoLuong = 1;
+                    
+                }
             }
-            if(item.SoLuong > item.SoluongAvailable)
-            {
-                
-                return RedirectToAction("index");
-            }
-            if (item.SoLuong < 1)
-            {
-                item.SoLuong = 1;
-                return RedirectToAction("index");
-            }
+            
             HttpContext.Session.Set(CART_KEY, giohang);
             return RedirectToAction("index");
         }
 
-        public IActionResult RemoveCart(string id)
+        public IActionResult RemoveCart(string id, string chatlieu, string kichthuoc, string mausac)
         {
             var giohang = Cart;
-            var item = giohang.SingleOrDefault(p => p.MaHh.Equals(id));
+            var item = giohang.SingleOrDefault(p => p.MaHh.Equals(id) && p.KichThuoc.Equals(kichthuoc) && p.Mau.Equals(mausac));
             if (item != null)
             {
                 giohang.Remove(item);
@@ -189,10 +192,18 @@ namespace ASMCshrp4_12345.Controllers
                             ChatLieu_ThuocTinhSuyDien = item.ChatLieu,
                             KichThuoc_ThuocTinhSuyDien = item.KichThuoc,
                         });
-                        var sanpham = db.Sanphams.Find(item.MaHh);
-                        sanpham.SoLuongBan = sanpham.SoLuongBan - item.SoLuong;
-                        db.Sanphams.Update(sanpham);
-                        db.SaveChanges();
+                        var sanpham = db.Sanphams.AsNoTracking().FirstOrDefault(p => p.MaSp == item.MaHh);
+                        if (sanpham != null)
+                        {
+                            var attachedSanpham = db.Sanphams.Local.FirstOrDefault(p => p.MaSp == sanpham.MaSp);
+                            if (attachedSanpham != null)
+                            {
+                                db.Entry(attachedSanpham).State = EntityState.Detached;
+                            }
+                            sanpham.SoLuongBan = Math.Max(sanpham.SoLuongBan - item.SoLuong, 0);
+                            db.Sanphams.Update(sanpham); 
+                            db.SaveChanges();
+                        }
                     }
                     db.AddRange(chitiethoadon);
                     db.SaveChanges();
@@ -208,7 +219,12 @@ namespace ASMCshrp4_12345.Controllers
 
                     db.Database.RollbackTransaction();
                     Console.WriteLine($"Error: {ex.Message}, Inner: {ex.InnerException?.Message}");
-                    return BadRequest("Có lỗi xảy ra.");
+                    return BadRequest(new
+                    {
+                        Error = "Có lỗi xảy ra.",
+                        Message = ex.Message,
+                        InnerMessage = ex.InnerException?.Message
+                    });
                 }
             }
             if (paymentMethod == "VNPAY")
@@ -301,10 +317,19 @@ namespace ASMCshrp4_12345.Controllers
                         ChatLieu_ThuocTinhSuyDien = item.ChatLieu,
                         KichThuoc_ThuocTinhSuyDien = item.KichThuoc,
                     });
-                    var sanpham = db.Sanphams.Find(item.MaHh);
-                    sanpham.SoLuongBan = sanpham.SoLuongBan - item.SoLuong;
-                    db.Sanphams.Update(sanpham);
-                    db.SaveChanges();
+                    var sanpham = db.Sanphams.AsNoTracking().FirstOrDefault(p => p.MaSp == item.MaHh);
+                    if (sanpham != null)
+                    {
+                        var attachedSanpham = db.Sanphams.Local.FirstOrDefault(p => p.MaSp == sanpham.MaSp);
+                        if (attachedSanpham != null)
+                        {
+                            db.Entry(attachedSanpham).State = EntityState.Detached;
+                        }
+
+                        sanpham.SoLuongBan = Math.Max(sanpham.SoLuongBan - item.SoLuong, 0);
+                        db.Sanphams.Update(sanpham);
+                        db.SaveChanges();
+                    }
                 }
                 db.AddRange(chitiethoadon);
                 db.SaveChanges();
@@ -320,7 +345,12 @@ namespace ASMCshrp4_12345.Controllers
 
                 db.Database.RollbackTransaction();
                 Console.WriteLine($"Error: {ex.Message}, Inner: {ex.InnerException?.Message}");
-                return BadRequest("Có lỗi xảy ra.");
+                return BadRequest(new
+                {
+                    Error = "Có lỗi xảy ra.",
+                    Message = ex.Message,
+                    InnerMessage = ex.InnerException?.Message
+                });
             }
 
         }
