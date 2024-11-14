@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[0.104.1, )"
             },
+            "EcoWebMVC": {
+              "target": "Package",
+              "version": "[7.2.0.16140, )"
+            },
             "Microsoft.AspNetCore.Authentication.Google": {
               "target": "Package",
               "version": "[8.0.10, )"

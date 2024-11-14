@@ -1,0 +1,200 @@
+﻿@model ASMCshrp4_12345.Models.Khachhang
+
+@{
+    ViewBag.Title = "Chỉnh sửa thông tin cá nhân";
+}
+
+<h2>Chỉnh sửa thông tin cá nhân</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+@using (Html.BeginForm("Editprofile", "Profile", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="profile-container">
+        <div class="profile-avatar">
+            <h3>HÌNH ĐẠI DIỆN</h3>
+            @if (!string.IsNullOrEmpty(Model.Avatar))
+            {
+                <div class="form-group">
+                    <img src="~/HinhAnh/KhachHang/@Model.Avatar" alt="Avatar" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;" />
+                </div>
+            }
+            <div class="form-group">
+                <input type="file" id="Avatar" name="Avatar" class="form-control" />
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <h3>THÔNG TIN CÁ NHÂN</h3>
+
+            @Html.HiddenFor(model => model.MaKh)
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HoTen, "Họ tên")
+                @Html.TextBoxFor(model => model.HoTen, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.HoTen)
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.GioiTinh, "Giới tính")
+                @Html.TextBoxFor(model => model.GioiTinh, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.GioiTinh)
+            </div>
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NgaySinh, "Ngày sinh")
+                @Html.TextBoxFor(model => model.NgaySinh, new { @class = "form-control", type = "date" })
+                @Html.ValidationMessageFor(model => model.NgaySinh)
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.DiaChi, "Địa chỉ")
+                @Html.TextBoxFor(model => model.DiaChi, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.DiaChi)
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Cccd, "CCCD")
+                @Html.TextBoxFor(model => model.Cccd, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Cccd)
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Sdt, "Số điện thoại")
+                @Html.TextBoxFor(model => model.Sdt, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Sdt)
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, "Email")
+                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+            <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+        </div>
+    </div>
+
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+    }
+
+ 
+    .profile-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 20px auto;
+        max-width: 900px;
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .profile-avatar {
+        flex: 1;
+        max-width: 300px;
+        text-align: center;
+        padding: 10px;
+        border-right: 1px solid #ddd;
+    }
+
+        .profile-avatar h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+    .avatar-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #ddd;
+        margin-bottom: 15px;
+    }
+
+    .file-input {
+        display: block;
+        margin: 10px auto;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+  
+    .profile-info {
+        flex: 2;
+        padding: 10px 20px;
+    }
+
+        .profile-info h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 8px 12px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+        .form-control:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+    .btn-primary {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .btn-primary:hover {
+            background-color: #218838;
+        }
+
+</style>

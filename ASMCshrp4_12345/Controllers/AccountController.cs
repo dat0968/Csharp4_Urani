@@ -35,6 +35,7 @@ namespace ASMCshrp4_12345.Controllers
             if (ModelState.IsValid)
             {
                 var user = _db.Khachhangs.FirstOrDefault(u => u.TenTaiKhoan == model.TenTaiKhoan && u.MatKhau == model.MatKhau);
+                var userId = User.FindFirst("CustomerID")?.Value;
 
                 if (user != null)
                 {

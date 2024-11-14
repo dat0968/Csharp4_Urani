@@ -112,6 +112,29 @@
           }
         }
       },
+      "EcoCore/7.2.0.16140": {
+        "type": "package",
+        "compile": {
+          "lib/net40/MDriven.Net.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MDriven.Net.Http.dll": {}
+        }
+      },
+      "EcoWebMVC/7.2.0.16140": {
+        "type": "package",
+        "dependencies": {
+          "EcoCore": "7.2.0.16140"
+        },
+        "compile": {
+          "lib/net40/Eco.MVC.dll": {},
+          "lib/net40/MDriven.Persistence.WebApi.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Eco.MVC.dll": {},
+          "lib/net40/MDriven.Persistence.WebApi.dll": {}
+        }
+      },
       "ExcelNumberFormat/1.1.0": {
         "type": "package",
         "compile": {
@@ -3026,6 +3049,33 @@
         "lib/net8.0/DocumentFormat.OpenXml.Framework.xml",
         "lib/netstandard2.0/DocumentFormat.OpenXml.Framework.dll",
         "lib/netstandard2.0/DocumentFormat.OpenXml.Framework.xml"
+      ]
+    },
+    "EcoCore/7.2.0.16140": {
+      "sha512": "fQK+YMZjHiEQqnl0Hf6NRER65T0GqbUGJ26W/eOjtZn+pUqm6kNwuIuJKau+VVz2wsrfjwCT9oSfXkyqbjDQ8g==",
+      "type": "package",
+      "path": "ecocore/7.2.0.16140",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "EcoCore.nuspec.org",
+        "ecocore.7.2.0.16140.nupkg.sha512",
+        "ecocore.nuspec",
+        "lib/net40/MDriven.Net.Http.dll"
+      ]
+    },
+    "EcoWebMVC/7.2.0.16140": {
+      "sha512": "dkMMf6/bvd4Dlu8TVENhMx3j0uvha9O4LTNeRBZ1AgTV5u7hq6CkT2hO2Z504noI6X1yneS8XSukmO6qL5lH+A==",
+      "type": "package",
+      "path": "ecowebmvc/7.2.0.16140",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "EcoWebMVC.nuspec.org",
+        "ecowebmvc.7.2.0.16140.nupkg.sha512",
+        "ecowebmvc.nuspec",
+        "lib/net40/Eco.MVC.dll",
+        "lib/net40/MDriven.Persistence.WebApi.dll"
       ]
     },
     "ExcelNumberFormat/1.1.0": {
@@ -8085,6 +8135,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "ClosedXML >= 0.104.1",
+      "EcoWebMVC >= 7.2.0.16140",
       "Microsoft.AspNetCore.Authentication.Google >= 8.0.10",
       "Microsoft.EntityFrameworkCore >= 8.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
@@ -8148,6 +8199,10 @@
           "ClosedXML": {
             "target": "Package",
             "version": "[0.104.1, )"
+          },
+          "EcoWebMVC": {
+            "target": "Package",
+            "version": "[7.2.0.16140, )"
           },
           "Microsoft.AspNetCore.Authentication.Google": {
             "target": "Package",
@@ -8274,6 +8329,26 @@
       "warningLevel": 1,
       "message": "Package 'System.Text.Json' 7.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
       "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EcoCore 7.2.0.16140' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EcoCore",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EcoWebMVC 7.2.0.16140' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EcoWebMVC",
       "targetGraphs": [
         "net8.0"
       ]

@@ -13,6 +13,9 @@ F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ClosedXML.dll
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ClosedXML.Parser.dll
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\MDriven.Net.Http.dll
+F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\Eco.MVC.dll
+F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\MDriven.Persistence.WebApi.dll
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ExcelNumberFormat.dll
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\Humanizer.dll
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll

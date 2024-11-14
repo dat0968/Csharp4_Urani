@@ -20,20 +20,20 @@ public partial class Khachhang
 
     //[Required(ErrorMessage = "Giới tính không được để trống")]
     [StringLength(5, ErrorMessage = "Giới tính không được vượt quá 5 ký tự.")]
-    public string? GioiTinh { get; set; } 
-
+    public string? GioiTinh { get; set; }
 
     public DateOnly? NgaySinh { get; set; }
 
     [StringLength(200, ErrorMessage = "Địa chỉ không được vượt quá 200 ký tự.")]
     public string? DiaChi { get; set; }
 
+
     [StringLength(12, ErrorMessage = "CCCD không được vượt quá 12 ký tự.")]
     public string? Cccd { get; set; }
 
 
     //[Required(ErrorMessage = "Số điện thoại không được để trống")]
-    [StringLength(12, ErrorMessage = "Số điện thoại không được vượt quá 12 ký tự.")]
+    [StringLength(10, ErrorMessage = "Số điện thoại không được vượt quá 10 ký tự.")]
     public string? Sdt { get; set; }
 
 
