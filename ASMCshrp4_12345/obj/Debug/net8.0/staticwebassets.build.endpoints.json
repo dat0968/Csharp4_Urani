@@ -84,8 +84,8 @@
       ]
     },
     {
-      "Route": "HinhAnh/KhachHang/anh-chan-dung-dep-yodyvn1.7rbz4ho5eq.jpg",
-      "AssetFile": "HinhAnh/KhachHang/anh-chan-dung-dep-yodyvn1.jpg",
+      "Route": "HinhAnh/KhachHang/1888b340-a6df-47e7-8bd0-269910953073.dlvv7mryp0.jpg",
+      "AssetFile": "HinhAnh/KhachHang/1888b340-a6df-47e7-8bd0-269910953073.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -98,7 +98,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "201651"
+          "Value": "26648"
         },
         {
           "Name": "Content-Type",
@@ -106,31 +106,31 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vbGEJj8jd0r6wSgXKzZ38hKnIpe6OINlWnviCBCSkW4=\""
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7rbz4ho5eq"
+          "Value": "dlvv7mryp0"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vbGEJj8jd0r6wSgXKzZ38hKnIpe6OINlWnviCBCSkW4="
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
         },
         {
           "Name": "label",
-          "Value": "HinhAnh/KhachHang/anh-chan-dung-dep-yodyvn1.jpg"
+          "Value": "HinhAnh/KhachHang/1888b340-a6df-47e7-8bd0-269910953073.jpg"
         }
       ]
     },
     {
-      "Route": "HinhAnh/KhachHang/anh-chan-dung-dep-yodyvn1.jpg",
-      "AssetFile": "HinhAnh/KhachHang/anh-chan-dung-dep-yodyvn1.jpg",
+      "Route": "HinhAnh/KhachHang/1888b340-a6df-47e7-8bd0-269910953073.jpg",
+      "AssetFile": "HinhAnh/KhachHang/1888b340-a6df-47e7-8bd0-269910953073.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -143,7 +143,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "201651"
+          "Value": "26648"
         },
         {
           "Name": "Content-Type",
@@ -151,17 +151,837 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vbGEJj8jd0r6wSgXKzZ38hKnIpe6OINlWnviCBCSkW4=\""
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 03:08:12 GMT"
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vbGEJj8jd0r6wSgXKzZ38hKnIpe6OINlWnviCBCSkW4="
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/1c663bd9-e2bd-41f4-94be-f6d924147d6d.dlvv7mryp0.jpg",
+      "AssetFile": "HinhAnh/KhachHang/1c663bd9-e2bd-41f4-94be-f6d924147d6d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dlvv7mryp0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/1c663bd9-e2bd-41f4-94be-f6d924147d6d.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/1c663bd9-e2bd-41f4-94be-f6d924147d6d.jpg",
+      "AssetFile": "HinhAnh/KhachHang/1c663bd9-e2bd-41f4-94be-f6d924147d6d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/1f33aa45-beaa-408d-9448-b283675e2f73.png",
+      "AssetFile": "HinhAnh/KhachHang/1f33aa45-beaa-408d-9448-b283675e2f73.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/1f33aa45-beaa-408d-9448-b283675e2f73.vgttubjye0.png",
+      "AssetFile": "HinhAnh/KhachHang/1f33aa45-beaa-408d-9448-b283675e2f73.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vgttubjye0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/1f33aa45-beaa-408d-9448-b283675e2f73.png"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/27478286-596f-4a87-8072-f6e8269b4ae6.3vl6uzivi9.jpg",
+      "AssetFile": "HinhAnh/KhachHang/27478286-596f-4a87-8072-f6e8269b4ae6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30627"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3vl6uzivi9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/27478286-596f-4a87-8072-f6e8269b4ae6.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/27478286-596f-4a87-8072-f6e8269b4ae6.jpg",
+      "AssetFile": "HinhAnh/KhachHang/27478286-596f-4a87-8072-f6e8269b4ae6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30627"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/40bd6b51-573e-472d-a282-0a9af722cb5e.dlvv7mryp0.jpg",
+      "AssetFile": "HinhAnh/KhachHang/40bd6b51-573e-472d-a282-0a9af722cb5e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dlvv7mryp0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/40bd6b51-573e-472d-a282-0a9af722cb5e.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/40bd6b51-573e-472d-a282-0a9af722cb5e.jpg",
+      "AssetFile": "HinhAnh/KhachHang/40bd6b51-573e-472d-a282-0a9af722cb5e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/4ef070a8-3236-4f4e-8b0a-552eb5daa5b2.5ipweew5fc.jpg",
+      "AssetFile": "HinhAnh/KhachHang/4ef070a8-3236-4f4e-8b0a-552eb5daa5b2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/4ef070a8-3236-4f4e-8b0a-552eb5daa5b2.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/4ef070a8-3236-4f4e-8b0a-552eb5daa5b2.jpg",
+      "AssetFile": "HinhAnh/KhachHang/4ef070a8-3236-4f4e-8b0a-552eb5daa5b2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/577aeaf8-3abc-4338-988e-f39ed57ca822.png",
+      "AssetFile": "HinhAnh/KhachHang/577aeaf8-3abc-4338-988e-f39ed57ca822.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/577aeaf8-3abc-4338-988e-f39ed57ca822.vgttubjye0.png",
+      "AssetFile": "HinhAnh/KhachHang/577aeaf8-3abc-4338-988e-f39ed57ca822.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vgttubjye0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/577aeaf8-3abc-4338-988e-f39ed57ca822.png"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/82b45acc-cf0b-475e-8f90-226868c318ef.dlvv7mryp0.jpg",
+      "AssetFile": "HinhAnh/KhachHang/82b45acc-cf0b-475e-8f90-226868c318ef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dlvv7mryp0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/82b45acc-cf0b-475e-8f90-226868c318ef.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/82b45acc-cf0b-475e-8f90-226868c318ef.jpg",
+      "AssetFile": "HinhAnh/KhachHang/82b45acc-cf0b-475e-8f90-226868c318ef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/8e5b8fd1-8702-46a5-9267-8ba0629dafd0.dlvv7mryp0.jpg",
+      "AssetFile": "HinhAnh/KhachHang/8e5b8fd1-8702-46a5-9267-8ba0629dafd0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dlvv7mryp0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/8e5b8fd1-8702-46a5-9267-8ba0629dafd0.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/8e5b8fd1-8702-46a5-9267-8ba0629dafd0.jpg",
+      "AssetFile": "HinhAnh/KhachHang/8e5b8fd1-8702-46a5-9267-8ba0629dafd0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/aa6d507b-f622-4991-b8b9-3d86eda3fe1e.dlvv7mryp0.jpg",
+      "AssetFile": "HinhAnh/KhachHang/aa6d507b-f622-4991-b8b9-3d86eda3fe1e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dlvv7mryp0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/aa6d507b-f622-4991-b8b9-3d86eda3fe1e.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/aa6d507b-f622-4991-b8b9-3d86eda3fe1e.jpg",
+      "AssetFile": "HinhAnh/KhachHang/aa6d507b-f622-4991-b8b9-3d86eda3fe1e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/ab16eda7-b8ac-4593-88e9-2835f87f561a.3vl6uzivi9.jpg",
+      "AssetFile": "HinhAnh/KhachHang/ab16eda7-b8ac-4593-88e9-2835f87f561a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30627"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3vl6uzivi9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/ab16eda7-b8ac-4593-88e9-2835f87f561a.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/ab16eda7-b8ac-4593-88e9-2835f87f561a.jpg",
+      "AssetFile": "HinhAnh/KhachHang/ab16eda7-b8ac-4593-88e9-2835f87f561a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30627"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw="
         }
       ]
     },
@@ -8120,6 +8940,88 @@
       ]
     },
     {
+      "Route": "images/151b147a-9fca-4b85-a370-6e5c0e738633.3vl6uzivi9.jpg",
+      "AssetFile": "images/151b147a-9fca-4b85-a370-6e5c0e738633.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30627"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3vl6uzivi9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw="
+        },
+        {
+          "Name": "label",
+          "Value": "images/151b147a-9fca-4b85-a370-6e5c0e738633.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/151b147a-9fca-4b85-a370-6e5c0e738633.jpg",
+      "AssetFile": "images/151b147a-9fca-4b85-a370-6e5c0e738633.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30627"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw="
+        }
+      ]
+    },
+    {
       "Route": "images/1af7e070-7233-4115-9cee-9c853d7257f3.dlvv7mryp0.jpg",
       "AssetFile": "images/1af7e070-7233-4115-9cee-9c853d7257f3.jpg",
       "Selectors": [],
@@ -8198,6 +9100,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/284f3d7f-4f8f-4242-b2c1-6c7e45892b20.png",
+      "AssetFile": "images/284f3d7f-4f8f-4242-b2c1-6c7e45892b20.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo="
+        }
+      ]
+    },
+    {
+      "Route": "images/284f3d7f-4f8f-4242-b2c1-6c7e45892b20.vgttubjye0.png",
+      "AssetFile": "images/284f3d7f-4f8f-4242-b2c1-6c7e45892b20.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vgttubjye0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo="
+        },
+        {
+          "Name": "label",
+          "Value": "images/284f3d7f-4f8f-4242-b2c1-6c7e45892b20.png"
+        }
+      ]
+    },
+    {
+      "Route": "images/355c7f12-4690-45ca-80d5-5ca3c998ef74.png",
+      "AssetFile": "images/355c7f12-4690-45ca-80d5-5ca3c998ef74.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo="
+        }
+      ]
+    },
+    {
+      "Route": "images/355c7f12-4690-45ca-80d5-5ca3c998ef74.vgttubjye0.png",
+      "AssetFile": "images/355c7f12-4690-45ca-80d5-5ca3c998ef74.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vgttubjye0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo="
+        },
+        {
+          "Name": "label",
+          "Value": "images/355c7f12-4690-45ca-80d5-5ca3c998ef74.png"
         }
       ]
     },
@@ -8284,6 +9350,170 @@
       ]
     },
     {
+      "Route": "images/6ad6d099-aa36-4176-b855-355de6954da7.jpg",
+      "AssetFile": "images/6ad6d099-aa36-4176-b855-355de6954da7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55858"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dZP3BBL2uQ8g992FkYoQALfnWzIvxlYYUxAGCSBlndw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dZP3BBL2uQ8g992FkYoQALfnWzIvxlYYUxAGCSBlndw="
+        }
+      ]
+    },
+    {
+      "Route": "images/6ad6d099-aa36-4176-b855-355de6954da7.l4luly1fxe.jpg",
+      "AssetFile": "images/6ad6d099-aa36-4176-b855-355de6954da7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55858"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dZP3BBL2uQ8g992FkYoQALfnWzIvxlYYUxAGCSBlndw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l4luly1fxe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dZP3BBL2uQ8g992FkYoQALfnWzIvxlYYUxAGCSBlndw="
+        },
+        {
+          "Name": "label",
+          "Value": "images/6ad6d099-aa36-4176-b855-355de6954da7.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/7079c19d-3336-4612-ad27-de398d61a550.gif",
+      "AssetFile": "images/7079c19d-3336-4612-ad27-de398d61a550.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41020"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f7nI2OpxFv0y4HCmuD+pynsldNX5gmvrH7/PYlR/zSo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f7nI2OpxFv0y4HCmuD+pynsldNX5gmvrH7/PYlR/zSo="
+        }
+      ]
+    },
+    {
+      "Route": "images/7079c19d-3336-4612-ad27-de398d61a550.n26b68235h.gif",
+      "AssetFile": "images/7079c19d-3336-4612-ad27-de398d61a550.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41020"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f7nI2OpxFv0y4HCmuD+pynsldNX5gmvrH7/PYlR/zSo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n26b68235h"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f7nI2OpxFv0y4HCmuD+pynsldNX5gmvrH7/PYlR/zSo="
+        },
+        {
+          "Name": "label",
+          "Value": "images/7079c19d-3336-4612-ad27-de398d61a550.gif"
+        }
+      ]
+    },
+    {
       "Route": "images/73e0e67f-c282-4fbb-ae8e-f1ec1761e8ee.jpg",
       "AssetFile": "images/73e0e67f-c282-4fbb-ae8e-f1ec1761e8ee.jpg",
       "Selectors": [],
@@ -8362,6 +9592,170 @@
         {
           "Name": "label",
           "Value": "images/73e0e67f-c282-4fbb-ae8e-f1ec1761e8ee.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/8824f62d-f40f-489a-b671-b5d43bff7e54.dlvv7mryp0.jpg",
+      "AssetFile": "images/8824f62d-f40f-489a-b671-b5d43bff7e54.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dlvv7mryp0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        },
+        {
+          "Name": "label",
+          "Value": "images/8824f62d-f40f-489a-b671-b5d43bff7e54.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/8824f62d-f40f-489a-b671-b5d43bff7e54.jpg",
+      "AssetFile": "images/8824f62d-f40f-489a-b671-b5d43bff7e54.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/8bcbabc0-7fd4-448b-9fb3-530a1b2d9f96.5ipweew5fc.jpg",
+      "AssetFile": "images/8bcbabc0-7fd4-448b-9fb3-530a1b2d9f96.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        },
+        {
+          "Name": "label",
+          "Value": "images/8bcbabc0-7fd4-448b-9fb3-530a1b2d9f96.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/8bcbabc0-7fd4-448b-9fb3-530a1b2d9f96.jpg",
+      "AssetFile": "images/8bcbabc0-7fd4-448b-9fb3-530a1b2d9f96.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
@@ -8612,6 +10006,88 @@
       ]
     },
     {
+      "Route": "images/ab748dc9-471d-4011-a70e-f26e5291fa7b.png",
+      "AssetFile": "images/ab748dc9-471d-4011-a70e-f26e5291fa7b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo="
+        }
+      ]
+    },
+    {
+      "Route": "images/ab748dc9-471d-4011-a70e-f26e5291fa7b.vgttubjye0.png",
+      "AssetFile": "images/ab748dc9-471d-4011-a70e-f26e5291fa7b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vgttubjye0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kSsEHh6L3Ne/6M/x4EYq3Tn+RbUFBfL0lFic2jflCEo="
+        },
+        {
+          "Name": "label",
+          "Value": "images/ab748dc9-471d-4011-a70e-f26e5291fa7b.png"
+        }
+      ]
+    },
+    {
       "Route": "images/b067c1ef-a230-42f2-974e-7c13ef4b70b0.5ipweew5fc.png",
       "AssetFile": "images/b067c1ef-a230-42f2-974e-7c13ef4b70b0.png",
       "Selectors": [],
@@ -8772,6 +10248,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/df4a2328-1b85-49cc-826e-3f71bb5d18cc.3vl6uzivi9.jpg",
+      "AssetFile": "images/df4a2328-1b85-49cc-826e-3f71bb5d18cc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30627"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3vl6uzivi9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw="
+        },
+        {
+          "Name": "label",
+          "Value": "images/df4a2328-1b85-49cc-826e-3f71bb5d18cc.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/df4a2328-1b85-49cc-826e-3f71bb5d18cc.jpg",
+      "AssetFile": "images/df4a2328-1b85-49cc-826e-3f71bb5d18cc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30627"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:36:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw="
         }
       ]
     },

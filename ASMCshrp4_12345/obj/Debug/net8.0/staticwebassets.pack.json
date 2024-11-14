@@ -5,8 +5,48 @@
       "PackagePath": "staticwebassets\\ASMCshrp4_12345.4juyfox8mp.bundle.scp.css"
     },
     {
-      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\anh-chan-dung-dep-yodyvn1.jpg",
-      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\anh-chan-dung-dep-yodyvn1.jpg"
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\1888b340-a6df-47e7-8bd0-269910953073.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\1888b340-a6df-47e7-8bd0-269910953073.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\1c663bd9-e2bd-41f4-94be-f6d924147d6d.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\1c663bd9-e2bd-41f4-94be-f6d924147d6d.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\1f33aa45-beaa-408d-9448-b283675e2f73.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\1f33aa45-beaa-408d-9448-b283675e2f73.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\27478286-596f-4a87-8072-f6e8269b4ae6.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\27478286-596f-4a87-8072-f6e8269b4ae6.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\40bd6b51-573e-472d-a282-0a9af722cb5e.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\40bd6b51-573e-472d-a282-0a9af722cb5e.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\4ef070a8-3236-4f4e-8b0a-552eb5daa5b2.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\4ef070a8-3236-4f4e-8b0a-552eb5daa5b2.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\577aeaf8-3abc-4338-988e-f39ed57ca822.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\577aeaf8-3abc-4338-988e-f39ed57ca822.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\82b45acc-cf0b-475e-8f90-226868c318ef.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\82b45acc-cf0b-475e-8f90-226868c318ef.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\8e5b8fd1-8702-46a5-9267-8ba0629dafd0.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\8e5b8fd1-8702-46a5-9267-8ba0629dafd0.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\aa6d507b-f622-4991-b8b9-3d86eda3fe1e.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\aa6d507b-f622-4991-b8b9-3d86eda3fe1e.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\ab16eda7-b8ac-4593-88e9-2835f87f561a.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\ab16eda7-b8ac-4593-88e9-2835f87f561a.jpg"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\images (1).jfif",
@@ -397,16 +437,44 @@
       "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.woff2"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\151b147a-9fca-4b85-a370-6e5c0e738633.jpg",
+      "PackagePath": "staticwebassets\\images\\151b147a-9fca-4b85-a370-6e5c0e738633.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\1af7e070-7233-4115-9cee-9c853d7257f3.jpg",
       "PackagePath": "staticwebassets\\images\\1af7e070-7233-4115-9cee-9c853d7257f3.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\284f3d7f-4f8f-4242-b2c1-6c7e45892b20.png",
+      "PackagePath": "staticwebassets\\images\\284f3d7f-4f8f-4242-b2c1-6c7e45892b20.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\355c7f12-4690-45ca-80d5-5ca3c998ef74.png",
+      "PackagePath": "staticwebassets\\images\\355c7f12-4690-45ca-80d5-5ca3c998ef74.png"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\606132b8-b47c-429f-8df4-038d29bae6a3.jpg",
       "PackagePath": "staticwebassets\\images\\606132b8-b47c-429f-8df4-038d29bae6a3.jpg"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\6ad6d099-aa36-4176-b855-355de6954da7.jpg",
+      "PackagePath": "staticwebassets\\images\\6ad6d099-aa36-4176-b855-355de6954da7.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\7079c19d-3336-4612-ad27-de398d61a550.gif",
+      "PackagePath": "staticwebassets\\images\\7079c19d-3336-4612-ad27-de398d61a550.gif"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\73e0e67f-c282-4fbb-ae8e-f1ec1761e8ee.jpg",
       "PackagePath": "staticwebassets\\images\\73e0e67f-c282-4fbb-ae8e-f1ec1761e8ee.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\8824f62d-f40f-489a-b671-b5d43bff7e54.jpg",
+      "PackagePath": "staticwebassets\\images\\8824f62d-f40f-489a-b671-b5d43bff7e54.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\8bcbabc0-7fd4-448b-9fb3-530a1b2d9f96.jpg",
+      "PackagePath": "staticwebassets\\images\\8bcbabc0-7fd4-448b-9fb3-530a1b2d9f96.jpg"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\9307272a-2248-4535-b617-b63bd342c518.jpg",
@@ -421,12 +489,20 @@
       "PackagePath": "staticwebassets\\images\\Hinh-nen-anime-cute-20-1.jpg"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\ab748dc9-471d-4011-a70e-f26e5291fa7b.png",
+      "PackagePath": "staticwebassets\\images\\ab748dc9-471d-4011-a70e-f26e5291fa7b.png"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\b067c1ef-a230-42f2-974e-7c13ef4b70b0.png",
       "PackagePath": "staticwebassets\\images\\b067c1ef-a230-42f2-974e-7c13ef4b70b0.png"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\bf06da61-dba0-430e-955c-a36b76e7b5b2.jpg",
       "PackagePath": "staticwebassets\\images\\bf06da61-dba0-430e-955c-a36b76e7b5b2.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\df4a2328-1b85-49cc-826e-3f71bb5d18cc.jpg",
+      "PackagePath": "staticwebassets\\images\\df4a2328-1b85-49cc-826e-3f71bb5d18cc.jpg"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\f3f3a64e-571e-4896-ac07-7c76aa15d151.jpg",
