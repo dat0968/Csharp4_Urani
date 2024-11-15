@@ -494,6 +494,88 @@
       ]
     },
     {
+      "Route": "HinhAnh/KhachHang/47c22ccd-aab4-4c65-91f9-3222134b664c.0vu8ynnoxe.jfif",
+      "AssetFile": "HinhAnh/KhachHang/47c22ccd-aab4-4c65-91f9-3222134b664c.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCN0Hm6UQbD98eYPR/XmBsYwq1byhGUPrsCYuPJ3I2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:38:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0vu8ynnoxe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCN0Hm6UQbD98eYPR/XmBsYwq1byhGUPrsCYuPJ3I2g="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/47c22ccd-aab4-4c65-91f9-3222134b664c.jfif"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/47c22ccd-aab4-4c65-91f9-3222134b664c.jfif",
+      "AssetFile": "HinhAnh/KhachHang/47c22ccd-aab4-4c65-91f9-3222134b664c.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCN0Hm6UQbD98eYPR/XmBsYwq1byhGUPrsCYuPJ3I2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:38:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCN0Hm6UQbD98eYPR/XmBsYwq1byhGUPrsCYuPJ3I2g="
+        }
+      ]
+    },
+    {
       "Route": "HinhAnh/KhachHang/4ef070a8-3236-4f4e-8b0a-552eb5daa5b2.5ipweew5fc.jpg",
       "AssetFile": "HinhAnh/KhachHang/4ef070a8-3236-4f4e-8b0a-552eb5daa5b2.jpg",
       "Selectors": [],

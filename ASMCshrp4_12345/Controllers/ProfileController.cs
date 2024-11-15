@@ -33,7 +33,7 @@ namespace ASMCshrp4_12345.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Editprofile(Khachhang updatedKhachhang, IFormFile Avatar)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 var khachhang = _context.Khachhangs.FirstOrDefault(kh => kh.MaKh == updatedKhachhang.MaKh);
 

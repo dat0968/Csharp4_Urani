@@ -5,6 +5,8 @@ using System.Linq;
 
 using Microsoft.EntityFrameworkCore;
 using DocumentFormat.OpenXml.InkML;
+using DocumentFormat.OpenXml.EMMA;
+using ASMCshrp4_12345.ViewModels;
 
 namespace ASMCshrp4_12345.Controllers
 {
@@ -30,12 +32,19 @@ namespace ASMCshrp4_12345.Controllers
             {
                 return RedirectToAction("Index", "Hoadons");
             }
-            var sanPhamNoiBat = _context.Sanphams
-                            .Include(sp => sp.Hinhanhs)
-                            .Where(sp => sp.SoLuongBan > 1)
-                            .OrderByDescending(sp => sp.SoLuongBan)
-                            .Take(8)                          
-                            .ToList();
+            var sanPhamNoiBat = from cthd in _context.Chitiethoadons
+                                join sp in _context.Sanphams on cthd.MaSp equals sp.MaSp
+                                group cthd by new { sp.TenSp, sp.MaSp, sp.DonGiaBan, sp.Hinh } into productGroup
+                                orderby productGroup.Sum(cthd => cthd.SoLuongMua) descending
+                                select new SanPhamNoiBat
+                                {
+                                    MaSp = productGroup.Key.MaSp,
+                                    TenSp = productGroup.Key.TenSp,
+                                    GiaBan = (double)productGroup.Key.DonGiaBan,
+                                    TongSoLuongMua = productGroup.Sum(pod => pod.SoLuongMua),
+                                    Hinh = productGroup.Key.Hinh,
+                                };
+                                
             return View(sanPhamNoiBat);
 
 

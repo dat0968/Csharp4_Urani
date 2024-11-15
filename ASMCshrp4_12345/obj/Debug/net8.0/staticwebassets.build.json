@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ij8beZtZmqmvEtWF40GXWlS78GVyBoigjXcVcp+ZB9o=",
+  "Hash": "daZDiRJbx5nLNrl3KV6oOZwucbydh0RZX9APdsM8F+0=",
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -1317,6 +1317,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\HinhAnh\\KhachHang\\40bd6b51-573e-472d-a282-0a9af722cb5e.jpg"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\47c22ccd-aab4-4c65-91f9-3222134b664c.jfif",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/KhachHang/47c22ccd-aab4-4c65-91f9-3222134b664c#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0vu8ynnoxe",
+      "Integrity": "xCN0Hm6UQbD98eYPR/XmBsYwq1byhGUPrsCYuPJ3I2g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\KhachHang\\47c22ccd-aab4-4c65-91f9-3222134b664c.jfif"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\4ef070a8-3236-4f4e-8b0a-552eb5daa5b2.jpg",
@@ -18602,6 +18623,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/47c22ccd-aab4-4c65-91f9-3222134b664c.0vu8ynnoxe.jfif",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\47c22ccd-aab4-4c65-91f9-3222134b664c.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCN0Hm6UQbD98eYPR/XmBsYwq1byhGUPrsCYuPJ3I2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:38:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0vu8ynnoxe"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/47c22ccd-aab4-4c65-91f9-3222134b664c.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCN0Hm6UQbD98eYPR/XmBsYwq1byhGUPrsCYuPJ3I2g="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/47c22ccd-aab4-4c65-91f9-3222134b664c.jfif",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\47c22ccd-aab4-4c65-91f9-3222134b664c.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCN0Hm6UQbD98eYPR/XmBsYwq1byhGUPrsCYuPJ3I2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Nov 2024 18:38:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCN0Hm6UQbD98eYPR/XmBsYwq1byhGUPrsCYuPJ3I2g="
         }
       ]
     },
