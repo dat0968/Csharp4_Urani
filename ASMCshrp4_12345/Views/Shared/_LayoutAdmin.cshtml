@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="~/css/perfect-scrollbar.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="~/css/custom.css" />
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -83,12 +83,14 @@
                             <li><a asp-action="InDex" asp-controller="NhaCungCap"> <span>QUẢN LÝ NHÀ CUNG CẤP</span></a></li>
                             <li><a asp-action="Index" asp-controller="ThuongHieu"> <span>QUẢN LÝ THƯƠNG HIỆU</span></a></li>
                             <li><a asp-action="Index" asp-controller="Hoadons"><span>QUẢN LÝ ĐƠN HÀNG</span></a></li>
+                            <li><a asp-action="PhanHoi" asp-controller="PhanHoiBinhLuan"><span>QUẢN LÝ BÌNH LUẬN KHÁCH HÀNG</span></a></li>
                             <li><a asp-action="Index" asp-controller="ThongKe"> <span>THỐNG KÊ</span></a></li>
                         }
                         else
                         {
                             <li><a asp-action="Index" asp-controller="Khachhangs"><span>QUẢN LÝ KHÁCH HÀNG</span></a></li>
                             <li><a asp-action="Index" asp-controller="Hoadons"><span>QUẢN LÝ ĐƠN HÀNG</span></a></li>
+                            <li><a asp-action="PhanHoi" asp-controller="PhanHoiBinhLuan"><span>QUẢN LÝ BÌNH LUẬN KHÁCH HÀNG</span></a></li>
                         }
 
                     </ul>

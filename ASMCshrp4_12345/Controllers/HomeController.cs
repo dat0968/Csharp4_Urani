@@ -34,6 +34,7 @@ namespace ASMCshrp4_12345.Controllers
             }
             var sanPhamNoiBat = from cthd in _context.Chitiethoadons
                                 join sp in _context.Sanphams on cthd.MaSp equals sp.MaSp
+                                join dg in _context.Binhluans on sp.MaSp equals dg.MaSP into reviews
                                 group cthd by new { sp.TenSp, sp.MaSp, sp.DonGiaBan, sp.Hinh } into productGroup
                                 orderby productGroup.Sum(cthd => cthd.SoLuongMua) descending
                                 select new SanPhamNoiBat
@@ -43,6 +44,9 @@ namespace ASMCshrp4_12345.Controllers
                                     GiaBan = (double)productGroup.Key.DonGiaBan,
                                     TongSoLuongMua = productGroup.Sum(pod => pod.SoLuongMua),
                                     Hinh = productGroup.Key.Hinh,
+                                    sosaotrungbinh = productGroup.SelectMany(p => p.MaSpNavigation.BinhLuans).Any()
+                                    ? productGroup.SelectMany(p => p.MaSpNavigation.BinhLuans).Average(r => r.Rating): 0,
+                                    socomment = productGroup.SelectMany(p => p.MaSpNavigation.BinhLuans).Count()
                                 };
                                 
             return View(sanPhamNoiBat);

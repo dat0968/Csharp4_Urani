@@ -14,6 +14,7 @@ namespace ASMCshrp4_12345.MiddleWare
             "/Nhanviens",
             "/ThongKe",
             "/ThuongHieu",
+            "/PhanHoiBinhLuan"
         };
         private readonly List<string> listPathsforUsers = new List<string>
         {

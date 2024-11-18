@@ -70,4 +70,5 @@ public partial class Nhanvien
 
 
     public virtual ICollection<Hoadon>? Hoadons { get; set; } = new List<Hoadon>();
+    public virtual ICollection<TraLoiBinhLuan>? TraLoiBinhLuans { get; set; } = new List<TraLoiBinhLuan>();
 }

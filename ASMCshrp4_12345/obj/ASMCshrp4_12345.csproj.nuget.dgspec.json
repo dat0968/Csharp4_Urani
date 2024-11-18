@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj": {}
+    "F:\\CSHARP_4\\Rating_Comment\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj": {}
   },
   "projects": {
-    "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj": {
+    "F:\\CSHARP_4\\Rating_Comment\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
+        "projectUniqueName": "F:\\CSHARP_4\\Rating_Comment\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
         "projectName": "ASMCshrp4_12345",
-        "projectPath": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
+        "projectPath": "F:\\CSHARP_4\\Rating_Comment\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\obj\\",
+        "outputPath": "F:\\CSHARP_4\\Rating_Comment\\ASMCshrp4_12345\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -84,13 +84,26 @@
                     <h3>@item.TenSp</h3>
                     <div class="d-flex mb-3">
                         <div class="text-primary mr-2">
-                            <small class="fas fa-star"></small>
-                            <small class="fas fa-star"></small>
-                            <small class="fas fa-star"></small>
-                            <small class="fas fa-star-half-alt"></small>
-                            <small class="far fa-star"></small>
+                            @{
+                                int fullStars = (int)item.Rating;
+                                bool hasHalfStar = (item.Rating - fullStars) >= 0.5;
+                                int emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+                            }
+                            @for (int i = 0; i < fullStars; i++)
+                            {
+                                <small class="fas fa-star"></small>
+                            }
+                            @if (hasHalfStar)
+                            {
+                                <small class="fas fa-star-half-alt"></small>
+                            }
+                            @for (int i = 0; i < emptyStars; i++)
+                            {
+                                <small class="far fa-star"></small>
+                            }
+                            
                         </div>
-                        <small class="pt-1">(99 Reviews)</small>
+                        <small class="pt-1">(@item.BinhLuans.Count() bình luận)</small>
                     </div>
                     <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaSp" >
                         <div class="d-flex mb-3">
@@ -151,7 +164,8 @@
                         </div>
 
 
-
+                        
+           
                         
 
 
@@ -186,53 +200,173 @@
                         </div>
                     </div>
 
+                    
+
+
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="bg-light p-30">
+                    <div class="nav nav-tabs mb-4">
+
+                        <a>Bình luận (@item.BinhLuans.Count())</a>
+                    </div>
+                    <div >                      
+                        <div >
+                            <div class="row">
+                                <div class="col-md-6">
+                                    @foreach(var binhluan in Model.SelectMany(p => p.BinhLuans))
+                                    {
+                                        <div class="media mb-4">
+                                            <img src="~/HinhAnh/KhachHang/@binhluan.MaKHNavigation.Avatar" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                                            <div class="media-body">
+                                                <h6>@binhluan.MaKHNavigation?.HoTen<small> - <i>@binhluan.ThoiGian</i></small></h6>
+                                                <div class="text-primary mb-2">
+                                                    @for (int i = 0; i < binhluan.Rating; i++)
+                                                    {
+                                                        <i class="fas fa-star"></i>
+                                                    }
+                                                    @* @if (hasHalfStar)
+                                                    {
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    } *@
+                                                    @for (int i = 0; i < (5 - binhluan.Rating); i++)
+                                                    {
+                                                        <small class="far fa-star"></small>
+                                                    }
+                                                </div>
+                                                <p>@binhluan.NoiDung</p>
+
+
+
+                                                <!-- Phần trả lời cho bình luận -->
+                                                <div class="reply-section">
+                                                    <h6 class="mt-3">Phản hồi</h6>
+                                                    @foreach(var replybinhluan in binhluan.TraLoiBinhLuans)
+                                                    {
+                                                        <!-- Phản hồi đã có -->
+                                                        <div class="media mb-4">
+                                                            <img src="~/HinhAnh/NhanVien/Avatar-trang-4.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                                                            <div class="media-body">
+                                                                <h6>URANI SHOP<small>- <i>@replybinhluan.ThoiGian</i></small></h6>
+                                                                <p>@replybinhluan.NoiDung</p>
+                                                            </div>
+                                                        </div>
+                                                    }
+                                                   
+
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                    
+                                </div>
+                                
+
+
+
+
+                                <div class="col-md-6">
+                                    <h4 class="mb-4">Để lại đánh giá</h4>
+                                    <small>Địa chỉ email của bạn sẽ không được công khai. Các trường bắt buộc được đánh dấu *</small>
+                                    <form asp-action="SendRating" asp-controller="CuaHang" method="post">
+                                    <div class="d-flex my-3">
+                                        <p class="mb-0 mr-2">Đánh giá của bạn * :</p>
+                                        <div class="text-primary" id="rating">
+                                            <i class="far fa-star" data-value="1"></i>
+                                            <i class="far fa-star" data-value="2"></i>
+                                            <i class="far fa-star" data-value="3"></i>
+                                            <i class="far fa-star" data-value="4"></i>
+                                            <i class="far fa-star" data-value="5"></i>
+                                            <input type="hidden" id="ratingValue" name="rating" value="0" />
+                                            <input type="hidden" id="productId" name="MaSP" value="@item.MaSp" />
+                                        </div>
+                                    </div>
+                                    
+                                        <div class="form-group">
+                                            <label for="message">Nhận xét của bạn *</label>
+                                            <textarea name="NoiDung" id="message" cols="30" rows="5" class="form-control"></textarea>
+                                        </div>
+                                        @* <div class="form-group">
+                                            <label for="name">Tên của bạn *</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div> *@
+                                        <div class="form-group mb-0">
+                                            <input type="submit"  value="Gửi đánh giá" class="btn btn-primary px-3">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+  
 }
 <!-- Shop Detail End -->
 <!-- Products Start -->
+<!-- Sản phẩm liên quan Start -->
 <div class="container-fluid py-5">
-    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-        <span class="bg-secondary pr-3">SẢN PHẨM TƯƠNG TỰ</span>
-    </h2>
     <div class="row px-xl-5">
-        <div class="col">
-            <div class="owl-carousel related-carousel">
-                @foreach (var item in ViewBag.SanPhamTuongTu as List<Sanpham>)
-                {
-                    <div class="product-item bg-light">
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100 h-50" src="~/HinhAnh/SanPham/@item.Hinh" alt="">
-                            <div class="product-action">
-                                <a asp-action="Details" asp-controller="CuaHang" asp-route-id="@item.MaSp" class="btn btn-outline-dark btn-square">Xem Thêm</a>
-                                @* <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                                <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-                                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
-                                <a asp-action="Details" asp-controller="CuaHang" asp-route-id="@item.MaSp" class="btn btn-outline-dark btn-square"><i class="fa fa-search"></i></a> *@
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <a asp-action="Details" asp-controller="CuaHang" asp-route-id="@item.MaSp" class="h6 text-decoration-none text-truncate">@item.TenSp</a>
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5>@item.DonGiaBan.ToString("#,##0") đ</h5>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-1">
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small>(99)</small>
-                            </div>
-                        </div>
-                    </div>
-                }
-            </div>
+        <div class="col-12">
+            <h3 class="section-title mb-4">SẢN PHẨM LIÊN QUAN</h3>
         </div>
     </div>
+    <div class="row px-xl-5">
+        @foreach (var sp in (List<Sanpham>)ViewBag.SanPhamTuongTu)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <!-- Sản phẩm item -->
+                <div class="product-item bg-light border rounded">
+                    <div class="product-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="~/HinhAnh/SanPham/@sp.Hinh" alt="@sp.TenSp">
+                        <div class="product-action">
+                            <a asp-action="Details" asp-controller="CuaHang" asp-route-id="@sp.MaSp" class="btn btn-outline-dark btn-square">Xem Thêm</a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <!-- Tên sản phẩm -->
+                        <a asp-action="Details" asp-controller="CuaHang" asp-route-id="@sp.MaSp" class="h6 text-decoration-none text-truncate">@sp.TenSp</a>
+                        <!-- Giá sản phẩm -->
+                        <div class="d-flex align-items-center justify-content-center mt-2">
+                            <h5>@sp.DonGiaBan.ToString("#,##0") đ</h5>
+                        </div>
+                        <!-- Đánh giá sản phẩm -->
+                        <div class="d-flex align-items-center justify-content-center mb-1">
+                            @{
+                                int fullStars = (int)sp.Rating;
+                                bool hasHalfStar = (sp.Rating - fullStars) >= 0.5;
+                                int emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+                            }
+                            @for (int i = 0; i < fullStars; i++)
+                            {
+                                <small class="fa fa-star text-primary mr-1"></small>
+                            }
+                            @if (hasHalfStar)
+                            {
+                                <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                            }
+                            @for (int i = 0; i < emptyStars; i++)
+                            {
+                                <small class="far fa-star"></small>
+                            }
+                            <small>(@sp.BinhLuans.Count())</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
+<!-- Sản phẩm liên quan End -->
 <!-- Products End -->
 
 <script>
@@ -268,6 +402,55 @@
         } else if (currentQuantity < minQuantity) {
             quantityInput.value = minQuantity;
         }
+    });
+@* 
+    function SendRating(MaSP) {
+        const message = document.getElementById("message").value;
+        const currentTime = new Date().toISOString();
+        $.ajax({
+            url: '/CuaHang/SendRating',
+            type: 'POST',
+            data: {
+                MaSP: MaSP,
+                NoiDung: message,
+                ThoiGian: currentTime,
+                Rating: selectedRating
+            },
+            success: function(response) {
+
+            },
+            error: function(error) {
+                console.error("Đã xảy ra lỗi:", error);
+            }
+        })
+    } *@
+
+
+    // Lấy tất cả các sao
+    const stars = document.querySelectorAll("#rating i");
+    let selectedRating = 0;
+
+    // Xử lý sự kiện khi người dùng click vào sao
+    stars.forEach((star, index) => {
+        star.addEventListener("click", function() {
+            document.getElementById("ratingValue").value = index + 1;
+            // Lấy giá trị của sao người dùng click
+            selectedRating = parseInt(star.getAttribute("data-value"));
+
+            // Thay đổi màu sắc sao
+            stars.forEach(s => {
+                if (parseInt(s.getAttribute("data-value")) <= selectedRating) {
+                    s.classList.remove("far");
+                    s.classList.add("fas");
+                } else {
+                    s.classList.remove("fas");
+                    s.classList.add("far");
+                }
+            });
+
+            // Bạn có thể gửi giá trị này cùng với form hoặc làm gì đó với selectedRating
+            console.log("Đánh giá của bạn là: " + selectedRating + " sao");
+        });
     });
 </script>
 

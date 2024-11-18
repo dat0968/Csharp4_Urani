@@ -51,6 +51,7 @@ public partial class Sanpham
     public virtual ICollection<Chitiethoadon>? Chitiethoadons { get; set; } = new List<Chitiethoadon>();
 
     public virtual ICollection<Chitietphieunhap>? Chitietphieunhaps { get; set; } = new List<Chitietphieunhap>();
+    public virtual ICollection<BinhLuan>? BinhLuans { get; set; } = new List<BinhLuan>();
 
     public virtual ICollection<Hinhanh>? Hinhanhs { get; set; } = new List<Hinhanh>();
 
@@ -72,4 +73,6 @@ public partial class Sanpham
     public List<int> SelectedMauIds { get; set; } = new List<int>();
     [NotMapped]
     public List<int> SelectedKichThuocIds { get; set; } = new List<int>();
+    [NotMapped]
+    public double Rating { get; set; }
 }

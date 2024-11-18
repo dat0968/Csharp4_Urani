@@ -120,12 +120,24 @@
                             <h5>@item.GiaBan.ToString("#,##0") đ</h5>@* <h6 class="text-muted ml-2"><del>@item.DonGiaBan.ToString("#,##0") đ</del></h6> *@
                     </div>
                     <div class="d-flex align-items-center justify-content-center mb-1">
-                        <small class="fa fa-star text-primary mr-1"></small>
-                        <small class="fa fa-star text-primary mr-1"></small>
-                        <small class="fa fa-star text-primary mr-1"></small>
-                        <small class="fa fa-star text-primary mr-1"></small>
-                        <small class="fa fa-star text-primary mr-1"></small>
-                        <small>(99)</small>
+                            @{
+                                int fullStars = (int)item.sosaotrungbinh;
+                                bool hasHalfStar = (item.sosaotrungbinh - fullStars) >= 0.5;
+                                int emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+                            }
+                            @for (int i = 0; i < fullStars; i++)
+                            {
+                                <small class="fa fa-star text-primary mr-1"></small>
+                            }
+                            @if (hasHalfStar)
+                            {
+                                <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                            }
+                            @for (int i = 0; i < emptyStars; i++)
+                            {
+                                <small class="far fa-star"></small>
+                            }
+                        <small>(@item.socomment bình luận)</small>
                     </div>
                 </div>
             </div>

@@ -45,6 +45,8 @@ public partial class Csharp4Context : DbContext
     public virtual DbSet<Chitietchatlieu> Chitietchatlieus { get; set; }
     public virtual DbSet<Chitietkichthuoc> Chitietkichthuocs { get; set; }
     public virtual DbSet<Chitietmausac> Chitietmausacs { get; set; }
+    public virtual DbSet<BinhLuan> Binhluans { get; set; }
+    public virtual DbSet<TraLoiBinhLuan> Traloibinhluans { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -678,6 +680,110 @@ public partial class Csharp4Context : DbContext
             
             
         );
+
+        // Cấu hình dữ liệu mẫu cho BinhLuan
+        modelBuilder.Entity<BinhLuan>().HasData(
+    new BinhLuan
+    {
+        IdBinhLuan = 3,
+        NoiDung = "Chất lượng sản phẩm ổn so với giá.",
+        ThoiGian = DateTime.Now.AddHours(-1),
+        MaSP = "SP003",
+        MaKH = "KH003",
+        Rating = 4,
+        isDelete = false
+    },
+    new BinhLuan
+    {
+        IdBinhLuan = 4,
+        NoiDung = "Hàng lỗi, cần đổi trả gấp.",
+        ThoiGian = DateTime.Now.AddHours(-2),
+        MaSP = "SP004",
+        MaKH = "KH004",
+        Rating = 2,
+        isDelete = false
+    },
+    new BinhLuan
+    {
+        IdBinhLuan = 5,
+        NoiDung = "Dịch vụ khách hàng rất tốt!",
+        ThoiGian = DateTime.Now.AddDays(-1),
+        MaSP = "SP005",
+        MaKH = "KH005",
+        Rating = 5,
+        isDelete = false
+    },
+    new BinhLuan
+    {
+        IdBinhLuan = 6,
+        NoiDung = "Giao hàng nhanh, sản phẩm đẹp.",
+        ThoiGian = DateTime.Now.AddDays(-2),
+        MaSP = "SP006",
+        MaKH = "KH006",
+        Rating = 5,
+        isDelete = false
+    },
+    new BinhLuan
+    {
+        IdBinhLuan = 7,
+        NoiDung = "Không giống hình trên web, thất vọng.",
+        ThoiGian = DateTime.Now.AddDays(-3),
+        MaSP = "SP007",
+        MaKH = "KH007",
+        Rating = 1,
+        isDelete = false
+    }
+);
+
+
+        // Cấu hình dữ liệu mẫu cho TraLoiBinhLuan
+        modelBuilder.Entity<TraLoiBinhLuan>().HasData(
+    new TraLoiBinhLuan
+    {
+        Id = 3,
+        IdBinhLuan = 3,
+        ThoiGian = DateTime.Now.AddMinutes(-15),
+        NoiDung = "Cảm ơn bạn đã phản hồi! Hẹn gặp bạn ở lần mua tiếp theo.",
+        MaNV = "NV003",
+        isDelete = false
+    },
+    new TraLoiBinhLuan
+    {
+        Id = 4,
+        IdBinhLuan = 4,
+        ThoiGian = DateTime.Now.AddMinutes(-30),
+        NoiDung = "Chúng tôi đã nhận thông tin và sẽ hỗ trợ bạn sớm nhất.",
+        MaNV = "NV004",
+        isDelete = false
+    },
+    new TraLoiBinhLuan
+    {
+        Id = 5,
+        IdBinhLuan = 5,
+        ThoiGian = DateTime.Now.AddMinutes(-45),
+        NoiDung = "Cảm ơn bạn đã tin tưởng sử dụng dịch vụ của chúng tôi.",
+        MaNV = "NV005",
+        isDelete = false
+    },
+    new TraLoiBinhLuan
+    {
+        Id = 6,
+        IdBinhLuan = 6,
+        ThoiGian = DateTime.Now.AddHours(-1),
+        NoiDung = "Chúng tôi rất vui vì bạn hài lòng!",
+        MaNV = "NV006",
+        isDelete = false
+    },
+    new TraLoiBinhLuan
+    {
+        Id = 7,
+        IdBinhLuan = 7,
+        ThoiGian = DateTime.Now.AddHours(-1.5),
+        NoiDung = "Chúng tôi rất tiếc, hãy liên hệ để được hỗ trợ đổi trả.",
+        MaNV = "NV007",
+        isDelete = false
+    }
+);
 
 
         base.OnModelCreating(modelBuilder);

@@ -56,4 +56,5 @@ public partial class Khachhang
     public bool IsDelete { get; set; } = false;
 
     public virtual ICollection<Hoadon>? Hoadons { get; set; } = new List<Hoadon>();
+    public virtual ICollection<BinhLuan>? BinhLuans { get; set; } = new List<BinhLuan>();
 }
