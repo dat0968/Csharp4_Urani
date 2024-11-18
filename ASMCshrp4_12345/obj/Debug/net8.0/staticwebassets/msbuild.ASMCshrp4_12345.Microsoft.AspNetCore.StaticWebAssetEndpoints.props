@@ -900,6 +900,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vbGEJj8jd0r6wSgXKzZ38hKnIpe6OINlWnviCBCSkW4="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"201651"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022vbGEJj8jd0r6wSgXKzZ38hKnIpe6OINlWnviCBCSkW4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 04 Nov 2024 03:08:12 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ASMCshrp4_12345/HinhAnh/NhanVien/avatar-trang-4.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HinhAnh\NhanVien\avatar-trang-4.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"18983"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 14:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ASMCshrp4_12345/HinhAnh/NhanVien/avatar-trang-4.ltfr8yrqfa.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HinhAnh\NhanVien\avatar-trang-4.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ltfr8yrqfa"},{"Name":"integrity","Value":"sha256-J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA="},{"Name":"label","Value":"_content/ASMCshrp4_12345/HinhAnh/NhanVien/avatar-trang-4.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18983"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 14:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ASMCshrp4_12345/HinhAnh/NhanVien/images (1).0vu8ynnoxe.jfif">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HinhAnh\NhanVien\images (1).jfif'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

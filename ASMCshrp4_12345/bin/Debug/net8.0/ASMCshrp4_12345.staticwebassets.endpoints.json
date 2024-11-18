@@ -1642,6 +1642,88 @@
       ]
     },
     {
+      "Route": "HinhAnh/NhanVien/avatar-trang-4.jpg",
+      "AssetFile": "HinhAnh/NhanVien/avatar-trang-4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18983"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 14:07:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/NhanVien/avatar-trang-4.ltfr8yrqfa.jpg",
+      "AssetFile": "HinhAnh/NhanVien/avatar-trang-4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18983"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 14:07:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ltfr8yrqfa"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/NhanVien/avatar-trang-4.jpg"
+        }
+      ]
+    },
+    {
       "Route": "HinhAnh/NhanVien/images (1).0vu8ynnoxe.jfif",
       "AssetFile": "HinhAnh/NhanVien/images (1).jfif",
       "Selectors": [],

@@ -1,0 +1,120 @@
+﻿@model IEnumerable<ASMCshrp4_12345.Models.BinhLuan>
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container mt-5">
+    <h2>Quản lý Bình Luận và Phản Hồi</h2>
+
+    <!-- Danh sách bình luận -->
+    <div class="bg-light p-4 mt-4">
+        <h4 class="mb-4">Danh Sách Bình Luận</h4>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên Khách Hàng</th>
+                    <th>Sản Phẩm</th>
+                    <th>Nội Dung</th>
+                    <th>Đánh Giá</th>
+                    <th>Thời Gian</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var binhluan in Model)
+                {
+                    <tr>
+                        <td>@binhluan.IdBinhLuan</td>
+                        <td>@binhluan.MaKHNavigation?.HoTen</td>
+                        <td>@binhluan.MaSPNavigation?.TenSp</td>
+                        <td>@binhluan.NoiDung</td>
+                        <td>
+                            @for (int i = 0; i < binhluan.Rating; i++)
+                            {
+                                <i class="fa fa-star text-warning"></i>
+                            }
+                            @for (int i = 0; i < (5 - binhluan.Rating); i++)
+                            {
+                                <i class="fa fa-star-o text-secondary"></i>
+                            }
+                        </td>
+                        <td>@binhluan.ThoiGian.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>
+                            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#@binhluan.IdBinhLuan">
+                                Xem & Phản Hồi
+                            </button>
+                        </td>
+                    </tr>
+
+                    <!-- Modal hiển thị bình luận và phản hồi -->
+                    <div class="modal fade" id="@binhluan.IdBinhLuan" tabindex="-1" role="dialog" aria-labelledby="modalLabel@binhluan.IdBinhLuan" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Bình Luận và Phản Hồi</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Khách hàng:</strong> @binhluan.MaKHNavigation?.HoTen</p>
+                                    <p><strong>Sản phẩm:</strong> @binhluan.MaSPNavigation?.TenSp</p>
+                                    <p><strong>Bình luận:</strong> @binhluan.NoiDung</p>
+                                    <p>
+                                        <strong>Đánh giá:</strong>
+                                        @for (int i = 0; i < binhluan.Rating; i++)
+                                        {
+                                            <i class="fa fa-star text-warning"></i>
+                                        }
+                                        @for (int i = 0; i < (5 - binhluan.Rating); i++)
+                                        {
+                                            <i class="fa fa-star-o text-secondary"></i>
+                                        }
+                                    </p>
+                                    <p><strong>Thời gian:</strong> @binhluan.ThoiGian.ToString("dd/MM/yyyy HH:mm")</p>
+
+                                    <hr />
+                                    <h6>Phản Hồi Trước Đây:</h6>
+                                    @if (binhluan.TraLoiBinhLuans != null && binhluan.TraLoiBinhLuans.Any())
+                                    {
+                                        <ul class="list-group">
+                                            @foreach (var reply in binhluan.TraLoiBinhLuans)
+                                            {
+                                                <li class="list-group-item">
+                                                    <p><strong>@reply.MaNV:</strong> @reply.MaNVNavigation?.HoTen</p>
+                                                    <p><strong>Nội dung:</strong> @reply.NoiDung</p>
+                                                    <p><small><i>@reply.ThoiGian.ToString("dd/MM/yyyy HH:mm")</i></small></p>
+                                                </li>
+                                            }
+                                        </ul>
+                                    }
+                                    else
+                                    {
+                                        <p>Chưa có phản hồi nào.</p>
+                                    }
+
+                                    <hr />
+                                    <h6>Thêm Phản Hồi:</h6>
+                                    <form asp-action="PhanHoi" asp-controller="PhanHoiBinhLuan" method="post">
+                                        <div class="form-group">
+                                            <label for="replyContent">Nội dung phản hồi:</label>
+                                            <textarea id="replyContent" name="ReplyContent" class="form-control" rows="4" required></textarea>
+                                        </div>
+                                        <input type="hidden" name="CommentId" value="@binhluan.IdBinhLuan" />
+                                        <button type="submit" class="btn btn-primary">Gửi Phản Hồi</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Các thư viện JavaScript cần thiết -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>  

@@ -7,5 +7,7 @@
         public double GiaBan { get; set; }
         public int TongSoLuongMua { get; set; }
         public string Hinh { get; set; }
+        public double sosaotrungbinh { get; set; }
+        public int socomment { get; set; }
     }
 }
