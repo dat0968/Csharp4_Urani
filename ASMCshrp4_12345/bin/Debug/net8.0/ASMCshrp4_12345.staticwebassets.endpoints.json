@@ -2626,6 +2626,88 @@
       ]
     },
     {
+      "Route": "HinhAnh/SanPham/TIC00213-scaled.3p8wqp991r.jpg",
+      "AssetFile": "HinhAnh/SanPham/TIC00213-scaled.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595101"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ByJgzP9N9XFhBsX1J7MWBGpjKWfkhESkdIDx0lHJqRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:02:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3p8wqp991r"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ByJgzP9N9XFhBsX1J7MWBGpjKWfkhESkdIDx0lHJqRs="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/TIC00213-scaled.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/TIC00213-scaled.jpg",
+      "AssetFile": "HinhAnh/SanPham/TIC00213-scaled.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595101"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ByJgzP9N9XFhBsX1J7MWBGpjKWfkhESkdIDx0lHJqRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:02:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ByJgzP9N9XFhBsX1J7MWBGpjKWfkhESkdIDx0lHJqRs="
+        }
+      ]
+    },
+    {
       "Route": "HinhAnh/SanPham/Tháng Tư Là Lời Nói Dối Của Em.mp3",
       "AssetFile": "HinhAnh/SanPham/Tháng Tư Là Lời Nói Dối Của Em.mp3",
       "Selectors": [],
@@ -2704,6 +2786,170 @@
         {
           "Name": "label",
           "Value": "HinhAnh/SanPham/Tháng Tư Là Lời Nói Dối Của Em.mp3"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.hbqgrgkyfc.jpg",
+      "AssetFile": "HinhAnh/SanPham/VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PeTaewqM4sdXAyd4dK3Lj9fXWtiCDlDy6sJSfzaqFxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:04:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hbqgrgkyfc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PeTaewqM4sdXAyd4dK3Lj9fXWtiCDlDy6sJSfzaqFxM="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg",
+      "AssetFile": "HinhAnh/SanPham/VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PeTaewqM4sdXAyd4dK3Lj9fXWtiCDlDy6sJSfzaqFxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:04:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PeTaewqM4sdXAyd4dK3Lj9fXWtiCDlDy6sJSfzaqFxM="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.6my914a0sj.jpg",
+      "AssetFile": "HinhAnh/SanPham/anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "113110"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ghd2dLDenUi+tCV5mzGyY0owUw3kj8zjnl+uxiDzFx0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:01:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6my914a0sj"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ghd2dLDenUi+tCV5mzGyY0owUw3kj8zjnl+uxiDzFx0="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg",
+      "AssetFile": "HinhAnh/SanPham/anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "113110"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ghd2dLDenUi+tCV5mzGyY0owUw3kj8zjnl+uxiDzFx0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:01:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ghd2dLDenUi+tCV5mzGyY0owUw3kj8zjnl+uxiDzFx0="
         }
       ]
     },
@@ -3200,6 +3446,88 @@
       ]
     },
     {
+      "Route": "HinhAnh/SanPham/f6a59412f7418faedec46a76c2398b3f-1.ds913ssgjv.jpg",
+      "AssetFile": "HinhAnh/SanPham/f6a59412f7418faedec46a76c2398b3f-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "852203"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M4XvAvjxVjWro9zFguUXI9jr8eLPl7CMpEhGsJiADgk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:03:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ds913ssgjv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M4XvAvjxVjWro9zFguUXI9jr8eLPl7CMpEhGsJiADgk="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/f6a59412f7418faedec46a76c2398b3f-1.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/f6a59412f7418faedec46a76c2398b3f-1.jpg",
+      "AssetFile": "HinhAnh/SanPham/f6a59412f7418faedec46a76c2398b3f-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "852203"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M4XvAvjxVjWro9zFguUXI9jr8eLPl7CMpEhGsJiADgk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:03:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M4XvAvjxVjWro9zFguUXI9jr8eLPl7CMpEhGsJiADgk="
+        }
+      ]
+    },
+    {
       "Route": "HinhAnh/SanPham/gucci_bag.jpg",
       "AssetFile": "HinhAnh/SanPham/gucci_bag.jpg",
       "Selectors": [],
@@ -3524,6 +3852,416 @@
         {
           "Name": "integrity",
           "Value": "sha256-oGANZ46/AxFq+8g9mhrZT0dnFE5DiTJ/61OekH/fJZU="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/images (1).8ypg53k2yz.jfif",
+      "AssetFile": "HinhAnh/SanPham/images (1).jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YLijfGEXZDJuCFKS3l58yMf6ZloKn2JwY9tFVaCGx38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:05:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8ypg53k2yz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YLijfGEXZDJuCFKS3l58yMf6ZloKn2JwY9tFVaCGx38="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/images (1).jfif"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/images (1).jfif",
+      "AssetFile": "HinhAnh/SanPham/images (1).jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YLijfGEXZDJuCFKS3l58yMf6ZloKn2JwY9tFVaCGx38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:05:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YLijfGEXZDJuCFKS3l58yMf6ZloKn2JwY9tFVaCGx38="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/images (2).jfif",
+      "AssetFile": "HinhAnh/SanPham/images (2).jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3069"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ecR3PgcX9Hx5Ck6BkZJdQnzc+uUjvHljhQvU03zXrQA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:05:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ecR3PgcX9Hx5Ck6BkZJdQnzc+uUjvHljhQvU03zXrQA="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/images (2).ld9cyiiwxs.jfif",
+      "AssetFile": "HinhAnh/SanPham/images (2).jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3069"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ecR3PgcX9Hx5Ck6BkZJdQnzc+uUjvHljhQvU03zXrQA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:05:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ld9cyiiwxs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ecR3PgcX9Hx5Ck6BkZJdQnzc+uUjvHljhQvU03zXrQA="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/images (2).jfif"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/images (3).itu70z5so5.jfif",
+      "AssetFile": "HinhAnh/SanPham/images (3).jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5707"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xlOQvUypBnFjOwUuC7chJFHasR4koNLc0zFPFQcZdZ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:06:28 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "itu70z5so5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xlOQvUypBnFjOwUuC7chJFHasR4koNLc0zFPFQcZdZ8="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/images (3).jfif"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/images (3).jfif",
+      "AssetFile": "HinhAnh/SanPham/images (3).jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5707"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xlOQvUypBnFjOwUuC7chJFHasR4koNLc0zFPFQcZdZ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:06:28 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xlOQvUypBnFjOwUuC7chJFHasR4koNLc0zFPFQcZdZ8="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/images (4).jfif",
+      "AssetFile": "HinhAnh/SanPham/images (4).jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kwnmx0qC7wA+75c6JKoHWWbyx4Bt2wZifQLhtpmUUFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:06:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kwnmx0qC7wA+75c6JKoHWWbyx4Bt2wZifQLhtpmUUFs="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/images (4).npxiu03qkl.jfif",
+      "AssetFile": "HinhAnh/SanPham/images (4).jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kwnmx0qC7wA+75c6JKoHWWbyx4Bt2wZifQLhtpmUUFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:06:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "npxiu03qkl"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kwnmx0qC7wA+75c6JKoHWWbyx4Bt2wZifQLhtpmUUFs="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/images (4).jfif"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/images.gklhtzpfj3.jfif",
+      "AssetFile": "HinhAnh/SanPham/images.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kH+q0EZbmVXmyZONEu5Qi3zu+Gdqi7aNnrXIQqxPvMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:04:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gklhtzpfj3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kH+q0EZbmVXmyZONEu5Qi3zu+Gdqi7aNnrXIQqxPvMc="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/images.jfif"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/images.jfif",
+      "AssetFile": "HinhAnh/SanPham/images.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kH+q0EZbmVXmyZONEu5Qi3zu+Gdqi7aNnrXIQqxPvMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:04:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kH+q0EZbmVXmyZONEu5Qi3zu+Gdqi7aNnrXIQqxPvMc="
         }
       ]
     },
@@ -4426,6 +5164,498 @@
         {
           "Name": "integrity",
           "Value": "sha256-b87kyw4MqY1W7k+gKyt62+vgbtMW+f6UbLhT3CqYphA="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-givenchy-nu-hang-11.2syijl1x68.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-givenchy-nu-hang-11.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115387"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kjdvCGGfMcU4BlbLeldDPDqwRrs05chYO3rMj4VHCZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:06:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2syijl1x68"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kjdvCGGfMcU4BlbLeldDPDqwRrs05chYO3rMj4VHCZY="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/tui-givenchy-nu-hang-11.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-givenchy-nu-hang-11.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-givenchy-nu-hang-11.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115387"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kjdvCGGfMcU4BlbLeldDPDqwRrs05chYO3rMj4VHCZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:06:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kjdvCGGfMcU4BlbLeldDPDqwRrs05chYO3rMj4VHCZY="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-xach-balenciaga-10-400x400.8tls29rutc.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-xach-balenciaga-10-400x400.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21761"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bJNWUda/4JY9kQjVdl5Xx5AV1vj4UsH4IZuJA+Mf4qA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:06:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8tls29rutc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bJNWUda/4JY9kQjVdl5Xx5AV1vj4UsH4IZuJA+Mf4qA="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/tui-xach-balenciaga-10-400x400.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-xach-balenciaga-10-400x400.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-xach-balenciaga-10-400x400.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21761"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bJNWUda/4JY9kQjVdl5Xx5AV1vj4UsH4IZuJA+Mf4qA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:06:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bJNWUda/4JY9kQjVdl5Xx5AV1vj4UsH4IZuJA+Mf4qA="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-xach-hang-hieu-dior-16.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-xach-hang-hieu-dior-16.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "158283"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SW+b0+5ZJifXGtNu2Lpz1KeTrCStRPq1czU2M+MboAA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:05:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SW+b0+5ZJifXGtNu2Lpz1KeTrCStRPq1czU2M+MboAA="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-xach-hang-hieu-dior-16.z954h7jl2e.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-xach-hang-hieu-dior-16.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "158283"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SW+b0+5ZJifXGtNu2Lpz1KeTrCStRPq1czU2M+MboAA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:05:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z954h7jl2e"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SW+b0+5ZJifXGtNu2Lpz1KeTrCStRPq1czU2M+MboAA="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/tui-xach-hang-hieu-dior-16.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:01:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-xach-lv-louis-vuitton-onthego-mau-nau-1.v2xnxszdgs.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:01:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v2xnxszdgs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.hpu5f6oo73.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tfE29okyf9giBoc03WLaiKXaWsEE7nAGoTHYNR9EA8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:03:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hpu5f6oo73"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tfE29okyf9giBoc03WLaiKXaWsEE7nAGoTHYNR9EA8c="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tfE29okyf9giBoc03WLaiKXaWsEE7nAGoTHYNR9EA8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:03:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tfE29okyf9giBoc03WLaiKXaWsEE7nAGoTHYNR9EA8c="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-xach-prada-chinh-hang-10.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-xach-prada-chinh-hang-10.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "262737"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EuC3tMwIQVvgfgbV8zekkXL+vZLctcykLiO6kqfmdDA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:02:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EuC3tMwIQVvgfgbV8zekkXL+vZLctcykLiO6kqfmdDA="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/tui-xach-prada-chinh-hang-10.mi5oeog7gz.jpg",
+      "AssetFile": "HinhAnh/SanPham/tui-xach-prada-chinh-hang-10.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "262737"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EuC3tMwIQVvgfgbV8zekkXL+vZLctcykLiO6kqfmdDA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:02:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mi5oeog7gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EuC3tMwIQVvgfgbV8zekkXL+vZLctcykLiO6kqfmdDA="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/tui-xach-prada-chinh-hang-10.jpg"
         }
       ]
     },

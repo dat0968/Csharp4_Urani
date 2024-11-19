@@ -67,7 +67,7 @@ namespace ASMCshrp4_12345.Migrations
                             MaSP = "SP003",
                             NoiDung = "Chất lượng sản phẩm ổn so với giá.",
                             Rating = 4.0,
-                            ThoiGian = new DateTime(2024, 11, 16, 11, 40, 12, 549, DateTimeKind.Local).AddTicks(3913),
+                            ThoiGian = new DateTime(2024, 11, 18, 22, 10, 14, 72, DateTimeKind.Local).AddTicks(1293),
                             isDelete = false
                         },
                         new
@@ -77,7 +77,7 @@ namespace ASMCshrp4_12345.Migrations
                             MaSP = "SP004",
                             NoiDung = "Hàng lỗi, cần đổi trả gấp.",
                             Rating = 2.0,
-                            ThoiGian = new DateTime(2024, 11, 16, 10, 40, 12, 549, DateTimeKind.Local).AddTicks(3917),
+                            ThoiGian = new DateTime(2024, 11, 18, 21, 10, 14, 72, DateTimeKind.Local).AddTicks(1298),
                             isDelete = false
                         },
                         new
@@ -87,7 +87,7 @@ namespace ASMCshrp4_12345.Migrations
                             MaSP = "SP005",
                             NoiDung = "Dịch vụ khách hàng rất tốt!",
                             Rating = 5.0,
-                            ThoiGian = new DateTime(2024, 11, 15, 12, 40, 12, 549, DateTimeKind.Local).AddTicks(3919),
+                            ThoiGian = new DateTime(2024, 11, 17, 23, 10, 14, 72, DateTimeKind.Local).AddTicks(1300),
                             isDelete = false
                         },
                         new
@@ -97,7 +97,7 @@ namespace ASMCshrp4_12345.Migrations
                             MaSP = "SP006",
                             NoiDung = "Giao hàng nhanh, sản phẩm đẹp.",
                             Rating = 5.0,
-                            ThoiGian = new DateTime(2024, 11, 14, 12, 40, 12, 549, DateTimeKind.Local).AddTicks(3922),
+                            ThoiGian = new DateTime(2024, 11, 16, 23, 10, 14, 72, DateTimeKind.Local).AddTicks(1302),
                             isDelete = false
                         },
                         new
@@ -107,7 +107,7 @@ namespace ASMCshrp4_12345.Migrations
                             MaSP = "SP007",
                             NoiDung = "Không giống hình trên web, thất vọng.",
                             Rating = 1.0,
-                            ThoiGian = new DateTime(2024, 11, 13, 12, 40, 12, 549, DateTimeKind.Local).AddTicks(3924),
+                            ThoiGian = new DateTime(2024, 11, 15, 23, 10, 14, 72, DateTimeKind.Local).AddTicks(1304),
                             isDelete = false
                         });
                 });
@@ -176,7 +176,22 @@ namespace ASMCshrp4_12345.Migrations
                         new
                         {
                             MaChatLieu = 2,
+                            MaSp = "SP001"
+                        },
+                        new
+                        {
+                            MaChatLieu = 2,
                             MaSp = "SP002"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP002"
+                        },
+                        new
+                        {
+                            MaChatLieu = 1,
+                            MaSp = "SP003"
                         },
                         new
                         {
@@ -186,7 +201,37 @@ namespace ASMCshrp4_12345.Migrations
                         new
                         {
                             MaChatLieu = 1,
+                            MaSp = "SP004"
+                        },
+                        new
+                        {
+                            MaChatLieu = 2,
+                            MaSp = "SP004"
+                        },
+                        new
+                        {
+                            MaChatLieu = 2,
+                            MaSp = "SP005"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP005"
+                        },
+                        new
+                        {
+                            MaChatLieu = 1,
                             MaSp = "SP006"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP006"
+                        },
+                        new
+                        {
+                            MaChatLieu = 1,
+                            MaSp = "SP007"
                         },
                         new
                         {
@@ -195,8 +240,133 @@ namespace ASMCshrp4_12345.Migrations
                         },
                         new
                         {
+                            MaChatLieu = 2,
+                            MaSp = "SP008"
+                        },
+                        new
+                        {
                             MaChatLieu = 3,
                             MaSp = "SP008"
+                        },
+                        new
+                        {
+                            MaChatLieu = 1,
+                            MaSp = "SP009"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP009"
+                        },
+                        new
+                        {
+                            MaChatLieu = 1,
+                            MaSp = "SP010"
+                        },
+                        new
+                        {
+                            MaChatLieu = 2,
+                            MaSp = "SP010"
+                        },
+                        new
+                        {
+                            MaChatLieu = 2,
+                            MaSp = "SP011"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP011"
+                        },
+                        new
+                        {
+                            MaChatLieu = 1,
+                            MaSp = "SP012"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP012"
+                        },
+                        new
+                        {
+                            MaChatLieu = 1,
+                            MaSp = "SP013"
+                        },
+                        new
+                        {
+                            MaChatLieu = 2,
+                            MaSp = "SP013"
+                        },
+                        new
+                        {
+                            MaChatLieu = 2,
+                            MaSp = "SP014"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP014"
+                        },
+                        new
+                        {
+                            MaChatLieu = 1,
+                            MaSp = "SP015"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP015"
+                        },
+                        new
+                        {
+                            MaChatLieu = 1,
+                            MaSp = "SP016"
+                        },
+                        new
+                        {
+                            MaChatLieu = 2,
+                            MaSp = "SP016"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP017"
+                        },
+                        new
+                        {
+                            MaChatLieu = 2,
+                            MaSp = "SP017"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP018"
+                        },
+                        new
+                        {
+                            MaChatLieu = 1,
+                            MaSp = "SP018"
+                        },
+                        new
+                        {
+                            MaChatLieu = 2,
+                            MaSp = "SP019"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP019"
+                        },
+                        new
+                        {
+                            MaChatLieu = 2,
+                            MaSp = "SP020"
+                        },
+                        new
+                        {
+                            MaChatLieu = 3,
+                            MaSp = "SP020"
                         });
                 });
 
@@ -377,7 +547,22 @@ namespace ASMCshrp4_12345.Migrations
                         new
                         {
                             MaKichThuoc = 2,
+                            MaSp = "SP001"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 2,
                             MaSp = "SP002"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP002"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 1,
+                            MaSp = "SP003"
                         },
                         new
                         {
@@ -392,7 +577,22 @@ namespace ASMCshrp4_12345.Migrations
                         new
                         {
                             MaKichThuoc = 2,
+                            MaSp = "SP004"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 2,
                             MaSp = "SP005"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP005"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 1,
+                            MaSp = "SP006"
                         },
                         new
                         {
@@ -407,7 +607,22 @@ namespace ASMCshrp4_12345.Migrations
                         new
                         {
                             MaKichThuoc = 2,
+                            MaSp = "SP007"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 2,
                             MaSp = "SP008"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP008"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 1,
+                            MaSp = "SP009"
                         },
                         new
                         {
@@ -416,8 +631,113 @@ namespace ASMCshrp4_12345.Migrations
                         },
                         new
                         {
-                            MaKichThuoc = 1,
+                            MaKichThuoc = 2,
                             MaSp = "SP010"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP010"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 1,
+                            MaSp = "SP011"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP011"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 2,
+                            MaSp = "SP012"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP012"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 1,
+                            MaSp = "SP013"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 2,
+                            MaSp = "SP013"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 2,
+                            MaSp = "SP014"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP014"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 1,
+                            MaSp = "SP015"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP015"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 2,
+                            MaSp = "SP016"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP016"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 1,
+                            MaSp = "SP017"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 2,
+                            MaSp = "SP017"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 2,
+                            MaSp = "SP018"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP018"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 1,
+                            MaSp = "SP019"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP019"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 2,
+                            MaSp = "SP020"
+                        },
+                        new
+                        {
+                            MaKichThuoc = 3,
+                            MaSp = "SP020"
                         });
                 });
 
@@ -444,17 +764,42 @@ namespace ASMCshrp4_12345.Migrations
                         new
                         {
                             MaMau = 2,
-                            MaSp = "SP002"
+                            MaSp = "SP001"
                         },
                         new
                         {
                             MaMau = 3,
-                            MaSp = "SP003"
+                            MaSp = "SP002"
                         },
                         new
                         {
                             MaMau = 4,
+                            MaSp = "SP002"
+                        },
+                        new
+                        {
+                            MaMau = 1,
+                            MaSp = "SP003"
+                        },
+                        new
+                        {
+                            MaMau = 5,
+                            MaSp = "SP003"
+                        },
+                        new
+                        {
+                            MaMau = 2,
                             MaSp = "SP004"
+                        },
+                        new
+                        {
+                            MaMau = 3,
+                            MaSp = "SP004"
+                        },
+                        new
+                        {
+                            MaMau = 4,
+                            MaSp = "SP005"
                         },
                         new
                         {
@@ -469,22 +814,147 @@ namespace ASMCshrp4_12345.Migrations
                         new
                         {
                             MaMau = 2,
-                            MaSp = "SP007"
+                            MaSp = "SP006"
                         },
                         new
                         {
                             MaMau = 3,
-                            MaSp = "SP008"
+                            MaSp = "SP007"
                         },
                         new
                         {
                             MaMau = 4,
+                            MaSp = "SP007"
+                        },
+                        new
+                        {
+                            MaMau = 5,
+                            MaSp = "SP008"
+                        },
+                        new
+                        {
+                            MaMau = 1,
+                            MaSp = "SP008"
+                        },
+                        new
+                        {
+                            MaMau = 2,
                             MaSp = "SP009"
+                        },
+                        new
+                        {
+                            MaMau = 3,
+                            MaSp = "SP009"
+                        },
+                        new
+                        {
+                            MaMau = 4,
+                            MaSp = "SP010"
                         },
                         new
                         {
                             MaMau = 5,
                             MaSp = "SP010"
+                        },
+                        new
+                        {
+                            MaMau = 1,
+                            MaSp = "SP011"
+                        },
+                        new
+                        {
+                            MaMau = 3,
+                            MaSp = "SP011"
+                        },
+                        new
+                        {
+                            MaMau = 2,
+                            MaSp = "SP012"
+                        },
+                        new
+                        {
+                            MaMau = 4,
+                            MaSp = "SP012"
+                        },
+                        new
+                        {
+                            MaMau = 5,
+                            MaSp = "SP013"
+                        },
+                        new
+                        {
+                            MaMau = 1,
+                            MaSp = "SP013"
+                        },
+                        new
+                        {
+                            MaMau = 2,
+                            MaSp = "SP014"
+                        },
+                        new
+                        {
+                            MaMau = 3,
+                            MaSp = "SP014"
+                        },
+                        new
+                        {
+                            MaMau = 4,
+                            MaSp = "SP015"
+                        },
+                        new
+                        {
+                            MaMau = 5,
+                            MaSp = "SP015"
+                        },
+                        new
+                        {
+                            MaMau = 1,
+                            MaSp = "SP016"
+                        },
+                        new
+                        {
+                            MaMau = 2,
+                            MaSp = "SP016"
+                        },
+                        new
+                        {
+                            MaMau = 3,
+                            MaSp = "SP017"
+                        },
+                        new
+                        {
+                            MaMau = 4,
+                            MaSp = "SP017"
+                        },
+                        new
+                        {
+                            MaMau = 5,
+                            MaSp = "SP018"
+                        },
+                        new
+                        {
+                            MaMau = 1,
+                            MaSp = "SP018"
+                        },
+                        new
+                        {
+                            MaMau = 2,
+                            MaSp = "SP019"
+                        },
+                        new
+                        {
+                            MaMau = 3,
+                            MaSp = "SP019"
+                        },
+                        new
+                        {
+                            MaMau = 4,
+                            MaSp = "SP020"
+                        },
+                        new
+                        {
+                            MaMau = 5,
+                            MaSp = "SP020"
                         });
                 });
 
@@ -622,6 +1092,368 @@ namespace ASMCshrp4_12345.Migrations
                     b.HasIndex("MaSp");
 
                     b.ToTable("Hinhanhs");
+
+                    b.HasData(
+                        new
+                        {
+                            MaHinhAnh = 1,
+                            HinhAnh1 = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg",
+                            MaSp = "SP001"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 2,
+                            HinhAnh1 = "f6a59412f7418faedec46a76c2398b3f-1.jpg",
+                            MaSp = "SP001"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 3,
+                            HinhAnh1 = "images (1).jfif",
+                            MaSp = "SP001"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 4,
+                            HinhAnh1 = "images (2).jfif",
+                            MaSp = "SP002"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 5,
+                            HinhAnh1 = "images (3).jfif",
+                            MaSp = "SP002"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 6,
+                            HinhAnh1 = "images (4).jfif",
+                            MaSp = "SP002"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 7,
+                            HinhAnh1 = "images.jfif",
+                            MaSp = "SP003"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 8,
+                            HinhAnh1 = "TIC00213-scaled.jpg",
+                            MaSp = "SP003"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 9,
+                            HinhAnh1 = "tui-givenchy-nu-hang-11.jpg",
+                            MaSp = "SP003"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 10,
+                            HinhAnh1 = "tui-xach-balenciaga-10-400x400.jpg",
+                            MaSp = "SP004"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 11,
+                            HinhAnh1 = "tui-xach-hang-hieu-dior-16.jpg",
+                            MaSp = "SP004"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 12,
+                            HinhAnh1 = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+                            MaSp = "SP004"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 13,
+                            HinhAnh1 = "tui-xach-prada-chinh-hang-10.jpg",
+                            MaSp = "SP005"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 14,
+                            HinhAnh1 = "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg",
+                            MaSp = "SP005"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 15,
+                            HinhAnh1 = "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg",
+                            MaSp = "SP005"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 16,
+                            HinhAnh1 = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg",
+                            MaSp = "SP006"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 17,
+                            HinhAnh1 = "f6a59412f7418faedec46a76c2398b3f-1.jpg",
+                            MaSp = "SP006"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 18,
+                            HinhAnh1 = "images (1).jfif",
+                            MaSp = "SP006"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 19,
+                            HinhAnh1 = "images (2).jfif",
+                            MaSp = "SP007"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 20,
+                            HinhAnh1 = "images (3).jfif",
+                            MaSp = "SP007"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 21,
+                            HinhAnh1 = "images (4).jfif",
+                            MaSp = "SP007"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 22,
+                            HinhAnh1 = "images.jfif",
+                            MaSp = "SP008"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 23,
+                            HinhAnh1 = "TIC00213-scaled.jpg",
+                            MaSp = "SP008"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 24,
+                            HinhAnh1 = "tui-givenchy-nu-hang-11.jpg",
+                            MaSp = "SP008"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 25,
+                            HinhAnh1 = "tui-xach-balenciaga-10-400x400.jpg",
+                            MaSp = "SP009"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 26,
+                            HinhAnh1 = "tui-xach-hang-hieu-dior-16.jpg",
+                            MaSp = "SP009"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 27,
+                            HinhAnh1 = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+                            MaSp = "SP009"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 28,
+                            HinhAnh1 = "tui-xach-prada-chinh-hang-10.jpg",
+                            MaSp = "SP010"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 29,
+                            HinhAnh1 = "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg",
+                            MaSp = "SP010"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 30,
+                            HinhAnh1 = "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg",
+                            MaSp = "SP010"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 31,
+                            HinhAnh1 = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg",
+                            MaSp = "SP011"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 32,
+                            HinhAnh1 = "f6a59412f7418faedec46a76c2398b3f-1.jpg",
+                            MaSp = "SP011"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 33,
+                            HinhAnh1 = "images (1).jfif",
+                            MaSp = "SP011"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 34,
+                            HinhAnh1 = "images (2).jfif",
+                            MaSp = "SP012"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 35,
+                            HinhAnh1 = "images (3).jfif",
+                            MaSp = "SP012"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 36,
+                            HinhAnh1 = "images (4).jfif",
+                            MaSp = "SP012"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 37,
+                            HinhAnh1 = "images.jfif",
+                            MaSp = "SP013"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 38,
+                            HinhAnh1 = "TIC00213-scaled.jpg",
+                            MaSp = "SP013"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 39,
+                            HinhAnh1 = "tui-givenchy-nu-hang-11.jpg",
+                            MaSp = "SP013"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 40,
+                            HinhAnh1 = "tui-xach-balenciaga-10-400x400.jpg",
+                            MaSp = "SP014"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 41,
+                            HinhAnh1 = "tui-xach-hang-hieu-dior-16.jpg",
+                            MaSp = "SP014"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 42,
+                            HinhAnh1 = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+                            MaSp = "SP014"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 43,
+                            HinhAnh1 = "tui-xach-prada-chinh-hang-10.jpg",
+                            MaSp = "SP015"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 44,
+                            HinhAnh1 = "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg",
+                            MaSp = "SP015"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 45,
+                            HinhAnh1 = "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg",
+                            MaSp = "SP015"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 46,
+                            HinhAnh1 = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg",
+                            MaSp = "SP016"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 47,
+                            HinhAnh1 = "f6a59412f7418faedec46a76c2398b3f-1.jpg",
+                            MaSp = "SP016"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 48,
+                            HinhAnh1 = "images (1).jfif",
+                            MaSp = "SP016"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 49,
+                            HinhAnh1 = "images (2).jfif",
+                            MaSp = "SP017"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 50,
+                            HinhAnh1 = "images (3).jfif",
+                            MaSp = "SP017"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 51,
+                            HinhAnh1 = "images (4).jfif",
+                            MaSp = "SP017"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 52,
+                            HinhAnh1 = "images.jfif",
+                            MaSp = "SP018"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 53,
+                            HinhAnh1 = "TIC00213-scaled.jpg",
+                            MaSp = "SP018"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 54,
+                            HinhAnh1 = "tui-givenchy-nu-hang-11.jpg",
+                            MaSp = "SP018"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 55,
+                            HinhAnh1 = "tui-xach-balenciaga-10-400x400.jpg",
+                            MaSp = "SP019"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 56,
+                            HinhAnh1 = "tui-xach-hang-hieu-dior-16.jpg",
+                            MaSp = "SP019"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 57,
+                            HinhAnh1 = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+                            MaSp = "SP019"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 58,
+                            HinhAnh1 = "tui-xach-prada-chinh-hang-10.jpg",
+                            MaSp = "SP020"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 59,
+                            HinhAnh1 = "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg",
+                            MaSp = "SP020"
+                        },
+                        new
+                        {
+                            MaHinhAnh = 60,
+                            HinhAnh1 = "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg",
+                            MaSp = "SP020"
+                        });
                 });
 
             modelBuilder.Entity("ASMCshrp4_12345.Models.Hoadon", b =>
@@ -691,10 +1523,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH001",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn đầu tiên",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 18),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 20),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -706,10 +1538,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH002",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ hai",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 19),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 21),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -721,10 +1553,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH003",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ ba",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 17),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 19),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -736,10 +1568,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH004",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ tư",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 21),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 23),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -751,10 +1583,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH005",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ năm",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 18),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 20),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -766,10 +1598,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH006",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ sáu",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 19),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 21),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -781,10 +1613,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH007",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ bảy",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 20),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 22),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -796,10 +1628,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH008",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ tám",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 18),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 20),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -811,10 +1643,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH009",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ chín",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 21),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 23),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -826,10 +1658,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH010",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ mười",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 19),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 21),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -841,10 +1673,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH011",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ mười một",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 18),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 20),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -856,10 +1688,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH012",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ mười hai",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 21),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 23),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -871,10 +1703,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ mười ba",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 18),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 20),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -886,10 +1718,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ mười bốn",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 19),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 21),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -901,10 +1733,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ mười lăm",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 20),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 22),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -916,10 +1748,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ mười sáu",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 18),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 20),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -931,10 +1763,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ mười bảy",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 19),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 21),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -946,10 +1778,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV003",
                             MoTa = "Hóa đơn thứ mười tám",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0912345678",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 20),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 22),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -961,10 +1793,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV001",
                             MoTa = "Hóa đơn thứ mười chín",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0123456789",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 18),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 20),
                             TinhTrang = "Đã thanh toán"
                         },
                         new
@@ -976,10 +1808,10 @@ namespace ASMCshrp4_12345.Migrations
                             MaKh = "KH013",
                             MaNv = "NV002",
                             MoTa = "Hóa đơn thứ hai mươi",
-                            NgayTao = new DateOnly(2024, 11, 16),
+                            NgayTao = new DateOnly(2024, 11, 18),
                             Sdt = "0987654321",
-                            ThoiGianDat = new DateOnly(2024, 11, 16),
-                            ThoiGianGiao = new DateOnly(2024, 11, 19),
+                            ThoiGianDat = new DateOnly(2024, 11, 18),
+                            ThoiGianGiao = new DateOnly(2024, 11, 21),
                             TinhTrang = "Đã thanh toán"
                         });
                 });
@@ -1295,7 +2127,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaKichThuoc = 3,
                             IsDelete = false,
-                            KichThuoc1 = "40 x 30 x 20 trở lên",
+                            KichThuoc1 = "40 x 30 x 20",
                             TenKichThuoc = "Lớn"
                         });
                 });
@@ -2164,7 +2996,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP001",
                             DonGiaBan = 15000000.0,
-                            Hinh = "gucci_bag.jpg",
+                            Hinh = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC01",
                             MaThuongHieu = "TH001",
@@ -2177,7 +3009,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP002",
                             DonGiaBan = 20000000.0,
-                            Hinh = "lv_bag.jpg",
+                            Hinh = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC02",
                             MaThuongHieu = "TH002",
@@ -2190,7 +3022,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP003",
                             DonGiaBan = 18000000.0,
-                            Hinh = "chanel_bag.jpg",
+                            Hinh = "images.jfif",
                             IsDelete = false,
                             MaNhaCc = "NCC01",
                             MaThuongHieu = "TH003",
@@ -2203,7 +3035,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP004",
                             DonGiaBan = 17000000.0,
-                            Hinh = "prada_bag.jpg",
+                            Hinh = "tui-xach-prada-chinh-hang-10.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC03",
                             MaThuongHieu = "TH004",
@@ -2216,7 +3048,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP005",
                             DonGiaBan = 12000000.0,
-                            Hinh = "mk_bag.jpg",
+                            Hinh = "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC02",
                             MaThuongHieu = "TH005",
@@ -2229,7 +3061,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP006",
                             DonGiaBan = 30000000.0,
-                            Hinh = "hermes_bag.jpg",
+                            Hinh = "images (1).jfif",
                             IsDelete = false,
                             MaNhaCc = "NCC01",
                             MaThuongHieu = "TH006",
@@ -2242,7 +3074,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP007",
                             DonGiaBan = 9500000.0,
-                            Hinh = "coach_bag.jpg",
+                            Hinh = "images (2).jfif",
                             IsDelete = false,
                             MaNhaCc = "NCC03",
                             MaThuongHieu = "TH007",
@@ -2255,7 +3087,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP008",
                             DonGiaBan = 11000000.0,
-                            Hinh = "kate_spade_bag.jpg",
+                            Hinh = "TIC00213-scaled.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC02",
                             MaThuongHieu = "TH008",
@@ -2268,7 +3100,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP009",
                             DonGiaBan = 7500000.0,
-                            Hinh = "fossil_bag.jpg",
+                            Hinh = "images (3).jfif",
                             IsDelete = false,
                             MaNhaCc = "NCC01",
                             MaThuongHieu = "TH009",
@@ -2281,7 +3113,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP010",
                             DonGiaBan = 8000000.0,
-                            Hinh = "ck_bag.jpg",
+                            Hinh = "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC03",
                             MaThuongHieu = "TH010",
@@ -2294,7 +3126,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP011",
                             DonGiaBan = 25000000.0,
-                            Hinh = "dior_bag.jpg",
+                            Hinh = "tui-xach-hang-hieu-dior-16.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC02",
                             MaThuongHieu = "TH001",
@@ -2307,7 +3139,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP012",
                             DonGiaBan = 29000000.0,
-                            Hinh = "balenciaga_bag.jpg",
+                            Hinh = "tui-xach-balenciaga-10-400x400.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC01",
                             MaThuongHieu = "TH002",
@@ -2320,7 +3152,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP013",
                             DonGiaBan = 22000000.0,
-                            Hinh = "givenchy_bag.jpg",
+                            Hinh = "tui-givenchy-nu-hang-11.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC02",
                             MaThuongHieu = "TH003",
@@ -2333,7 +3165,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP014",
                             DonGiaBan = 9000000.0,
-                            Hinh = "tommy_bag.jpg",
+                            Hinh = "f6a59412f7418faedec46a76c2398b3f-1.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC03",
                             MaThuongHieu = "TH004",
@@ -2346,7 +3178,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP015",
                             DonGiaBan = 10500000.0,
-                            Hinh = "tory_burch_bag.jpg",
+                            Hinh = "images (4).jfif",
                             IsDelete = false,
                             MaNhaCc = "NCC01",
                             MaThuongHieu = "TH005",
@@ -2359,7 +3191,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP016",
                             DonGiaBan = 6500000.0,
-                            Hinh = "lacoste_bag.jpg",
+                            Hinh = "f6a59412f7418faedec46a76c2398b3f-1.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC02",
                             MaThuongHieu = "TH006",
@@ -2372,7 +3204,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP017",
                             DonGiaBan = 7200000.0,
-                            Hinh = "reebok_bag.jpg",
+                            Hinh = "images (1).jfif",
                             IsDelete = false,
                             MaNhaCc = "NCC03",
                             MaThuongHieu = "TH007",
@@ -2385,7 +3217,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP018",
                             DonGiaBan = 5600000.0,
-                            Hinh = "vans_bag.jpg",
+                            Hinh = "f6a59412f7418faedec46a76c2398b3f-1.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC01",
                             MaThuongHieu = "TH008",
@@ -2398,7 +3230,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP019",
                             DonGiaBan = 8000000.0,
-                            Hinh = "under_armour_bag.jpg",
+                            Hinh = "images (1).jfif",
                             IsDelete = false,
                             MaNhaCc = "NCC02",
                             MaThuongHieu = "TH009",
@@ -2411,7 +3243,7 @@ namespace ASMCshrp4_12345.Migrations
                         {
                             MaSp = "SP020",
                             DonGiaBan = 7800000.0,
-                            Hinh = "nike_bag.jpg",
+                            Hinh = "f6a59412f7418faedec46a76c2398b3f-1.jpg",
                             IsDelete = false,
                             MaNhaCc = "NCC03",
                             MaThuongHieu = "TH010",
@@ -2543,7 +3375,7 @@ namespace ASMCshrp4_12345.Migrations
                             IdBinhLuan = 3,
                             MaNV = "NV003",
                             NoiDung = "Cảm ơn bạn đã phản hồi! Hẹn gặp bạn ở lần mua tiếp theo.",
-                            ThoiGian = new DateTime(2024, 11, 16, 12, 25, 12, 549, DateTimeKind.Local).AddTicks(3962),
+                            ThoiGian = new DateTime(2024, 11, 18, 22, 55, 14, 72, DateTimeKind.Local).AddTicks(1332),
                             isDelete = false
                         },
                         new
@@ -2552,7 +3384,7 @@ namespace ASMCshrp4_12345.Migrations
                             IdBinhLuan = 4,
                             MaNV = "NV004",
                             NoiDung = "Chúng tôi đã nhận thông tin và sẽ hỗ trợ bạn sớm nhất.",
-                            ThoiGian = new DateTime(2024, 11, 16, 12, 10, 12, 549, DateTimeKind.Local).AddTicks(3967),
+                            ThoiGian = new DateTime(2024, 11, 18, 22, 40, 14, 72, DateTimeKind.Local).AddTicks(1337),
                             isDelete = false
                         },
                         new
@@ -2561,7 +3393,7 @@ namespace ASMCshrp4_12345.Migrations
                             IdBinhLuan = 5,
                             MaNV = "NV005",
                             NoiDung = "Cảm ơn bạn đã tin tưởng sử dụng dịch vụ của chúng tôi.",
-                            ThoiGian = new DateTime(2024, 11, 16, 11, 55, 12, 549, DateTimeKind.Local).AddTicks(3969),
+                            ThoiGian = new DateTime(2024, 11, 18, 22, 25, 14, 72, DateTimeKind.Local).AddTicks(1338),
                             isDelete = false
                         },
                         new
@@ -2570,7 +3402,7 @@ namespace ASMCshrp4_12345.Migrations
                             IdBinhLuan = 6,
                             MaNV = "NV006",
                             NoiDung = "Chúng tôi rất vui vì bạn hài lòng!",
-                            ThoiGian = new DateTime(2024, 11, 16, 11, 40, 12, 549, DateTimeKind.Local).AddTicks(3971),
+                            ThoiGian = new DateTime(2024, 11, 18, 22, 10, 14, 72, DateTimeKind.Local).AddTicks(1340),
                             isDelete = false
                         },
                         new
@@ -2579,7 +3411,7 @@ namespace ASMCshrp4_12345.Migrations
                             IdBinhLuan = 7,
                             MaNV = "NV007",
                             NoiDung = "Chúng tôi rất tiếc, hãy liên hệ để được hỗ trợ đổi trả.",
-                            ThoiGian = new DateTime(2024, 11, 16, 11, 10, 12, 549, DateTimeKind.Local).AddTicks(4034),
+                            ThoiGian = new DateTime(2024, 11, 18, 21, 40, 14, 72, DateTimeKind.Local).AddTicks(1341),
                             isDelete = false
                         });
                 });

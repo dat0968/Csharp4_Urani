@@ -129,8 +129,20 @@
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\5142c18d042f33912aa14b8340f1db20.jfif"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\TIC00213-scaled.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\TIC00213-scaled.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Tháng Tư Là Lời Nói Dối Của Em.mp3",
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\Tháng Tư Là Lời Nói Dối Của Em.mp3"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\anh-my-pham-02.jpg",
@@ -157,6 +169,10 @@
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\f5792f67-9cdc-4b10-a9ee-f531b311a515.jpg"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\f6a59412f7418faedec46a76c2398b3f-1.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\f6a59412f7418faedec46a76c2398b3f-1.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag.jpg",
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\gucci_bag.jpg"
     },
@@ -171,6 +187,26 @@
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\gucci_bag4.jpg",
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\gucci_bag4.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\images (1).jfif",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\images (1).jfif"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\images (2).jfif",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\images (2).jfif"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\images (3).jfif",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\images (3).jfif"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\images (4).jfif",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\images (4).jfif"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\images.jfif",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\images.jfif"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp001.png",
@@ -215,6 +251,30 @@
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp015c.png",
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\sp015c.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\tui-givenchy-nu-hang-11.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\tui-givenchy-nu-hang-11.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\tui-xach-balenciaga-10-400x400.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\tui-xach-balenciaga-10-400x400.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\tui-xach-hang-hieu-dior-16.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\tui-xach-hang-hieu-dior-16.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\tui-xach-prada-chinh-hang-10.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\tui-xach-prada-chinh-hang-10.jpg"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\vn-11134201-7qukw-lescmnup06dz29.jfif",

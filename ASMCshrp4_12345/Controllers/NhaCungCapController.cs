@@ -15,7 +15,7 @@ namespace ASMCshrp4_12345.Controllers
         {
             ViewBag.ShowDeleted = showDeleted;
 
-            var nhacungcaps = _context.Nhacungcaps.AsQueryable();
+            var nhacungcaps = _context.Nhacungcaps.Where(p => p.IsDelete == false).AsQueryable();
 
             if (!showDeleted)
             {
@@ -51,6 +51,7 @@ namespace ASMCshrp4_12345.Controllers
             {
                 _context.Add(nhacungcap);
                 _context.SaveChanges();
+                TempData["SuccessMessage"] = "Thêm nhà cung cấp thành công!";
                 return RedirectToAction(nameof(Index));
             }
             return View(nhacungcap);
@@ -75,6 +76,7 @@ namespace ASMCshrp4_12345.Controllers
             {
                 _context.Update(nhacungcap);
                 _context.SaveChanges();
+                TempData["SuccessMessage"] = "Cập nhật thông tin nhà cung cấp thành công!";
                 return RedirectToAction(nameof(Index));
             }
             return View(nhacungcap);
@@ -99,6 +101,7 @@ namespace ASMCshrp4_12345.Controllers
                 nhacungcap.IsDelete = true;
                 _context.Update(nhacungcap);
                 _context.SaveChanges();
+                TempData["SuccessMessage"] = "Xóa nhà cung cấp thành công!";
             }
             return RedirectToAction(nameof(Index));
         }

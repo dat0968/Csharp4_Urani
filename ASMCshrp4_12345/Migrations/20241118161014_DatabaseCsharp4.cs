@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ASMCshrp4_12345.Migrations
 {
     /// <inheritdoc />
-    public partial class createRangtingComment : Migration
+    public partial class DatabaseCsharp4 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -457,7 +457,7 @@ namespace ASMCshrp4_12345.Migrations
                 {
                     { 1, false, "20 x 15 x 10", "Nhỏ" },
                     { 2, false, "30 x 25 x 15", "Trung Bình" },
-                    { 3, false, "40 x 30 x 20 trở lên", "Lớn" }
+                    { 3, false, "40 x 30 x 20", "Lớn" }
                 });
 
             migrationBuilder.InsertData(
@@ -570,26 +570,26 @@ namespace ASMCshrp4_12345.Migrations
                 columns: new[] { "MaHoaDon", "DiaChiNhanHang", "Hoten", "Httt", "MaKh", "MaNv", "MoTa", "NgayTao", "Sdt", "ThoiGianDat", "ThoiGianGiao", "TinhTrang" },
                 values: new object[,]
                 {
-                    { "HD001", "123 Đường A, Quận 1", "Nguyễn Văn A", "COD", "KH001", "NV001", "Hóa đơn đầu tiên", new DateOnly(2024, 11, 16), "0123456789", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 18), "Đã thanh toán" },
-                    { "HD002", "456 Đường B, Quận 2", "Trần Thị B", "COD", "KH002", "NV002", "Hóa đơn thứ hai", new DateOnly(2024, 11, 16), "0987654321", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 19), "Đã thanh toán" },
-                    { "HD003", "789 Đường C, Quận 3", "Nguyễn Thị C", "COD", "KH003", "NV003", "Hóa đơn thứ ba", new DateOnly(2024, 11, 16), "0912345678", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 17), "Đã thanh toán" },
-                    { "HD004", "321 Đường D, Quận 4", "Lê Văn D", "COD", "KH004", "NV001", "Hóa đơn thứ tư", new DateOnly(2024, 11, 16), "0123456789", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 21), "Đã thanh toán" },
-                    { "HD005", "654 Đường E, Quận 5", "Nguyễn Văn E", "COD", "KH005", "NV002", "Hóa đơn thứ năm", new DateOnly(2024, 11, 16), "0987654321", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 18), "Đã thanh toán" },
-                    { "HD006", "987 Đường F, Quận 6", "Trần Thị F", "COD", "KH006", "NV003", "Hóa đơn thứ sáu", new DateOnly(2024, 11, 16), "0912345678", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 19), "Đã thanh toán" },
-                    { "HD007", "159 Đường G, Quận 7", "Nguyễn Văn G", "COD", "KH007", "NV001", "Hóa đơn thứ bảy", new DateOnly(2024, 11, 16), "0123456789", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 20), "Đã thanh toán" },
-                    { "HD008", "753 Đường H, Quận 8", "Lê Thị H", "COD", "KH008", "NV002", "Hóa đơn thứ tám", new DateOnly(2024, 11, 16), "0987654321", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 18), "Đã thanh toán" },
-                    { "HD009", "258 Đường I, Quận 9", "Nguyễn Văn I", "COD", "KH009", "NV003", "Hóa đơn thứ chín", new DateOnly(2024, 11, 16), "0912345678", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 21), "Đã thanh toán" },
-                    { "HD010", "369 Đường J, Quận 10", "Trần Văn J", "COD", "KH010", "NV001", "Hóa đơn thứ mười", new DateOnly(2024, 11, 16), "0123456789", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 19), "Đã thanh toán" },
-                    { "HD011", "123 Đường K, Quận 11", "Lê Thị K", "COD", "KH011", "NV002", "Hóa đơn thứ mười một", new DateOnly(2024, 11, 16), "0987654321", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 18), "Đã thanh toán" },
-                    { "HD012", "456 Đường L, Quận 12", "Nguyễn Văn L", "COD", "KH012", "NV003", "Hóa đơn thứ mười hai", new DateOnly(2024, 11, 16), "0912345678", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 21), "Đã thanh toán" },
-                    { "HD013", "789 Đường M, Quận 1", "Lê Văn M", "COD", "KH013", "NV001", "Hóa đơn thứ mười ba", new DateOnly(2024, 11, 16), "0123456789", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 18), "Đã thanh toán" },
-                    { "HD014", "321 Đường N, Quận 2", "Nguyễn Thị N", "COD", "KH013", "NV002", "Hóa đơn thứ mười bốn", new DateOnly(2024, 11, 16), "0987654321", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 19), "Đã thanh toán" },
-                    { "HD015", "654 Đường O, Quận 3", "Lê Văn O", "COD", "KH013", "NV003", "Hóa đơn thứ mười lăm", new DateOnly(2024, 11, 16), "0912345678", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 20), "Đã thanh toán" },
-                    { "HD016", "987 Đường P, Quận 4", "Nguyễn Văn P", "COD", "KH013", "NV001", "Hóa đơn thứ mười sáu", new DateOnly(2024, 11, 16), "0123456789", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 18), "Đã thanh toán" },
-                    { "HD017", "159 Đường Q, Quận 5", "Trần Thị Q", "COD", "KH013", "NV002", "Hóa đơn thứ mười bảy", new DateOnly(2024, 11, 16), "0987654321", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 19), "Đã thanh toán" },
-                    { "HD018", "753 Đường R, Quận 6", "Lê Văn R", "COD", "KH013", "NV003", "Hóa đơn thứ mười tám", new DateOnly(2024, 11, 16), "0912345678", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 20), "Đã thanh toán" },
-                    { "HD019", "258 Đường S, Quận 7", "Nguyễn Thị S", "COD", "KH013", "NV001", "Hóa đơn thứ mười chín", new DateOnly(2024, 11, 16), "0123456789", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 18), "Đã thanh toán" },
-                    { "HD020", "369 Đường T, Quận 8", "Lê Văn T", "COD", "KH013", "NV002", "Hóa đơn thứ hai mươi", new DateOnly(2024, 11, 16), "0987654321", new DateOnly(2024, 11, 16), new DateOnly(2024, 11, 19), "Đã thanh toán" }
+                    { "HD001", "123 Đường A, Quận 1", "Nguyễn Văn A", "COD", "KH001", "NV001", "Hóa đơn đầu tiên", new DateOnly(2024, 11, 18), "0123456789", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 20), "Đã thanh toán" },
+                    { "HD002", "456 Đường B, Quận 2", "Trần Thị B", "COD", "KH002", "NV002", "Hóa đơn thứ hai", new DateOnly(2024, 11, 18), "0987654321", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 21), "Đã thanh toán" },
+                    { "HD003", "789 Đường C, Quận 3", "Nguyễn Thị C", "COD", "KH003", "NV003", "Hóa đơn thứ ba", new DateOnly(2024, 11, 18), "0912345678", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 19), "Đã thanh toán" },
+                    { "HD004", "321 Đường D, Quận 4", "Lê Văn D", "COD", "KH004", "NV001", "Hóa đơn thứ tư", new DateOnly(2024, 11, 18), "0123456789", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 23), "Đã thanh toán" },
+                    { "HD005", "654 Đường E, Quận 5", "Nguyễn Văn E", "COD", "KH005", "NV002", "Hóa đơn thứ năm", new DateOnly(2024, 11, 18), "0987654321", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 20), "Đã thanh toán" },
+                    { "HD006", "987 Đường F, Quận 6", "Trần Thị F", "COD", "KH006", "NV003", "Hóa đơn thứ sáu", new DateOnly(2024, 11, 18), "0912345678", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 21), "Đã thanh toán" },
+                    { "HD007", "159 Đường G, Quận 7", "Nguyễn Văn G", "COD", "KH007", "NV001", "Hóa đơn thứ bảy", new DateOnly(2024, 11, 18), "0123456789", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 22), "Đã thanh toán" },
+                    { "HD008", "753 Đường H, Quận 8", "Lê Thị H", "COD", "KH008", "NV002", "Hóa đơn thứ tám", new DateOnly(2024, 11, 18), "0987654321", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 20), "Đã thanh toán" },
+                    { "HD009", "258 Đường I, Quận 9", "Nguyễn Văn I", "COD", "KH009", "NV003", "Hóa đơn thứ chín", new DateOnly(2024, 11, 18), "0912345678", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 23), "Đã thanh toán" },
+                    { "HD010", "369 Đường J, Quận 10", "Trần Văn J", "COD", "KH010", "NV001", "Hóa đơn thứ mười", new DateOnly(2024, 11, 18), "0123456789", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 21), "Đã thanh toán" },
+                    { "HD011", "123 Đường K, Quận 11", "Lê Thị K", "COD", "KH011", "NV002", "Hóa đơn thứ mười một", new DateOnly(2024, 11, 18), "0987654321", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 20), "Đã thanh toán" },
+                    { "HD012", "456 Đường L, Quận 12", "Nguyễn Văn L", "COD", "KH012", "NV003", "Hóa đơn thứ mười hai", new DateOnly(2024, 11, 18), "0912345678", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 23), "Đã thanh toán" },
+                    { "HD013", "789 Đường M, Quận 1", "Lê Văn M", "COD", "KH013", "NV001", "Hóa đơn thứ mười ba", new DateOnly(2024, 11, 18), "0123456789", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 20), "Đã thanh toán" },
+                    { "HD014", "321 Đường N, Quận 2", "Nguyễn Thị N", "COD", "KH013", "NV002", "Hóa đơn thứ mười bốn", new DateOnly(2024, 11, 18), "0987654321", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 21), "Đã thanh toán" },
+                    { "HD015", "654 Đường O, Quận 3", "Lê Văn O", "COD", "KH013", "NV003", "Hóa đơn thứ mười lăm", new DateOnly(2024, 11, 18), "0912345678", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 22), "Đã thanh toán" },
+                    { "HD016", "987 Đường P, Quận 4", "Nguyễn Văn P", "COD", "KH013", "NV001", "Hóa đơn thứ mười sáu", new DateOnly(2024, 11, 18), "0123456789", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 20), "Đã thanh toán" },
+                    { "HD017", "159 Đường Q, Quận 5", "Trần Thị Q", "COD", "KH013", "NV002", "Hóa đơn thứ mười bảy", new DateOnly(2024, 11, 18), "0987654321", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 21), "Đã thanh toán" },
+                    { "HD018", "753 Đường R, Quận 6", "Lê Văn R", "COD", "KH013", "NV003", "Hóa đơn thứ mười tám", new DateOnly(2024, 11, 18), "0912345678", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 22), "Đã thanh toán" },
+                    { "HD019", "258 Đường S, Quận 7", "Nguyễn Thị S", "COD", "KH013", "NV001", "Hóa đơn thứ mười chín", new DateOnly(2024, 11, 18), "0123456789", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 20), "Đã thanh toán" },
+                    { "HD020", "369 Đường T, Quận 8", "Lê Văn T", "COD", "KH013", "NV002", "Hóa đơn thứ hai mươi", new DateOnly(2024, 11, 18), "0987654321", new DateOnly(2024, 11, 18), new DateOnly(2024, 11, 21), "Đã thanh toán" }
                 });
 
             migrationBuilder.InsertData(
@@ -597,26 +597,26 @@ namespace ASMCshrp4_12345.Migrations
                 columns: new[] { "MaSp", "DonGiaBan", "Hinh", "IsDelete", "MaNhaCc", "MaThuongHieu", "MoTa", "NgaySanXuat", "SoLuongBan", "TenSp" },
                 values: new object[,]
                 {
-                    { "SP001", 15000000.0, "gucci_bag.jpg", false, "NCC01", "TH001", "Túi xách cao cấp thương hiệu Gucci.", new DateOnly(2023, 1, 1), 50, "Túi Xách Gucci" },
-                    { "SP002", 20000000.0, "lv_bag.jpg", false, "NCC02", "TH002", "Túi xách sang trọng của Louis Vuitton.", new DateOnly(2023, 1, 5), 30, "Túi Xách Louis Vuitton" },
-                    { "SP003", 18000000.0, "chanel_bag.jpg", false, "NCC01", "TH003", "Túi xách đẹp và quý phái của Chanel.", new DateOnly(2023, 1, 10), 25, "Túi Xách Chanel" },
-                    { "SP004", 17000000.0, "prada_bag.jpg", false, "NCC03", "TH004", "Túi xách thời trang của Prada.", new DateOnly(2023, 1, 15), 40, "Túi Xách Prada" },
-                    { "SP005", 12000000.0, "mk_bag.jpg", false, "NCC02", "TH005", "Túi xách phong cách và tiện lợi của Michael Kors.", new DateOnly(2023, 2, 1), 60, "Túi Xách Michael Kors" },
-                    { "SP006", 30000000.0, "hermes_bag.jpg", false, "NCC01", "TH006", "Túi xách xa xỉ thương hiệu Hermès.", new DateOnly(2023, 2, 5), 20, "Túi Xách Hermès" },
-                    { "SP007", 9500000.0, "coach_bag.jpg", false, "NCC03", "TH007", "Túi xách tiện dụng của Coach.", new DateOnly(2023, 2, 10), 45, "Túi Xách Coach" },
-                    { "SP008", 11000000.0, "kate_spade_bag.jpg", false, "NCC02", "TH008", "Túi xách nữ tính của Kate Spade.", new DateOnly(2023, 2, 15), 35, "Túi Xách Kate Spade" },
-                    { "SP009", 7500000.0, "fossil_bag.jpg", false, "NCC01", "TH009", "Túi xách năng động của Fossil.", new DateOnly(2023, 3, 1), 50, "Túi Xách Fossil" },
-                    { "SP010", 8000000.0, "ck_bag.jpg", false, "NCC03", "TH010", "Túi xách hiện đại của Calvin Klein.", new DateOnly(2023, 3, 5), 65, "Túi Xách Calvin Klein" },
-                    { "SP011", 25000000.0, "dior_bag.jpg", false, "NCC02", "TH001", "Túi xách thời thượng của Dior.", new DateOnly(2023, 3, 10), 30, "Túi Xách Dior" },
-                    { "SP012", 29000000.0, "balenciaga_bag.jpg", false, "NCC01", "TH002", "Túi xách độc đáo của Balenciaga.", new DateOnly(2023, 3, 15), 20, "Túi Xách Balenciaga" },
-                    { "SP013", 22000000.0, "givenchy_bag.jpg", false, "NCC02", "TH003", "Túi xách thanh lịch của Givenchy.", new DateOnly(2023, 4, 1), 25, "Túi Xách Givenchy" },
-                    { "SP014", 9000000.0, "tommy_bag.jpg", false, "NCC03", "TH004", "Túi xách phong cách của Tommy Hilfiger.", new DateOnly(2023, 4, 5), 40, "Túi Xách Tommy Hilfiger" },
-                    { "SP015", 10500000.0, "tory_burch_bag.jpg", false, "NCC01", "TH005", "Túi xách trẻ trung của Tory Burch.", new DateOnly(2023, 4, 10), 50, "Túi Xách Tory Burch" },
-                    { "SP016", 6500000.0, "lacoste_bag.jpg", false, "NCC02", "TH006", "Túi xách thể thao của Lacoste.", new DateOnly(2023, 4, 15), 30, "Túi Xách Lacoste" },
-                    { "SP017", 7200000.0, "reebok_bag.jpg", false, "NCC03", "TH007", "Túi xách năng động của Reebok.", new DateOnly(2023, 5, 1), 20, "Túi Xách Reebok" },
-                    { "SP018", 5600000.0, "vans_bag.jpg", false, "NCC01", "TH008", "Túi xách cá tính của Vans.", new DateOnly(2023, 5, 5), 35, "Túi Xách Vans" },
-                    { "SP019", 8000000.0, "under_armour_bag.jpg", false, "NCC02", "TH009", "Túi xách bền bỉ của Under Armour.", new DateOnly(2023, 5, 10), 25, "Túi Xách Under Armour" },
-                    { "SP020", 7800000.0, "nike_bag.jpg", false, "NCC03", "TH010", "Túi xách thời trang của Nike.", new DateOnly(2023, 5, 15), 40, "Túi Xách Nike" }
+                    { "SP001", 15000000.0, "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg", false, "NCC01", "TH001", "Túi xách cao cấp thương hiệu Gucci.", new DateOnly(2023, 1, 1), 50, "Túi Xách Gucci" },
+                    { "SP002", 20000000.0, "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg", false, "NCC02", "TH002", "Túi xách sang trọng của Louis Vuitton.", new DateOnly(2023, 1, 5), 30, "Túi Xách Louis Vuitton" },
+                    { "SP003", 18000000.0, "images.jfif", false, "NCC01", "TH003", "Túi xách đẹp và quý phái của Chanel.", new DateOnly(2023, 1, 10), 25, "Túi Xách Chanel" },
+                    { "SP004", 17000000.0, "tui-xach-prada-chinh-hang-10.jpg", false, "NCC03", "TH004", "Túi xách thời trang của Prada.", new DateOnly(2023, 1, 15), 40, "Túi Xách Prada" },
+                    { "SP005", 12000000.0, "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg", false, "NCC02", "TH005", "Túi xách phong cách và tiện lợi của Michael Kors.", new DateOnly(2023, 2, 1), 60, "Túi Xách Michael Kors" },
+                    { "SP006", 30000000.0, "images (1).jfif", false, "NCC01", "TH006", "Túi xách xa xỉ thương hiệu Hermès.", new DateOnly(2023, 2, 5), 20, "Túi Xách Hermès" },
+                    { "SP007", 9500000.0, "images (2).jfif", false, "NCC03", "TH007", "Túi xách tiện dụng của Coach.", new DateOnly(2023, 2, 10), 45, "Túi Xách Coach" },
+                    { "SP008", 11000000.0, "TIC00213-scaled.jpg", false, "NCC02", "TH008", "Túi xách nữ tính của Kate Spade.", new DateOnly(2023, 2, 15), 35, "Túi Xách Kate Spade" },
+                    { "SP009", 7500000.0, "images (3).jfif", false, "NCC01", "TH009", "Túi xách năng động của Fossil.", new DateOnly(2023, 3, 1), 50, "Túi Xách Fossil" },
+                    { "SP010", 8000000.0, "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg", false, "NCC03", "TH010", "Túi xách hiện đại của Calvin Klein.", new DateOnly(2023, 3, 5), 65, "Túi Xách Calvin Klein" },
+                    { "SP011", 25000000.0, "tui-xach-hang-hieu-dior-16.jpg", false, "NCC02", "TH001", "Túi xách thời thượng của Dior.", new DateOnly(2023, 3, 10), 30, "Túi Xách Dior" },
+                    { "SP012", 29000000.0, "tui-xach-balenciaga-10-400x400.jpg", false, "NCC01", "TH002", "Túi xách độc đáo của Balenciaga.", new DateOnly(2023, 3, 15), 20, "Túi Xách Balenciaga" },
+                    { "SP013", 22000000.0, "tui-givenchy-nu-hang-11.jpg", false, "NCC02", "TH003", "Túi xách thanh lịch của Givenchy.", new DateOnly(2023, 4, 1), 25, "Túi Xách Givenchy" },
+                    { "SP014", 9000000.0, "f6a59412f7418faedec46a76c2398b3f-1.jpg", false, "NCC03", "TH004", "Túi xách phong cách của Tommy Hilfiger.", new DateOnly(2023, 4, 5), 40, "Túi Xách Tommy Hilfiger" },
+                    { "SP015", 10500000.0, "images (4).jfif", false, "NCC01", "TH005", "Túi xách trẻ trung của Tory Burch.", new DateOnly(2023, 4, 10), 50, "Túi Xách Tory Burch" },
+                    { "SP016", 6500000.0, "f6a59412f7418faedec46a76c2398b3f-1.jpg", false, "NCC02", "TH006", "Túi xách thể thao của Lacoste.", new DateOnly(2023, 4, 15), 30, "Túi Xách Lacoste" },
+                    { "SP017", 7200000.0, "images (1).jfif", false, "NCC03", "TH007", "Túi xách năng động của Reebok.", new DateOnly(2023, 5, 1), 20, "Túi Xách Reebok" },
+                    { "SP018", 5600000.0, "f6a59412f7418faedec46a76c2398b3f-1.jpg", false, "NCC01", "TH008", "Túi xách cá tính của Vans.", new DateOnly(2023, 5, 5), 35, "Túi Xách Vans" },
+                    { "SP019", 8000000.0, "images (1).jfif", false, "NCC02", "TH009", "Túi xách bền bỉ của Under Armour.", new DateOnly(2023, 5, 10), 25, "Túi Xách Under Armour" },
+                    { "SP020", 7800000.0, "f6a59412f7418faedec46a76c2398b3f-1.jpg", false, "NCC03", "TH010", "Túi xách thời trang của Nike.", new DateOnly(2023, 5, 15), 40, "Túi Xách Nike" }
                 });
 
             migrationBuilder.InsertData(
@@ -624,11 +624,11 @@ namespace ASMCshrp4_12345.Migrations
                 columns: new[] { "IdBinhLuan", "MaKH", "MaSP", "NoiDung", "Rating", "ThoiGian", "isDelete" },
                 values: new object[,]
                 {
-                    { 3, "KH003", "SP003", "Chất lượng sản phẩm ổn so với giá.", 4.0, new DateTime(2024, 11, 16, 11, 40, 12, 549, DateTimeKind.Local).AddTicks(3913), false },
-                    { 4, "KH004", "SP004", "Hàng lỗi, cần đổi trả gấp.", 2.0, new DateTime(2024, 11, 16, 10, 40, 12, 549, DateTimeKind.Local).AddTicks(3917), false },
-                    { 5, "KH005", "SP005", "Dịch vụ khách hàng rất tốt!", 5.0, new DateTime(2024, 11, 15, 12, 40, 12, 549, DateTimeKind.Local).AddTicks(3919), false },
-                    { 6, "KH006", "SP006", "Giao hàng nhanh, sản phẩm đẹp.", 5.0, new DateTime(2024, 11, 14, 12, 40, 12, 549, DateTimeKind.Local).AddTicks(3922), false },
-                    { 7, "KH007", "SP007", "Không giống hình trên web, thất vọng.", 1.0, new DateTime(2024, 11, 13, 12, 40, 12, 549, DateTimeKind.Local).AddTicks(3924), false }
+                    { 3, "KH003", "SP003", "Chất lượng sản phẩm ổn so với giá.", 4.0, new DateTime(2024, 11, 18, 22, 10, 14, 72, DateTimeKind.Local).AddTicks(1293), false },
+                    { 4, "KH004", "SP004", "Hàng lỗi, cần đổi trả gấp.", 2.0, new DateTime(2024, 11, 18, 21, 10, 14, 72, DateTimeKind.Local).AddTicks(1298), false },
+                    { 5, "KH005", "SP005", "Dịch vụ khách hàng rất tốt!", 5.0, new DateTime(2024, 11, 17, 23, 10, 14, 72, DateTimeKind.Local).AddTicks(1300), false },
+                    { 6, "KH006", "SP006", "Giao hàng nhanh, sản phẩm đẹp.", 5.0, new DateTime(2024, 11, 16, 23, 10, 14, 72, DateTimeKind.Local).AddTicks(1302), false },
+                    { 7, "KH007", "SP007", "Không giống hình trên web, thất vọng.", 1.0, new DateTime(2024, 11, 15, 23, 10, 14, 72, DateTimeKind.Local).AddTicks(1304), false }
                 });
 
             migrationBuilder.InsertData(
@@ -637,11 +637,45 @@ namespace ASMCshrp4_12345.Migrations
                 values: new object[,]
                 {
                     { 1, "SP001" },
+                    { 1, "SP003" },
+                    { 1, "SP004" },
                     { 1, "SP006" },
+                    { 1, "SP007" },
+                    { 1, "SP009" },
+                    { 1, "SP010" },
+                    { 1, "SP012" },
+                    { 1, "SP013" },
+                    { 1, "SP015" },
+                    { 1, "SP016" },
+                    { 1, "SP018" },
+                    { 2, "SP001" },
                     { 2, "SP002" },
+                    { 2, "SP004" },
+                    { 2, "SP005" },
                     { 2, "SP007" },
+                    { 2, "SP008" },
+                    { 2, "SP010" },
+                    { 2, "SP011" },
+                    { 2, "SP013" },
+                    { 2, "SP014" },
+                    { 2, "SP016" },
+                    { 2, "SP017" },
+                    { 2, "SP019" },
+                    { 2, "SP020" },
+                    { 3, "SP002" },
                     { 3, "SP003" },
-                    { 3, "SP008" }
+                    { 3, "SP005" },
+                    { 3, "SP006" },
+                    { 3, "SP008" },
+                    { 3, "SP009" },
+                    { 3, "SP011" },
+                    { 3, "SP012" },
+                    { 3, "SP014" },
+                    { 3, "SP015" },
+                    { 3, "SP017" },
+                    { 3, "SP018" },
+                    { 3, "SP019" },
+                    { 3, "SP020" }
                 });
 
             migrationBuilder.InsertData(
@@ -667,15 +701,45 @@ namespace ASMCshrp4_12345.Migrations
                 values: new object[,]
                 {
                     { 1, "SP001" },
+                    { 1, "SP003" },
                     { 1, "SP004" },
+                    { 1, "SP006" },
                     { 1, "SP007" },
-                    { 1, "SP010" },
+                    { 1, "SP009" },
+                    { 1, "SP011" },
+                    { 1, "SP013" },
+                    { 1, "SP015" },
+                    { 1, "SP017" },
+                    { 1, "SP019" },
+                    { 2, "SP001" },
                     { 2, "SP002" },
+                    { 2, "SP004" },
                     { 2, "SP005" },
+                    { 2, "SP007" },
                     { 2, "SP008" },
+                    { 2, "SP010" },
+                    { 2, "SP012" },
+                    { 2, "SP013" },
+                    { 2, "SP014" },
+                    { 2, "SP016" },
+                    { 2, "SP017" },
+                    { 2, "SP018" },
+                    { 2, "SP020" },
+                    { 3, "SP002" },
                     { 3, "SP003" },
+                    { 3, "SP005" },
                     { 3, "SP006" },
-                    { 3, "SP009" }
+                    { 3, "SP008" },
+                    { 3, "SP009" },
+                    { 3, "SP010" },
+                    { 3, "SP011" },
+                    { 3, "SP012" },
+                    { 3, "SP014" },
+                    { 3, "SP015" },
+                    { 3, "SP016" },
+                    { 3, "SP018" },
+                    { 3, "SP019" },
+                    { 3, "SP020" }
                 });
 
             migrationBuilder.InsertData(
@@ -684,15 +748,45 @@ namespace ASMCshrp4_12345.Migrations
                 values: new object[,]
                 {
                     { 1, "SP001" },
+                    { 1, "SP003" },
                     { 1, "SP006" },
-                    { 2, "SP002" },
-                    { 2, "SP007" },
-                    { 3, "SP003" },
-                    { 3, "SP008" },
-                    { 4, "SP004" },
-                    { 4, "SP009" },
+                    { 1, "SP008" },
+                    { 1, "SP011" },
+                    { 1, "SP013" },
+                    { 1, "SP016" },
+                    { 1, "SP018" },
+                    { 2, "SP001" },
+                    { 2, "SP004" },
+                    { 2, "SP006" },
+                    { 2, "SP009" },
+                    { 2, "SP012" },
+                    { 2, "SP014" },
+                    { 2, "SP016" },
+                    { 2, "SP019" },
+                    { 3, "SP002" },
+                    { 3, "SP004" },
+                    { 3, "SP007" },
+                    { 3, "SP009" },
+                    { 3, "SP011" },
+                    { 3, "SP014" },
+                    { 3, "SP017" },
+                    { 3, "SP019" },
+                    { 4, "SP002" },
+                    { 4, "SP005" },
+                    { 4, "SP007" },
+                    { 4, "SP010" },
+                    { 4, "SP012" },
+                    { 4, "SP015" },
+                    { 4, "SP017" },
+                    { 4, "SP020" },
+                    { 5, "SP003" },
                     { 5, "SP005" },
-                    { 5, "SP010" }
+                    { 5, "SP008" },
+                    { 5, "SP010" },
+                    { 5, "SP013" },
+                    { 5, "SP015" },
+                    { 5, "SP018" },
+                    { 5, "SP020" }
                 });
 
             migrationBuilder.InsertData(
@@ -713,15 +807,82 @@ namespace ASMCshrp4_12345.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "Hinhanhs",
+                columns: new[] { "MaHinhAnh", "HinhAnh1", "MaSp" },
+                values: new object[,]
+                {
+                    { 1, "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg", "SP001" },
+                    { 2, "f6a59412f7418faedec46a76c2398b3f-1.jpg", "SP001" },
+                    { 3, "images (1).jfif", "SP001" },
+                    { 4, "images (2).jfif", "SP002" },
+                    { 5, "images (3).jfif", "SP002" },
+                    { 6, "images (4).jfif", "SP002" },
+                    { 7, "images.jfif", "SP003" },
+                    { 8, "TIC00213-scaled.jpg", "SP003" },
+                    { 9, "tui-givenchy-nu-hang-11.jpg", "SP003" },
+                    { 10, "tui-xach-balenciaga-10-400x400.jpg", "SP004" },
+                    { 11, "tui-xach-hang-hieu-dior-16.jpg", "SP004" },
+                    { 12, "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg", "SP004" },
+                    { 13, "tui-xach-prada-chinh-hang-10.jpg", "SP005" },
+                    { 14, "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg", "SP005" },
+                    { 15, "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg", "SP005" },
+                    { 16, "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg", "SP006" },
+                    { 17, "f6a59412f7418faedec46a76c2398b3f-1.jpg", "SP006" },
+                    { 18, "images (1).jfif", "SP006" },
+                    { 19, "images (2).jfif", "SP007" },
+                    { 20, "images (3).jfif", "SP007" },
+                    { 21, "images (4).jfif", "SP007" },
+                    { 22, "images.jfif", "SP008" },
+                    { 23, "TIC00213-scaled.jpg", "SP008" },
+                    { 24, "tui-givenchy-nu-hang-11.jpg", "SP008" },
+                    { 25, "tui-xach-balenciaga-10-400x400.jpg", "SP009" },
+                    { 26, "tui-xach-hang-hieu-dior-16.jpg", "SP009" },
+                    { 27, "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg", "SP009" },
+                    { 28, "tui-xach-prada-chinh-hang-10.jpg", "SP010" },
+                    { 29, "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg", "SP010" },
+                    { 30, "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg", "SP010" },
+                    { 31, "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg", "SP011" },
+                    { 32, "f6a59412f7418faedec46a76c2398b3f-1.jpg", "SP011" },
+                    { 33, "images (1).jfif", "SP011" },
+                    { 34, "images (2).jfif", "SP012" },
+                    { 35, "images (3).jfif", "SP012" },
+                    { 36, "images (4).jfif", "SP012" },
+                    { 37, "images.jfif", "SP013" },
+                    { 38, "TIC00213-scaled.jpg", "SP013" },
+                    { 39, "tui-givenchy-nu-hang-11.jpg", "SP013" },
+                    { 40, "tui-xach-balenciaga-10-400x400.jpg", "SP014" },
+                    { 41, "tui-xach-hang-hieu-dior-16.jpg", "SP014" },
+                    { 42, "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg", "SP014" },
+                    { 43, "tui-xach-prada-chinh-hang-10.jpg", "SP015" },
+                    { 44, "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg", "SP015" },
+                    { 45, "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg", "SP015" },
+                    { 46, "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg", "SP016" },
+                    { 47, "f6a59412f7418faedec46a76c2398b3f-1.jpg", "SP016" },
+                    { 48, "images (1).jfif", "SP016" },
+                    { 49, "images (2).jfif", "SP017" },
+                    { 50, "images (3).jfif", "SP017" },
+                    { 51, "images (4).jfif", "SP017" },
+                    { 52, "images.jfif", "SP018" },
+                    { 53, "TIC00213-scaled.jpg", "SP018" },
+                    { 54, "tui-givenchy-nu-hang-11.jpg", "SP018" },
+                    { 55, "tui-xach-balenciaga-10-400x400.jpg", "SP019" },
+                    { 56, "tui-xach-hang-hieu-dior-16.jpg", "SP019" },
+                    { 57, "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg", "SP019" },
+                    { 58, "tui-xach-prada-chinh-hang-10.jpg", "SP020" },
+                    { 59, "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg", "SP020" },
+                    { 60, "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg", "SP020" }
+                });
+
+            migrationBuilder.InsertData(
                 table: "Traloibinhluans",
                 columns: new[] { "Id", "IdBinhLuan", "MaNV", "NoiDung", "ThoiGian", "isDelete" },
                 values: new object[,]
                 {
-                    { 3, 3, "NV003", "Cảm ơn bạn đã phản hồi! Hẹn gặp bạn ở lần mua tiếp theo.", new DateTime(2024, 11, 16, 12, 25, 12, 549, DateTimeKind.Local).AddTicks(3962), false },
-                    { 4, 4, "NV004", "Chúng tôi đã nhận thông tin và sẽ hỗ trợ bạn sớm nhất.", new DateTime(2024, 11, 16, 12, 10, 12, 549, DateTimeKind.Local).AddTicks(3967), false },
-                    { 5, 5, "NV005", "Cảm ơn bạn đã tin tưởng sử dụng dịch vụ của chúng tôi.", new DateTime(2024, 11, 16, 11, 55, 12, 549, DateTimeKind.Local).AddTicks(3969), false },
-                    { 6, 6, "NV006", "Chúng tôi rất vui vì bạn hài lòng!", new DateTime(2024, 11, 16, 11, 40, 12, 549, DateTimeKind.Local).AddTicks(3971), false },
-                    { 7, 7, "NV007", "Chúng tôi rất tiếc, hãy liên hệ để được hỗ trợ đổi trả.", new DateTime(2024, 11, 16, 11, 10, 12, 549, DateTimeKind.Local).AddTicks(4034), false }
+                    { 3, 3, "NV003", "Cảm ơn bạn đã phản hồi! Hẹn gặp bạn ở lần mua tiếp theo.", new DateTime(2024, 11, 18, 22, 55, 14, 72, DateTimeKind.Local).AddTicks(1332), false },
+                    { 4, 4, "NV004", "Chúng tôi đã nhận thông tin và sẽ hỗ trợ bạn sớm nhất.", new DateTime(2024, 11, 18, 22, 40, 14, 72, DateTimeKind.Local).AddTicks(1337), false },
+                    { 5, 5, "NV005", "Cảm ơn bạn đã tin tưởng sử dụng dịch vụ của chúng tôi.", new DateTime(2024, 11, 18, 22, 25, 14, 72, DateTimeKind.Local).AddTicks(1338), false },
+                    { 6, 6, "NV006", "Chúng tôi rất vui vì bạn hài lòng!", new DateTime(2024, 11, 18, 22, 10, 14, 72, DateTimeKind.Local).AddTicks(1340), false },
+                    { 7, 7, "NV007", "Chúng tôi rất tiếc, hãy liên hệ để được hỗ trợ đổi trả.", new DateTime(2024, 11, 18, 21, 40, 14, 72, DateTimeKind.Local).AddTicks(1341), false }
                 });
 
             migrationBuilder.CreateIndex(

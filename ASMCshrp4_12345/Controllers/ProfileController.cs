@@ -71,7 +71,7 @@ namespace ASMCshrp4_12345.Controllers
                         }
 
 
-                        khachhang.Avatar = "/HinhAnh/KhachHang/" + fileName;
+                        khachhang.Avatar = fileName;
                     }
 
                     _context.SaveChanges();

@@ -155,6 +155,7 @@ namespace ASMCshrp4_12345.Controllers
                 {
                     _context.Update(hoadon);
                     await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Cập nhật thông tin đơn hàng thành công!";
                 }
                 catch (DbUpdateConcurrencyException)
                 {

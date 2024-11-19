@@ -91,7 +91,7 @@ public partial class Csharp4Context : DbContext
         modelBuilder.Entity<Kichthuoc>().HasData(
             new Kichthuoc { MaKichThuoc = 1, TenKichThuoc = "Nhỏ", KichThuoc1 = "20 x 15 x 10", IsDelete = false },
             new Kichthuoc { MaKichThuoc = 2, TenKichThuoc = "Trung Bình", KichThuoc1 = "30 x 25 x 15", IsDelete = false },
-            new Kichthuoc { MaKichThuoc = 3, TenKichThuoc = "Lớn", KichThuoc1 = "40 x 30 x 20 trở lên", IsDelete = false }
+            new Kichthuoc { MaKichThuoc = 3, TenKichThuoc = "Lớn", KichThuoc1 = "40 x 30 x 20", IsDelete = false }
         );
         modelBuilder.Entity<Nhacungcap>().HasData(
             new Nhacungcap { MaNhaCc = "NCC01", TenNhaCc = "Gucci Ltd.", DiaChi = "Via Tornabuoni 73r, Florence, Italy", Email = "contact@gucci.com", Sdt = "0123456789", IsDelete = false },
@@ -117,28 +117,109 @@ public partial class Csharp4Context : DbContext
         );
 
         modelBuilder.Entity<Sanpham>().HasData(
-            new Sanpham { MaSp = "SP001", TenSp = "Túi Xách Gucci", SoLuongBan = 50, DonGiaBan = 15000000, MaThuongHieu = "TH001", Hinh = "gucci_bag.jpg", MoTa = "Túi xách cao cấp thương hiệu Gucci.", NgaySanXuat = new DateOnly(2023, 1, 1), MaNhaCc = "NCC01", IsDelete = false },
-            new Sanpham { MaSp = "SP002", TenSp = "Túi Xách Louis Vuitton", SoLuongBan = 30, DonGiaBan = 20000000, MaThuongHieu = "TH002", Hinh = "lv_bag.jpg", MoTa = "Túi xách sang trọng của Louis Vuitton.", NgaySanXuat = new DateOnly(2023, 1, 5), MaNhaCc = "NCC02", IsDelete = false },
-            new Sanpham { MaSp = "SP003", TenSp = "Túi Xách Chanel", SoLuongBan = 25, DonGiaBan = 18000000, MaThuongHieu = "TH003", Hinh = "chanel_bag.jpg", MoTa = "Túi xách đẹp và quý phái của Chanel.", NgaySanXuat = new DateOnly(2023, 1, 10), MaNhaCc = "NCC01", IsDelete = false },
-            new Sanpham { MaSp = "SP004", TenSp = "Túi Xách Prada", SoLuongBan = 40, DonGiaBan = 17000000, MaThuongHieu = "TH004", Hinh = "prada_bag.jpg", MoTa = "Túi xách thời trang của Prada.", NgaySanXuat = new DateOnly(2023, 1, 15), MaNhaCc = "NCC03", IsDelete = false },
-            new Sanpham { MaSp = "SP005", TenSp = "Túi Xách Michael Kors", SoLuongBan = 60, DonGiaBan = 12000000, MaThuongHieu = "TH005", Hinh = "mk_bag.jpg", MoTa = "Túi xách phong cách và tiện lợi của Michael Kors.", NgaySanXuat = new DateOnly(2023, 2, 1), MaNhaCc = "NCC02", IsDelete = false },
-            new Sanpham { MaSp = "SP006", TenSp = "Túi Xách Hermès", SoLuongBan = 20, DonGiaBan = 30000000, MaThuongHieu = "TH006", Hinh = "hermes_bag.jpg", MoTa = "Túi xách xa xỉ thương hiệu Hermès.", NgaySanXuat = new DateOnly(2023, 2, 5), MaNhaCc = "NCC01", IsDelete = false },
-            new Sanpham { MaSp = "SP007", TenSp = "Túi Xách Coach", SoLuongBan = 45, DonGiaBan = 9500000, MaThuongHieu = "TH007", Hinh = "coach_bag.jpg", MoTa = "Túi xách tiện dụng của Coach.", NgaySanXuat = new DateOnly(2023, 2, 10), MaNhaCc = "NCC03", IsDelete = false },
-            new Sanpham { MaSp = "SP008", TenSp = "Túi Xách Kate Spade", SoLuongBan = 35, DonGiaBan = 11000000, MaThuongHieu = "TH008", Hinh = "kate_spade_bag.jpg", MoTa = "Túi xách nữ tính của Kate Spade.", NgaySanXuat = new DateOnly(2023, 2, 15), MaNhaCc = "NCC02", IsDelete = false },
-            new Sanpham { MaSp = "SP009", TenSp = "Túi Xách Fossil", SoLuongBan = 50, DonGiaBan = 7500000, MaThuongHieu = "TH009", Hinh = "fossil_bag.jpg", MoTa = "Túi xách năng động của Fossil.", NgaySanXuat = new DateOnly(2023, 3, 1), MaNhaCc = "NCC01", IsDelete = false },
-            new Sanpham { MaSp = "SP010", TenSp = "Túi Xách Calvin Klein", SoLuongBan = 65, DonGiaBan = 8000000, MaThuongHieu = "TH010", Hinh = "ck_bag.jpg", MoTa = "Túi xách hiện đại của Calvin Klein.", NgaySanXuat = new DateOnly(2023, 3, 5), MaNhaCc = "NCC03", IsDelete = false },
-            new Sanpham { MaSp = "SP011", TenSp = "Túi Xách Dior", SoLuongBan = 30, DonGiaBan = 25000000, MaThuongHieu = "TH001", Hinh = "dior_bag.jpg", MoTa = "Túi xách thời thượng của Dior.", NgaySanXuat = new DateOnly(2023, 3, 10), MaNhaCc = "NCC02", IsDelete = false },
-            new Sanpham { MaSp = "SP012", TenSp = "Túi Xách Balenciaga", SoLuongBan = 20, DonGiaBan = 29000000, MaThuongHieu = "TH002", Hinh = "balenciaga_bag.jpg", MoTa = "Túi xách độc đáo của Balenciaga.", NgaySanXuat = new DateOnly(2023, 3, 15), MaNhaCc = "NCC01", IsDelete = false },
-            new Sanpham { MaSp = "SP013", TenSp = "Túi Xách Givenchy", SoLuongBan = 25, DonGiaBan = 22000000, MaThuongHieu = "TH003", Hinh = "givenchy_bag.jpg", MoTa = "Túi xách thanh lịch của Givenchy.", NgaySanXuat = new DateOnly(2023, 4, 1), MaNhaCc = "NCC02", IsDelete = false },
-            new Sanpham { MaSp = "SP014", TenSp = "Túi Xách Tommy Hilfiger", SoLuongBan = 40, DonGiaBan = 9000000, MaThuongHieu = "TH004", Hinh = "tommy_bag.jpg", MoTa = "Túi xách phong cách của Tommy Hilfiger.", NgaySanXuat = new DateOnly(2023, 4, 5), MaNhaCc = "NCC03", IsDelete = false },
-            new Sanpham { MaSp = "SP015", TenSp = "Túi Xách Tory Burch", SoLuongBan = 50, DonGiaBan = 10500000, MaThuongHieu = "TH005", Hinh = "tory_burch_bag.jpg", MoTa = "Túi xách trẻ trung của Tory Burch.", NgaySanXuat = new DateOnly(2023, 4, 10), MaNhaCc = "NCC01", IsDelete = false },
-            new Sanpham { MaSp = "SP016", TenSp = "Túi Xách Lacoste", SoLuongBan = 30, DonGiaBan = 6500000, MaThuongHieu = "TH006", Hinh = "lacoste_bag.jpg", MoTa = "Túi xách thể thao của Lacoste.", NgaySanXuat = new DateOnly(2023, 4, 15), MaNhaCc = "NCC02", IsDelete = false },
-            new Sanpham { MaSp = "SP017", TenSp = "Túi Xách Reebok", SoLuongBan = 20, DonGiaBan = 7200000, MaThuongHieu = "TH007", Hinh = "reebok_bag.jpg", MoTa = "Túi xách năng động của Reebok.", NgaySanXuat = new DateOnly(2023, 5, 1), MaNhaCc = "NCC03", IsDelete = false },
-            new Sanpham { MaSp = "SP018", TenSp = "Túi Xách Vans", SoLuongBan = 35, DonGiaBan = 5600000, MaThuongHieu = "TH008", Hinh = "vans_bag.jpg", MoTa = "Túi xách cá tính của Vans.", NgaySanXuat = new DateOnly(2023, 5, 5), MaNhaCc = "NCC01", IsDelete = false },
-            new Sanpham { MaSp = "SP019", TenSp = "Túi Xách Under Armour", SoLuongBan = 25, DonGiaBan = 8000000, MaThuongHieu = "TH009", Hinh = "under_armour_bag.jpg", MoTa = "Túi xách bền bỉ của Under Armour.", NgaySanXuat = new DateOnly(2023, 5, 10), MaNhaCc = "NCC02", IsDelete = false },
-            new Sanpham { MaSp = "SP020", TenSp = "Túi Xách Nike", SoLuongBan = 40, DonGiaBan = 7800000, MaThuongHieu = "TH010", Hinh = "nike_bag.jpg", MoTa = "Túi xách thời trang của Nike.", NgaySanXuat = new DateOnly(2023, 5, 15), MaNhaCc = "NCC03", IsDelete = false }
+            new Sanpham { MaSp = "SP001", TenSp = "Túi Xách Gucci", SoLuongBan = 50, DonGiaBan = 15000000, MaThuongHieu = "TH001", Hinh = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg", MoTa = "Túi xách cao cấp thương hiệu Gucci.", NgaySanXuat = new DateOnly(2023, 1, 1), MaNhaCc = "NCC01", IsDelete = false },
+            new Sanpham { MaSp = "SP002", TenSp = "Túi Xách Louis Vuitton", SoLuongBan = 30, DonGiaBan = 20000000, MaThuongHieu = "TH002", Hinh = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg", MoTa = "Túi xách sang trọng của Louis Vuitton.", NgaySanXuat = new DateOnly(2023, 1, 5), MaNhaCc = "NCC02", IsDelete = false },
+            new Sanpham { MaSp = "SP003", TenSp = "Túi Xách Chanel", SoLuongBan = 25, DonGiaBan = 18000000, MaThuongHieu = "TH003", Hinh = "images.jfif", MoTa = "Túi xách đẹp và quý phái của Chanel.", NgaySanXuat = new DateOnly(2023, 1, 10), MaNhaCc = "NCC01", IsDelete = false },
+            new Sanpham { MaSp = "SP004", TenSp = "Túi Xách Prada", SoLuongBan = 40, DonGiaBan = 17000000, MaThuongHieu = "TH004", Hinh = "tui-xach-prada-chinh-hang-10.jpg", MoTa = "Túi xách thời trang của Prada.", NgaySanXuat = new DateOnly(2023, 1, 15), MaNhaCc = "NCC03", IsDelete = false },
+            new Sanpham { MaSp = "SP005", TenSp = "Túi Xách Michael Kors", SoLuongBan = 60, DonGiaBan = 12000000, MaThuongHieu = "TH005", Hinh = "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg", MoTa = "Túi xách phong cách và tiện lợi của Michael Kors.", NgaySanXuat = new DateOnly(2023, 2, 1), MaNhaCc = "NCC02", IsDelete = false },
+            new Sanpham { MaSp = "SP006", TenSp = "Túi Xách Hermès", SoLuongBan = 20, DonGiaBan = 30000000, MaThuongHieu = "TH006", Hinh = "images (1).jfif", MoTa = "Túi xách xa xỉ thương hiệu Hermès.", NgaySanXuat = new DateOnly(2023, 2, 5), MaNhaCc = "NCC01", IsDelete = false },
+            new Sanpham { MaSp = "SP007", TenSp = "Túi Xách Coach", SoLuongBan = 45, DonGiaBan = 9500000, MaThuongHieu = "TH007", Hinh = "images (2).jfif", MoTa = "Túi xách tiện dụng của Coach.", NgaySanXuat = new DateOnly(2023, 2, 10), MaNhaCc = "NCC03", IsDelete = false },
+            new Sanpham { MaSp = "SP008", TenSp = "Túi Xách Kate Spade", SoLuongBan = 35, DonGiaBan = 11000000, MaThuongHieu = "TH008", Hinh = "TIC00213-scaled.jpg", MoTa = "Túi xách nữ tính của Kate Spade.", NgaySanXuat = new DateOnly(2023, 2, 15), MaNhaCc = "NCC02", IsDelete = false },
+            new Sanpham { MaSp = "SP009", TenSp = "Túi Xách Fossil", SoLuongBan = 50, DonGiaBan = 7500000, MaThuongHieu = "TH009", Hinh = "images (3).jfif", MoTa = "Túi xách năng động của Fossil.", NgaySanXuat = new DateOnly(2023, 3, 1), MaNhaCc = "NCC01", IsDelete = false },
+            new Sanpham { MaSp = "SP010", TenSp = "Túi Xách Calvin Klein", SoLuongBan = 65, DonGiaBan = 8000000, MaThuongHieu = "TH010", Hinh = "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg", MoTa = "Túi xách hiện đại của Calvin Klein.", NgaySanXuat = new DateOnly(2023, 3, 5), MaNhaCc = "NCC03", IsDelete = false },
+            new Sanpham { MaSp = "SP011", TenSp = "Túi Xách Dior", SoLuongBan = 30, DonGiaBan = 25000000, MaThuongHieu = "TH001", Hinh = "tui-xach-hang-hieu-dior-16.jpg", MoTa = "Túi xách thời thượng của Dior.", NgaySanXuat = new DateOnly(2023, 3, 10), MaNhaCc = "NCC02", IsDelete = false },
+            new Sanpham { MaSp = "SP012", TenSp = "Túi Xách Balenciaga", SoLuongBan = 20, DonGiaBan = 29000000, MaThuongHieu = "TH002", Hinh = "tui-xach-balenciaga-10-400x400.jpg", MoTa = "Túi xách độc đáo của Balenciaga.", NgaySanXuat = new DateOnly(2023, 3, 15), MaNhaCc = "NCC01", IsDelete = false },
+            new Sanpham { MaSp = "SP013", TenSp = "Túi Xách Givenchy", SoLuongBan = 25, DonGiaBan = 22000000, MaThuongHieu = "TH003", Hinh = "tui-givenchy-nu-hang-11.jpg", MoTa = "Túi xách thanh lịch của Givenchy.", NgaySanXuat = new DateOnly(2023, 4, 1), MaNhaCc = "NCC02", IsDelete = false },
+            new Sanpham { MaSp = "SP014", TenSp = "Túi Xách Tommy Hilfiger", SoLuongBan = 40, DonGiaBan = 9000000, MaThuongHieu = "TH004", Hinh = "f6a59412f7418faedec46a76c2398b3f-1.jpg", MoTa = "Túi xách phong cách của Tommy Hilfiger.", NgaySanXuat = new DateOnly(2023, 4, 5), MaNhaCc = "NCC03", IsDelete = false },
+            new Sanpham { MaSp = "SP015", TenSp = "Túi Xách Tory Burch", SoLuongBan = 50, DonGiaBan = 10500000, MaThuongHieu = "TH005", Hinh = "images (4).jfif", MoTa = "Túi xách trẻ trung của Tory Burch.", NgaySanXuat = new DateOnly(2023, 4, 10), MaNhaCc = "NCC01", IsDelete = false },
+            new Sanpham { MaSp = "SP016", TenSp = "Túi Xách Lacoste", SoLuongBan = 30, DonGiaBan = 6500000, MaThuongHieu = "TH006", Hinh = "f6a59412f7418faedec46a76c2398b3f-1.jpg", MoTa = "Túi xách thể thao của Lacoste.", NgaySanXuat = new DateOnly(2023, 4, 15), MaNhaCc = "NCC02", IsDelete = false },
+            new Sanpham { MaSp = "SP017", TenSp = "Túi Xách Reebok", SoLuongBan = 20, DonGiaBan = 7200000, MaThuongHieu = "TH007", Hinh = "images (1).jfif", MoTa = "Túi xách năng động của Reebok.", NgaySanXuat = new DateOnly(2023, 5, 1), MaNhaCc = "NCC03", IsDelete = false },
+            new Sanpham { MaSp = "SP018", TenSp = "Túi Xách Vans", SoLuongBan = 35, DonGiaBan = 5600000, MaThuongHieu = "TH008", Hinh = "f6a59412f7418faedec46a76c2398b3f-1.jpg", MoTa = "Túi xách cá tính của Vans.", NgaySanXuat = new DateOnly(2023, 5, 5), MaNhaCc = "NCC01", IsDelete = false },
+            new Sanpham { MaSp = "SP019", TenSp = "Túi Xách Under Armour", SoLuongBan = 25, DonGiaBan = 8000000, MaThuongHieu = "TH009", Hinh = "images (1).jfif", MoTa = "Túi xách bền bỉ của Under Armour.", NgaySanXuat = new DateOnly(2023, 5, 10), MaNhaCc = "NCC02", IsDelete = false },
+            new Sanpham { MaSp = "SP020", TenSp = "Túi Xách Nike", SoLuongBan = 40, DonGiaBan = 7800000, MaThuongHieu = "TH010", Hinh = "f6a59412f7418faedec46a76c2398b3f-1.jpg", MoTa = "Túi xách thời trang của Nike.", NgaySanXuat = new DateOnly(2023, 5, 15), MaNhaCc = "NCC03", IsDelete = false }
         );
-
+        modelBuilder.Entity<Hinhanh>().HasData(
+            // SP001
+            new Hinhanh { MaHinhAnh = 1, MaSp = "SP001", HinhAnh1 = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg" },
+            new Hinhanh { MaHinhAnh = 2, MaSp = "SP001", HinhAnh1 = "f6a59412f7418faedec46a76c2398b3f-1.jpg" },
+            new Hinhanh { MaHinhAnh = 3, MaSp = "SP001", HinhAnh1 = "images (1).jfif" },
+            // SP002
+            new Hinhanh { MaHinhAnh = 4, MaSp = "SP002", HinhAnh1 = "images (2).jfif" },
+            new Hinhanh { MaHinhAnh = 5, MaSp = "SP002", HinhAnh1 = "images (3).jfif" },
+            new Hinhanh { MaHinhAnh = 6, MaSp = "SP002", HinhAnh1 = "images (4).jfif" },
+            // SP003
+            new Hinhanh { MaHinhAnh = 7, MaSp = "SP003", HinhAnh1 = "images.jfif" },
+            new Hinhanh { MaHinhAnh = 8, MaSp = "SP003", HinhAnh1 = "TIC00213-scaled.jpg" },
+            new Hinhanh { MaHinhAnh = 9, MaSp = "SP003", HinhAnh1 = "tui-givenchy-nu-hang-11.jpg" },
+            // SP004
+            new Hinhanh { MaHinhAnh = 10, MaSp = "SP004", HinhAnh1 = "tui-xach-balenciaga-10-400x400.jpg" },
+            new Hinhanh { MaHinhAnh = 11, MaSp = "SP004", HinhAnh1 = "tui-xach-hang-hieu-dior-16.jpg" },
+            new Hinhanh { MaHinhAnh = 12, MaSp = "SP004", HinhAnh1 = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg" },
+            // SP005
+            new Hinhanh { MaHinhAnh = 13, MaSp = "SP005", HinhAnh1 = "tui-xach-prada-chinh-hang-10.jpg" },
+            new Hinhanh { MaHinhAnh = 14, MaSp = "SP005", HinhAnh1 = "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg" },
+            new Hinhanh { MaHinhAnh = 15, MaSp = "SP005", HinhAnh1 = "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg" },
+            // SP006
+            new Hinhanh { MaHinhAnh = 16, MaSp = "SP006", HinhAnh1 = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg" },
+            new Hinhanh { MaHinhAnh = 17, MaSp = "SP006", HinhAnh1 = "f6a59412f7418faedec46a76c2398b3f-1.jpg" },
+            new Hinhanh { MaHinhAnh = 18, MaSp = "SP006", HinhAnh1 = "images (1).jfif" },
+            // SP007
+            new Hinhanh { MaHinhAnh = 19, MaSp = "SP007", HinhAnh1 = "images (2).jfif" },
+            new Hinhanh { MaHinhAnh = 20, MaSp = "SP007", HinhAnh1 = "images (3).jfif" },
+            new Hinhanh { MaHinhAnh = 21, MaSp = "SP007", HinhAnh1 = "images (4).jfif" },
+            // SP008
+            new Hinhanh { MaHinhAnh = 22, MaSp = "SP008", HinhAnh1 = "images.jfif" },
+            new Hinhanh { MaHinhAnh = 23, MaSp = "SP008", HinhAnh1 = "TIC00213-scaled.jpg" },
+            new Hinhanh { MaHinhAnh = 24, MaSp = "SP008", HinhAnh1 = "tui-givenchy-nu-hang-11.jpg" },
+            // SP009
+            new Hinhanh { MaHinhAnh = 25, MaSp = "SP009", HinhAnh1 = "tui-xach-balenciaga-10-400x400.jpg" },
+            new Hinhanh { MaHinhAnh = 26, MaSp = "SP009", HinhAnh1 = "tui-xach-hang-hieu-dior-16.jpg" },
+            new Hinhanh { MaHinhAnh = 27, MaSp = "SP009", HinhAnh1 = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg" },
+            // SP010
+            new Hinhanh { MaHinhAnh = 28, MaSp = "SP010", HinhAnh1 = "tui-xach-prada-chinh-hang-10.jpg" },
+            new Hinhanh { MaHinhAnh = 29, MaSp = "SP010", HinhAnh1 = "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg" },
+            new Hinhanh { MaHinhAnh = 30, MaSp = "SP010", HinhAnh1 = "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg" },
+            // SP011
+            new Hinhanh { MaHinhAnh = 31, MaSp = "SP011", HinhAnh1 = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg" },
+            new Hinhanh { MaHinhAnh = 32, MaSp = "SP011", HinhAnh1 = "f6a59412f7418faedec46a76c2398b3f-1.jpg" },
+            new Hinhanh { MaHinhAnh = 33, MaSp = "SP011", HinhAnh1 = "images (1).jfif" },
+            // SP012
+            new Hinhanh { MaHinhAnh = 34, MaSp = "SP012", HinhAnh1 = "images (2).jfif" },
+            new Hinhanh { MaHinhAnh = 35, MaSp = "SP012", HinhAnh1 = "images (3).jfif" },
+            new Hinhanh { MaHinhAnh = 36, MaSp = "SP012", HinhAnh1 = "images (4).jfif" },
+            // SP013
+            new Hinhanh { MaHinhAnh = 37, MaSp = "SP013", HinhAnh1 = "images.jfif" },
+            new Hinhanh { MaHinhAnh = 38, MaSp = "SP013", HinhAnh1 = "TIC00213-scaled.jpg" },
+            new Hinhanh { MaHinhAnh = 39, MaSp = "SP013", HinhAnh1 = "tui-givenchy-nu-hang-11.jpg" },
+            // SP014
+            new Hinhanh { MaHinhAnh = 40, MaSp = "SP014", HinhAnh1 = "tui-xach-balenciaga-10-400x400.jpg" },
+            new Hinhanh { MaHinhAnh = 41, MaSp = "SP014", HinhAnh1 = "tui-xach-hang-hieu-dior-16.jpg" },
+            new Hinhanh { MaHinhAnh = 42, MaSp = "SP014", HinhAnh1 = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg" },
+            // SP015
+            new Hinhanh { MaHinhAnh = 43, MaSp = "SP015", HinhAnh1 = "tui-xach-prada-chinh-hang-10.jpg" },
+            new Hinhanh { MaHinhAnh = 44, MaSp = "SP015", HinhAnh1 = "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg" },
+            new Hinhanh { MaHinhAnh = 45, MaSp = "SP015", HinhAnh1 = "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg" },
+            // SP016
+            new Hinhanh { MaHinhAnh = 46, MaSp = "SP016", HinhAnh1 = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg" },
+            new Hinhanh { MaHinhAnh = 47, MaSp = "SP016", HinhAnh1 = "f6a59412f7418faedec46a76c2398b3f-1.jpg" },
+            new Hinhanh { MaHinhAnh = 48, MaSp = "SP016", HinhAnh1 = "images (1).jfif" },
+            // SP017
+            new Hinhanh { MaHinhAnh = 49, MaSp = "SP017", HinhAnh1 = "images (2).jfif" },
+            new Hinhanh { MaHinhAnh = 50, MaSp = "SP017", HinhAnh1 = "images (3).jfif" },
+            new Hinhanh { MaHinhAnh = 51, MaSp = "SP017", HinhAnh1 = "images (4).jfif" },
+            // SP018
+            new Hinhanh { MaHinhAnh = 52, MaSp = "SP018", HinhAnh1 = "images.jfif" },
+            new Hinhanh { MaHinhAnh = 53, MaSp = "SP018", HinhAnh1 = "TIC00213-scaled.jpg" },
+            new Hinhanh { MaHinhAnh = 54, MaSp = "SP018", HinhAnh1 = "tui-givenchy-nu-hang-11.jpg" },
+            // SP019
+            new Hinhanh { MaHinhAnh = 55, MaSp = "SP019", HinhAnh1 = "tui-xach-balenciaga-10-400x400.jpg" },
+            new Hinhanh { MaHinhAnh = 56, MaSp = "SP019", HinhAnh1 = "tui-xach-hang-hieu-dior-16.jpg" },
+            new Hinhanh { MaHinhAnh = 57, MaSp = "SP019", HinhAnh1 = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg" },
+            // SP020
+            new Hinhanh { MaHinhAnh = 58, MaSp = "SP020", HinhAnh1 = "tui-xach-prada-chinh-hang-10.jpg" },
+            new Hinhanh { MaHinhAnh = 59, MaSp = "SP020", HinhAnh1 = "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg" },
+            new Hinhanh { MaHinhAnh = 60, MaSp = "SP020", HinhAnh1 = "VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg" }
+        );
         modelBuilder.Entity<Phieunhap>().HasData(
             new Phieunhap { MaPhieuNhap = "PN001", ThoiGianNhap = new DateOnly(2023, 1, 5) },
             new Phieunhap { MaPhieuNhap = "PN002", ThoiGianNhap = new DateOnly(2023, 1, 10) },
@@ -212,310 +293,310 @@ public partial class Csharp4Context : DbContext
                 ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
 
             },
-        new Hoadon
-        {
-            MaHoaDon = "HD002",
-            DiaChiNhanHang = "456 Đường B, Quận 2",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV002",
-            MaKh = "KH002",
-            MoTa = "Hóa đơn thứ hai",
-            Hoten = "Trần Thị B",
-            Sdt = "0987654321",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
+            new Hoadon
+            {
+                MaHoaDon = "HD002",
+                DiaChiNhanHang = "456 Đường B, Quận 2",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV002",
+                MaKh = "KH002",
+                MoTa = "Hóa đơn thứ hai",
+                Hoten = "Trần Thị B",
+                Sdt = "0987654321",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
        
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD003",
-            DiaChiNhanHang = "789 Đường C, Quận 3",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV003",
-            MaKh = "KH003",
-            MoTa = "Hóa đơn thứ ba",
-            Hoten = "Nguyễn Thị C",
-            Sdt = "0912345678",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(1)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD003",
+                DiaChiNhanHang = "789 Đường C, Quận 3",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV003",
+                MaKh = "KH003",
+                MoTa = "Hóa đơn thứ ba",
+                Hoten = "Nguyễn Thị C",
+                Sdt = "0912345678",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(1)),
             
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD004",
-            DiaChiNhanHang = "321 Đường D, Quận 4",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV001",
-            MaKh = "KH004",
-            MoTa = "Hóa đơn thứ tư",
-            Hoten = "Lê Văn D",
-            Sdt = "0123456789",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(5)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD004",
+                DiaChiNhanHang = "321 Đường D, Quận 4",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV001",
+                MaKh = "KH004",
+                MoTa = "Hóa đơn thứ tư",
+                Hoten = "Lê Văn D",
+                Sdt = "0123456789",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(5)),
           
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD005",
-            DiaChiNhanHang = "654 Đường E, Quận 5",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV002",
-            MaKh = "KH005",
-            MoTa = "Hóa đơn thứ năm",
-            Hoten = "Nguyễn Văn E",
-            Sdt = "0987654321",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD005",
+                DiaChiNhanHang = "654 Đường E, Quận 5",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV002",
+                MaKh = "KH005",
+                MoTa = "Hóa đơn thứ năm",
+                Hoten = "Nguyễn Văn E",
+                Sdt = "0987654321",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
             
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD006",
-            DiaChiNhanHang = "987 Đường F, Quận 6",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV003",
-            MaKh = "KH006",
-            MoTa = "Hóa đơn thứ sáu",
-            Hoten = "Trần Thị F",
-            Sdt = "0912345678",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD006",
+                DiaChiNhanHang = "987 Đường F, Quận 6",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV003",
+                MaKh = "KH006",
+                MoTa = "Hóa đơn thứ sáu",
+                Hoten = "Trần Thị F",
+                Sdt = "0912345678",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
           
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD007",
-            DiaChiNhanHang = "159 Đường G, Quận 7",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV001",
-            MaKh = "KH007",
-            MoTa = "Hóa đơn thứ bảy",
-            Hoten = "Nguyễn Văn G",
-            Sdt = "0123456789",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(4)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD007",
+                DiaChiNhanHang = "159 Đường G, Quận 7",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV001",
+                MaKh = "KH007",
+                MoTa = "Hóa đơn thứ bảy",
+                Hoten = "Nguyễn Văn G",
+                Sdt = "0123456789",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(4)),
           
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD008",
-            DiaChiNhanHang = "753 Đường H, Quận 8",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV002",
-            MaKh = "KH008",
-            MoTa = "Hóa đơn thứ tám",
-            Hoten = "Lê Thị H",
-            Sdt = "0987654321",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD008",
+                DiaChiNhanHang = "753 Đường H, Quận 8",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV002",
+                MaKh = "KH008",
+                MoTa = "Hóa đơn thứ tám",
+                Hoten = "Lê Thị H",
+                Sdt = "0987654321",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
        
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD009",
-            DiaChiNhanHang = "258 Đường I, Quận 9",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV003",
-            MaKh = "KH009",
-            MoTa = "Hóa đơn thứ chín",
-            Hoten = "Nguyễn Văn I",
-            Sdt = "0912345678",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(5)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD009",
+                DiaChiNhanHang = "258 Đường I, Quận 9",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV003",
+                MaKh = "KH009",
+                MoTa = "Hóa đơn thứ chín",
+                Hoten = "Nguyễn Văn I",
+                Sdt = "0912345678",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(5)),
           
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD010",
-            DiaChiNhanHang = "369 Đường J, Quận 10",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV001",
-            MaKh = "KH010",
-            MoTa = "Hóa đơn thứ mười",
-            Hoten = "Trần Văn J",
-            Sdt = "0123456789",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD010",
+                DiaChiNhanHang = "369 Đường J, Quận 10",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV001",
+                MaKh = "KH010",
+                MoTa = "Hóa đơn thứ mười",
+                Hoten = "Trần Văn J",
+                Sdt = "0123456789",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
           
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD011",
-            DiaChiNhanHang = "123 Đường K, Quận 11",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV002",
-            MaKh = "KH011",
-            MoTa = "Hóa đơn thứ mười một",
-            Hoten = "Lê Thị K",
-            Sdt = "0987654321",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD011",
+                DiaChiNhanHang = "123 Đường K, Quận 11",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV002",
+                MaKh = "KH011",
+                MoTa = "Hóa đơn thứ mười một",
+                Hoten = "Lê Thị K",
+                Sdt = "0987654321",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
           
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD012",
-            DiaChiNhanHang = "456 Đường L, Quận 12",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV003",
-            MaKh = "KH012",
-            MoTa = "Hóa đơn thứ mười hai",
-            Hoten = "Nguyễn Văn L",
-            Sdt = "0912345678",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(5)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD012",
+                DiaChiNhanHang = "456 Đường L, Quận 12",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV003",
+                MaKh = "KH012",
+                MoTa = "Hóa đơn thứ mười hai",
+                Hoten = "Nguyễn Văn L",
+                Sdt = "0912345678",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(5)),
        
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD013",
-            DiaChiNhanHang = "789 Đường M, Quận 1",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV001",
-            MaKh = "KH013",
-            MoTa = "Hóa đơn thứ mười ba",
-            Hoten = "Lê Văn M",
-            Sdt = "0123456789",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD013",
+                DiaChiNhanHang = "789 Đường M, Quận 1",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV001",
+                MaKh = "KH013",
+                MoTa = "Hóa đơn thứ mười ba",
+                Hoten = "Lê Văn M",
+                Sdt = "0123456789",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
        
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD014",
-            DiaChiNhanHang = "321 Đường N, Quận 2",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV002",
-            MaKh = "KH013",
-            MoTa = "Hóa đơn thứ mười bốn",
-            Hoten = "Nguyễn Thị N",
-            Sdt = "0987654321",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD014",
+                DiaChiNhanHang = "321 Đường N, Quận 2",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV002",
+                MaKh = "KH013",
+                MoTa = "Hóa đơn thứ mười bốn",
+                Hoten = "Nguyễn Thị N",
+                Sdt = "0987654321",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
          
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD015",
-            DiaChiNhanHang = "654 Đường O, Quận 3",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV003",
-            MaKh = "KH013",
-            MoTa = "Hóa đơn thứ mười lăm",
-            Hoten = "Lê Văn O",
-            Sdt = "0912345678",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(4)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD015",
+                DiaChiNhanHang = "654 Đường O, Quận 3",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV003",
+                MaKh = "KH013",
+                MoTa = "Hóa đơn thứ mười lăm",
+                Hoten = "Lê Văn O",
+                Sdt = "0912345678",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(4)),
            
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD016",
-            DiaChiNhanHang = "987 Đường P, Quận 4",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV001",
-            MaKh = "KH013",
-            MoTa = "Hóa đơn thứ mười sáu",
-            Hoten = "Nguyễn Văn P",
-            Sdt = "0123456789",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD016",
+                DiaChiNhanHang = "987 Đường P, Quận 4",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV001",
+                MaKh = "KH013",
+                MoTa = "Hóa đơn thứ mười sáu",
+                Hoten = "Nguyễn Văn P",
+                Sdt = "0123456789",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
           
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD017",
-            DiaChiNhanHang = "159 Đường Q, Quận 5",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV002",
-            MaKh = "KH013",
-            MoTa = "Hóa đơn thứ mười bảy",
-            Hoten = "Trần Thị Q",
-            Sdt = "0987654321",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD017",
+                DiaChiNhanHang = "159 Đường Q, Quận 5",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV002",
+                MaKh = "KH013",
+                MoTa = "Hóa đơn thứ mười bảy",
+                Hoten = "Trần Thị Q",
+                Sdt = "0987654321",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
            
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD018",
-            DiaChiNhanHang = "753 Đường R, Quận 6",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV003",
-            MaKh = "KH013",
-            MoTa = "Hóa đơn thứ mười tám",
-            Hoten = "Lê Văn R",
-            Sdt = "0912345678",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(4)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD018",
+                DiaChiNhanHang = "753 Đường R, Quận 6",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV003",
+                MaKh = "KH013",
+                MoTa = "Hóa đơn thứ mười tám",
+                Hoten = "Lê Văn R",
+                Sdt = "0912345678",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(4)),
            
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD019",
-            DiaChiNhanHang = "258 Đường S, Quận 7",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV001",
-            MaKh = "KH013",
-            MoTa = "Hóa đơn thứ mười chín",
-            Hoten = "Nguyễn Thị S",
-            Sdt = "0123456789",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD019",
+                DiaChiNhanHang = "258 Đường S, Quận 7",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV001",
+                MaKh = "KH013",
+                MoTa = "Hóa đơn thứ mười chín",
+                Hoten = "Nguyễn Thị S",
+                Sdt = "0123456789",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
        
-        },
-        new Hoadon
-        {
-            MaHoaDon = "HD020",
-            DiaChiNhanHang = "369 Đường T, Quận 8",
-            NgayTao = DateOnly.FromDateTime(DateTime.Now),
-            Httt = "COD",
-            TinhTrang = "Đã thanh toán",
-            MaNv = "NV002",
-            MaKh = "KH013",
-            MoTa = "Hóa đơn thứ hai mươi",
-            Hoten = "Lê Văn T",
-            Sdt = "0987654321",
-            ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-            ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
+            },
+            new Hoadon
+            {
+                MaHoaDon = "HD020",
+                DiaChiNhanHang = "369 Đường T, Quận 8",
+                NgayTao = DateOnly.FromDateTime(DateTime.Now),
+                Httt = "COD",
+                TinhTrang = "Đã thanh toán",
+                MaNv = "NV002",
+                MaKh = "KH013",
+                MoTa = "Hóa đơn thứ hai mươi",
+                Hoten = "Lê Văn T",
+                Sdt = "0987654321",
+                ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
+                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(3)),
            
-        }
+            }
         );
         modelBuilder.Entity<Chitietphieunhap>().HasData(
             new Chitietphieunhap { MaCtpn = "CT001", MaPhieuNhap = "PN001", MaSp = "SP001", SoluongNhap = 50, DonGiaNhap = 120000 },
@@ -644,146 +725,298 @@ public partial class Csharp4Context : DbContext
         );
 
         modelBuilder.Entity<Chitietmausac>().HasData(
+            // SP001
             new Chitietmausac { MaMau = 1, MaSp = "SP001" },
-            new Chitietmausac { MaMau = 2, MaSp = "SP002" },
-            new Chitietmausac { MaMau = 3, MaSp = "SP003" },
-            new Chitietmausac { MaMau = 4, MaSp = "SP004" },
+            new Chitietmausac { MaMau = 2, MaSp = "SP001" },
+            // SP002
+            new Chitietmausac { MaMau = 3, MaSp = "SP002" },
+            new Chitietmausac { MaMau = 4, MaSp = "SP002" },
+            // SP003
+            new Chitietmausac { MaMau = 1, MaSp = "SP003" },
+            new Chitietmausac { MaMau = 5, MaSp = "SP003" },
+            // SP004
+            new Chitietmausac { MaMau = 2, MaSp = "SP004" },
+            new Chitietmausac { MaMau = 3, MaSp = "SP004" },
+            // SP005
+            new Chitietmausac { MaMau = 4, MaSp = "SP005" },
             new Chitietmausac { MaMau = 5, MaSp = "SP005" },
+            // SP006
             new Chitietmausac { MaMau = 1, MaSp = "SP006" },
-            new Chitietmausac { MaMau = 2, MaSp = "SP007" },
-            new Chitietmausac { MaMau = 3, MaSp = "SP008" },
-            new Chitietmausac { MaMau = 4, MaSp = "SP009" },
-            new Chitietmausac { MaMau = 5, MaSp = "SP010" }
+            new Chitietmausac { MaMau = 2, MaSp = "SP006" },
+            // SP007
+            new Chitietmausac { MaMau = 3, MaSp = "SP007" },
+            new Chitietmausac { MaMau = 4, MaSp = "SP007" },
+            // SP008
+            new Chitietmausac { MaMau = 5, MaSp = "SP008" },
+            new Chitietmausac { MaMau = 1, MaSp = "SP008" },
+            // SP009
+            new Chitietmausac { MaMau = 2, MaSp = "SP009" },
+            new Chitietmausac { MaMau = 3, MaSp = "SP009" },
+            // SP010
+            new Chitietmausac { MaMau = 4, MaSp = "SP010" },
+            new Chitietmausac { MaMau = 5, MaSp = "SP010" },
+            // SP011
+            new Chitietmausac { MaMau = 1, MaSp = "SP011" },
+            new Chitietmausac { MaMau = 3, MaSp = "SP011" },
+            // SP012
+            new Chitietmausac { MaMau = 2, MaSp = "SP012" },
+            new Chitietmausac { MaMau = 4, MaSp = "SP012" },
+            // SP013
+            new Chitietmausac { MaMau = 5, MaSp = "SP013" },
+            new Chitietmausac { MaMau = 1, MaSp = "SP013" },
+            // SP014
+            new Chitietmausac { MaMau = 2, MaSp = "SP014" },
+            new Chitietmausac { MaMau = 3, MaSp = "SP014" },
+            // SP015
+            new Chitietmausac { MaMau = 4, MaSp = "SP015" },
+            new Chitietmausac { MaMau = 5, MaSp = "SP015" },
+            // SP016
+            new Chitietmausac { MaMau = 1, MaSp = "SP016" },
+            new Chitietmausac { MaMau = 2, MaSp = "SP016" },
+            // SP017
+            new Chitietmausac { MaMau = 3, MaSp = "SP017" },
+            new Chitietmausac { MaMau = 4, MaSp = "SP017" },
+            // SP018
+            new Chitietmausac { MaMau = 5, MaSp = "SP018" },
+            new Chitietmausac { MaMau = 1, MaSp = "SP018" },
+            // SP019
+            new Chitietmausac { MaMau = 2, MaSp = "SP019" },
+            new Chitietmausac { MaMau = 3, MaSp = "SP019" },
+            // SP020
+            new Chitietmausac { MaMau = 4, MaSp = "SP020" },
+            new Chitietmausac { MaMau = 5, MaSp = "SP020" }
         );
 
         modelBuilder.Entity<Chitietkichthuoc>().HasData(
+            // SP001
             new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP001" },
+            new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP001" },
+            // SP002
             new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP002" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP002" },
+            // SP003
+            new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP003" },
             new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP003" },
+            // SP004
             new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP004" },
+            new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP004" },
+            // SP005
             new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP005" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP005" },
+            // SP006
+            new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP006" },
             new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP006" },
+            // SP007
             new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP007" },
+            new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP007" },
+            // SP008
             new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP008" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP008" },
+            // SP009
+            new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP009" },
             new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP009" },
-            new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP010" }
+            // SP010
+            new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP010" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP010" },
+            // SP011
+            new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP011" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP011" },
+            // SP012
+            new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP012" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP012" },
+            // SP013
+            new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP013" },
+            new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP013" },
+            // SP014
+            new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP014" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP014" },
+            // SP015
+            new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP015" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP015" },
+            // SP016
+            new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP016" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP016" },
+            // SP017
+            new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP017" },
+            new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP017" },
+            // SP018
+            new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP018" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP018" },
+            // SP019
+            new Chitietkichthuoc { MaKichThuoc = 1, MaSp = "SP019" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP019" },
+            // SP020
+            new Chitietkichthuoc { MaKichThuoc = 2, MaSp = "SP020" },
+            new Chitietkichthuoc { MaKichThuoc = 3, MaSp = "SP020" }
         );
 
         modelBuilder.Entity<Chitietchatlieu>().HasData(
+            // SP001
             new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP001" },
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP001" },
+            // SP002
             new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP002" },
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP002" },
+            // SP003
+            new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP003" },
             new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP003" },
-            
+            // SP004
+            new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP004" },
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP004" },
+            // SP005
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP005" },
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP005" },
+            // SP006
             new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP006" },
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP006" },
+            // SP007
+            new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP007" },
             new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP007" },
-            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP008" }
-            
-            
+            // SP008
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP008" },
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP008" },
+            // SP009
+            new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP009" },
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP009" },
+            // SP010
+            new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP010" },
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP010" },
+            // SP011
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP011" },
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP011" },
+            // SP012
+            new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP012" },
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP012" },
+            // SP013
+            new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP013" },
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP013" },
+            // SP014
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP014" },
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP014" },
+            // SP015
+            new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP015" },
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP015" },
+            // SP016
+            new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP016" },
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP016" },
+            // SP017
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP017" },
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP017" },
+            // SP018
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP018" },
+            new Chitietchatlieu { MaChatLieu = 1, MaSp = "SP018" },
+            // SP019
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP019" },
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP019" },
+            // SP020
+            new Chitietchatlieu { MaChatLieu = 2, MaSp = "SP020" },
+            new Chitietchatlieu { MaChatLieu = 3, MaSp = "SP020" }
         );
+
 
         // Cấu hình dữ liệu mẫu cho BinhLuan
         modelBuilder.Entity<BinhLuan>().HasData(
-    new BinhLuan
-    {
-        IdBinhLuan = 3,
-        NoiDung = "Chất lượng sản phẩm ổn so với giá.",
-        ThoiGian = DateTime.Now.AddHours(-1),
-        MaSP = "SP003",
-        MaKH = "KH003",
-        Rating = 4,
-        isDelete = false
-    },
-    new BinhLuan
-    {
-        IdBinhLuan = 4,
-        NoiDung = "Hàng lỗi, cần đổi trả gấp.",
-        ThoiGian = DateTime.Now.AddHours(-2),
-        MaSP = "SP004",
-        MaKH = "KH004",
-        Rating = 2,
-        isDelete = false
-    },
-    new BinhLuan
-    {
-        IdBinhLuan = 5,
-        NoiDung = "Dịch vụ khách hàng rất tốt!",
-        ThoiGian = DateTime.Now.AddDays(-1),
-        MaSP = "SP005",
-        MaKH = "KH005",
-        Rating = 5,
-        isDelete = false
-    },
-    new BinhLuan
-    {
-        IdBinhLuan = 6,
-        NoiDung = "Giao hàng nhanh, sản phẩm đẹp.",
-        ThoiGian = DateTime.Now.AddDays(-2),
-        MaSP = "SP006",
-        MaKH = "KH006",
-        Rating = 5,
-        isDelete = false
-    },
-    new BinhLuan
-    {
-        IdBinhLuan = 7,
-        NoiDung = "Không giống hình trên web, thất vọng.",
-        ThoiGian = DateTime.Now.AddDays(-3),
-        MaSP = "SP007",
-        MaKH = "KH007",
-        Rating = 1,
-        isDelete = false
-    }
-);
+            new BinhLuan
+            {
+                IdBinhLuan = 3,
+                NoiDung = "Chất lượng sản phẩm ổn so với giá.",
+                ThoiGian = DateTime.Now.AddHours(-1),
+                MaSP = "SP003",
+                MaKH = "KH003",
+                Rating = 4,
+                isDelete = false
+            },
+            new BinhLuan
+            {
+                IdBinhLuan = 4,
+                NoiDung = "Hàng lỗi, cần đổi trả gấp.",
+                ThoiGian = DateTime.Now.AddHours(-2),
+                MaSP = "SP004",
+                MaKH = "KH004",
+                Rating = 2,
+                isDelete = false
+            },
+            new BinhLuan
+            {
+                IdBinhLuan = 5,
+                NoiDung = "Dịch vụ khách hàng rất tốt!",
+                ThoiGian = DateTime.Now.AddDays(-1),
+                MaSP = "SP005",
+                MaKH = "KH005",
+                Rating = 5,
+                isDelete = false
+            },
+            new BinhLuan
+            {
+                IdBinhLuan = 6,
+                NoiDung = "Giao hàng nhanh, sản phẩm đẹp.",
+                ThoiGian = DateTime.Now.AddDays(-2),
+                MaSP = "SP006",
+                MaKH = "KH006",
+                Rating = 5,
+                isDelete = false
+            },
+            new BinhLuan
+            {
+                IdBinhLuan = 7,
+                NoiDung = "Không giống hình trên web, thất vọng.",
+                ThoiGian = DateTime.Now.AddDays(-3),
+                MaSP = "SP007",
+                MaKH = "KH007",
+                Rating = 1,
+                isDelete = false
+            }
+        );
 
 
         // Cấu hình dữ liệu mẫu cho TraLoiBinhLuan
         modelBuilder.Entity<TraLoiBinhLuan>().HasData(
-    new TraLoiBinhLuan
-    {
-        Id = 3,
-        IdBinhLuan = 3,
-        ThoiGian = DateTime.Now.AddMinutes(-15),
-        NoiDung = "Cảm ơn bạn đã phản hồi! Hẹn gặp bạn ở lần mua tiếp theo.",
-        MaNV = "NV003",
-        isDelete = false
-    },
-    new TraLoiBinhLuan
-    {
-        Id = 4,
-        IdBinhLuan = 4,
-        ThoiGian = DateTime.Now.AddMinutes(-30),
-        NoiDung = "Chúng tôi đã nhận thông tin và sẽ hỗ trợ bạn sớm nhất.",
-        MaNV = "NV004",
-        isDelete = false
-    },
-    new TraLoiBinhLuan
-    {
-        Id = 5,
-        IdBinhLuan = 5,
-        ThoiGian = DateTime.Now.AddMinutes(-45),
-        NoiDung = "Cảm ơn bạn đã tin tưởng sử dụng dịch vụ của chúng tôi.",
-        MaNV = "NV005",
-        isDelete = false
-    },
-    new TraLoiBinhLuan
-    {
-        Id = 6,
-        IdBinhLuan = 6,
-        ThoiGian = DateTime.Now.AddHours(-1),
-        NoiDung = "Chúng tôi rất vui vì bạn hài lòng!",
-        MaNV = "NV006",
-        isDelete = false
-    },
-    new TraLoiBinhLuan
-    {
-        Id = 7,
-        IdBinhLuan = 7,
-        ThoiGian = DateTime.Now.AddHours(-1.5),
-        NoiDung = "Chúng tôi rất tiếc, hãy liên hệ để được hỗ trợ đổi trả.",
-        MaNV = "NV007",
-        isDelete = false
-    }
-);
+            new TraLoiBinhLuan
+            {
+                Id = 3,
+                IdBinhLuan = 3,
+                ThoiGian = DateTime.Now.AddMinutes(-15),
+                NoiDung = "Cảm ơn bạn đã phản hồi! Hẹn gặp bạn ở lần mua tiếp theo.",
+                MaNV = "NV003",
+                isDelete = false
+            },
+            new TraLoiBinhLuan
+            {
+                Id = 4,
+                IdBinhLuan = 4,
+                ThoiGian = DateTime.Now.AddMinutes(-30),
+                NoiDung = "Chúng tôi đã nhận thông tin và sẽ hỗ trợ bạn sớm nhất.",
+                MaNV = "NV004",
+                isDelete = false
+            },
+            new TraLoiBinhLuan
+            {
+                Id = 5,
+                IdBinhLuan = 5,
+                ThoiGian = DateTime.Now.AddMinutes(-45),
+                NoiDung = "Cảm ơn bạn đã tin tưởng sử dụng dịch vụ của chúng tôi.",
+                MaNV = "NV005",
+                isDelete = false
+            },
+            new TraLoiBinhLuan
+            {
+                Id = 6,
+                IdBinhLuan = 6,
+                ThoiGian = DateTime.Now.AddHours(-1),
+                NoiDung = "Chúng tôi rất vui vì bạn hài lòng!",
+                MaNV = "NV006",
+                isDelete = false
+            },
+            new TraLoiBinhLuan
+            {
+                Id = 7,
+                IdBinhLuan = 7,
+                ThoiGian = DateTime.Now.AddHours(-1.5),
+                NoiDung = "Chúng tôi rất tiếc, hãy liên hệ để được hỗ trợ đổi trả.",
+                MaNV = "NV007",
+                isDelete = false
+            }
+        );
 
 
         base.OnModelCreating(modelBuilder);

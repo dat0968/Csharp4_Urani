@@ -23,7 +23,7 @@ namespace ASMCshrp4_12345.Controllers
         {
             ViewBag.PriceSortParam = sortOrder == "price_asc" ? "price_desc" : "price_asc";
 
-            var sanPhamQuery = _context.Sanphams.Where(p => p.IsDelete == false && p.Chitietchatlieus.Any() && p.Chitietkichthuocs.Any() && p.Chitietmausacs.Any() )
+            var sanPhamQuery = _context.Sanphams.Where(p => p.IsDelete == false && p.Chitietchatlieus.Any() && p.Chitietkichthuocs.Any() && p.Chitietmausacs.Any())
                 .Include(s => s.Hinhanhs)
                 .Include(s => s.Chitietkichthuocs)
                 .ThenInclude(s => s.MaKichThuocNavigation)
@@ -116,7 +116,7 @@ namespace ASMCshrp4_12345.Controllers
                 return NotFound();
             }
             sanPham.Rating = sanPham.BinhLuans.Any() ? sanPham.BinhLuans.Average(p => p.Rating) : 0;
-            var sanPhamTuongTu = _context.Sanphams.Where(p => p.MaThuongHieu == sanPham.MaThuongHieu && p.MaSp != sanPham.MaSp )
+            var sanPhamTuongTu = _context.Sanphams.Where(p => p.MaThuongHieu == sanPham.MaThuongHieu && p.MaSp != sanPham.MaSp && p.IsDelete == false  )
                 .Include(s => s.Hinhanhs)
                 .Include(s => s.Chitietkichthuocs)
                 .ThenInclude(s => s.MaKichThuocNavigation)

@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using DocumentFormat.OpenXml.InkML;
 using DocumentFormat.OpenXml.EMMA;
 using ASMCshrp4_12345.ViewModels;
+using AspNetCoreGeneratedDocument;
 
 namespace ASMCshrp4_12345.Controllers
 {
@@ -34,9 +35,11 @@ namespace ASMCshrp4_12345.Controllers
             }
             var sanPhamNoiBat = from cthd in _context.Chitiethoadons
                                 join sp in _context.Sanphams on cthd.MaSp equals sp.MaSp
+                                where sp.IsDelete == false
                                 join dg in _context.Binhluans on sp.MaSp equals dg.MaSP into reviews
                                 group cthd by new { sp.TenSp, sp.MaSp, sp.DonGiaBan, sp.Hinh } into productGroup
                                 orderby productGroup.Sum(cthd => cthd.SoLuongMua) descending
+                                
                                 select new SanPhamNoiBat
                                 {
                                     MaSp = productGroup.Key.MaSp,

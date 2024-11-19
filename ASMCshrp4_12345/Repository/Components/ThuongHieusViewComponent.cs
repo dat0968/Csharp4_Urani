@@ -12,6 +12,6 @@ namespace ASMCshrp4_12345.Repository.Components
         {
             _context = context;
         }
-        public async Task<IViewComponentResult> InvokeAsync() => View(await _context.Thuonghieus.ToListAsync());
+        public async Task<IViewComponentResult> InvokeAsync() => View(await _context.Thuonghieus.Where(p => p.IsDelete == false).ToListAsync());
     }
 }

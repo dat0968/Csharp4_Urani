@@ -42,14 +42,16 @@
             <button type="submit" class="btn btn-primary w-100">Tìm kiếm</button>
         </div>
         <div class="form-group mx-sm-3 mb-2">
-            <a asp-action="Create" class="btn btn-success">Tạo sản phẩm mới</a>
-            <a style="color: green" href="@Url.Action("XuatExcel")" class="btn btn-label-success btn-round btn-sm me-2">
-                <span class="btn-label">
-                    <i class="fa fa-download"></i>
-                </span>
-                Xuất danh sách khách hàng
-            </a>
-            </a>
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-action="Create" class="btn btn-success">Tạo sản phẩm mới</a>
+                <a style="color: green" href="@Url.Action("XuatExcel")" class="btn btn-label-success btn-round btn-sm me-2">
+                    <span class="btn-label">
+                        <i class="fa fa-download"></i>
+                    </span>
+                    Xuất danh sách sản phẩm
+                </a>
+            }
         </div>
     </div>
 </form>
@@ -83,11 +85,16 @@
                     <img src="~/HinhAnh/SanPham/@item.Hinh" alt="Hình ảnh sản phẩm" style="width: 100px; height: auto;" />
                 </td>
                 <td>
-                    <a href="@Url.Action("Edit", "Sanphams", new { id = item.MaSp })" class="btn btn-primary">Sửa</a>
+                    @if(User.IsInRole("Admin")){
+                        <a href="@Url.Action("Edit", "Sanphams", new { id = item.MaSp })" class="btn btn-primary">Sửa</a>
+                    }                   
                     <a href="@Url.Action("Details", "Sanphams", new { id = item.MaSp })" class="btn btn-info">Chi tiết</a>
-                    <form asp-action="Delete" asp-route-id="@item.MaSp" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này không?');">
-                        <button type="submit" class="btn btn-danger">Xóa</button>
-                    </form>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <form asp-action="Delete" asp-route-id="@item.MaSp" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này không?');">
+                            <button type="submit" class="btn btn-danger">Xóa</button>
+                        </form>
+                    }
                 </td>
             </tr>
         }

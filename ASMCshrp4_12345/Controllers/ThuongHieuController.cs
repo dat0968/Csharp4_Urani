@@ -14,7 +14,7 @@ namespace ASMCshrp4_12345.Controllers
         {
             ViewBag.ShowDeleted = showDeleted;
 
-            var thuonghieus = _context.Thuonghieus.AsQueryable();
+            var thuonghieus = _context.Thuonghieus.Where(p => p.IsDelete == false).AsQueryable();
 
             if (!showDeleted)
             {
@@ -47,6 +47,7 @@ namespace ASMCshrp4_12345.Controllers
             {
                 _context.Add(thuonghieu);
                 _context.SaveChanges();
+                TempData["SuccessMessage"] = "Thêm thương hiệu thành công!";
                 return RedirectToAction(nameof(Index));
             }
             return View(thuonghieu);
@@ -71,6 +72,7 @@ namespace ASMCshrp4_12345.Controllers
             {
                 _context.Update(thuonghieu);
                 _context.SaveChanges();
+                TempData["SuccessMessage"] = "Cập nhật thông tin thương hiệu thành công!";
                 return RedirectToAction(nameof(Index));
             }
             return View(thuonghieu);
@@ -95,6 +97,7 @@ namespace ASMCshrp4_12345.Controllers
                 thuonghieu.IsDelete = true;
                 _context.Update(thuonghieu);
                 _context.SaveChanges();
+                TempData["SuccessMessage"] = "Xóa thương hiệu thành công!";
             }
             return RedirectToAction(nameof(Index));
         }
