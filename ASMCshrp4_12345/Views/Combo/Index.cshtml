@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ASMCshrp4_12345.Models.ComBo>
+
+@{
+    ViewData["Title"] = "Danh sách Combo";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Danh sách Combo</h2>
+
+<a class="btn btn-primary" asp-action="Create">Thêm mới</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã Combo</th>
+            <th>Tên Combo</th>
+            <th>Đơn Giá</th>
+            <th>Số Lượng</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var combo in Model)
+        {
+            <tr>
+                <td>@combo.MaComBo</td>
+                <td>@combo.TenComBo</td>
+                <td>@combo.DonGia</td>
+                <td>@combo.SoLuong</td>
+                <td>
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@combo.MaComBo">Sửa</a>
+                    <!-- Thêm thuộc tính onclick để hiển thị hộp thoại xác nhận -->
+                    <a class="btn btn-danger" href="@Url.Action("Delete", new { id = combo.MaComBo })" onclick="return confirmDelete()">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        function confirmDelete() {
+            return confirm('Bạn có chắc chắn muốn xóa Combo này?');
+        }
+    </script>
+}

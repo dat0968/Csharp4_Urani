@@ -1,0 +1,32 @@
+﻿@if (Model != null)
+{
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th class="text-center">Mã Sản Phẩm</th>
+                    <th class="text-center">Tên Sản Phẩm</th>
+                    <th class="text-center">Số Lượng</th>
+                    <th class="text-center">Giá</th>
+                    <th class="text-center">Thành Tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var chiTiet in Model.MaSpNavigation.Chitiethoadons)
+                {
+                    <tr>
+                        <td class="text-center">@chiTiet.MaSp</td>
+                        <td>@chiTiet.MaSpNavigation?.TenSp</td>
+                        <td class="text-center">@chiTiet.SoLuongMua</td>
+                        <td class="text-end">@chiTiet.DonGia.ToString("N0") ₫</td>
+                        <td class="text-end">@((chiTiet.SoLuongMua * chiTiet.DonGia).ToString("N0")) ₫</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p class="text-danger text-center">Không có chi tiết đơn hàng để hiển thị.</p>
+}

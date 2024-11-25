@@ -75,4 +75,5 @@ public partial class Sanpham
     public List<int> SelectedKichThuocIds { get; set; } = new List<int>();
     [NotMapped]
     public double Rating { get; set; }
+    public virtual ICollection<CtComBo>? CtComBos { get; set; } = new List<CtComBo>();
 }
