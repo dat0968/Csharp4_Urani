@@ -130,6 +130,35 @@ namespace ASMCshrp4_12345.Controllers
             }
             return View(combo);
         }
+        public async Task<IActionResult> Details(int id)
+        {
+            var combo = await _context.ComBos
+                .Include(c => c.CtComBos)
+                .ThenInclude(ct => ct.MaSpNavigation)
+                .FirstOrDefaultAsync(c => c.MaComBo == id);
+
+            if (combo == null)
+            {
+                return NotFound();
+            }
+
+            var viewModel = new ComboDetailViewModel
+            {
+                MaComBo = combo.MaComBo,
+                TenComBo = combo.TenComBo,
+                SoLuong = combo.SoLuong,
+                DonGia = combo.DonGia,
+                SanPhamList = combo.CtComBos.Select(ct => new SanPhamComBoViewModel
+                {
+                    MaSp = ct.MaSp,
+                    TenSp = ct.MaSpNavigation?.TenSp ?? "N/A",
+                    SoLuong = ct.SoLuong,
+                    GiaBan = ct.DonGia
+                }).ToList()
+            };
+
+            return PartialView("_DetailPartial", viewModel);
+        }
 
         public async Task<IActionResult> Delete(int id)
         {
