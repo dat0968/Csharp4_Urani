@@ -7,7 +7,7 @@
 
 <h2>Thêm Combo</h2>
 
-<form asp-action="Create" method="post">
+<form asp-action="Create" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="TenComBo">Tên Combo</label>
         <input type="text" class="form-control" id="TenComBo" name="TenComBo" required />
@@ -17,7 +17,15 @@
         <label for="SoLuong">Số Lượng</label>
         <input type="number" class="form-control" id="SoLuong" name="SoLuong" required />
     </div>
-
+    <div>
+        <label for="HinhAnhList">Hình Ảnh:</label>
+        <input asp-for="HinhAnhList" type="file" multiple />
+    </div>
+    <div>
+        <label for="MoTa">Mô Tả:</label>
+        <textarea asp-for="MoTa" class="form-control"></textarea> <!-- Trường nhập mô tả -->
+    </div>
+    <br />
     <!-- Nút mở modal chọn sản phẩm -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selectProductsModal">
         Chọn Sản Phẩm
@@ -76,7 +84,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- Bảng hiển thị sản phẩm đã chọn -->
     <h5>Các sản phẩm đã chọn:</h5>
     <table class="table" id="selectedProductsTable">
@@ -108,43 +116,35 @@
 </form>
 
 <script>
-    // Danh sách sản phẩm đã chọn
+    // tạo cái danh sách sp đã chọn
     let selectedProducts = [];
 
-    // Hàm xử lý khi chọn/bỏ chọn sản phẩm
+    // cái này xử lí nút checkbox khi chọn hoặc bỏ
     function toggleProduct(checkbox) {
         const maSp = checkbox.getAttribute('data-masp');
         const tenSp = checkbox.getAttribute('data-tensp');
         const giaBan = parseFloat(checkbox.getAttribute('data-giaban'));
         const soLuongInput = document.querySelector(`.product-quantity[data-masp="${maSp}"]`);
         const soLuong = parseInt(soLuongInput.value) || 1;
-
+        // checked bằng true thì thêm k thì thôi
         if (checkbox.checked) {
-            // Thêm sản phẩm vào danh sách đã chọn
             selectedProducts.push({ maSp, tenSp, giaBan, soLuong, IsSelected: true });
         } else {
-            // Xóa sản phẩm khỏi danh sách
             selectedProducts = selectedProducts.filter(sp => sp.maSp !== maSp);
         }
-
         updateSelectedProductsTable();
     }
-
-    // Hàm xử lý khi thay đổi số lượng
+    // hàm để xử lí số lượng
     function updateProductQuantity(input) {
         const maSp = input.getAttribute('data-masp');
         const soLuong = parseInt(input.value) || 1;
-
-        // Cập nhật số lượng sản phẩm trong danh sách
         const product = selectedProducts.find(sp => sp.maSp === maSp);
         if (product) {
             product.soLuong = soLuong;
         }
-
         updateSelectedProductsTable();
     }
-
-    // Hàm cập nhật bảng hiển thị sản phẩm đã chọn
+    //hàm render ra cái sản phẩm đã chọn
     function updateSelectedProductsTable() {
         const tableBody = document.getElementById('selectedProductsTable').querySelector('tbody');
         tableBody.innerHTML = '';
@@ -153,7 +153,6 @@
         selectedProducts.forEach(sp => {
             const thanhTien = sp.giaBan * sp.soLuong;
             tongGiaGoc += thanhTien;
-
             const row = `
                 <tr>
                     <td>${sp.maSp}</td>
@@ -164,21 +163,17 @@
             `;
             tableBody.innerHTML += row;
         });
-
         document.getElementById('tongGiaGoc').innerText = tongGiaGoc.toLocaleString();
-
-        // Cập nhật dữ liệu gửi về server
+        // Cập nhật dữ liệu gửi về server (qua controller lấy xuống rồi thêm)
         document.getElementById('SanPhamList').value = JSON.stringify(selectedProducts);
     }
-
-    // Kiểm tra trước khi gửi form để đảm bảo danh sách sản phẩm không rỗng
+    // hàm này kiểm tra lại cái mảng selectedProducts coi có dữ liệu không
     document.querySelector('form').addEventListener('submit', function(event) {
         if (selectedProducts.length === 0) {
-            event.preventDefault(); // Ngừng gửi form
+            event.preventDefault();
             alert('Vui lòng chọn ít nhất một sản phẩm.');
         }
     });
-
     // Khi modal bị ẩn (ẩn modal thì cập nhật bảng)
     $('#selectProductsModal').on('hide.bs.modal', function () {
         updateSelectedProductsTable();

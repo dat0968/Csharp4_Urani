@@ -21,11 +21,11 @@ namespace ASMCshrp4_12345.Controllers
         }
 
         // Thêm Combo (GET)
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            var viewModel = new ComboViewModel
+            var viewModel =  new ComboViewModel
             {
-                SanPhamList = _context.Sanphams
+                SanPhamList = await _context.Sanphams
                     .Select(sp => new SanPhamComBoViewModel
                     {
                         MaSp = sp.MaSp,
@@ -34,102 +34,230 @@ namespace ASMCshrp4_12345.Controllers
                         IsSelected = false,
                         SoLuong = 0
                     })
-                    .ToList()
+                    .ToListAsync()
             };
 
             return View(viewModel);
         }
 
         [HttpPost]
-        public IActionResult Create(ComboViewModel model, string SanPhamList)
+        public async Task<IActionResult> Create(ComboViewModel model, string SanPhamList)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                // Deserialize JSON thành danh sách sản phẩm
+                // lấy dữ liệu và chuyển JSON thành mảng để render
                 if (!string.IsNullOrEmpty(SanPhamList))
                 {
                     model.SanPhamList = JsonConvert.DeserializeObject<List<SanPhamComBoViewModel>>(SanPhamList);
                 }
-
-                // Kiểm tra danh sách sản phẩm
                 if (model.SanPhamList == null || !model.SanPhamList.Any())
                 {
                     ModelState.AddModelError("", "Danh sách sản phẩm không được để trống.");
-                    return View(model);
+                    return  View(model);
                 }
-
-                // Lưu combo vào cơ sở dữ liệu
-                // Giả sử bạn có một thực thể Combo và ChiTietCombo
                 var combo = new ComBo
                 {
                     TenComBo = model.TenComBo,
                     SoLuong = model.SoLuong,
-                    DonGia = model.DonGia
+                    DonGia = model.DonGia,
+                    MoTa = model.MoTa,
                 };
 
                 _context.ComBos.Add(combo);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
+                // Lưu danh sách ảnh
+                if (model.HinhAnhList != null && model.HinhAnhList.Count > 0)
+                {
+                    foreach (var file in model.HinhAnhList)
+                    {
+                        if (file.Length > 0)
+                        {
+                            var fileName = $"{Guid.NewGuid()}_{file.FileName}";
+                            var filePath = Path.Combine("wwwroot/HinhAnh", fileName);
 
+                            using (var stream = new FileStream(filePath, FileMode.Create))
+                            {
+                                await file.CopyToAsync(stream);
+                            }
+
+                            var anhCombo = new AnhComBo
+                            {
+                                MaComBo = combo.MaComBo,
+                                HinhAnh = fileName
+                            };
+                            _context.AnhComBos.Add(anhCombo);
+                        }
+                    }
+                     _context.SaveChangesAsync();
+                }
                 foreach (var sp in model.SanPhamList)
                 {
                     var chiTiet = new CtComBo
                     {
-                        MaComBo = combo.MaComBo, // ID của combo vừa lưu
+                        MaComBo = combo.MaComBo, 
                         MaSp = sp.MaSp,
                         SoLuong = sp.SoLuong,
                         DonGia = sp.GiaBan
                     };
                     _context.CtComBos.Add(chiTiet);
                 }
-                _context.SaveChanges();
+                _context.SaveChangesAsync();
 
-                return RedirectToAction("Index"); // Quay lại danh sách combo
+                return RedirectToAction("Index"); 
+            }
+
+            return View(model);
+        }
+
+        // Sửa Combo (GET)
+        public async Task<IActionResult> Edit(int id)
+        {
+            var combo = await _context.ComBos
+                .Include(c => c.CtComBos)
+                .ThenInclude(ct => ct.MaSpNavigation)
+                .Include(a => a.AnhComBos)
+                .FirstOrDefaultAsync(c => c.MaComBo == id);
+
+            var viewModel = new ComboViewModel
+            {
+                MaComBo = combo.MaComBo,
+                TenComBo = combo.TenComBo,
+                SoLuong = combo.SoLuong,
+                DonGia = combo.DonGia,
+                AnhComBos = combo.AnhComBos.ToList(),
+                //lấy cái danh sách trong chi tiết combo
+                SanPhamList = combo.CtComBos.Select(ct => new SanPhamComBoViewModel
+                {
+                    MaSp = ct.MaSp,
+                    TenSp = ct.MaSpNavigation?.TenSp ?? "N/A",
+                    SoLuong = ct.SoLuong,
+                    GiaBan = ct.DonGia
+                }).ToList(),
+                //lấy hết danh sách sản phẩm để thêm vào chi tiết combo khi sửa 
+                AllSanPhamList = _context.Sanphams.Select(sp => new SanPhamComBoViewModel
+                {
+                    MaSp = sp.MaSp,
+                    TenSp = sp.TenSp,
+                    GiaBan = sp.DonGiaBan,
+                }).ToList(),
+                HinhAnhToDelete = combo.AnhComBos.Select(a => a.IdAnh).ToList()
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, ComboViewModel model, string SanPhamList)
+        {
+            if (id != model.MaComBo)
+            {
+                return NotFound();
+            }
+
+            if (!ModelState.IsValid)
+            {
+                // lấy dữ liệu và chuyển JSON thành mảng để render
+                if (!string.IsNullOrEmpty(SanPhamList))
+                {
+                    model.SanPhamList = JsonConvert.DeserializeObject<List<SanPhamComBoViewModel>>(SanPhamList);
+                }
+                if (model.SanPhamList == null || !model.SanPhamList.Any())
+                {
+                    ModelState.AddModelError("", "Danh sách sản phẩm không được để trống.");
+                    return View(model);
+                }
+                      // Cập nhật thông tin combo
+                var combo = await _context.ComBos.FindAsync(id);
+                if (combo == null)
+                {
+                    return NotFound();
+                }
+                combo.TenComBo = model.TenComBo;
+                combo.DonGia = model.DonGia;
+                combo.SoLuong = model.SoLuong;
+                combo.MoTa = model.MoTa;
+                _context.Update(combo);
+                if (model.HinhAnhToDelete != null && model.HinhAnhToDelete.Any())
+                {
+                    foreach (var imageId in model.HinhAnhToDelete)
+                    {
+                        var anhToDelete = await _context.AnhComBos.FirstOrDefaultAsync(a => a.IdAnh == imageId);
+                        if (anhToDelete != null)
+                        {
+                            var filePath = Path.Combine("wwwroot/HinhAnh", anhToDelete.HinhAnh);
+                            if (System.IO.File.Exists(filePath))
+                            {
+                                System.IO.File.Delete(filePath);
+                            }
+                            _context.AnhComBos.Remove(anhToDelete);
+                        }
+                    }
+                }
+
+                // Thêm ảnh mới nếu có
+                if (model.HinhAnhList != null && model.HinhAnhList.Count > 0)
+                {
+                    foreach (var file in model.HinhAnhList)
+                    {
+                        if (file.Length > 0)
+                        {
+                            var fileName = $"{Guid.NewGuid()}_{file.FileName}";
+                            var filePath = Path.Combine("wwwroot/HinhAnh", fileName);
+
+                            using (var stream = new FileStream(filePath, FileMode.Create))
+                            {
+                                await file.CopyToAsync(stream);
+                            }
+
+                            var anhCombo = new AnhComBo
+                            {
+                                MaComBo = combo.MaComBo,
+                                HinhAnh = fileName
+                            };
+                            _context.AnhComBos.Add(anhCombo);
+                        }
+                    }
+                }
+
+                // Xóa các chi tiết combo cũ nếu bấm nút xóa trong view
+                var oldCtComBos = _context.CtComBos.Where(ct => ct.MaComBo == id).ToList();
+                foreach (var oldCtComBo in oldCtComBos)
+                {
+                    var newProduct = model.SanPhamList.FirstOrDefault(sp => sp.MaSp == oldCtComBo.MaSp);
+                    //kiểm tra xem chi tiết combo có bấm xóa hay không 
+                    if (newProduct == null || newProduct.IsSelected)
+                    {
+                        _context.CtComBos.Remove(oldCtComBo);
+                    }
+                    else
+                    {
+                        oldCtComBo.SoLuong = newProduct.SoLuong;
+                        oldCtComBo.DonGia = newProduct.GiaBan;
+                    }
+                }
+                // thêm mấy sản phẩm được chọn thêm vào chi tiết cb
+                foreach (var sp in model.SanPhamList)
+                {
+                    if (sp.IsSelected)
+                    {
+                        var chiTiet = new CtComBo
+                        {
+                            MaComBo = id,
+                            MaSp = sp.MaSp,
+                            SoLuong = sp.SoLuong,
+                            DonGia = sp.GiaBan
+                        };
+                        _context.CtComBos.Add(chiTiet);
+                    }
+                }
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
 
             return View(model);
         }
 
 
-        // Sửa ComBo (GET)
-        public async Task<IActionResult> Edit(int id)
-        {
-            var combo = await _context.ComBos.FindAsync(id);
-            if (combo == null)
-            {
-                return NotFound();
-            }
-            return View(combo);
-        }
-
-        // Sửa ComBo (POST)
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, ComBo combo)
-        {
-            if (id != combo.MaComBo)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(combo);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!_context.ComBos.Any(e => e.MaComBo == id))
-                    {
-                        return NotFound();
-                    }
-                    throw;
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(combo);
-        }
         public async Task<IActionResult> Details(int id)
         {
             var combo = await _context.ComBos
@@ -148,12 +276,14 @@ namespace ASMCshrp4_12345.Controllers
                 TenComBo = combo.TenComBo,
                 SoLuong = combo.SoLuong,
                 DonGia = combo.DonGia,
+                MoTa = combo.MoTa,
                 SanPhamList = combo.CtComBos.Select(ct => new SanPhamComBoViewModel
                 {
                     MaSp = ct.MaSp,
                     TenSp = ct.MaSpNavigation?.TenSp ?? "N/A",
                     SoLuong = ct.SoLuong,
-                    GiaBan = ct.DonGia
+                    GiaBan = ct.DonGia,
+                    IsSelected = true
                 }).ToList()
             };
 
@@ -167,14 +297,13 @@ namespace ASMCshrp4_12345.Controllers
             {
                 return NotFound();
             }
-
-            // Nếu tìm thấy combo, chuyển sang xóa trực tiếp
+            // xóa chi tiết cb trước
             var ctComBoItems = _context.CtComBos.Where(p => p.MaComBo == id);
-            _context.CtComBos.RemoveRange(ctComBoItems); // Xóa các item liên quan trong CtComBo
-            _context.ComBos.Remove(combo); // Xóa combo chính
+            _context.CtComBos.RemoveRange(ctComBoItems); 
+            _context.ComBos.Remove(combo); 
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index)); // Sau khi xóa, chuyển đến trang danh sách
+            return RedirectToAction(nameof(Index)); 
         }
     }
 }

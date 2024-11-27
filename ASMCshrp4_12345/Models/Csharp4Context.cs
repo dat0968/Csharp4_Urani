@@ -49,6 +49,7 @@ public partial class Csharp4Context : DbContext
     public virtual DbSet<TraLoiBinhLuan> Traloibinhluans { get; set; }
     public virtual DbSet<ComBo> ComBos { get; set; }
     public virtual DbSet<CtComBo> CtComBos { get; set; }
+    public virtual DbSet<AnhComBo> AnhComBos { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
