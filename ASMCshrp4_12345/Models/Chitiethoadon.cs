@@ -20,6 +20,7 @@ public partial class Chitiethoadon
     [Required(ErrorMessage = "Mã sản phẩm không được để trống.")]
     [StringLength(5, ErrorMessage = "Mã sản phẩm không được vượt quá 5 ký tự.")]
     public string MaSp { get; set; }
+    public int? MaComBo_ThuocTinhSuyDien { get; set; }
 
     public string? MauSac_ThuocTinhSuyDien { get; set; }
 

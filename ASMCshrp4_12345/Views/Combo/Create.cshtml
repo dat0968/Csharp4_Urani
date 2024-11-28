@@ -1,11 +1,94 @@
 ﻿@model ASMCshrp4_12345.ViewModels.ComboViewModel
-
 @{
     ViewData["Title"] = "Thêm Combo";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Thêm Combo</h2>
+<script>
+        let selectedProducts = [];
+
+    function toggleProduct(checkbox) {
+        const maSp = checkbox.getAttribute('data-masp');
+        const tenSp = checkbox.getAttribute('data-tensp');
+        const giaBan = parseFloat(checkbox.getAttribute('data-giaban'));
+        const soLuongInput = document.querySelector(`.product-quantity[data-masp="${maSp}"]`);
+        const soLuong = parseInt(soLuongInput.value) || 1;
+        const TenMau = document.querySelector(`.product-TenMau[data-masp="${maSp}"]`).value;
+        const TenKichThuoc = document.querySelector(`.product-TenKichThuoc[data-masp="${maSp}"]`).value;
+        const TenChatLieu = document.querySelector(`.product-TenChatLieu[data-masp="${maSp}"]`).value;
+        // Kiểm tra nếu checkbox được chọn
+       if (checkbox.checked) {
+        selectedProducts.push({ maSp, tenSp, giaBan, soLuong, TenMau, TenKichThuoc, TenChatLieu, IsSelected: true });
+        } else {
+        selectedProducts = selectedProducts.filter(sp => sp.maSp !== maSp);
+        }
+
+        updateSelectedProductsTable();
+    }
+
+    function updateProductQuantity(input) {
+        const maSp = input.getAttribute('data-masp');
+        const soLuong = parseInt(input.value) || 1;
+        const product = selectedProducts.find(sp => sp.maSp === maSp);
+        if (product) {
+            product.soLuong = soLuong;
+        }
+        updateSelectedProductsTable();
+    }
+
+       function updateProductAttribute(select, attribute) {
+        const maSp = select.getAttribute('data-masp');
+        const value = select.value;
+        const product = selectedProducts.find(sp => sp.maSp === maSp);
+
+        if (product) {
+            product[attribute] = value;  // Cập nhật tên màu, kích thước hoặc chất liệu
+        }
+
+        updateSelectedProductsTable();
+    }
+
+        function updateSelectedProductsTable() {
+        const tableBody = document.getElementById('selectedProductsTable').querySelector('tbody');
+        tableBody.innerHTML = '';
+        let tongGiaGoc = 0;
+
+        selectedProducts.forEach(sp => {
+            const thanhTien = sp.giaBan * sp.soLuong;
+            tongGiaGoc += thanhTien;
+
+            const row = `
+                <tr>
+                    <td>${sp.maSp}</td>
+                    <td>${sp.tenSp}</td>
+                    <td>${sp.soLuong}</td>
+                    <td>${sp.TenMau || 'N/A'}</td>  <!-- Hiển thị tên màu -->
+                    <td>${sp.TenKichThuoc || 'N/A'}</td>   <!-- Hiển thị tên kích thước -->
+                    <td>${sp.TenChatLieu || 'N/A'}</td>  <!-- Hiển thị tên chất liệu -->
+                    <td>${thanhTien.toLocaleString()} VND</td>
+                </tr>
+            `;
+            tableBody.innerHTML += row;
+        });
+
+        document.getElementById('tongGiaGoc').innerText = tongGiaGoc.toLocaleString();
+        document.getElementById('SanPhamList').value = JSON.stringify(selectedProducts);
+    }
+
+    document.querySelector('form').addEventListener('submit', function(event) {
+        if (selectedProducts.length === 0) {
+            event.preventDefault();
+            alert('Vui lòng chọn ít nhất một sản phẩm!');
+        }
+    });
+        var Model = {
+        MauSacList: @Html.Raw(Json.Serialize(Model.MauSacList)),
+        KichThuocList: @Html.Raw(Json.Serialize(Model.KichThuocList)),
+        ChatLieuList: @Html.Raw(Json.Serialize(Model.ChatLieuList))
+    };
+</script>
+
+<br />
 
 <form asp-action="Create" method="post" enctype="multipart/form-data">
     <div class="form-group">
@@ -46,7 +129,9 @@
                                 <th>Chọn</th>
                                 <th>Mã Sản Phẩm</th>
                                 <th>Tên Sản Phẩm</th>
-                                <th>Giá Bán</th>
+                                <th>Màu Sắc</th>
+                                <th>Kích Thước</th>
+                                <th>Chất Liệu</th>
                                 <th>Số Lượng</th>
                             </tr>
                         </thead>
@@ -64,7 +149,35 @@
                                     </td>
                                     <td>@Model.SanPhamList[i].MaSp</td>
                                     <td>@Model.SanPhamList[i].TenSp</td>
-                                    <td>@Model.SanPhamList[i].GiaBan.ToString("N0") VND</td>
+                                    <td>
+                                        <select class="form-control product-TenMau" data-masp="@Model.SanPhamList[i].MaSp" onchange="updateProductAttribute(this, 'TenMau')">
+                                            <option value="">Chọn màu</option>
+                                            @foreach (var TenMau in Model.MauSacList)
+                                            {
+                                                <option value="@TenMau.TenMau">@TenMau.TenMau</option>
+                                            }
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <select class="form-control product-TenKichThuoc" data-masp="@Model.SanPhamList[i].MaSp" onchange="updateProductAttribute(this, 'TenKichThuoc')">
+                                            <option value="">Chọn kích thước</option>
+                                            @foreach (var TenKichThuoc in Model.KichThuocList)
+                                            {
+                                                <option value="@TenKichThuoc.TenKichThuoc">@TenKichThuoc.TenKichThuoc</option>
+                                            }
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <select class="form-control product-TenChatLieu" data-masp="@Model.SanPhamList[i].MaSp" onchange="updateProductAttribute(this, 'TenChatLieu')">
+                                            <option value="">Chọn chất liệu</option>
+                                            @foreach (var TenChatLieu in Model.ChatLieuList)
+                                            {
+                                                <option value="@TenChatLieu.TenChatLieu">@TenChatLieu.TenChatLieu</option>
+                                            }
+                                        </select>
+                                    </td>
                                     <td>
                                         <input type="number"
                                                class="product-quantity form-control"
@@ -84,7 +197,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Bảng hiển thị sản phẩm đã chọn -->
     <h5>Các sản phẩm đã chọn:</h5>
     <table class="table" id="selectedProductsTable">
@@ -93,6 +206,9 @@
                 <th>Mã Sản Phẩm</th>
                 <th>Tên Sản Phẩm</th>
                 <th>Số Lượng</th>
+                <th>Màu Sắc</th>
+                <th>Kích Thước</th>
+                <th>Chất Liệu</th>
                 <th>Thành Tiền</th>
             </tr>
         </thead>
@@ -115,67 +231,3 @@
     <button type="submit" class="btn btn-success mt-3">Lưu</button>
 </form>
 
-<script>
-    // tạo cái danh sách sp đã chọn
-    let selectedProducts = [];
-
-    // cái này xử lí nút checkbox khi chọn hoặc bỏ
-    function toggleProduct(checkbox) {
-        const maSp = checkbox.getAttribute('data-masp');
-        const tenSp = checkbox.getAttribute('data-tensp');
-        const giaBan = parseFloat(checkbox.getAttribute('data-giaban'));
-        const soLuongInput = document.querySelector(`.product-quantity[data-masp="${maSp}"]`);
-        const soLuong = parseInt(soLuongInput.value) || 1;
-        // checked bằng true thì thêm k thì thôi
-        if (checkbox.checked) {
-            selectedProducts.push({ maSp, tenSp, giaBan, soLuong, IsSelected: true });
-        } else {
-            selectedProducts = selectedProducts.filter(sp => sp.maSp !== maSp);
-        }
-        updateSelectedProductsTable();
-    }
-    // hàm để xử lí số lượng
-    function updateProductQuantity(input) {
-        const maSp = input.getAttribute('data-masp');
-        const soLuong = parseInt(input.value) || 1;
-        const product = selectedProducts.find(sp => sp.maSp === maSp);
-        if (product) {
-            product.soLuong = soLuong;
-        }
-        updateSelectedProductsTable();
-    }
-    //hàm render ra cái sản phẩm đã chọn
-    function updateSelectedProductsTable() {
-        const tableBody = document.getElementById('selectedProductsTable').querySelector('tbody');
-        tableBody.innerHTML = '';
-        let tongGiaGoc = 0;
-
-        selectedProducts.forEach(sp => {
-            const thanhTien = sp.giaBan * sp.soLuong;
-            tongGiaGoc += thanhTien;
-            const row = `
-                <tr>
-                    <td>${sp.maSp}</td>
-                    <td>${sp.tenSp}</td>
-                    <td>${sp.soLuong}</td>
-                    <td>${thanhTien.toLocaleString()} VND</td>
-                </tr>
-            `;
-            tableBody.innerHTML += row;
-        });
-        document.getElementById('tongGiaGoc').innerText = tongGiaGoc.toLocaleString();
-        // Cập nhật dữ liệu gửi về server (qua controller lấy xuống rồi thêm)
-        document.getElementById('SanPhamList').value = JSON.stringify(selectedProducts);
-    }
-    // hàm này kiểm tra lại cái mảng selectedProducts coi có dữ liệu không
-    document.querySelector('form').addEventListener('submit', function(event) {
-        if (selectedProducts.length === 0) {
-            event.preventDefault();
-            alert('Vui lòng chọn ít nhất một sản phẩm.');
-        }
-    });
-    // Khi modal bị ẩn (ẩn modal thì cập nhật bảng)
-    $('#selectProductsModal').on('hide.bs.modal', function () {
-        updateSelectedProductsTable();
-    });
-</script>

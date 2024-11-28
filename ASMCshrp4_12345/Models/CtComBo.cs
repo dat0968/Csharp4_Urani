@@ -12,6 +12,9 @@ namespace ASMCshrp4_12345.Models
         public int MaComBo { get; set; }
         [ForeignKey("MaSpNavigation")]
         public string MaSp { get; set; }
+        public string? TenMau { get; set; }
+        public string? TenKichThuoc { get; set; }
+        public string? TenChatLieu { get; set; }
         public int SoLuong { get; set; }
         public double DonGia { get; set; }
         public virtual ComBo? MaComBoNavigation { get; set; }

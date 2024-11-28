@@ -383,7 +383,7 @@ namespace ASMCshrp4_12345.Controllers
             return View(model);
 
         }
-        /*public IActionResult ChiTietDonHang(string maHoaDon)
+        public IActionResult ChiTietDonHang(string maHoaDon)
         {
             var donHang = db.Chitiethoadons
         .Include(h => h.MaSpNavigation)
@@ -398,6 +398,6 @@ namespace ASMCshrp4_12345.Controllers
 
             // Trả về partial view với dữ liệu đơn hàng
             return PartialView("ChiTietDonHang", donHang);
-        }*/
+        }
     }
 }

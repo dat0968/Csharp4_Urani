@@ -4,12 +4,11 @@
     ViewData["Title"] = "Danh sách Combo";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
-
-<h2>Danh sách Combo</h2>
+<br />
 
 <a class="btn btn-primary mb-3" asp-action="Create">Thêm mới</a>
 
-<table class="table table-bordered table-hover">
+<table class="table table-bordered ">
     <thead class="table-dark">
         <tr>
             <th>Mã Combo</th>
@@ -40,20 +39,18 @@
 </table>
 
 <!-- Modal hiển thị chi tiết Combo -->
-<div class="modal fade" id="comboDetailModal" tabindex="-1" role="dialog" aria-labelledby="comboDetailLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+<div class="modal fade" id="comboDetailModal" tabindex="-1" aria-labelledby="comboDetailLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="comboDetailLabel">Chi tiết Combo</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="comboDetailContent">
                 <!-- Partial View sẽ được load tại đây -->
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
             </div>
         </div>
     </div>
@@ -64,6 +61,7 @@
         function confirmDelete() {
             return confirm('Bạn có chắc chắn muốn xóa Combo này?');
         }
+
         function showComboDetail(comboId) {
             $.ajax({
                 url: '/Combo/Details/' + comboId,

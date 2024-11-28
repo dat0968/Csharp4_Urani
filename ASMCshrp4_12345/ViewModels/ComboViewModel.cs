@@ -12,6 +12,9 @@ namespace ASMCshrp4_12345.ViewModels
         public List<AnhComBo> AnhComBos { get; set; }
         public List<int> HinhAnhToDelete { get; set; }
         public List<SanPhamComBoViewModel> SanPhamList { get; set; }
+        public List<Chitietchatlieu> ChatLieuList { get; set; }
+        public List<Chitietmausac> MauSacList { get; set; }
+        public List<Chitietkichthuoc> KichThuocList { get; set; }
         public List<SanPhamComBoViewModel> AllSanPhamList { get; set; } = new List<SanPhamComBoViewModel>();
         public List<IFormFile> HinhAnhList { get; set; }
     }

@@ -34,6 +34,32 @@ namespace ASMCshrp4_12345.Controllers
                         IsSelected = false,
                         SoLuong = 0
                     })
+                    .ToListAsync(),
+                MauSacList = await _context.Mausacs
+                    .Select(ct => new Chitietmausac
+                    {
+                        MaMau = ct.MaMau,
+                        // Access TenMau from the MaMauNavigation navigation property
+                        TenMau = ct.TenMau
+                    })
+                    .ToListAsync(),
+
+                // Lấy kích thước cho từng sản phẩm
+                KichThuocList = await _context.Kichthuocs
+                    .Select(ct => new Chitietkichthuoc
+                    {
+                        MaKichThuoc = ct.MaKichThuoc,
+                        TenKichThuoc = ct.TenKichThuoc
+                    })
+                    .ToListAsync(),
+
+                // Lấy chất liệu cho từng sản phẩm
+                ChatLieuList = await _context.Chatlieus
+                    .Select(ct => new Chitietchatlieu
+                    {
+                        MaChatLieu = ct.MaChatLieu,
+                        TenChatLieu = ct.TenChatLieu
+                    })
                     .ToListAsync()
             };
 
@@ -97,11 +123,14 @@ namespace ASMCshrp4_12345.Controllers
                         MaComBo = combo.MaComBo, 
                         MaSp = sp.MaSp,
                         SoLuong = sp.SoLuong,
-                        DonGia = sp.GiaBan
+                        DonGia = sp.GiaBan,
+                        TenMau = sp.TenMau,       
+                        TenKichThuoc = sp.TenKichThuoc, 
+                        TenChatLieu = sp.TenChatLieu
                     };
                     _context.CtComBos.Add(chiTiet);
                 }
-                _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
 
                 return RedirectToAction("Index"); 
             }
@@ -131,16 +160,46 @@ namespace ASMCshrp4_12345.Controllers
                     MaSp = ct.MaSp,
                     TenSp = ct.MaSpNavigation?.TenSp ?? "N/A",
                     SoLuong = ct.SoLuong,
-                    GiaBan = ct.DonGia
+                    GiaBan = ct.DonGia,
+                    TenMau = ct.TenMau,
+                    TenKichThuoc = ct.TenKichThuoc,
+                    TenChatLieu = ct.TenChatLieu 
                 }).ToList(),
                 //lấy hết danh sách sản phẩm để thêm vào chi tiết combo khi sửa 
-                AllSanPhamList = _context.Sanphams.Select(sp => new SanPhamComBoViewModel
+                AllSanPhamList = await _context.Sanphams.Select(sp => new SanPhamComBoViewModel
                 {
                     MaSp = sp.MaSp,
                     TenSp = sp.TenSp,
                     GiaBan = sp.DonGiaBan,
-                }).ToList(),
-                HinhAnhToDelete = combo.AnhComBos.Select(a => a.IdAnh).ToList()
+                }).ToListAsync(),
+                HinhAnhToDelete = combo.AnhComBos.Select(a => a.IdAnh).ToList(),
+
+                MauSacList = await _context.Mausacs
+                    .Select(ct => new Chitietmausac
+                    {
+                        MaMau = ct.MaMau,
+                        // Access TenMau from the MaMauNavigation navigation property
+                        TenMau = ct.TenMau
+                    })
+                    .ToListAsync(),
+
+                // Lấy kích thước cho từng sản phẩm
+                KichThuocList = await _context.Kichthuocs
+                    .Select(ct => new Chitietkichthuoc
+                    {
+                        MaKichThuoc = ct.MaKichThuoc,
+                        TenKichThuoc = ct.TenKichThuoc
+                    })
+                    .ToListAsync(),
+
+                // Lấy chất liệu cho từng sản phẩm
+                ChatLieuList = await _context.Chatlieus
+                    .Select(ct => new Chitietchatlieu
+                    {
+                        MaChatLieu = ct.MaChatLieu,
+                        TenChatLieu = ct.TenChatLieu
+                    })
+                    .ToListAsync()
             };
 
             return View(viewModel);
@@ -233,6 +292,9 @@ namespace ASMCshrp4_12345.Controllers
                     {
                         oldCtComBo.SoLuong = newProduct.SoLuong;
                         oldCtComBo.DonGia = newProduct.GiaBan;
+                        oldCtComBo.TenMau = newProduct.TenMau;
+                        oldCtComBo.TenKichThuoc = newProduct.TenKichThuoc;
+                        oldCtComBo.TenChatLieu = newProduct.TenChatLieu;
                     }
                 }
                 // thêm mấy sản phẩm được chọn thêm vào chi tiết cb
@@ -245,7 +307,10 @@ namespace ASMCshrp4_12345.Controllers
                             MaComBo = id,
                             MaSp = sp.MaSp,
                             SoLuong = sp.SoLuong,
-                            DonGia = sp.GiaBan
+                            DonGia = sp.GiaBan,
+                            TenMau = sp.TenMau,
+                            TenKichThuoc = sp.TenKichThuoc,
+                            TenChatLieu = sp.TenChatLieu
                         };
                         _context.CtComBos.Add(chiTiet);
                     }
@@ -283,6 +348,9 @@ namespace ASMCshrp4_12345.Controllers
                     TenSp = ct.MaSpNavigation?.TenSp ?? "N/A",
                     SoLuong = ct.SoLuong,
                     GiaBan = ct.DonGia,
+                    TenMau = ct.TenMau, 
+                    TenKichThuoc = ct.TenKichThuoc, 
+                    TenChatLieu = ct.TenChatLieu,
                     IsSelected = true
                 }).ToList()
             };
@@ -305,5 +373,7 @@ namespace ASMCshrp4_12345.Controllers
 
             return RedirectToAction(nameof(Index)); 
         }
+        
+
     }
 }

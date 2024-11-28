@@ -4,7 +4,6 @@
         <table class="table table-bordered table-hover align-middle">
             <thead class="table-dark">
                 <tr>
-                    <th class="text-center">Mã Sản Phẩm</th>
                     <th class="text-center">Tên Sản Phẩm</th>
                     <th class="text-center">Số Lượng</th>
                     <th class="text-center">Giá</th>
@@ -15,7 +14,6 @@
                 @foreach (var chiTiet in Model.MaSpNavigation.Chitiethoadons)
                 {
                     <tr>
-                        <td class="text-center">@chiTiet.MaSp</td>
                         <td>@chiTiet.MaSpNavigation?.TenSp</td>
                         <td class="text-center">@chiTiet.SoLuongMua</td>
                         <td class="text-end">@chiTiet.DonGia.ToString("N0") ₫</td>
