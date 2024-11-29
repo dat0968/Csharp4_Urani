@@ -827,3 +827,4 @@ F:\CSHARP_4\Rating_Comment\ASMCshrp4_12345\obj\Debug\net8.0\refint\ASMCshrp4_123
 F:\CSHARP_4\Rating_Comment\ASMCshrp4_12345\obj\Debug\net8.0\ASMCshrp4_12345.pdb
 F:\CSHARP_4\Rating_Comment\ASMCshrp4_12345\obj\Debug\net8.0\ASMCshrp4_12345.genruntimeconfig.cache
 F:\CSHARP_4\Rating_Comment\ASMCshrp4_12345\obj\Debug\net8.0\ref\ASMCshrp4_12345.dll
+F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
