@@ -91,7 +91,7 @@
             <th>HTTT</th>
             <th>Tình trạng</th>
             <th>SDT</th>
-
+            <th>Thao tác</th>
         </tr>
     </thead>
     @if (Model != null && Model.Any())
@@ -107,15 +107,16 @@
                     <td id="_sdt">@Html.DisplayFor(modelItem => item.Httt)</td>
                     <td id="_email">@Html.DisplayFor(modelItem => item.TinhTrang)</td>
                     <td id="_sdt">@Html.DisplayFor(modelItem => item.Sdt)</td>
+                    <td>
+                        @if (item.TinhTrang != "Đã hủy" && item.TinhTrang != "Hoàn tiền")
+                        {
+                            <a href="@Url.Action("Edit", "Hoadons", new { id = item.MaHoaDon })" class="btn btn-primary">Sửa</a>
+                        }
+                        <a href="@Url.Action("Details", "Hoadons", new { id = item.MaHoaDon })" class="btn btn-info">Chi tiết</a>
+                    </td>
                 </tr>
 
-            <td>
-                 @if (item.TinhTrang != "Đã hủy" && item.TinhTrang != "Hoàn tiền")
-                 {
-                    <a href="@Url.Action("Edit", "Hoadons", new { id = item.MaHoaDon })" class="btn btn-primary">Sửa</a>
-                 }
-                <a href="@Url.Action("Details", "Hoadons", new { id = item.MaHoaDon })" class="btn btn-info">Chi tiết</a>
-            </td>
+            
             }
 
         </tbody>
