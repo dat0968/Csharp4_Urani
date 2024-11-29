@@ -3,10 +3,6 @@
 <h4>Thông tin Combo</h4>
 <table class="table">
     <tr>
-        <th>Mã Combo:</th>
-        <td>@Model.MaComBo</td>
-    </tr>
-    <tr>
         <th>Tên Combo:</th>
         <td>@Model.TenComBo</td>
     </tr>
@@ -23,12 +19,38 @@
         <td>@Model.MoTa</td>
     </tr>
 </table>
+@if (Model.AnhComBos.Any())
+{
+    <div id="comboImageCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            @for (int i = 0; i < Model.AnhComBos.Count; i++)
+            {
+                var image = Model.AnhComBos[i];
+                <div class="carousel-item @(i == 0 ? "active" : "")">
+                    <img src="~/HinhAnh/@image.HinhAnh" class="d-block w-100" alt="Ảnh Combo @i">
+                </div>
+            }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#comboImageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#comboImageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+    </div>
+}
+else
+{
+    <p>Không có ảnh nào trong combo.</p>
+}
 
 <h4>Danh sách sản phẩm</h4>
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>Mã Sản Phẩm</th>
+            
             <th>Tên Sản Phẩm</th>
             <th>Số Lượng</th>
             <th>Giá Bán</th>
@@ -41,7 +63,7 @@
         @foreach (var sp in Model.SanPhamList)
         {
             <tr>
-                <td>@sp.MaSp</td>
+               
                 <td>@sp.TenSp</td>
                 <td>@sp.SoLuong</td>
                 <td>@sp.GiaBan.ToString("C")</td>
@@ -52,3 +74,35 @@
         }
     </tbody>
 </table>
+<style scoped>
+    .carousel-inner img {
+        width: 100%; /* Chiều rộng của hình ảnh sẽ là 100% */
+        height: 400px; /* Chiều cao cố định */
+        object-fit: cover; /* Cắt ảnh để vừa với khung mà không bị biến dạng */
+    }
+    /* Tùy chỉnh phần điều khiển carousel */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: transparent; /* Bỏ nền của nút */
+        filter: invert(1); /* Đảo ngược màu của nút để thành màu đen */
+        width: 30px; /* Điều chỉnh chiều rộng của nút */
+        height: 30px; /* Điều chỉnh chiều cao của nút */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: auto; /* Điều chỉnh chiều rộng của nút để chỉ vừa với mũi tên */
+        height: auto; /* Điều chỉnh chiều cao của nút để chỉ vừa với mũi tên */
+    }
+
+    /* Tùy chỉnh cho phần caption của carousel */
+    .carousel-item img {
+        transition: transform 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động cho ảnh */
+    }
+
+    .carousel-item.active img {
+        transform: scale(1.05); /* Tăng nhẹ kích thước ảnh khi nó là ảnh hiển thị chính */
+    }
+
+    
+</style>

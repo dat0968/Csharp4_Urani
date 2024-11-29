@@ -59,7 +59,7 @@
 
             const row = `
                 <tr>
-                    <td>${sp.maSp}</td>
+                    
                     <td>${sp.tenSp}</td>
                     <td>${sp.soLuong}</td>
                     <td>${sp.TenMau || 'N/A'}</td>  <!-- Hiển thị tên màu -->
@@ -127,7 +127,7 @@
                         <thead>
                             <tr>
                                 <th>Chọn</th>
-                                <th>Mã Sản Phẩm</th>
+                                
                                 <th>Tên Sản Phẩm</th>
                                 <th>Màu Sắc</th>
                                 <th>Kích Thước</th>
@@ -147,7 +147,7 @@
                                                data-giaban="@Model.SanPhamList[i].GiaBan"
                                                onchange="toggleProduct(this)" />
                                     </td>
-                                    <td>@Model.SanPhamList[i].MaSp</td>
+                                   
                                     <td>@Model.SanPhamList[i].TenSp</td>
                                     <td>
                                         <select class="form-control product-TenMau" data-masp="@Model.SanPhamList[i].MaSp" onchange="updateProductAttribute(this, 'TenMau')">
@@ -203,7 +203,7 @@
     <table class="table" id="selectedProductsTable">
         <thead>
             <tr>
-                <th>Mã Sản Phẩm</th>
+                
                 <th>Tên Sản Phẩm</th>
                 <th>Số Lượng</th>
                 <th>Màu Sắc</th>

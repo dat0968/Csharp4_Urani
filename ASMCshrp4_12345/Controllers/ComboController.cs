@@ -114,7 +114,7 @@ namespace ASMCshrp4_12345.Controllers
                             _context.AnhComBos.Add(anhCombo);
                         }
                     }
-                     _context.SaveChangesAsync();
+                     await _context.SaveChangesAsync();
                 }
                 foreach (var sp in model.SanPhamList)
                 {
@@ -328,6 +328,7 @@ namespace ASMCshrp4_12345.Controllers
             var combo = await _context.ComBos
                 .Include(c => c.CtComBos)
                 .ThenInclude(ct => ct.MaSpNavigation)
+                .Include(c => c.AnhComBos)
                 .FirstOrDefaultAsync(c => c.MaComBo == id);
 
             if (combo == null)
@@ -352,6 +353,11 @@ namespace ASMCshrp4_12345.Controllers
                     TenKichThuoc = ct.TenKichThuoc, 
                     TenChatLieu = ct.TenChatLieu,
                     IsSelected = true
+                }).ToList(),
+                AnhComBos = combo.AnhComBos.Select(a => new AnhComBo
+                {
+                    IdAnh = a.IdAnh,
+                    HinhAnh = a.HinhAnh
                 }).ToList()
             };
 

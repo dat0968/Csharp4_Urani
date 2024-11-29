@@ -6,12 +6,12 @@
 }
 <br />
 
-<a class="btn btn-primary mb-3" asp-action="Create">Thêm mới</a>
+<a class="btn btn-primary mb-3" asp-action="Create">Thêm Combo</a>
 
 <table class="table table-bordered ">
     <thead class="table-dark">
         <tr>
-            <th>Mã Combo</th>
+           
             <th>Tên Combo</th>
             <th>Đơn Giá</th>
             <th>Số Lượng</th>
@@ -23,7 +23,7 @@
         @foreach (var combo in Model)
         {
             <tr>
-                <td>@combo.MaComBo</td>
+               
                 <td>@combo.TenComBo</td>
                 <td>@string.Format("{0:N0} VNĐ", combo.DonGia)</td>
                 <td>@combo.SoLuong</td>
