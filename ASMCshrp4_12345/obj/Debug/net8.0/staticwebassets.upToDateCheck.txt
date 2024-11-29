@@ -53,6 +53,41 @@ wwwroot\fonts\glyphicons-halflings-regular.svg
 wwwroot\fonts\glyphicons-halflings-regular.ttf
 wwwroot\fonts\glyphicons-halflings-regular.woff
 wwwroot\fonts\glyphicons-halflings-regular.woff2
+wwwroot\HinhAnh\06ac1d82-3d11-4e90-8a3f-cdb6a1ae516f_Screenshot 2024-11-25 000259.png
+wwwroot\HinhAnh\0faedf41-8d0b-4284-a44c-61e2ec7aac38_Screenshot 2024-11-24 220400.png
+wwwroot\HinhAnh\1ff96f29-e2e4-4bc4-8c06-34aa52128d43_Screenshot 2024-11-24 231747.png
+wwwroot\HinhAnh\2cf1ce81-040e-47f1-9ad5-0c5b7f9f0727_Screenshot 2024-11-26 015748.png
+wwwroot\HinhAnh\3d403e88-0242-480f-b9f7-d9d770125859_Screenshot 2024-11-25 000259.png
+wwwroot\HinhAnh\3d7ff10d-901a-43fa-8ffb-e092c131a2e9_Screenshot 2024-11-25 000259.png
+wwwroot\HinhAnh\514a5742-426c-433e-b148-b7e664389db5_Screenshot 2024-11-26 015748.png
+wwwroot\HinhAnh\68fc7824-fbeb-49eb-a9c2-3b1010606a2e_Screenshot 2024-11-26 015732.png
+wwwroot\HinhAnh\71bc74ee-c3b0-4c9d-a917-3a8a4af62de7_Screenshot 2024-11-24 231747.png
+wwwroot\HinhAnh\7311153b-4c30-4b9f-bdf5-be0d21e6c1eb_Screenshot 2024-11-26 015732.png
+wwwroot\HinhAnh\80b8a9b5-ff2a-46c8-9e1c-db41d525eaf5_Screenshot 2024-11-28 215212.png
+wwwroot\HinhAnh\82d3b822-6500-4f3e-973d-2ca75f70e3c4_Screenshot 2024-11-26 015732.png
+wwwroot\HinhAnh\8cd95c96-41a9-4b85-801a-ab0894d6b4e6_Screenshot 2024-11-26 015748.png
+wwwroot\HinhAnh\921a1c23-633c-4d64-9af2-b19d183c9d4a_Screenshot 2024-11-28 215212.png
+wwwroot\HinhAnh\92f399a9-91fc-4544-89ac-a364dac6cbe5_Screenshot 2024-11-26 015748.png
+wwwroot\HinhAnh\93226d34-2b32-412c-aace-284c06b61bb6_Screenshot 2024-11-26 015732.png
+wwwroot\HinhAnh\9a74b521-437f-4c45-9844-56bcfadab3f9_Screenshot 2024-11-28 215212.png
+wwwroot\HinhAnh\9ba7c899-f33c-43eb-a532-1b0261d9bbf5_Screenshot 2024-11-28 215212.png
+wwwroot\HinhAnh\a2a8d2f3-05d9-4320-ba4b-544a6086b2ae_Screenshot 2024-11-24 220400.png
+wwwroot\HinhAnh\a2e77333-4773-42aa-a3d2-056946cb887d_Screenshot 2024-11-26 015748.png
+wwwroot\HinhAnh\a2e97588-5421-4c7f-9c00-33d0373637c4_Screenshot 2024-11-26 015748.png
+wwwroot\HinhAnh\a4d881d1-f72e-4fed-8534-e72bcdd997f5_Screenshot 2024-11-25 000259.png
+wwwroot\HinhAnh\b3a5b633-03fd-4eda-bdd4-5445191c57e7_Screenshot 2024-11-25 000259.png
+wwwroot\HinhAnh\b830fc47-44eb-4d3d-8eb1-9f6380da9b5f_Screenshot 2024-11-26 015732.png
+wwwroot\HinhAnh\bc6f397f-5589-43b8-a32a-c56a00ac9be1_Screenshot 2024-11-24 231747.png
+wwwroot\HinhAnh\be2464c7-4d57-40a9-bcfc-5c04298c3c63_Screenshot 2024-11-26 015732.png
+wwwroot\HinhAnh\da7e3f26-72bf-4bec-af90-bed3a05351ef_Screenshot 2024-11-26 015732.png
+wwwroot\HinhAnh\defe16e8-2d66-4634-bd93-bd1d6c4526d5_Screenshot 2024-11-25 000259.png
+wwwroot\HinhAnh\e443fdf2-06a9-4d43-9d30-e2ac9ff29d77_Screenshot 2024-11-24 220400.png
+wwwroot\HinhAnh\e49d19e8-8173-49e3-aeff-f333afc13e64_Screenshot 2024-11-25 000259.png
+wwwroot\HinhAnh\e74bc68f-80cb-4061-8dee-a391c82045e0_Screenshot 2024-11-26 015732.png
+wwwroot\HinhAnh\f274c368-a58c-46b4-b66d-6e3c19f56360_Screenshot 2024-11-26 015748.png
+wwwroot\HinhAnh\fa7ee7dc-d4f7-466b-9667-44882a8ea49b_Screenshot 2024-11-25 000259.png
+wwwroot\HinhAnh\fc4af210-00b8-41c9-9cc3-a25ceedaf61c_Screenshot 2024-11-26 015732.png
+wwwroot\HinhAnh\fce8654d-7b44-46d5-a306-450d9ffd3b24_Screenshot 2024-11-26 015748.png
 wwwroot\HinhAnh\KhachHang\1888b340-a6df-47e7-8bd0-269910953073.jpg
 wwwroot\HinhAnh\KhachHang\1c663bd9-e2bd-41f4-94be-f6d924147d6d.jpg
 wwwroot\HinhAnh\KhachHang\1f33aa45-beaa-408d-9448-b283675e2f73.png

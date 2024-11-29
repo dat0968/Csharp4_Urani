@@ -1,0 +1,316 @@
+﻿@using Newtonsoft.Json
+@model ASMCshrp4_12345.ViewModels.ComboViewModel
+
+@{
+    ViewData["Title"] = "Sửa Combo";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<br />
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="MaComBo" />
+
+    <div class="form-group mb-3">
+        <label for="TenComBo">Tên Combo</label>
+        <input type="text" class="form-control" asp-for="TenComBo" required />
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="SoLuong">Số Lượng</label>
+        <input type="number" class="form-control" asp-for="SoLuong" required />
+    </div>
+
+    <div class="mb-3">
+         @if (Model.AnhComBos != null && Model.AnhComBos.Any())
+         {
+            <label>Ảnh đã có trong combo:</label>
+            @foreach (var item in Model.AnhComBos)
+            {
+                <div class="d-flex align-items-center mb-2">
+                    <img src="~/HinhAnh/@item.HinhAnh" width="100" class="me-2" />
+                    <input type="checkbox" name="HinhAnhToDelete" value="@item.IdAnh" /> Xóa
+                </div>
+            }
+         }
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="MoTa">Mô Tả:</label>
+        <textarea asp-for="MoTa" class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label>Chọn ảnh mới:</label>
+        <input type="file" name="HinhAnhList" multiple class="form-control" />
+    </div>
+
+    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#selectProductsModal">
+        Chọn Sản Phẩm
+    </button>
+
+    <!-- Modal chọn sản phẩm -->
+    <div class="modal fade" id="selectProductsModal" tabindex="-1" aria-labelledby="selectProductsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="selectProductsModalLabel">Danh Sách Tất Cả Sản Phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Chọn</th>
+                                <th>Mã Sản Phẩm</th>
+                                <th>Tên Sản Phẩm</th>
+                                <th>Màu Sắc</th>
+                                <th>Kích Thước</th>
+                                <th>Chất Liệu</th>
+                                <th>Số Lượng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var product in Model.AllSanPhamList)
+                            {
+                                <tr>
+                                    <td>
+                                        <input type="checkbox"
+                                               class="product-checkbox"
+                                               data-masp="@product.MaSp"
+                                               data-tensp="@product.TenSp"
+                                               data-giaban="@product.GiaBan"
+                                               onchange="toggleProduct(this)"
+                                        @(Model.SanPhamList.Any(sp => sp.MaSp == product.MaSp) ? "checked" : "") />
+                                    </td>
+                                    <td>@product.MaSp</td>
+                                    <td>@product.TenSp</td>
+                                    <td>
+                                        <select class="form-control product-TenMau" data-masp="@product.MaSp" onchange="updateProductAttribute(this, 'TenMau')">
+                                            <option value="">Chọn màu</option>
+                                            @foreach (var TenMau in Model.MauSacList)
+                                            {
+                                                <option value="@TenMau.TenMau">@TenMau.TenMau</option>
+                                            }
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="form-control product-TenKichThuoc" data-masp="@product.MaSp" onchange="updateProductAttribute(this, 'TenKichThuoc')">
+                                            <option value="">Chọn kích thước</option>
+                                            @foreach (var TenKichThuoc in Model.KichThuocList)
+                                            {
+                                                <option value="@TenKichThuoc.TenKichThuoc">@TenKichThuoc.TenKichThuoc</option>
+                                            }
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="form-control product-TenChatLieu" data-masp="@product.MaSp" onchange="updateProductAttribute(this, 'TenChatLieu')">
+                                            <option value="">Chọn chất liệu</option>
+                                            @foreach (var TenChatLieu in Model.ChatLieuList)
+                                            {
+                                                <option value="@TenChatLieu.TenChatLieu">@TenChatLieu.TenChatLieu</option>
+                                            }
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number"
+                                               class="product-quantity form-control"
+                                               data-masp="@product.MaSp"
+                                               value="1"
+                                               min="1"
+                                               onchange="updateProductQuantity(this)" />
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bảng hiển thị sản phẩm đã chọn -->
+    <h5 class="mt-4">Các sản phẩm đã chọn:</h5>
+    <table class="table table-bordered" id="selectedProductsTable">
+        <thead>
+            <tr>
+                <th>Mã Sản Phẩm</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Màu Sắc</th>
+                <th>Kích Thước</th>
+                <th>Chất Liệu</th>
+                <th>Số Lượng</th>
+                <th>Thành Tiền</th>
+                <th>Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var sp in Model.SanPhamList)
+            {
+                <tr>
+                    <td>@sp.MaSp</td>
+                    <td>@sp.TenSp</td>
+                    <td>@sp.TenMau</td>
+                    <td>@sp.TenKichThuoc</td>
+                    <td>@sp.TenChatLieu</td>
+                    <td>
+                        <input type="number" class="form-control" data-masp="@sp.MaSp" value="@sp.SoLuong" min="1" onchange="updateProductQuantity(this)" />
+                    </td>
+                    <td>@(sp.GiaBan * sp.SoLuong).ToString("N0") VND</td>
+                    <td>
+                        <button type="button" class="btn btn-danger" onclick="removeProduct('@sp.MaSp')">Xóa</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Hiển thị tổng giá gốc -->
+    <h5>Tổng giá gốc: <span id="tongGiaGoc">0</span> VND</h5>
+
+    <!-- Ẩn danh sách sản phẩm đã chọn để gửi về server -->
+    <input type="hidden" id="SanPhamList" name="SanPhamList" />
+
+    <div class="form-group mb-3">
+        <label for="DonGia">Giá Combo</label>
+        <input type="number" class="form-control" asp-for="DonGia" required />
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3">Lưu</button>
+</form>
+
+<script>
+    let selectedProducts = @Html.Raw(JsonConvert.SerializeObject(Model.SanPhamList));
+
+    // Thêm sản phẩm vào danh sách
+    function addProduct(masp, tensp, giaban) {
+        const existingProduct = selectedProducts.find(p => p.MaSp === masp);
+        if (!existingProduct) {
+            selectedProducts.push({
+                MaSp: masp,
+                TenSp: tensp,
+                GiaBan: giaban,
+                SoLuong: 1,
+                IsSelected: true,
+                TenMau: "",
+                TenKichThuoc: "",
+                TenChatLieu: ""
+            });
+        } else {
+            existingProduct.IsSelected = true;
+        }
+        updateSelectedProductsTable();
+        document.getElementById("SanPhamList").value = JSON.stringify(selectedProducts);
+    }
+
+    // Xóa sản phẩm khỏi danh sách
+    function removeProduct(masp) {
+        const productIndex = selectedProducts.findIndex(p => p.MaSp === masp);
+        if (productIndex !== -1) {
+            selectedProducts.splice(productIndex, 1);
+        }
+        updateSelectedProductsTable();
+        document.getElementById("SanPhamList").value = JSON.stringify(selectedProducts);
+    }
+
+    // Cập nhật thuộc tính sản phẩm
+    function updateProductAttribute(select, attribute) {
+        const maSp = select.getAttribute('data-masp');
+        const value = select.value;
+        const product = selectedProducts.find(sp => sp.MaSp === maSp);
+        if (product) {
+            product[attribute] = value;
+        }
+        updateSelectedProductsTable();
+        document.getElementById("SanPhamList").value = JSON.stringify(selectedProducts);
+    }
+
+    // Cập nhật số lượng sản phẩm
+    function updateProductQuantity(input) {
+        const maSp = input.getAttribute('data-masp');
+        const value = parseInt(input.value) || 1; // Đảm bảo số lượng là một số hợp lệ
+        const product = selectedProducts.find(sp => sp.MaSp === maSp);
+        if (product) {
+            product.SoLuong = value; // Cập nhật số lượng sản phẩm
+        }
+        document.getElementById("SanPhamList").value = JSON.stringify(selectedProducts); // Cập nhật dữ liệu ẩn
+        updateSelectedProductsTable(); // Cập nhật bảng sản phẩm đã chọn
+    }
+
+    // Cập nhật bảng sản phẩm đã chọn
+    function updateSelectedProductsTable() {
+        const tableBody = document.querySelector("#selectedProductsTable tbody");
+        tableBody.innerHTML = ""; // Xóa bảng hiện tại
+        let tongGiaGoc = 0;
+
+        selectedProducts.forEach(product => {
+            const thanhTien = product.GiaBan * product.SoLuong;
+            tongGiaGoc += thanhTien;
+
+            const row = `
+                <tr>
+                    <td>${product.MaSp}</td>
+                    <td>${product.TenSp}</td>
+                    <td>${product.TenMau}</td>
+                    <td>${product.TenKichThuoc}</td>
+                    <td>${product.TenChatLieu}</td>
+                    <td>
+                        <input type="number" class="form-control" value="${product.SoLuong}" min="1"
+                               data-masp="${product.MaSp}" onchange="updateProductQuantity(this)">
+                    </td>
+                    <td>${thanhTien.toLocaleString()} VND</td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm" onclick="removeProduct('${product.MaSp}')">
+                            Xóa
+                        </button>
+                    </td>
+                </tr>
+            `;
+            tableBody.innerHTML += row;
+        });
+
+        document.getElementById("tongGiaGoc").innerText = tongGiaGoc.toLocaleString(); // Cập nhật tổng giá gốc
+    }
+
+    // Cập nhật khi load lại trang
+       document.addEventListener("DOMContentLoaded", () => {
+        if (selectedProducts.length > 0) {
+            updateSelectedProductsTable();
+            document.getElementById("SanPhamList").value = JSON.stringify(selectedProducts); // Gửi dữ liệu ngay khi trang tải
+        }
+        const imageInput = document.getElementById("imageInput");
+        if (imageInput) {
+            imageInput.addEventListener("change", function () {
+                // Cập nhật lại giá trị của SanPhamList khi chọn ảnh
+                const sanPhamList = JSON.stringify(selectedProducts);
+                document.getElementById("SanPhamList").value = sanPhamList;
+
+                // Cập nhật lại bảng sản phẩm đã chọn
+                updateSelectedProductsTable();
+            });
+        }
+    });
+
+    // Thêm sự kiện cho các checkbox sản phẩm
+    document.querySelectorAll('.product-checkbox').forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            const masp = this.getAttribute('data-masp');
+            const tensp = this.getAttribute('data-tensp');
+            const giaban = this.getAttribute('data-giaban');
+            if (this.checked) {
+                addProduct(masp, tensp, giaban);
+            } else {
+                removeProduct(masp);
+            }
+        });
+    });
+        document.querySelector('form').addEventListener('submit', function (e) {
+        const sanPhamList = document.getElementById("SanPhamList").value;
+        if (!sanPhamList) {
+            e.preventDefault(); // Ngăn gửi form
+            alert("Danh sách sản phẩm không được để trống.");
+        }
+    });
+</script>

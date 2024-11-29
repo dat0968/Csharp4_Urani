@@ -47,6 +47,9 @@ public partial class Csharp4Context : DbContext
     public virtual DbSet<Chitietmausac> Chitietmausacs { get; set; }
     public virtual DbSet<BinhLuan> Binhluans { get; set; }
     public virtual DbSet<TraLoiBinhLuan> Traloibinhluans { get; set; }
+    public virtual DbSet<ComBo> ComBos { get; set; }
+    public virtual DbSet<CtComBo> CtComBos { get; set; }
+    public virtual DbSet<AnhComBo> AnhComBos { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -1017,7 +1020,33 @@ public partial class Csharp4Context : DbContext
                 isDelete = false
             }
         );
-
+        modelBuilder.Entity<ComBo>().HasData(
+          new ComBo
+          {
+              MaComBo = 1,
+              TenComBo = "Combo test",
+              SoLuong = 2,
+              DonGia = 1000000
+          }
+        );
+        modelBuilder.Entity<CtComBo>().HasData(
+            new CtComBo
+            {
+                MaCtComBo = 1,
+                MaComBo = 1,
+                MaSp = "SP001",
+                SoLuong = 1,
+                DonGia = 600000
+            },
+            new CtComBo
+            {
+                MaCtComBo = 2,
+                MaComBo = 1,
+                MaSp = "SP002",
+                SoLuong = 1,
+                DonGia = 600000
+            }
+        );
 
         base.OnModelCreating(modelBuilder);
     }

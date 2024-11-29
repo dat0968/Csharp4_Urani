@@ -1,0 +1,79 @@
+﻿@model IEnumerable<ASMCshrp4_12345.Models.ComBo>
+
+@{
+    ViewData["Title"] = "Danh sách Combo";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<br />
+
+<a class="btn btn-primary mb-3" asp-action="Create">Thêm Combo</a>
+
+<table class="table table-bordered ">
+    <thead class="table-dark">
+        <tr>
+           
+            <th>Tên Combo</th>
+            <th>Đơn Giá</th>
+            <th>Số Lượng</th>
+            <th>Mô tả</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var combo in Model)
+        {
+            <tr>
+               
+                <td>@combo.TenComBo</td>
+                <td>@string.Format("{0:N0} VNĐ", combo.DonGia)</td>
+                <td>@combo.SoLuong</td>
+                <td>@combo.MoTa</td>
+                <td>
+                    <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#comboDetailModal" onclick="showComboDetail(@combo.MaComBo)">Chi tiết</button>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@combo.MaComBo">Sửa</a>
+                    <a class="btn btn-danger btn-sm" href="@Url.Action("Delete", new { id = combo.MaComBo })" onclick="return confirmDelete()">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Modal hiển thị chi tiết Combo -->
+<div class="modal fade" id="comboDetailModal" tabindex="-1" aria-labelledby="comboDetailLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="comboDetailLabel">Chi tiết Combo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="comboDetailContent">
+                <!-- Partial View sẽ được load tại đây -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function confirmDelete() {
+            return confirm('Bạn có chắc chắn muốn xóa Combo này?');
+        }
+
+        function showComboDetail(comboId) {
+            $.ajax({
+                url: '/Combo/Details/' + comboId,
+                type: 'GET',
+                success: function (data) {
+                    $('#comboDetailContent').html(data);
+                    $('#comboDetailModal').modal('show');
+                },
+                error: function () {
+                    alert('Không thể tải chi tiết combo.');
+                }
+            });
+        }
+    </script>
+}

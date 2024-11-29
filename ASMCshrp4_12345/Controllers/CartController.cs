@@ -25,7 +25,7 @@ namespace ASMCshrp4_12345.Controllers
         public List<CartViewModel> Cart => HttpContext.Session.Get<List<CartViewModel>>(CART_KEY) ?? new List<CartViewModel>();
         public IActionResult Index()
         {
-             
+
             return View(Cart);
         }
 
@@ -66,15 +66,15 @@ namespace ASMCshrp4_12345.Controllers
                 {
                     TempData["ErrorMessage"] = $"Số lượng không đủ, chỉ còn {item.SoluongAvailable} sản phẩm";
                     item.SoLuong = item.SoluongAvailable;
-                    
+
                 }
                 else if (item.SoLuong < 1)
                 {
                     item.SoLuong = 1;
-                    
+
                 }
             }
-            
+
             HttpContext.Session.Set(CART_KEY, giohang);
             return RedirectToAction("index");
         }
@@ -91,7 +91,7 @@ namespace ASMCshrp4_12345.Controllers
             return RedirectToAction("index");
         }
         [HttpGet]
-        [Authorize(Roles = "User" )]
+        [Authorize(Roles = "User")]
         public IActionResult Checkout()
         {
             if (Cart.Count == 0)
@@ -114,7 +114,7 @@ namespace ASMCshrp4_12345.Controllers
                 ViewBag.Sdt = checkFullInfo.Sdt;
                 ViewBag.DiaChi = checkFullInfo.DiaChi;
             }
-            
+
             return View(Cart);
         }
         [HttpPost]
@@ -159,7 +159,7 @@ namespace ASMCshrp4_12345.Controllers
             HttpContext.Session.Set("MoTa", model.MoTa);
 
             if (paymentMethod == "COD")
-            {             
+            {
                 var hoadon = new Hoadon
                 {
                     MaHoaDon = newMaHD,
@@ -201,7 +201,7 @@ namespace ASMCshrp4_12345.Controllers
                                 db.Entry(attachedSanpham).State = EntityState.Detached;
                             }
                             sanpham.SoLuongBan = Math.Max(sanpham.SoLuongBan - item.SoLuong, 0);
-                            db.Sanphams.Update(sanpham); 
+                            db.Sanphams.Update(sanpham);
                             db.SaveChanges();
                         }
                     }
@@ -268,7 +268,7 @@ namespace ASMCshrp4_12345.Controllers
                 TempData["ErrorMessage"] = "Không tìm thấy thông tin người dùng.";
                 return RedirectToAction("Index", "Cart");
             }
-            if(Guitoidiachikhac == false)
+            if (Guitoidiachikhac == false)
             {
                 khachhang = db.Khachhangs.FirstOrDefault(p => p.MaKh == GetinfoCustomer);
             }
@@ -382,6 +382,22 @@ namespace ASMCshrp4_12345.Controllers
 
             return View(model);
 
+        }
+        public IActionResult ChiTietDonHang(string maHoaDon)
+        {
+            var donHang = db.Chitiethoadons
+        .Include(h => h.MaSpNavigation)
+        .Include(ct => ct.MaHoaDonNavigation)
+        .FirstOrDefault(h => h.MaHoaDon == maHoaDon);
+
+            if (donHang == null)
+            {
+                // Trả về partial view với thông báo lỗi
+                return PartialView("ChiTietDonHang", null);
+            }
+
+            // Trả về partial view với dữ liệu đơn hàng
+            return PartialView("ChiTietDonHang", donHang);
         }
     }
 }

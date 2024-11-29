@@ -20,33 +20,135 @@
 <div class="tab-content" id="pills-tabContent">
     <!-- Tab Chờ xác nhận -->
     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-        @foreach (var donHang in Model.DonHangsChuaXacNhan)
-        {
-            <p>@donHang.MaHoaDon - @donHang.DiaChiNhanHang - @donHang.NgayTao.ToString("dd/MM/yyyy")</p>
-        }
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Mã Hóa Đơn</th>
+                    <th>Địa Chỉ Nhận Hàng</th>
+                    <th>Ngày Tạo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var donHang in Model.DonHangsChuaXacNhan)
+                {
+                    <tr>
+                        <td>@donHang.MaHoaDon</td>
+                        <td>@donHang.DiaChiNhanHang</td>
+                        <td>@donHang.NgayTao.ToString("dd/MM/yyyy")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 
     <!-- Tab Đã xác nhận -->
     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-        @foreach (var donHang in Model.DonHangsDaXacNhan)
-        {
-            <p>@donHang.MaHoaDon - @donHang.DiaChiNhanHang - @donHang.NgayTao.ToString("dd/MM/yyyy")</p>
-        }
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Mã Hóa Đơn</th>
+                    <th>Địa Chỉ Nhận Hàng</th>
+                    <th>Ngày Tạo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var donHang in Model.DonHangsDaXacNhan)
+                {
+                    <tr>
+                        <td>@donHang.MaHoaDon</td>
+                        <td>@donHang.DiaChiNhanHang</td>
+                        <td>@donHang.NgayTao.ToString("dd/MM/yyyy")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 
     <!-- Tab Đang giao hàng -->
     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-        @foreach (var donHang in Model.DonHangsDangGiao)
-        {
-            <p>@donHang.MaHoaDon - @donHang.DiaChiNhanHang - @donHang.NgayTao.ToString("dd/MM/yyyy")</p>
-        }
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Mã Hóa Đơn</th>
+                    <th>Địa Chỉ Nhận Hàng</th>
+                    <th>Ngày Tạo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var donHang in Model.DonHangsDangGiao)
+                {
+                    <tr>
+                        <td>@donHang.MaHoaDon</td>
+                        <td>@donHang.DiaChiNhanHang</td>
+                        <td>@donHang.NgayTao.ToString("dd/MM/yyyy")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 
     <!-- Tab Đã nhận hàng -->
     <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
-        @foreach (var donHang in Model.DonHangsDaTT)
-        {
-            <p>@donHang.MaHoaDon - @donHang.DiaChiNhanHang - @donHang.NgayTao.ToString("dd/MM/yyyy")</p>
-        }
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Mã Hóa Đơn</th>
+                    <th>Địa Chỉ Nhận Hàng</th>
+                    <th>Ngày Tạo</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var donHang in Model.DonHangsDaTT)
+                {
+                    <tr>
+                        <td>@donHang.MaHoaDon</td>
+                        <td>@donHang.DiaChiNhanHang</td>
+                        <td>@donHang.NgayTao.ToString("dd/MM/yyyy")</td>
+                        <td><button class="btn btn-primary xemChiTietDonHang" data-mahoadon="@donHang.MaHoaDon">Chi tiết đơn hàng</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>
+<div class="modal" id="chiTietDonHangModal" tabindex="-1" aria-labelledby="chiTietDonHangLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="chiTietDonHangLabel">Chi tiết đơn hàng</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="chiTietDonHangContent">
+                    <!-- Nội dung được load từ server -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.xemChiTietDonHang').on('click', function () {
+            const maHoaDon = $(this).data('mahoadon'); // Lấy mã hóa đơn
+
+            $.ajax({
+                url: '/Cart/ChiTietDonHang', // Action để lấy dữ liệu
+                method: 'GET',
+                data: { maHoaDon: maHoaDon },
+                success: function (response) {
+                    // Chỉ cập nhật nội dung modal-content
+                    $('#chiTietDonHangContent').html(response);
+                    $('#chiTietDonHangModal').modal('show');
+                },
+                error: function () {
+                    $('#chiTietDonHangContent').html('<p class="text-danger">Không thể tải dữ liệu chi tiết đơn hàng.</p>');
+                }
+            });
+        });
+    });
+</script>
