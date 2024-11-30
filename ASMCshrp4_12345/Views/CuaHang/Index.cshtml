@@ -28,7 +28,28 @@
                     </div>
                 </div>
                 @foreach (var item in Model)
+                {                
+                @foreach (var combo in item.CtComBos)
                 {
+                    var hinhanhsanpham = combo.MaComBoNavigation?.AnhComBos.FirstOrDefault()?.HinhAnh;
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" style="height: 80px; width: 80px" src="~/HinhAnh/SanPham/@hinhanhsanpham" alt="he">
+                                <div class="product-action">
+                                    <a asp-action="DetailCombo" asp-controller="CuaHang" asp-route-idcombo="@combo.MaComBo" class="btn btn-outline-dark btn-square">Xem Thêm</a>
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                    <a asp-action="DetailCombo" asp-controller="CuaHang" asp-route-idcombo="@combo.MaComBo" class="h6 text-decoration-none text-truncate">@combo.MaComBoNavigation.TenComBo</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>@combo.DonGia.ToString("#,##0") đ</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+                }
                     <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden">
