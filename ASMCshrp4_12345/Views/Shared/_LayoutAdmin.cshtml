@@ -118,9 +118,14 @@
                                                 </span>
                                             </a>
                                             <div class="dropdown-menu">
+                                                <form asp-action="EditNhanVien" asp-controller="ThongTinNv">
+                                                    <button type="submit" class="dropdown-item btn btn-light text-dark">
+                                                        Cập nhật thông tin <i class="fa fa-sign-out"></i>
+                                                    </button>
+                                                </form>
                                                 <form asp-action="Logout" asp-controller="Account_Staff" method="post">
                                                     <button type="submit" class="dropdown-item btn btn-light text-dark">
-                                                        ĐĂNG XUẤT <i class="fa fa-sign-out"></i>
+                                                        Đăng xuất <i class="fa fa-sign-out"></i>
                                                     </button>
                                                 </form>
                                             </div>
