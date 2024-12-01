@@ -107,6 +107,7 @@ wwwroot\HinhAnh\KhachHang\photo-1-15997930085231081781532.webp
 wwwroot\HinhAnh\KhachHang\tao-dang-chup-anh-chan-dung-01.jpg
 wwwroot\HinhAnh\NhanVien\123.jpg
 wwwroot\HinhAnh\NhanVien\366760000_968465774368418_3331979115163731096_n.jpg
+wwwroot\HinhAnh\NhanVien\78c0bae9-62d7-4d78-92a3-5c813cfa1e2f.jfif
 wwwroot\HinhAnh\NhanVien\anh-chan-dung-dep-yodyvn1.jpg
 wwwroot\HinhAnh\NhanVien\avatar-trang-4.jpg
 wwwroot\HinhAnh\NhanVien\images (1).jfif

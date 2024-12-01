@@ -32,8 +32,8 @@ namespace ASMCshrp4_12345.Controllers
                     {
                         new Claim(ClaimTypes.Name, staffAccount.TenTaiKhoan),
                         new Claim(ClaimTypes.Role, staffAccount.VaiTro),
-                        new Claim(ClaimTypes.NameIdentifier, staffAccount.MaNv)
-
+                        new Claim(ClaimTypes.NameIdentifier, staffAccount.MaNv),
+                        new Claim("Avatar", staffAccount.Avatar)
                     };
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 

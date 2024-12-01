@@ -357,6 +357,7 @@ namespace ASMCshrp4_12345.Controllers
 
         public IActionResult ThongTinDonHang()
         {
+            
             var maKh = HttpContext.User.Claims.FirstOrDefault(p => p.Type == "CustomerID").Value;
 
             if (string.IsNullOrEmpty(maKh))
@@ -370,6 +371,8 @@ namespace ASMCshrp4_12345.Controllers
             var donHangsDaXacNhan = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đã xác nhận").ToList();
             var donHangsDangGiao = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đang giao hàng").ToList();
             var donHangsDaTT = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đã thanh toán").ToList();
+            var donHangsDaHuy = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đã hủy").ToList();
+            var donHangsHoanTien = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Hoàn tiền").ToList();
 
             // Truyền các danh sách đơn hàng vào View
             var model = new
@@ -377,7 +380,9 @@ namespace ASMCshrp4_12345.Controllers
                 DonHangsChuaXacNhan = donHangsChuaXacNhan,
                 DonHangsDaXacNhan = donHangsDaXacNhan,
                 DonHangsDangGiao = donHangsDangGiao,
-                DonHangsDaTT = donHangsDaTT
+                DonHangsDaTT = donHangsDaTT,
+                DonHangsDaHuy = donHangsDaHuy,
+                DonHangsHoanTien = donHangsHoanTien
             };
 
             return View(model);
