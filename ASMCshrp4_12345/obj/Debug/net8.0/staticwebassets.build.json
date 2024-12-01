@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "n2CsRumgo/rmyUaJt/lASkUbpqkEeaUqarOAiTk27qo=",
+  "Hash": "3eQa63zEuENnLqTNj4BudzYb7pgNTaTH9eRktYqqWhU=",
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -1296,6 +1296,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\HinhAnh\\2cf1ce81-040e-47f1-9ad5-0c5b7f9f0727_Screenshot 2024-11-26 015748.png"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\359a9275-c0cb-4f44-aba6-c12106c15461_Screenshot 2024-11-21 160006.png",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/359a9275-c0cb-4f44-aba6-c12106c15461_Screenshot 2024-11-21 160006#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "crsmhm05cd",
+      "Integrity": "GER1c2tiulZsW3JOz6B9cs9M6GSmHXQKprxVU7dA3CY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\359a9275-c0cb-4f44-aba6-c12106c15461_Screenshot 2024-11-21 160006.png"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\3d403e88-0242-480f-b9f7-d9d770125859_Screenshot 2024-11-25 000259.png",
@@ -2997,6 +3018,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\images.jfif"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160006.png",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/Screenshot 2024-11-21 160006#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "crsmhm05cd",
+      "Integrity": "GER1c2tiulZsW3JOz6B9cs9M6GSmHXQKprxVU7dA3CY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160006.png"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160218.png",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/SanPham/Screenshot 2024-11-21 160218#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "usgqzl5rhw",
+      "Integrity": "cqF/fffxVNiBnZigOp63ttSNqIe5CPgRa74Qn8Rc4mQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160218.png"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\sp001.png",
@@ -14678,7 +14741,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 01 Dec 2024 05:32:14 GMT"
+          "Value": "Sun, 01 Dec 2024 05:49:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14723,7 +14786,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 01 Dec 2024 05:32:14 GMT"
+          "Value": "Sun, 01 Dec 2024 05:49:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14768,7 +14831,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 01 Dec 2024 05:32:14 GMT"
+          "Value": "Sun, 01 Dec 2024 05:49:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14805,7 +14868,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 01 Dec 2024 05:32:14 GMT"
+          "Value": "Sun, 01 Dec 2024 05:49:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19654,6 +19717,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-yRAidOI8K6MSusz1hbatpN07R+qBJQpdRRC2yWaw8bc="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/359a9275-c0cb-4f44-aba6-c12106c15461_Screenshot 2024-11-21 160006.crsmhm05cd.png",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\359a9275-c0cb-4f44-aba6-c12106c15461_Screenshot 2024-11-21 160006.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GER1c2tiulZsW3JOz6B9cs9M6GSmHXQKprxVU7dA3CY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 05:48:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "crsmhm05cd"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/359a9275-c0cb-4f44-aba6-c12106c15461_Screenshot 2024-11-21 160006.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GER1c2tiulZsW3JOz6B9cs9M6GSmHXQKprxVU7dA3CY="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/359a9275-c0cb-4f44-aba6-c12106c15461_Screenshot 2024-11-21 160006.png",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\359a9275-c0cb-4f44-aba6-c12106c15461_Screenshot 2024-11-21 160006.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GER1c2tiulZsW3JOz6B9cs9M6GSmHXQKprxVU7dA3CY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 05:48:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GER1c2tiulZsW3JOz6B9cs9M6GSmHXQKprxVU7dA3CY="
         }
       ]
     },
@@ -26296,6 +26441,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-kH+q0EZbmVXmyZONEu5Qi3zu+Gdqi7aNnrXIQqxPvMc="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/Screenshot 2024-11-21 160006.crsmhm05cd.png",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160006.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GER1c2tiulZsW3JOz6B9cs9M6GSmHXQKprxVU7dA3CY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 05:48:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "crsmhm05cd"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/Screenshot 2024-11-21 160006.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GER1c2tiulZsW3JOz6B9cs9M6GSmHXQKprxVU7dA3CY="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/Screenshot 2024-11-21 160006.png",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160006.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GER1c2tiulZsW3JOz6B9cs9M6GSmHXQKprxVU7dA3CY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 05:48:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GER1c2tiulZsW3JOz6B9cs9M6GSmHXQKprxVU7dA3CY="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/Screenshot 2024-11-21 160218.png",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160218.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cqF/fffxVNiBnZigOp63ttSNqIe5CPgRa74Qn8Rc4mQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 05:48:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cqF/fffxVNiBnZigOp63ttSNqIe5CPgRa74Qn8Rc4mQ="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/SanPham/Screenshot 2024-11-21 160218.usgqzl5rhw.png",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160218.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cqF/fffxVNiBnZigOp63ttSNqIe5CPgRa74Qn8Rc4mQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 05:48:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "usgqzl5rhw"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/SanPham/Screenshot 2024-11-21 160218.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cqF/fffxVNiBnZigOp63ttSNqIe5CPgRa74Qn8Rc4mQ="
         }
       ]
     },

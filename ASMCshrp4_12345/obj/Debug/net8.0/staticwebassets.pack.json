@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\HinhAnh\\2cf1ce81-040e-47f1-9ad5-0c5b7f9f0727_Screenshot 2024-11-26 015748.png"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\359a9275-c0cb-4f44-aba6-c12106c15461_Screenshot 2024-11-21 160006.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\359a9275-c0cb-4f44-aba6-c12106c15461_Screenshot 2024-11-21 160006.png"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\3d403e88-0242-480f-b9f7-d9d770125859_Screenshot 2024-11-25 000259.png",
       "PackagePath": "staticwebassets\\HinhAnh\\3d403e88-0242-480f-b9f7-d9d770125859_Screenshot 2024-11-25 000259.png"
     },
@@ -203,6 +207,14 @@
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\5142c18d042f33912aa14b8340f1db20.jfif",
       "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\5142c18d042f33912aa14b8340f1db20.jfif"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160006.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160006.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160218.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\SanPham\\Screenshot 2024-11-21 160218.png"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\SanPham\\TIC00213-scaled.jpg",
