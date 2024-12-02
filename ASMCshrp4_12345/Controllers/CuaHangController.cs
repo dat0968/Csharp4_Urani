@@ -183,6 +183,7 @@ namespace ASMCshrp4_12345.Controllers
             }
             var combo = await _context.ComBos
                     .Include(s => s.CtComBos)
+                        .ThenInclude(sp => sp.MaSpNavigation)
                     .Include(combo => combo.AnhComBos)
                 .FirstOrDefaultAsync(m => m.MaComBo == idcombo);
 

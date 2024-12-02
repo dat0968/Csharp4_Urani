@@ -8,14 +8,14 @@
     .btn-yellow {
         background-color: rgb(255, 211, 51);
         border-color: rgb(255, 211, 51);
-    color: black;
+        color: black;
     }
 
-    .btn-yellow:hover {
+        .btn-yellow:hover {
             background-color: rgb(255, 211, 51); /* Màu vàng đậm hơn khi hover */
             border-color: rgb(255, 211, 51);
-    color: black;
-    }
+            color: black;
+        }
 
     input[type=number]::-webkit-outer-spin-button,
     input[type=number]::-webkit-inner-spin-button {
@@ -44,28 +44,28 @@
 <!-- Shop Detail Start -->
 @foreach (var combo in Model)
 {
-    var hinhanhcb = combo .AnhComBos?.FirstOrDefault()?.HinhAnh;
+    var hinhanhcb = combo.AnhComBos?.FirstOrDefault()?.HinhAnh;
     <div class="container-fluid pb-5">
         <div class="row px-xl-5">
             <div class="col-lg-5 mb-30">
                 <div id="product-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner bg-light">
-                        @if (combo .AnhComBos != null)
+                        @if (combo.AnhComBos != null)
                         {
                             <div class="carousel-item active">
-                                <img class="w-100 h-90" src="~/HinhAnh/SanPham/@hinhanhcb" alt="Image">
+                                <img class="w-100 h-90" src="~/HinhAnh/@hinhanhcb" alt="Image">
                             </div>
                             foreach (var hacb in combo.AnhComBos.Skip(1))
                             {
                                 <div class="carousel-item">
-                                    <img class="w-100 h-90" src="~/HinhAnh/SanPham/@hacb.HinhAnh" alt="Image">
+                                    <img class="w-100 h-90" src="~/HinhAnh/@hacb.HinhAnh" alt="Image">
                                 </div>
                             }
                         }
                         else
                         {
                             <div class="carousel-item active">
-                                <img class="w-100 h-90" src="~/HinhAnh/SanPham/@hinhanhcb" alt="Image">
+                                <img class="w-100 h-90" src="~/HinhAnh/@hinhanhcb" alt="Image">
                             </div>
                         }
                     </div>
@@ -84,38 +84,24 @@
                         @* <small class="pt-1">(@combo.BinhLuans.Count() bình luận)</small> *@
                     </div>
                     <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@combo.MaComBo">
-                        <div class="d-flex mb-3">
-                            <strong class="text-dark mr-3">Kích Thước:</strong>
-                            @foreach (var kichthuoc in combo.CtComBos.Select(c => c.TenKichThuoc).Distinct())
+                        <div class="d-flex mb-4">
+                            <strong class="text-dark mr-3">Bao gồm:</strong>
+                            @foreach (var item in combo.CtComBos)
                             {
-                                <div class="custom-control custom-radio custom-control-inline mr-3">
-                                    <input type="radio" class="custom-control-input" id="size-@kichthuoc" name="size" value="@kichthuoc" required>
-                                    <label class="custom-control-label" for="size-@kichthuoc">@kichthuoc</label>
+                                <div class="mr-3">
+                                    <span>
+                                        @item.MaSpNavigation?.TenSp
+                                        <br />
+                                        Màu: @item.TenMau
+                                        <br />
+                                        Kích thước: @item.TenKichThuoc
+                                        <br />
+                                        Chất liệu: @item.TenChatLieu
+                                    </span>
                                 </div>
                             }
                         </div>
 
-                        <div class="d-flex mb-4">
-                            <strong class="text-dark mr-3">Màu:</strong>
-                            @foreach (var ms in combo.CtComBos.Select(c => c.TenMau).Distinct())
-                            {
-                                <div class="custom-control custom-radio custom-control-inline mr-3">
-                                    <input type="radio" class="custom-control-input" id="color-@ms" name="color" value="@ms" required>
-                                    <label class="custom-control-label" for="color-@ms">@ms</label>
-                                </div>
-                            }
-                        </div>
-
-                        <div class="d-flex mb-4">
-                            <strong class="text-dark mr-3">Chất liệu:</strong>
-                            @foreach (var cl in combo.CtComBos.Select(c => c.TenChatLieu).Distinct())
-                            {
-                                <div class="custom-control custom-radio custom-control-inline mr-3">
-                                    <input type="radio" class="custom-control-input" id="material-@cl" name="material" value="@cl" required>
-                                    <label class="custom-control-label" for="material-@cl">@cl</label>
-                                </div>
-                            }
-                        </div>
 
                         <!--Nút tăng giảm số lượng-->
                         <div class="d-flex align-items-center mb-4">
@@ -165,7 +151,7 @@
                 <!-- Sản phẩm item -->
                 <div class="product-item bg-light border rounded">
                     <div class="product-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="~/HinhAnh/SanPham/@hinhanhcbo" alt="@sp.TenComBo">
+                        <img class="img-fluid w-100" src="~/HinhAnh/@hinhanhcbo" alt="@sp.TenComBo">
                         <div class="product-action">
                             <a asp-action="DetailCombo" asp-controller="CuaHang" asp-route-idcombo="@sp.MaComBo" class="btn btn-outline-dark btn-square">Xem Thêm</a>
                         </div>
@@ -183,3 +169,38 @@
 </div>
 <!-- Sản phẩm liên quan End -->
 <!-- Products End -->
+<script>
+    function increaseQuantity() {
+        var quantityInput = document.getElementById("quantity");
+        var currentQuantity = parseInt(quantityInput.value);
+        var maxQuantity = parseInt(quantityInput.getAttribute("max"));
+
+        if (currentQuantity < maxQuantity) {
+            quantityInput.value = currentQuantity + 1;
+        }
+    }
+
+    function decreaseQuantity() {
+        var quantityInput = document.getElementById("quantity");
+        var currentQuantity = parseInt(quantityInput.value);
+
+        if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+        }
+    }
+
+    // Kiểm tra giá trị nhập tay để đảm bảo không vượt quá số lượng tối đa
+    document.getElementById("quantity").addEventListener("input", function () {
+        var quantityInput = document.getElementById("quantity");
+        var currentQuantity = parseInt(quantityInput.value);
+        var maxQuantity = parseInt(quantityInput.getAttribute("max"));
+        var minQuantity = parseInt(quantityInput.getAttribute("min"));
+
+        // Nếu số lượng nhập vào vượt quá tối đa hoặc tối thiểu, chỉnh sửa lại
+        if (currentQuantity > maxQuantity) {
+            quantityInput.value = maxQuantity;
+        } else if (currentQuantity < minQuantity) {
+            quantityInput.value = minQuantity;
+        }
+    });
+</script>
