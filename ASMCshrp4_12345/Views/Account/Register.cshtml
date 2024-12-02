@@ -15,32 +15,32 @@
         <form asp-action="Register" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="mb-3">
-                <label asp-for="HoTen" class="form-label"></label>
+                <label asp-for="HoTen" class="form-label">Họ Và Tên</label>
                 <input asp-for="HoTen" class="form-control" />
                 <span asp-validation-for="HoTen" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="Email" class="form-label"></label>
+                <label asp-for="Email" class="form-label">Email</label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="TenTaiKhoan" class="form-label"></label>
+                <label asp-for="TenTaiKhoan" class="form-label">Tên Tài Khoản</label>
                 <input asp-for="TenTaiKhoan" class="form-control" />
                 <span asp-validation-for="TenTaiKhoan" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="MatKhau" class="form-label"></label>
-                <input asp-for="MatKhau" class="form-control" />
+                <label asp-for="MatKhau" class="form-label">Mật Khẩu</label>
+                <input type="password" asp-for="MatKhau" class="form-control" />
                 <span asp-validation-for="MatKhau" class="text-danger"></span>
             </div>
             <button asp-controller="Account" asp-action="Register" class="btn btn-success w-100 p-2">Đăng ký</button>
             @*   <input type="submit" value="Register" class="btn btn-success w-100 p-2" /> *@
             <p class="text-center mt-2">
-                Already have an account? <a asp-controller="Account" asp-action="Index" class="text-decoration-none">Đăng nhập</a>
+                Bạn đã có tài khoản? <a asp-controller="Account" asp-action="Index" class="text-decoration-none">Đăng nhập</a>
             </p>
             <div class="text-center">
-                <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Trở về</a>
+                <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3 btn btn-secondary">Trở về</a>
             </div>
         </form>
     </div>
