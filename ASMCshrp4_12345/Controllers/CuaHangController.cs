@@ -39,9 +39,10 @@ namespace ASMCshrp4_12345.Controllers
                 .ThenInclude(s => s.MaChatLieuNavigation)
                 .Include(s => s.BinhLuans)
                 .Include(s => s.CtComBos)
-                    .ThenInclude(s=>s.MaComBoNavigation)
+                    .ThenInclude(s => s.MaComBoNavigation)
                     .ThenInclude(combo => combo.AnhComBos)
                 .AsQueryable();
+            
             // Tìm kiếm theo tên sản phẩm
             if (!string.IsNullOrEmpty(searchTerm))
             {
@@ -208,6 +209,7 @@ namespace ASMCshrp4_12345.Controllers
             }
             var combo = await _context.ComBos
                     .Include(s => s.CtComBos)
+                        .ThenInclude(sp => sp.MaSpNavigation)
                     .Include(combo => combo.AnhComBos)
                 .FirstOrDefaultAsync(m => m.MaComBo == idcombo);
 

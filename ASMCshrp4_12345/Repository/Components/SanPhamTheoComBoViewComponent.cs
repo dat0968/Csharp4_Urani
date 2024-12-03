@@ -13,7 +13,7 @@ namespace ASMCshrp4_12345.Repository.Components
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var listCombo = db.ComBos.Include(p => p.AnhComBos).Include(p => p.CtComBos).ThenInclude(p => p.MaSpNavigation).Take(4).ToList();
+            var listCombo = db.ComBos.Include(p => p.AnhComBos).Include(p => p.CtComBos).ThenInclude(p => p.MaSpNavigation).ToList();
             return View(listCombo);
         }
     }
