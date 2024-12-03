@@ -370,6 +370,7 @@ namespace ASMCshrp4_12345.Controllers
             var donHangsChuaXacNhan = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Chờ xác nhận").ToList();
             var donHangsDaXacNhan = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đã xác nhận").ToList();
             var donHangsDangGiao = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đang giao hàng").ToList();
+            var donHangsDaGiao = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đã giao").ToList();
             var donHangsDaTT = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đã thanh toán").ToList();
             var donHangsDaHuy = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Đã hủy").ToList();
             var donHangsHoanTien = db.Hoadons.Where(h => h.MaKh == maKh && h.TinhTrang == "Hoàn tiền").ToList();
@@ -380,6 +381,7 @@ namespace ASMCshrp4_12345.Controllers
                 DonHangsChuaXacNhan = donHangsChuaXacNhan,
                 DonHangsDaXacNhan = donHangsDaXacNhan,
                 DonHangsDangGiao = donHangsDangGiao,
+                DonHangsDaGiao = donHangsDaGiao,
                 DonHangsDaTT = donHangsDaTT,
                 DonHangsDaHuy = donHangsDaHuy,
                 DonHangsHoanTien = donHangsHoanTien

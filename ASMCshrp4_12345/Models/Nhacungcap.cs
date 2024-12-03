@@ -25,7 +25,7 @@ public partial class Nhacungcap
 
     [Required(ErrorMessage = "Số điện thoại không được để trống")]
     [StringLength(11, ErrorMessage = "Số điện thoại không được vượt quá 11 ký tự.")]
-    [RegularExpression(@"0[9876]\d{8}",ErrorMessage ="Số điện thoại phải bắt đầu từ 0 và có 10 hoặc 11 số")]
+    [RegularExpression(@"0[9876]\d{8}",ErrorMessage ="Số điện thoại phải bắt đầu từ 0 và có 10 số")]
     public string Sdt { get; set; }
 
     public bool IsDelete { get; set; } = false; 
