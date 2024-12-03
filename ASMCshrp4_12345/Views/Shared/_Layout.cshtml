@@ -148,7 +148,7 @@
                                 <div class="dropdown">
                                     <a href="#" class="btn px-0 ml-3 dropdown-toggle" id="cartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fas fa-shopping-cart text-primary"></i>
-                                        <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                                        
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cartDropdown">
                                         <li><a class="dropdown-item" asp-controller="Cart" asp-action="Index">Giỏ hàng</a></li>
@@ -163,7 +163,7 @@
                                 <div class="dropdown">
                                     <a href="#" class="btn px-0 ml-3 dropdown-toggle" id="cartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fas fa-shopping-cart text-primary"></i>
-                                        <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                                        
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cartDropdown">
                                         <li><a class="dropdown-item" asp-controller="Cart" asp-action="Index">Giỏ hàng</a></li>
@@ -248,3 +248,27 @@
     </script>
 </body>
 </html>
+<style scoped>
+    /* Điều chỉnh width của dropdown menu */
+    .dropdown-menu {
+        min-width: 200px; /* Tăng độ rộng tối thiểu */
+        max-width: 300px; /* Giới hạn độ rộng tối đa */
+    }
+
+    /* Điều chỉnh vị trí hiển thị của dropdown menu */
+    .dropdown .dropdown-menu {
+        position: absolute;
+        right: 0; /* Hiển thị dropdown menu bên phải */
+        left: auto; /* Bỏ qua vị trí mặc định bên trái */
+    }
+
+    /* Điều chỉnh padding và margin của các mục trong dropdown menu */
+    .dropdown-menu .dropdown-item {
+        padding: 0.5rem 1rem; /* Tăng khoảng cách giữa các mục */
+        margin: 0.25rem 0; /* Thêm khoảng cách giữa các mục */
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+</style>

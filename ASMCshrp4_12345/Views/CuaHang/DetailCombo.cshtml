@@ -85,23 +85,35 @@
                         @* <small class="pt-1">(@combo.BinhLuans.Count() bình luận)</small> *@
                     </div>
                     <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@combo.MaComBo">
-                        <div class="d-flex mb-4">
-                            <strong class="text-dark mr-3">Bao gồm:</strong>
-                            @foreach (var item in combo.CtComBos)
-                            {
-                                <div class="mr-3">
-                                    <span>
-                                        @item.MaSpNavigation?.TenSp
-                                        <br />
-                                        Màu: @item.TenMau
-                                        <br />
-                                        Kích thước: @item.TenKichThuoc
-                                        <br />
-                                        Chất liệu: @item.TenChatLieu
-                                    </span>
-                                </div>
-                            }
+                        <div class="mb-4">
+                            <strong class="text-dark">Bao gồm:</strong>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Tên Sản Phẩm</th>
+                                        <th>Màu</th>
+                                        <th>Kích Thước</th>
+                                        <th>Chất Liệu</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in combo.CtComBos)
+                                    {
+                                        <tr>
+                                            <td>@item.MaSpNavigation?.TenSp</td>
+                                            <td>@item.TenMau</td>
+                                            <td>@item.TenKichThuoc</td>
+                                            <td>@item.TenChatLieu</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
                         </div>
+                        <div class="mt-3">
+                            <strong class="text-dark">Giá: @combo.DonGia.ToString("#,##0") đ</strong>
+                        </div>
+                        <br />
+                       
 
 
                         <!--Nút tăng giảm số lượng-->

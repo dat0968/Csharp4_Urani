@@ -1,23 +1,30 @@
-﻿@if (Model != null)
+﻿@model IEnumerable<ASMCshrp4_12345.Models.Chitiethoadon>
+@if (Model != null && Model.Any())
 {
     <div class="table-responsive">
         <table class="table table-bordered table-hover align-middle">
             <thead class="table-dark">
                 <tr>
                     <th class="text-center">Tên Sản Phẩm</th>
+                    <th class="text-center">Màu Sắc</th>
+                    <th class="text-center">Chất Liệu</th>
+                    <th class="text-center">Kích Thước</th>
                     <th class="text-center">Số Lượng</th>
-                    <th class="text-center">Giá</th>
-                    <th class="text-center">Thành Tiền</th>
+                    <th class="text-center">Đơn Giá</th>
+                    
                 </tr>
             </thead>
             <tbody>
-                @foreach (var chiTiet in Model.MaSpNavigation.Chitiethoadons)
+                @foreach (var chiTiet in Model)
                 {
                     <tr>
                         <td>@chiTiet.MaSpNavigation?.TenSp</td>
+                        <td class="text-center">@chiTiet.MauSac_ThuocTinhSuyDien</td>
+                        <td class="text-center">@chiTiet.ChatLieu_ThuocTinhSuyDien</td>
+                        <td class="text-center">@chiTiet.KichThuoc_ThuocTinhSuyDien</td>
                         <td class="text-center">@chiTiet.SoLuongMua</td>
                         <td class="text-end">@chiTiet.DonGia.ToString("N0") ₫</td>
-                        <td class="text-end">@((chiTiet.SoLuongMua * chiTiet.DonGia).ToString("N0")) ₫</td>
+                       
                     </tr>
                 }
             </tbody>
