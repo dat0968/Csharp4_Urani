@@ -20,8 +20,8 @@
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">SẮP XẾP</button>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="@Url.Action("Index", new { sortOrder = "price_asc", page = Model.PageNumber })">GIÁ TĂNG DẦN</a>
-                                    <a class="dropdown-item" href="@Url.Action("Index", new { sortOrder = "price_desc", page = Model.PageNumber })">GIÁ GIẢM DẦN</a>
+                                    <a class="dropdown-item" href="@Url.Action("Index", new { sortOrder = "price_asc", priceRange = ViewBag.priceRange, selectedColor = ViewBag.selectedColor, selectedSize = ViewBag.selectedSize })">GIÁ TĂNG DẦN</a>
+                                    <a class="dropdown-item" href="@Url.Action("Index", new { sortOrder = "price_desc", priceRange = ViewBag.priceRange, selectedColor = ViewBag.selectedColor, selectedSize = ViewBag.selectedSize })">GIÁ GIẢM DẦN</a>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,84 @@
+﻿@model ASMCshrp4_12345.ViewModels.ThuocTinhSanPham
+<!-- Price Start -->
+<form id="FilterForm" method="get" asp-action="Index" asp-controller="CuaHang">
+    <input type="hidden" name="sortOrder" value=@ViewBag.sortOrder />
+<h5 class="section-title position-relative text-uppercase mb-3">
+    <span class="bg-secondary pr-3">LỌC THEO GIÁ</span>
+</h5>
+<div class="bg-light p-4 mb-30">
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input @(ViewBag.priceRange.Contains("all") ? "checked" : "") type="radio" class="custom-control-input" name="priceRange" value="all" id="price-all" onchange="submitForm()">
+            <label class="custom-control-label" for="price-all">TẤT CẢ KHOẢNG GIÁ</label>
+        </div>
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input @(ViewBag.priceRange.Contains("100000-10000000") ? "checked" : "")  type="radio" class="custom-control-input" name="priceRange" value="100000-10000000" id="price-1" onchange="submitForm()">
+            <label class="custom-control-label" for="price-1">100,000 đ - 10,000,000 đ</label>
+        </div>
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input @(ViewBag.priceRange.Contains("10000000-20000000") ? "checked" : "") type="radio" class="custom-control-input" name="priceRange" value="10000000-20000000" id="price-2" onchange="submitForm()">
+            <label class="custom-control-label" for="price-2">10,000,000 đ - 20,000,000 đ</label>
+        </div>
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input @(ViewBag.priceRange.Contains("20000000-30000000") ? "checked" : "") type="radio" class="custom-control-input" name="priceRange" value="20000000-30000000" id="price-3" onchange="submitForm()">
+            <label class="custom-control-label" for="price-3">20,000,000 đ - 30,000,000 đ</label>
+        </div>
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+            <input @(ViewBag.priceRange.Contains("30000000-40000000") ? "checked" : "") type="radio" class="custom-control-input" name="priceRange" value="30000000-40000000" id="price-4" onchange="submitForm()">
+            <label class="custom-control-label" for="price-4">30,000,000 đ - 40,000,000 đ</label>
+        </div>
+        <div class="custom-control custom-radio d-flex align-items-center justify-content-between">
+            <input @(ViewBag.priceRange.Contains("40000000-50000000") ? "checked" : "") type="radio" class="custom-control-input" name="priceRange" value="40000000-50000000" id="price-5" onchange="submitForm()">
+            <label class="custom-control-label" for="price-5">40,000,000 đ - 50,000,000 đ</label>
+        </div>
+</div>
+<!-- Price End -->
+<!-- Color Start -->
+<h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">LỌC THEO MÀU SẮC</span></h5>
+<div class="bg-light p-4 mb-30">
+        <div class="bg-light p-4 mb-30">
+            <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+                <input type="radio" class="custom-control-input" name="selectedColor" value="all" id="color-all" onchange="submitForm()"
+                @(ViewBag.selectedColor.Contains("all") ? "checked" : "")>
+                <label class="custom-control-label" for="color-all">TẤT CẢ MÀU SẮC</label>
+            </div>
+            @foreach (var item in Model.mausacs)
+            {
+                <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+                    <input type="radio" class="custom-control-input" name="selectedColor" value="@item.MaMau.ToString()" id="color-@item.MaMau" onchange="submitForm()"
+                    @(ViewBag.selectedColor.Contains(item.MaMau.ToString()) ? "checked" : "")>
+                    <label class="custom-control-label" for="color-@item.MaMau">@item.TenMau</label>
+                </div>
+            }
+        </div>
+</div>
+<!-- Color End -->
+<!-- Size Start -->
+<h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">LỌC THEO KÍCH THƯỚC</span></h5>
+<div class="bg-light p-4 mb-30">
+    
+        <div class="bg-light p-4 mb-30">
+            <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+                <input type="radio" class="custom-control-input" name="selectedSize" value="all" id="size-all" onchange="submitForm()"
+                @(ViewBag.selectedSize.Contains("all") ? "checked" : "")>
+                <label class="custom-control-label" for="size-all">TẤT CẢ KÍCH THƯỚC</label>
+            </div>
+            @foreach (var item in  Model.kichthuocs)
+            {
+                <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+                    <input type="radio" class="custom-control-input" name="selectedSize" value="@item.MaKichThuoc" id="size-@item.MaKichThuoc" onchange="submitForm()"
+                    @(ViewBag.selectedSize.Contains(item.MaKichThuoc.ToString()) ? "checked" : "")>
+                    <label class="custom-control-label" for="size-@item.MaKichThuoc">@item.TenKichThuoc</label>
+                </div>
+            }
+        </div>
+    
+</div>
+</form>
+<!-- Size End -->
+<script>  
+    function submitForm() {
+        const form = document.getElementById('FilterForm');
+        form.submit();
+        
+    }  
+</script> 

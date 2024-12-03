@@ -8,6 +8,7 @@ using System.Linq;
 using NuGet.Versioning;
 using Microsoft.AspNetCore.Authorization;
 using DocumentFormat.OpenXml.Office2010.Excel;
+using Microsoft.IdentityModel.Tokens;
 
 namespace ASMCshrp4_12345.Controllers
 {
@@ -18,12 +19,16 @@ namespace ASMCshrp4_12345.Controllers
         {
             _context = context;
         }
-        public IActionResult Index(int page = 1, int pageSize = 6,
-            string sortOrder = "", string selectedBrand = null, string[] selectedColors = null,
-            string[] selectedSizes = null, decimal? minPrice = null, decimal? maxPrice = null, string searchTerm = null)
+        public IActionResult Index(int page, int pageSize,
+            string? sortOrder, string? priceRange, string? selectedBrand, string? selectedColor,
+            string? selectedSize, string? searchTerm)
         {
-            ViewBag.PriceSortParam = sortOrder == "price_asc" ? "price_desc" : "price_asc";
-
+            ViewBag.sortOrder = sortOrder == "price_asc" ? "price_desc" : "price_asc";
+            ViewBag.priceRange = priceRange ?? "all";
+            ViewBag.selectedColor = selectedColor ?? "all";
+            ViewBag.selectedSize = selectedSize ?? "all";
+            page = page < 1 ? 1 : page;
+            pageSize = 6;
             var sanPhamQuery = _context.Sanphams.Where(p => p.IsDelete == false && p.Chitietchatlieus.Any() && p.Chitietkichthuocs.Any() && p.Chitietmausacs.Any())
                 .Include(s => s.Hinhanhs)
                 .Include(s => s.Chitietkichthuocs)
@@ -41,7 +46,7 @@ namespace ASMCshrp4_12345.Controllers
             if (!string.IsNullOrEmpty(searchTerm))
             {
                 sanPhamQuery = sanPhamQuery.Where(sp =>
-                    sp.CtComBos.Any(ct => ct.MaComBoNavigation.TenComBo.Contains(searchTerm)));
+                    sp.TenSp.Contains(searchTerm));
             }
 
             // Lọc theo thương hiệu
@@ -50,19 +55,39 @@ namespace ASMCshrp4_12345.Controllers
                 sanPhamQuery = sanPhamQuery.Where(sp => sp.MaThuongHieu == selectedBrand);
             }
             //Lọc theo màu sắc
-            if (selectedColors != null && selectedColors.Length > 0 && !selectedColors.Contains("all"))
+            if (!string.IsNullOrEmpty(selectedColor) && !selectedColor.Contains("all"))
             {
-                sanPhamQuery = sanPhamQuery.Where(sp => sp.Chitietmausacs.Any(p => selectedColors.Contains(p.MaMau.ToString())));
+                sanPhamQuery = sanPhamQuery.Where(sp => sp.Chitietmausacs.Any(p => selectedColor.Contains(p.MaMau.ToString())));
             }
             // Lọc theo kích thước
-            if (selectedSizes != null && selectedSizes.Length > 0 && !selectedSizes.Contains("all"))
+            if (!string.IsNullOrEmpty(selectedSize) && !selectedSize.Contains("all"))
             {
-                sanPhamQuery = sanPhamQuery.Where(sp => sp.Chitietkichthuocs.Any(p => selectedSizes.Contains(p.MaKichThuoc.ToString())));
+                sanPhamQuery = sanPhamQuery.Where(sp => sp.Chitietkichthuocs.Any(p => selectedSize.Contains(p.MaKichThuoc.ToString())));
             }
-                // Lọc theo khoảng giá
-                if (minPrice.HasValue && maxPrice.HasValue)
+            // Lọc theo khoảng giá
+            if (!string.IsNullOrEmpty(priceRange))
             {
-                sanPhamQuery = sanPhamQuery.Where(sp => (decimal)sp.DonGiaBan >= minPrice.Value && (decimal)sp.DonGiaBan <= maxPrice.Value);
+                switch (priceRange)
+                {
+                    case "100000-10000000":
+                        sanPhamQuery = sanPhamQuery.Where(sp => sp.DonGiaBan >= 100000 && sp.DonGiaBan <= 10000000);
+                        break;
+                    case "10000000-20000000":
+                        sanPhamQuery = sanPhamQuery.Where(sp => sp.DonGiaBan >= 10000000 && sp.DonGiaBan <= 20000000);
+                        break;
+                    case "20000000-30000000":
+                        sanPhamQuery = sanPhamQuery.Where(sp => sp.DonGiaBan >= 20000000 && sp.DonGiaBan <= 30000000);
+                        break;
+                    case "30000000-40000000":
+                        sanPhamQuery = sanPhamQuery.Where(sp => sp.DonGiaBan >= 30000000 && sp.DonGiaBan <= 40000000);
+                        break;
+                    case "40000000-50000000":
+                        sanPhamQuery = sanPhamQuery.Where(sp => sp.DonGiaBan >= 40000000 && sp.DonGiaBan <= 50000000);
+                        break;
+                    default:
+                        sanPhamQuery = sanPhamQuery;
+                        break;
+                }
             }
 
             // Sắp xếp theo giá
