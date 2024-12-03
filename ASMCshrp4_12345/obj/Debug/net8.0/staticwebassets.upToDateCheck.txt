@@ -57,6 +57,7 @@ wwwroot\HinhAnh\06ac1d82-3d11-4e90-8a3f-cdb6a1ae516f_Screenshot 2024-11-25 00025
 wwwroot\HinhAnh\0faedf41-8d0b-4284-a44c-61e2ec7aac38_Screenshot 2024-11-24 220400.png
 wwwroot\HinhAnh\1ff96f29-e2e4-4bc4-8c06-34aa52128d43_Screenshot 2024-11-24 231747.png
 wwwroot\HinhAnh\2cf1ce81-040e-47f1-9ad5-0c5b7f9f0727_Screenshot 2024-11-26 015748.png
+wwwroot\HinhAnh\359a9275-c0cb-4f44-aba6-c12106c15461_Screenshot 2024-11-21 160006.png
 wwwroot\HinhAnh\3d403e88-0242-480f-b9f7-d9d770125859_Screenshot 2024-11-25 000259.png
 wwwroot\HinhAnh\3d7ff10d-901a-43fa-8ffb-e092c131a2e9_Screenshot 2024-11-25 000259.png
 wwwroot\HinhAnh\514a5742-426c-433e-b148-b7e664389db5_Screenshot 2024-11-26 015748.png
@@ -80,6 +81,7 @@ wwwroot\HinhAnh\b830fc47-44eb-4d3d-8eb1-9f6380da9b5f_Screenshot 2024-11-26 01573
 wwwroot\HinhAnh\bc6f397f-5589-43b8-a32a-c56a00ac9be1_Screenshot 2024-11-24 231747.png
 wwwroot\HinhAnh\be2464c7-4d57-40a9-bcfc-5c04298c3c63_Screenshot 2024-11-26 015732.png
 wwwroot\HinhAnh\da7e3f26-72bf-4bec-af90-bed3a05351ef_Screenshot 2024-11-26 015732.png
+wwwroot\HinhAnh\daf3b241-a5b9-4296-ac1e-f41f500fbf9b_366760000_968465774368418_3331979115163731096_n.jpg
 wwwroot\HinhAnh\defe16e8-2d66-4634-bd93-bd1d6c4526d5_Screenshot 2024-11-25 000259.png
 wwwroot\HinhAnh\e443fdf2-06a9-4d43-9d30-e2ac9ff29d77_Screenshot 2024-11-24 220400.png
 wwwroot\HinhAnh\e49d19e8-8173-49e3-aeff-f333afc13e64_Screenshot 2024-11-25 000259.png
@@ -109,6 +111,7 @@ wwwroot\HinhAnh\NhanVien\366760000_968465774368418_3331979115163731096_n.jpg
 wwwroot\HinhAnh\NhanVien\78c0bae9-62d7-4d78-92a3-5c813cfa1e2f.jfif
 wwwroot\HinhAnh\NhanVien\anh-chan-dung-dep-yodyvn1.jpg
 wwwroot\HinhAnh\NhanVien\avatar-trang-4.jpg
+wwwroot\HinhAnh\NhanVien\images (1).jfif
 wwwroot\HinhAnh\NhanVien\images.jfif
 wwwroot\HinhAnh\NhanVien\photo-1-15997930085231081781532.webp
 wwwroot\HinhAnh\NhanVien\tao-dang-chup-anh-chan-dung-01.jpg
@@ -136,6 +139,8 @@ wwwroot\HinhAnh\SanPham\images (2).jfif
 wwwroot\HinhAnh\SanPham\images (3).jfif
 wwwroot\HinhAnh\SanPham\images (4).jfif
 wwwroot\HinhAnh\SanPham\images.jfif
+wwwroot\HinhAnh\SanPham\Screenshot 2024-11-21 160006.png
+wwwroot\HinhAnh\SanPham\Screenshot 2024-11-21 160218.png
 wwwroot\HinhAnh\SanPham\sp001.png
 wwwroot\HinhAnh\SanPham\sp001a.png
 wwwroot\HinhAnh\SanPham\sp001b.png

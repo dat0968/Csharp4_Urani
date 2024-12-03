@@ -64,7 +64,7 @@
                         <div class="icon_setting"></div>
                         <div class="user_profle_side">
 
-                            <div class="user_img"><img class="img-responsive" src="~/images/layout_img/user_img.jpg" alt="#" /></div>
+                            <div class="user_img"><img class="img-responsive" src="~/HinhAnh/NhanVien/@(User.Claims.FirstOrDefault(p => p.Type == "Avatar")?.Value ?? "~/images/layout_img/default_avatar.jpg" )" alt="#" /></div>
 
                             <div class="user_info">
                                 <h6>Xin chào, @(User.Claims.FirstOrDefault(p => p.Type == ClaimTypes.Name).Value) </h6>
@@ -112,7 +112,7 @@
                                     <ul class="user_profile_dd">
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-                                                <img class="img-responsive rounded-circle" src="~/images/layout_img/user_img.jpg" alt="#" />
+                                                <img class="img-responsive rounded-circle" src="~/HinhAnh/NhanVien/@(User.Claims.FirstOrDefault(p => p.Type == "Avatar")?.Value ?? "~/images/layout_img/default_avatar.jpg" )" alt="#" alt="#" />
                                                 <span class="name_user">
                                                     @(User.Claims.FirstOrDefault(p => p.Type == ClaimTypes.Name).Value)
                                                 </span>

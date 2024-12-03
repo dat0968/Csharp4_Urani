@@ -7,6 +7,7 @@ using X.PagedList.Extensions;
 using System.Linq;
 using NuGet.Versioning;
 using Microsoft.AspNetCore.Authorization;
+using DocumentFormat.OpenXml.Office2010.Excel;
 
 namespace ASMCshrp4_12345.Controllers
 {
@@ -32,12 +33,17 @@ namespace ASMCshrp4_12345.Controllers
                 .Include(s => s.Chitietchatlieus)
                 .ThenInclude(s => s.MaChatLieuNavigation)
                 .Include(s => s.BinhLuans)
+                .Include(s => s.CtComBos)
+                    .ThenInclude(s=>s.MaComBoNavigation)
+                    .ThenInclude(combo => combo.AnhComBos)
                 .AsQueryable();
             // Tìm kiếm theo tên sản phẩm
             if (!string.IsNullOrEmpty(searchTerm))
             {
-                sanPhamQuery = sanPhamQuery.Where(sp => sp.TenSp.Contains(searchTerm));
+                sanPhamQuery = sanPhamQuery.Where(sp =>
+                    sp.CtComBos.Any(ct => ct.MaComBoNavigation.TenComBo.Contains(searchTerm)));
             }
+
             // Lọc theo thương hiệu
             if (!string.IsNullOrEmpty(selectedBrand))
             {
@@ -94,7 +100,6 @@ namespace ASMCshrp4_12345.Controllers
             {
                 return NotFound();
             }
-
             var sanPham = await _context.Sanphams
                 .Include(s => s.Hinhanhs)
                 .Include(s => s.Chitietkichthuocs)
@@ -108,13 +113,16 @@ namespace ASMCshrp4_12345.Controllers
                 .Include(m => m.BinhLuans)
                     .ThenInclude(s => s.TraLoiBinhLuans)
                     .ThenInclude(s => s.MaNVNavigation)
-
+                    .Include(s => s.CtComBos)
+                    .ThenInclude(s => s.MaComBoNavigation)
+                    .ThenInclude(combo => combo.AnhComBos)
                 .FirstOrDefaultAsync(m => m.MaSp == id);
 
             if (sanPham == null)
             {
                 return NotFound();
             }
+            //
             sanPham.Rating = sanPham.BinhLuans.Any() ? sanPham.BinhLuans.Average(p => p.Rating) : 0;
             var sanPhamTuongTu = _context.Sanphams.Where(p => p.MaThuongHieu == sanPham.MaThuongHieu && p.MaSp != sanPham.MaSp && p.IsDelete == false  )
                 .Include(s => s.Hinhanhs)
@@ -133,9 +141,7 @@ namespace ASMCshrp4_12345.Controllers
                     : 0;
             }
             ViewBag.SanPhamTuongTu = sanPhamTuongTu;
-
             var sanPhams = new List<Sanpham> { sanPham };
-
             return View(sanPhams);
         }
         [HttpPost]
@@ -169,6 +175,28 @@ namespace ASMCshrp4_12345.Controllers
             
             return RedirectToAction("Details", new { id = MaSP });
         }
-        
+        public async Task<IActionResult> DetailCombo(int? idcombo)
+        {
+            if (idcombo == null || _context.ComBos == null)
+            {
+                return NotFound();
+            }
+            var combo = await _context.ComBos
+                    .Include(s => s.CtComBos)
+                    .Include(combo => combo.AnhComBos)
+                .FirstOrDefaultAsync(m => m.MaComBo == idcombo);
+
+            if (combo == null)
+            {
+                return NotFound();
+            }
+            var comBoTuongTu = _context.ComBos.Where(p => p.MaComBo == combo.MaComBo && p.MaComBo != combo.MaComBo)
+                    .Include(s => s.CtComBos)
+                    .Include(combo => combo.AnhComBos)
+                .ToList();
+            ViewBag.comBoTuongTu = comBoTuongTu;
+            var combos = new List<ComBo> { combo };
+            return View(combos);
+        }
     }
 }

@@ -45,16 +45,31 @@ namespace ASMCshrp4_12345.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Nhacungcap nhacungcap)
+        public async Task<IActionResult> Create(Nhacungcap model)
         {
-            if (ModelState.IsValid)
+            var nhacungcap = new Nhacungcap();
+            var lastSupplier = _context.Nhacungcaps.OrderByDescending(p => p.MaNhaCc).FirstOrDefault();
+            if (lastSupplier != null)
             {
-                _context.Add(nhacungcap);
-                _context.SaveChanges();
-                TempData["SuccessMessage"] = "Thêm nhà cung cấp thành công!";
-                return RedirectToAction(nameof(Index));
+                string lastSupplierID = lastSupplier.MaNhaCc;
+                if (lastSupplierID.Length > 3 && lastSupplierID.StartsWith("NCC"))
+                {
+                    int number = int.Parse(lastSupplierID.Substring(3));
+                    nhacungcap.MaNhaCc = "NCC" + (number + 1).ToString("D2");
+                }
+                else
+                {
+                    nhacungcap.MaNhaCc = "NCC01";
+                }
             }
-            return View(nhacungcap);
+            nhacungcap.TenNhaCc = model.TenNhaCc;
+            nhacungcap.DiaChi = model.DiaChi;
+            nhacungcap.Email = model.Email;
+            nhacungcap.Sdt = model.Sdt;
+            _context.Add(nhacungcap);
+            await _context.SaveChangesAsync();
+            TempData["SuccessMessage"] = "Thêm nhà cung cấp thành công!";
+            return RedirectToAction(nameof(Index));
         }
         public IActionResult Edit(string id)
         {
