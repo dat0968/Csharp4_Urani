@@ -110,9 +110,10 @@
                         <img class="img-fluid rounded-circle" style="width: 50px; height: 50px;" src="~/HinhAnh/KhachHang/@item.Avatar" alt="Avatar">
                     }
                 </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GioiTinh)
-            </td>
+                <td>
+                    @(string.IsNullOrEmpty(item.GioiTinh) ? "Chưa có" : item.GioiTinh)
+                </td>
+
             <td>
                     @if (item.NgaySinh.HasValue)
                     {

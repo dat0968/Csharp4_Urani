@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASMCshrp4_12345.Models;
-using X.PagedList;
 using X.PagedList.Extensions;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using ClosedXML.Excel;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using ClosedXML;
 using ClosedXML.Excel;
 namespace ASMCshrp4_12345.Controllers
 {

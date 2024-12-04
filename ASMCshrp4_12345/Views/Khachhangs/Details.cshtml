@@ -29,28 +29,28 @@
             </div>
 
             <div class="col-md-4 font-weight-bold mb-3">Giới Tính:</div>
-            <div class="col-md-8 mb-3">@Model.GioiTinh</div>
+            <div class="col-md-8 mb-3">@(string.IsNullOrEmpty(Model.GioiTinh) ? "Chưa có giới tính" : Model.GioiTinh)</div>
 
             <div class="col-md-4 font-weight-bold mb-3">Ngày Sinh:</div>
             <div class="col-md-8 mb-3">@Model.NgaySinh?.ToString("dd/MM/yyyy")</div>
 
             <div class="col-md-4 font-weight-bold mb-3">Địa Chỉ:</div>
-            <div class="col-md-8 mb-3">@Model.DiaChi</div>
+            <div class="col-md-8 mb-3">@(string.IsNullOrEmpty(Model.DiaChi) ? "Chưa có địa chỉ" : Model.DiaChi) </div>
 
             <div class="col-md-4 font-weight-bold mb-3">CCCD:</div>
-            <div class="col-md-8 mb-3">@Model.Cccd</div>
+            <div class="col-md-8 mb-3">@(string.IsNullOrEmpty(Model.Cccd) ? "Chưa có cccd" : Model.Cccd)</div>
 
             <div class="col-md-4 font-weight-bold mb-3">Số Điện Thoại:</div>
-            <div class="col-md-8 mb-3">@Model.Sdt</div>
+            <div class="col-md-8 mb-3">@(string.IsNullOrEmpty(Model.Sdt) ? "Chưa có Sdt" : Model.Sdt)</div>
 
             <div class="col-md-4 font-weight-bold mb-3">Email:</div>
             <div class="col-md-8 mb-3">@Model.Email</div>
 
             <div class="col-md-4 font-weight-bold mb-3">Tên Tài Khoản:</div>
-            <div class="col-md-8 mb-3">@Model.TenTaiKhoan</div>
+            <div class="col-md-8 mb-3">@(string.IsNullOrEmpty(Model.TenTaiKhoan) ? "Chưa có tên tài khoản" : Model.TenTaiKhoan)</div>
 
             <div class="col-md-4 font-weight-bold mb-3">Mật Khẩu:</div>
-            <div class="col-md-8 mb-3">@Model.MatKhau</div>
+            <div class="col-md-8 mb-3">@(string.IsNullOrEmpty(Model.MatKhau) ? "Chưa có mật khẩu" : Model.MatKhau)</div>
 
             <div class="col-md-4 font-weight-bold mb-3">Tình Trạng:</div>
             <div class="col-md-8 mb-3">@Model.TinhTrang</div>

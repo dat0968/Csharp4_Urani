@@ -16,7 +16,7 @@
 
 
 
-    <PackageReference Include="ClosedXML" Version="0.104.1" />
+    <PackageReference Include="ClosedXML" Version="0.104.2" />
 
 
 

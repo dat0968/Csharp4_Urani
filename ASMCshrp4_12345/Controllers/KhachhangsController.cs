@@ -10,7 +10,11 @@ using X.PagedList.Extensions;
 using Microsoft.Data.SqlClient;
 using ClosedXML.Excel;
 using ASMCshrp4_12345.ViewModels;
-
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Extensions;
+using ClosedXML;
+using ClosedXML.Excel;
 
 
 namespace ASMCshrp4_12345.Controllers
@@ -28,7 +32,23 @@ namespace ASMCshrp4_12345.Controllers
         // GET: Khachhangs
         public async Task<IActionResult> Index(string? keywords, string? filterGender, string? statusFilter, string? sortOrder, int page = 1)
         {
-            var csharp4Context = _context.Khachhangs.Where(p => p.IsDelete == false);
+            var csharp4Context = _context.Khachhangs.Where(p => p.IsDelete == false)
+                .Select(kh => new Khachhang
+                {
+                    MaKh = kh.MaKh,
+                    HoTen = kh.HoTen,
+                    Avatar = kh.Avatar ?? "N/A",
+                    GioiTinh = kh.GioiTinh ?? "N/A",
+                    NgaySinh = kh.NgaySinh ?? DateOnly.MinValue,
+                    DiaChi = kh.DiaChi ?? "N/A",
+                    Cccd = kh.Cccd ?? "N/A",
+                    Sdt = kh.Sdt ?? "N/A",
+                    Email = kh.Email,
+                    TenTaiKhoan = kh.TenTaiKhoan ?? "N/A",
+                    MatKhau = kh.MatKhau ?? "N/A",
+                    TinhTrang = kh.TinhTrang,
+                    IsDelete = kh.IsDelete,
+                });
             page = page < 1 ? 1 : page;
             int pagesize = 10;
 
