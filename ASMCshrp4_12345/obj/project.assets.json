@@ -8153,11 +8153,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
+      "projectUniqueName": "D:\\FPT\\C#4\\Csharp4_Urani\\Csharp4_Urani\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
       "projectName": "ASMCshrp4_12345",
-      "projectPath": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
+      "projectPath": "D:\\FPT\\C#4\\Csharp4_Urani\\Csharp4_Urani\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\FPT\\C#4\\Csharp4_Urani\\ASMCshrp4_12345\\obj\\",
+      "outputPath": "D:\\FPT\\C#4\\Csharp4_Urani\\Csharp4_Urani\\ASMCshrp4_12345\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

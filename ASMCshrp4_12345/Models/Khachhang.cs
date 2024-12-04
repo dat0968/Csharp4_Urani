@@ -23,9 +23,6 @@ public partial class Khachhang
     [StringLength(5, ErrorMessage = "Giới tính không được vượt quá 5 ký tự.")]
     public string? GioiTinh { get; set; }
 
-    [Required(ErrorMessage = "Ngày sinh là bắt buộc.")]
-    [DataType(DataType.Date, ErrorMessage = "Ngày sinh phải là định dạng ngày hợp lệ.")]
-    //[customagevalidation(16, errormessage = "bạn phải trên 16 tuổi để cập nhật thông tin.")]
     public DateOnly? NgaySinh { get; set; }
 
     [StringLength(200, ErrorMessage = "Địa chỉ không được vượt quá 200 ký tự.")]
