@@ -1,12 +1,6 @@
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\appsettings.Development.json
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\appsettings.json
-F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.staticwebassets.runtime.json
-F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.staticwebassets.endpoints.json
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.exe
-F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.deps.json
-F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.runtimeconfig.json
-F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.dll
-F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.pdb
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\Azure.Core.dll
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\Azure.Identity.dll
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ClosedXML.dll
@@ -271,6 +265,12 @@ F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\obj\Debug\net8.0\staticwebassets\msb
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\obj\Debug\net8.0\staticwebassets.pack.json
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\obj\Debug\net8.0\ASMCshrp.A5E71D9A.Up2Date
+F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.staticwebassets.runtime.json
+F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.staticwebassets.endpoints.json
+F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.deps.json
+F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.runtimeconfig.json
+F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.dll
+F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\bin\Debug\net8.0\ASMCshrp4_12345.pdb
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\obj\Debug\net8.0\ASMCshrp4_12345.dll
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\obj\Debug\net8.0\refint\ASMCshrp4_12345.dll
 F:\CSHARP_4\ASMCshrp4_12345\ASMCshrp4_12345\obj\Debug\net8.0\ASMCshrp4_12345.pdb

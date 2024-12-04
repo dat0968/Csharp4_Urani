@@ -58,8 +58,7 @@
               "RelativeToolTip": "ASMCshrp4_12345\\Views\\Khachhangs\\Details.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAB0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T16:28:50.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T16:28:50.338Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "ASMCshrp4_12345\\Views\\Khachhangs\\Index.cshtml",
               "ViewState": "AgIAAFQAAAAAAAAAAAAAAGEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T16:19:52.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T16:19:52.929Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\SanphamsController.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:17:31.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T16:17:31.138Z"
             },
             {
               "$type": "Document",
@@ -95,7 +92,7 @@
               "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\KhachhangsController.cs",
               "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\KhachhangsController.cs",
               "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\KhachhangsController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAwDEAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwAwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T16:17:11.629Z",
               "EditorCaption": ""
@@ -110,8 +107,7 @@
               "RelativeToolTip": "ASMCshrp4_12345\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-04T15:28:05.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T15:28:05.014Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "ASMCshrp4_12345\\Views\\CuaHang\\DetailCombo.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAIBJwFUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T15:22:01.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T15:22:01.96Z"
             }
           ]
         },
@@ -140,7 +135,7 @@
               "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\NhanviensController.cs",
               "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\NhanviensController.cs",
               "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\NhanviensController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAxwBsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T16:17:55.155Z",
               "EditorCaption": ""
@@ -155,8 +150,7 @@
               "RelativeToolTip": "ASMCshrp4_12345\\Views\\Nhanviens\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T16:20:02.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T16:20:02.948Z"
             }
           ]
         }

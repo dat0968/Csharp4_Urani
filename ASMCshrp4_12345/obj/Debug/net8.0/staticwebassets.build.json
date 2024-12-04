@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YhNN+BSwm2anBcYOVgyXxXagPx9y6DhooQzjLhu4wd4=",
+  "Hash": "jGUWiT6gmd2gFdBc8HImm9EhKqvVfqehBs2/wcWSgq0=",
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -2472,6 +2472,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\HinhAnh\\KhachHang\\ab16eda7-b8ac-4593-88e9-2835f87f561a.jpg"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\af3774ac-8b4a-45a2-8045-ccd65dbe4584.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/KhachHang/af3774ac-8b4a-45a2-8045-ccd65dbe4584#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5uvl0jig0m",
+      "Integrity": "kx9bYecDTOG7crx09OAUuildIApuMGvfZ4Rxx7blHiw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\KhachHang\\af3774ac-8b4a-45a2-8045-ccd65dbe4584.jpg"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\b84f5049-a5c5-46bd-b96c-b70d338d09c4.jpg",
@@ -15138,7 +15159,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Dec 2024 15:28:30 GMT"
+          "Value": "Wed, 04 Dec 2024 16:59:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15183,7 +15204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Dec 2024 15:28:30 GMT"
+          "Value": "Wed, 04 Dec 2024 16:59:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15228,7 +15249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Dec 2024 15:28:30 GMT"
+          "Value": "Wed, 04 Dec 2024 16:59:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15265,7 +15286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Dec 2024 15:28:30 GMT"
+          "Value": "Wed, 04 Dec 2024 16:59:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24624,6 +24645,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-0SE3HqBx+ETqyXArtu9X2sk0kvZ+6nc5W+Kr7pSJkSw="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/af3774ac-8b4a-45a2-8045-ccd65dbe4584.5uvl0jig0m.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\af3774ac-8b4a-45a2-8045-ccd65dbe4584.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kx9bYecDTOG7crx09OAUuildIApuMGvfZ4Rxx7blHiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 16:58:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5uvl0jig0m"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/af3774ac-8b4a-45a2-8045-ccd65dbe4584.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kx9bYecDTOG7crx09OAUuildIApuMGvfZ4Rxx7blHiw="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/af3774ac-8b4a-45a2-8045-ccd65dbe4584.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\af3774ac-8b4a-45a2-8045-ccd65dbe4584.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kx9bYecDTOG7crx09OAUuildIApuMGvfZ4Rxx7blHiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 16:58:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kx9bYecDTOG7crx09OAUuildIApuMGvfZ4Rxx7blHiw="
         }
       ]
     },

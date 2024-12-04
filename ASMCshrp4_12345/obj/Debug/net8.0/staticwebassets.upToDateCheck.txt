@@ -113,6 +113,7 @@ wwwroot\HinhAnh\KhachHang\8e5b8fd1-8702-46a5-9267-8ba0629dafd0.jpg
 wwwroot\HinhAnh\KhachHang\970bb4d6-0224-4298-afa0-5b99ca5a33d7.jpg
 wwwroot\HinhAnh\KhachHang\aa6d507b-f622-4991-b8b9-3d86eda3fe1e.jpg
 wwwroot\HinhAnh\KhachHang\ab16eda7-b8ac-4593-88e9-2835f87f561a.jpg
+wwwroot\HinhAnh\KhachHang\af3774ac-8b4a-45a2-8045-ccd65dbe4584.jpg
 wwwroot\HinhAnh\KhachHang\b84f5049-a5c5-46bd-b96c-b70d338d09c4.jpg
 wwwroot\HinhAnh\KhachHang\dc1a5ec3-6da1-4a23-96e6-990096665a11.jpg
 wwwroot\HinhAnh\KhachHang\images (1).jfif
