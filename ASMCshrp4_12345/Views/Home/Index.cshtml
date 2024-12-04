@@ -105,7 +105,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
             <div class="product-item bg-light mb-4">
                 <div class="product-img position-relative overflow-hidden">
-                    <img style="width: 100px; height: 350px" class="img-fluid w-100" src="~/HinhAnh/SanPham/@item.Hinh" alt="">
+                        <img style="width: 100px; height: 250px; border-radius: 10px;object-fit: cover;" class="img-fluid w-100" src="~/HinhAnh/SanPham/@item.Hinh" alt="">
                     <div class="product-action">
                             <a asp-action="Details" asp-controller="CuaHang" asp-route-id="@item.MaSp" class="btn btn-outline-dark btn-square">Xem Thêm</a>
                         @* <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
@@ -149,3 +149,42 @@
 
 
 @await Component.InvokeAsync("SanPhamTheoComBo")
+<style scoped>
+
+    .btn-square {
+        border-radius: 10px;
+        white-space: nowrap;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+        padding: 0.5rem 1rem;
+        min-width: 120px; /* Đặt chiều rộng tối thiểu */
+        min-height: 40px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .btn-square {
+        white-space: nowrap; /* Ngăn chặn nội dung bị xuống dòng */
+        padding: 0.5rem 1rem; /* Điều chỉnh khoảng cách nội dung và viền */
+        font-size: 1rem; /* Điều chỉnh kích thước font chữ */
+    }
+
+        .btn-square:hover {
+            background-color: #343a40;
+            color: #f8f9fa;
+        }
+
+    .cart {
+        border-radius: 10px;
+        overflow: hidden; /* Đảm bảo không bị cắt bo viền */
+        box-sizing: border-box; /* Đảm bảo padding/border không ảnh hưởng đến bo viền */
+    }
+
+    .product-item {
+        border-radius: 10px;
+        overflow: hidden; /* Giúp giữ cho các cạnh được bo tròn */
+    }
+</style>

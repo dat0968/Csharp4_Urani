@@ -539,7 +539,8 @@ namespace ASMCshrp4_12345.Controllers
             var donHang = db.Chitiethoadons
         .Include(h => h.MaSpNavigation)
         .Include(ct => ct.MaHoaDonNavigation)
-        .FirstOrDefault(h => h.MaHoaDon == maHoaDon);
+        .Where(h => h.MaHoaDon == maHoaDon)
+        .ToList();
 
             if (donHang == null)
             {
