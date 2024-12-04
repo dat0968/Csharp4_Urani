@@ -33,10 +33,34 @@ namespace ASMCshrp4_12345.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Editprofile(Khachhang updatedKhachhang, IFormFile Avatar)
         {
-            if (!ModelState.IsValid)
-            {
-                var khachhang = _context.Khachhangs.FirstOrDefault(kh => kh.MaKh == updatedKhachhang.MaKh);
 
+            var today = DateTime.Today;
+            var dob = updatedKhachhang.NgaySinh?.ToDateTime(TimeOnly.MinValue); 
+
+            if (dob.HasValue)
+            {
+                var age = today.Year - dob.Value.Year;
+
+             
+                if (today.Month < dob.Value.Month || (today.Month == dob.Value.Month && today.Day < dob.Value.Day))
+                {
+                    age--;
+                }
+
+                if (age < 16)
+                {
+                   
+                    TempData["ErrorMessage"] = "Bạn phải trên 16 tuổi để cập nhật thông tin.";
+                    return View(updatedKhachhang);  
+                }
+            }
+
+
+   
+            var khachhang = _context.Khachhangs.FirstOrDefault(kh => kh.MaKh == updatedKhachhang.MaKh);
+      
+            if (khachhang.MaKh != null)
+            {
                 if (khachhang != null)
                 {
                   

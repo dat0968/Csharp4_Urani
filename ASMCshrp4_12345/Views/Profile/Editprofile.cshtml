@@ -4,7 +4,6 @@
     ViewBag.Title = "Chỉnh sửa thông tin cá nhân";
 }
 
-<h2>Chỉnh sửa thông tin cá nhân</h2>
 
 @if (TempData["SuccessMessage"] != null)
 {
@@ -58,10 +57,9 @@
                 @Html.ValidationMessageFor(model => model.GioiTinh)
             </div>
 
-
             <div class="form-group">
                 @Html.LabelFor(model => model.NgaySinh, "Ngày sinh")
-                @Html.TextBoxFor(model => model.NgaySinh, new { @class = "form-control", type = "date" })
+                <input class="form-control" type="date" id="NgaySinh" name="NgaySinh" value="@Model.NgaySinh?.ToString("yyyy-MM-dd")" />
                 @Html.ValidationMessageFor(model => model.NgaySinh)
             </div>
 
@@ -99,6 +97,27 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+<script>
+    document.getElementById("editProfileForm").onsubmit = function (event) {
+        var ngaySinh = document.getElementById("NgaySinh").value;
+        var dob = new Date(ngaySinh);
+        var today = new Date();
+        var age = today.getFullYear() - dob.getFullYear();
+        var m = today.getMonth() - dob.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+            age--;
+        }
+
+        if (age < 16) {
+            event.preventDefault(); 
+            alert("Bạn phải ít nhất 16 tuổi để cập nhật thông tin.");
+            return false;
+        }
+    };
+
+</script>
+
 
 <style>
 
