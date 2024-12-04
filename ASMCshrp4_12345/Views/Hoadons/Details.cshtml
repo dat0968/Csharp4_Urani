@@ -45,8 +45,8 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Mã Sản Phẩm</th>
-                <th>Tên sản phẩm</th>
+                <th>Mã Sản Phẩm/Combo</th>
+                <th>Tên Sản phẩm/Combo</th>
                 <th>Số Lượng Mua</th>
                 <th>Đơn Giá</th>
                 <th>Chất Liệu</th>
@@ -59,9 +59,39 @@
             @foreach (var item in Model.Chitiethoadons)
             {
                 <tr>
-                    <td>@item.MaSp</td>
-                    <td>@(item.MaSpNavigation != null ? item.MaSpNavigation.TenSp : "N/A")</td>
-                    <td>@item.SoLuongMua</td>
+                    <td>
+                        @if(item.MaComBo_ThuocTinhSuyDien != null)
+                        {
+                            @item.MaComBo_ThuocTinhSuyDien
+                        }
+                        else
+                        {
+                            @item.MaSp
+                        }
+                    </td>
+                    <td>
+                        @if(item.MaComBo_ThuocTinhSuyDien != null)
+                        {
+                            foreach (var tencombo in ViewBag.listTencombo)
+                            {
+                                @(tencombo)
+                            }
+                        }
+                        else
+                        {
+                            @(item.MaSpNavigation != null ? item.MaSpNavigation.TenSp : "N/A")
+                        }                        
+                    </td>
+                    <td>
+                        @if(item.MaComBo_ThuocTinhSuyDien != null)
+                        {
+                            @item.SoLuongMua <span>( combo )</span>
+                        }
+                        else
+                        {
+                            @item.SoLuongMua <span>( sản phẩm )</span>
+                        }
+                    </td>
                     <td>@item.DonGia.ToString("N2")</td>
 
                     <td>

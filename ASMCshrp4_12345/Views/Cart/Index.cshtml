@@ -3,25 +3,25 @@
 <style>
     /* Thêm lớp CSS để thay đổi màu nút tăng giảm */
     .btn-yellow {
-        background-color: rgb(255, 211, 51);
-        border-color: rgb(255, 211, 51);
-        color: black;
+    background-color: rgb(255, 211, 51);
+    border-color: rgb(255, 211, 51);
+    color: black;
     }
 
-        .btn-yellow:hover {
-            background-color: rgb(255, 211, 51); /* Màu vàng đậm hơn khi hover */
-            border-color: rgb(255, 211, 51);
-            color: black;
-        }
+    .btn-yellow:hover {
+    background-color: rgb(255, 211, 51); /* Màu vàng đậm hơn khi hover */
+    border-color: rgb(255, 211, 51);
+    color: black;
+    }
 
     input[type=number]::-webkit-outer-spin-button,
     input[type=number]::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
     }
 
     input[type=number] {
-        -moz-appearance: textfield;
+    -moz-appearance: textfield;
     }
 
 </style>
@@ -45,9 +45,6 @@
                 <thead class="thead-dark">
                     <tr>
                         <th>SẢN PHẨM</th>
-                        <th>MÀU</th>
-                        <th>CHẤT LIỆU</th>
-                        <th>KÍCH THƯỚC</th>
                         <th>GIÁ</th>
                         <th>SỐ LƯỢNG</th>
                         <th>THÀNH TIỀN</th>
@@ -58,10 +55,37 @@
                     @foreach (var item in Model)
                     {
                         <tr>
-                            <td class="align-middle"><img src="~/HinhAnh/SanPham/@item.Hinh" alt="" style="width: 50px;"> @item.TenHh</td>
-                            <td class="align-middle">@item.Mau</td>
-                            <td class="align-middle">@item.ChatLieu</td>
-                            <td class="align-middle">@item.KichThuoc</td>
+                            <td class="align-middle">
+                                @if (item.isCombo == true)
+                                {
+                                    <img src="~/HinhAnh/SanPham/@item.Hinh" alt="" style="width: 50px;">
+                                    <div style ="font-weight: bold;">@item.TenHh</div>
+                                    <div>
+                                        (
+                                        @foreach (var sp in item.dsSanPhams)
+                                        {
+                                            <span style="font-weight: bold;">@sp.TenSP</span>
+                                            <span style="font-style: italic; color: #777;">(@sp.Mau, @sp.KichThuoc, @sp.ChatLieu)</span>
+
+                                            @if (item.dsSanPhams.LastOrDefault() != sp)
+                                            {
+                                                <span>,</span> 
+                                            }
+                                        }
+                                        )
+                                    </div>
+                                }
+                                else
+                                {
+                                    <img src="~/HinhAnh/SanPham/@item.Hinh" alt="" style="width: 50px;">
+                                    <div style="font-weight: bold;">@item.TenHh</div>
+                                    <div>(
+                                        <span style="font-style: italic; color: #777;">@item.Mau</span>,
+                                        <span style="font-style: italic; color: #777;">@item.KichThuoc</span>,
+                                        <span style="font-style: italic; color: #777;">@item.ChatLieu</span>)
+                                    </div>
+                                }
+                            </td>
                             <td class="align-middle">@item.Gia VNĐ</td>
                             <td class="align-middle">
                                 <div class="d-flex align-items-center mb-4">
@@ -77,7 +101,14 @@
                                 </div>
                             </td>
                             <td class="align-middle">@item.ThanhTien VNĐ</td>
-                            <td class="align-middle"><a asp-action="RemoveCart" asp-controller="Cart" asp-route-id="@item.MaHh" asp-route-chatlieu="@item.ChatLieu" asp-route-kichthuoc="@item.KichThuoc" asp-route-mausac = "@item.Mau" class="btn btn-sm btn-danger"><i class="fa fa-times"></i></a></td>
+                            @if (@item.isCombo == false )
+                            {
+                                <td class="align-middle"><a asp-action="RemoveCart" asp-controller="Cart" asp-route-id="@item.MaHh" asp-route-chatlieu="@item.ChatLieu" asp-route-kichthuoc="@item.KichThuoc" asp-route-mausac="@item.Mau" class="btn btn-sm btn-danger"><i class="fa fa-times"></i></a></td>
+                            }
+                            else
+                            {
+                                <td class="align-middle"><a asp-action="RemoveCart" asp-controller="Cart" asp-route-id="@item.MaHh"   class="btn btn-sm btn-danger"><i class="fa fa-times"></i></a></td>
+                            }
                         </tr>
                     }
                 </tbody>

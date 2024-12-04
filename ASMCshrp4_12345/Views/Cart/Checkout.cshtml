@@ -85,7 +85,24 @@
                         @foreach (var item in Model)
                         {
                             <div class="d-flex justify-content-between">
-                                <p>@item.TenHh (<span>@item.Mau, @item.ChatLieu, @item.KichThuoc</span>)</p>
+                                @if(item.isCombo == false)
+                                {
+                                    <p>@item.TenHh (<span>@item.Mau, @item.ChatLieu, @item.KichThuoc</span>)</p>
+                                }
+                                else
+                                {
+                                    <p>@item.TenHh (
+                                    @foreach(var thongtinsp in item.dsSanPhams)
+                                    {
+                                        <span>@thongtinsp.TenSP</span>
+                                        @if (item.dsSanPhams.LastOrDefault() != thongtinsp)
+                                        {
+                                            <span>,</span>
+                                        }
+                                    }
+                                        )
+                                    </p>
+                                }
                                 <p>@item.ThanhTien đ</p>
                             </div>
                         }

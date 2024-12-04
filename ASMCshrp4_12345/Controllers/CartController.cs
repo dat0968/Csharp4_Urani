@@ -3,11 +3,16 @@ using ASMCshrp4_12345.Models;
 using ASMCshrp4_12345.Services;
 using ASMCshrp4_12345.ViewModels;
 using DocumentFormat.OpenXml.InkML;
+using DocumentFormat.OpenXml.Office2010.Excel;
+using DocumentFormat.OpenXml.Spreadsheet;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
+using Tuple = System.Tuple;
+
 
 namespace ASMCshrp4_12345.Controllers
 {
@@ -30,63 +35,136 @@ namespace ASMCshrp4_12345.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddToCart(string? id, string? size, string? color, string? chatlieu, int quantity = 1)
+        public IActionResult AddToCart(string? id, string? size, string? color, string? chatlieu, int quantity = 1, bool isCombo = false)
         {
             var giohang = Cart;
-            var item = giohang.SingleOrDefault(p => p.MaHh.Equals(id) && (p.Mau.Equals(color) && p.KichThuoc.Equals(size) && p.ChatLieu.Equals(chatlieu)));
-            var sanpham = db.Sanphams.AsNoTracking().SingleOrDefault(p => p.MaSp.Equals(id));
-            if (item == null)
+            var item = new CartViewModel();
+            if (isCombo == true)
             {
-                if (sanpham == null)
+                item = giohang.SingleOrDefault(p => p.MaHh.Equals(id));
+                var combo = db.ComBos.Include(p => p.CtComBos).ThenInclude(p => p.MaSpNavigation).AsNoTracking().SingleOrDefault(p => p.MaComBo.ToString().Equals(id));
+                if (item == null)
                 {
-                    TempData["Message"] = $"Không tìm thấy sản phẩm có mã {id}";
-                    return Redirect("/404");
+                    if (combo == null)
+                    {
+                        TempData["Message"] = $"Không tìm thấy combo có mã {id}";
+                        return Redirect("/404");
+                    }
+                    
+
+                    else
+                    {
+                        item = new CartViewModel
+                        {
+                            MaHh = combo.MaComBo.ToString(),
+                            TenHh = combo.TenComBo,
+                            Gia = (decimal?)combo.DonGia ?? 0,
+                            Hinh = combo.AnhComBos?.FirstOrDefault()?.HinhAnh ?? string.Empty,
+                            SoLuong = quantity,
+                            //Maus = (List<string>)combo.CtComBos.Select(p => p.TenMau),
+                            //KichThuocs = (List<string>)combo.CtComBos.Select(p => p.TenKichThuoc),
+                            //ChatLieus = (List<string>)combo.CtComBos.Select(p => p.TenChatLieu),
+                            thuoctinh = combo.CtComBos.Select(p => Tuple.Create(p.TenMau, p.TenKichThuoc, p.TenChatLieu)).ToList(),
+                            MoTa = "",
+                            dsSanPhams = combo.CtComBos
+                            .Select(p => new dsSanPhamViewModel
+                            {
+                                MaSP = p.MaSp,
+                                TenSP = p.MaSpNavigation.TenSp,  
+                                KichThuoc = p.TenKichThuoc,       
+                                ChatLieu = p.TenChatLieu,         
+                                Mau = p.TenMau                    
+                            })
+                            .ToList(),
+
+                            SoluongAvailable = combo.SoLuong,
+                            isCombo = true,
+                        };
+                        giohang.Add(item);
+                    }
                 }
                 else
                 {
-                    item = new CartViewModel
+                    item.SoLuong += quantity;
+                    if (item.SoLuong > item.SoluongAvailable)
                     {
-                        MaHh = sanpham.MaSp,
-                        TenHh = sanpham.TenSp,
-                        Gia = (decimal?)sanpham.DonGiaBan,
-                        Hinh = sanpham.Hinh ?? string.Empty,
-                        SoLuong = quantity,
-                        Mau = color,
-                        KichThuoc = size,
-                        ChatLieu = chatlieu,
-                        SoluongAvailable = sanpham.SoLuongBan,
-                    };
-                    giohang.Add(item);
+                        TempData["ErrorMessage"] = $"Số lượng không đủ, số lượng chỉ còn {item.SoluongAvailable}  ";
+                        item.SoLuong = item.SoluongAvailable;
+
+                    }
+                    else if (item.SoLuong < 1)
+                    {
+                        item.SoLuong = 1;
+
+                    }
                 }
             }
             else
-            {
-                item.SoLuong += quantity;
-                if (item.SoLuong > item.SoluongAvailable)
+            {             
+                item = giohang.SingleOrDefault(p => p.MaHh.Equals(id) && (p.Mau.Equals(color) && p.KichThuoc.Equals(size) && p.ChatLieu.Equals(chatlieu)));
+                var sanpham = db.Sanphams.AsNoTracking().SingleOrDefault(p => p.MaSp.Equals(id));
+                if (item == null)
                 {
-                    TempData["ErrorMessage"] = $"Số lượng không đủ, chỉ còn {item.SoluongAvailable} sản phẩm";
-                    item.SoLuong = item.SoluongAvailable;
-
+                    if (sanpham == null)
+                    {
+                        TempData["Message"] = $"Không tìm thấy sản phẩm có mã {id}";
+                        return Redirect("/404");
+                    }
+                    else
+                    {
+                        item = new CartViewModel
+                        {
+                            MaHh = sanpham.MaSp,
+                            TenHh = sanpham.TenSp,
+                            Gia = (decimal?)sanpham.DonGiaBan,
+                            Hinh = sanpham.Hinh ?? string.Empty,
+                            SoLuong = quantity,
+                            Mau = color,
+                            KichThuoc = size,
+                            ChatLieu = chatlieu,
+                            MoTa = "",
+                            SoluongAvailable = sanpham.SoLuongBan,
+                        };
+                        giohang.Add(item);
+                    }
                 }
-                else if (item.SoLuong < 1)
+                else
                 {
-                    item.SoLuong = 1;
+                    item.SoLuong += quantity;
+                    if (item.SoLuong > item.SoluongAvailable)
+                    {
+                        TempData["ErrorMessage"] = $"Số lượng không đủ, chỉ còn {item.SoluongAvailable} sản phẩm";
+                        item.SoLuong = item.SoluongAvailable;
 
+                    }
+                    else if (item.SoLuong < 1)
+                    {
+                        item.SoLuong = 1;
+
+                    }
                 }
-            }
-
+            }          
             HttpContext.Session.Set(CART_KEY, giohang);
             return RedirectToAction("index");
         }
 
-        public IActionResult RemoveCart(string id, string chatlieu, string kichthuoc, string mausac)
+        public IActionResult RemoveCart(string? id, string? chatlieu, string? kichthuoc, string? mausac)
         {
             var giohang = Cart;
-            var item = giohang.SingleOrDefault(p => p.MaHh.Equals(id) && p.KichThuoc.Equals(kichthuoc) && p.Mau.Equals(mausac));
-            if (item != null)
+            if (!string.IsNullOrEmpty(chatlieu) && !string.IsNullOrEmpty(kichthuoc) && !string.IsNullOrEmpty(mausac))
             {
+                var item = giohang.SingleOrDefault(p => p.MaHh.Equals(id) && p.KichThuoc.Equals(kichthuoc) && p.Mau.Equals(mausac)); 
                 giohang.Remove(item);
                 HttpContext.Session.Set(CART_KEY, giohang);
+            }
+            else
+            {
+                var item = giohang.SingleOrDefault(p => p.MaHh.Equals(id));
+                if(item  != null)
+                {
+                    giohang.Remove(item);
+                    HttpContext.Session.Set(CART_KEY, giohang);
+                }
             }
             return RedirectToAction("index");
         }
@@ -182,26 +260,59 @@ namespace ASMCshrp4_12345.Controllers
 
                     foreach (var item in Cart)
                     {
-                        chitiethoadon.Add(new Chitiethoadon
+                        if(item.isCombo == false)
                         {
-                            MaHoaDon = hoadon.MaHoaDon,
-                            MaSp = item.MaHh,
-                            SoLuongMua = item.SoLuong,
-                            DonGia = (double)item.Gia,
-                            MauSac_ThuocTinhSuyDien = item.Mau,
-                            ChatLieu_ThuocTinhSuyDien = item.ChatLieu,
-                            KichThuoc_ThuocTinhSuyDien = item.KichThuoc,
-                        });
-                        var sanpham = db.Sanphams.AsNoTracking().FirstOrDefault(p => p.MaSp == item.MaHh);
-                        if (sanpham != null)
-                        {
-                            var attachedSanpham = db.Sanphams.Local.FirstOrDefault(p => p.MaSp == sanpham.MaSp);
-                            if (attachedSanpham != null)
+                            chitiethoadon.Add(new Chitiethoadon
                             {
-                                db.Entry(attachedSanpham).State = EntityState.Detached;
+                                MaHoaDon = hoadon.MaHoaDon,
+                                MaSp = item.MaHh,
+                                SoLuongMua = item.SoLuong,
+                                DonGia = (double)item.Gia,
+                                MauSac_ThuocTinhSuyDien = item.Mau,
+                                ChatLieu_ThuocTinhSuyDien = item.ChatLieu,
+                                KichThuoc_ThuocTinhSuyDien = item.KichThuoc,
+                            });
+                            var sanpham = db.Sanphams.AsNoTracking().FirstOrDefault(p => p.MaSp == item.MaHh);
+                            if (sanpham != null)
+                            {
+                                var attachedSanpham = db.Sanphams.Local.FirstOrDefault(p => p.MaSp == sanpham.MaSp);
+                                if (attachedSanpham != null)
+                                {
+                                    db.Entry(attachedSanpham).State = EntityState.Detached;
+                                }
+                                sanpham.SoLuongBan = Math.Max(sanpham.SoLuongBan - item.SoLuong, 0);
+                                db.Sanphams.Update(sanpham);
+                                db.SaveChanges();
                             }
-                            sanpham.SoLuongBan = Math.Max(sanpham.SoLuongBan - item.SoLuong, 0);
-                            db.Sanphams.Update(sanpham);
+                        }
+                        else
+                        {
+                            foreach (var sp in item.dsSanPhams)
+                            {
+                                chitiethoadon.Add(new Chitiethoadon
+                                {
+                                    MaHoaDon = hoadon.MaHoaDon,
+                                    MaSp = sp.MaSP,
+                                    SoLuongMua = item.SoLuong,
+                                    DonGia = (double)item.Gia,
+                                    MauSac_ThuocTinhSuyDien = sp.Mau,
+                                    ChatLieu_ThuocTinhSuyDien = sp.ChatLieu,
+                                    KichThuoc_ThuocTinhSuyDien = sp.KichThuoc,
+                                    MaComBo_ThuocTinhSuyDien = int.Parse(item.MaHh)
+                                });                                                              
+                            }
+                            var combo = db.ComBos.AsNoTracking().FirstOrDefault(p => p.MaComBo.ToString().Equals(item.MaHh));
+                            if (combo != null)
+                            {
+                                var attachedSanpham = db.ComBos.Local.FirstOrDefault(p => p.MaComBo == combo.MaComBo);
+                                if (attachedSanpham != null)
+                                {
+                                    db.Entry(attachedSanpham).State = EntityState.Detached;
+                                }
+
+                            }
+                            combo.SoLuong = Math.Max(combo.SoLuong - item.SoLuong, 0);
+                            db.ComBos.Update(combo);
                             db.SaveChanges();
                         }
                     }
@@ -304,30 +415,63 @@ namespace ASMCshrp4_12345.Controllers
                 db.Add(hoadon);
                 db.SaveChanges();
                 var chitiethoadon = new List<Chitiethoadon>();
-
+                
                 foreach (var item in Cart)
                 {
-                    chitiethoadon.Add(new Chitiethoadon
+                    if(item.isCombo == false)
                     {
-                        MaHoaDon = hoadon.MaHoaDon,
-                        MaSp = item.MaHh,
-                        SoLuongMua = item.SoLuong,
-                        DonGia = (double)item.Gia,
-                        MauSac_ThuocTinhSuyDien = item.Mau,
-                        ChatLieu_ThuocTinhSuyDien = item.ChatLieu,
-                        KichThuoc_ThuocTinhSuyDien = item.KichThuoc,
-                    });
-                    var sanpham = db.Sanphams.AsNoTracking().FirstOrDefault(p => p.MaSp == item.MaHh);
-                    if (sanpham != null)
-                    {
-                        var attachedSanpham = db.Sanphams.Local.FirstOrDefault(p => p.MaSp == sanpham.MaSp);
-                        if (attachedSanpham != null)
+                        chitiethoadon.Add(new Chitiethoadon
                         {
-                            db.Entry(attachedSanpham).State = EntityState.Detached;
-                        }
+                            MaHoaDon = hoadon.MaHoaDon,
+                            MaSp = item.MaHh,
+                            SoLuongMua = item.SoLuong,
+                            DonGia = (double)item.Gia,
+                            MauSac_ThuocTinhSuyDien = item.Mau,
+                            ChatLieu_ThuocTinhSuyDien = item.ChatLieu,
+                            KichThuoc_ThuocTinhSuyDien = item.KichThuoc,
+                        });
+                        var sanpham = db.Sanphams.AsNoTracking().FirstOrDefault(p => p.MaSp == item.MaHh);
+                        if (sanpham != null)
+                        {
+                            var attachedSanpham = db.Sanphams.Local.FirstOrDefault(p => p.MaSp == sanpham.MaSp);
+                            if (attachedSanpham != null)
+                            {
+                                db.Entry(attachedSanpham).State = EntityState.Detached;
+                            }
 
-                        sanpham.SoLuongBan = Math.Max(sanpham.SoLuongBan - item.SoLuong, 0);
-                        db.Sanphams.Update(sanpham);
+                            sanpham.SoLuongBan = Math.Max(sanpham.SoLuongBan - item.SoLuong, 0);
+                            db.Sanphams.Update(sanpham);
+                            db.SaveChanges();
+                        }
+                    }
+                    else
+                    {
+                        foreach (var sp in item.dsSanPhams)
+                        {
+                            chitiethoadon.Add(new Chitiethoadon
+                            {
+                                MaHoaDon = hoadon.MaHoaDon,
+                                MaSp = sp.MaSP,
+                                SoLuongMua = item.SoLuong,
+                                DonGia = (double)item.Gia,
+                                MauSac_ThuocTinhSuyDien = sp.Mau,
+                                ChatLieu_ThuocTinhSuyDien = sp.ChatLieu,
+                                KichThuoc_ThuocTinhSuyDien = sp.KichThuoc,
+                                MaComBo_ThuocTinhSuyDien = int.Parse(item.MaHh)
+                            });                         
+                        }
+                        var combo = db.ComBos.AsNoTracking().FirstOrDefault(p => p.MaComBo.ToString().Equals(item.MaHh));
+                        if (combo != null)
+                        {
+                            var attachedSanpham = db.ComBos.Local.FirstOrDefault(p => p.MaComBo == combo.MaComBo);
+                            if (attachedSanpham != null)
+                            {
+                                db.Entry(attachedSanpham).State = EntityState.Detached;
+                            }
+
+                        }
+                        combo.SoLuong = Math.Max(combo.SoLuong - item.SoLuong, 0);
+                        db.ComBos.Update(combo);
                         db.SaveChanges();
                     }
                 }

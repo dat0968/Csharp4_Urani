@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\HinhAnh\\8cd95c96-41a9-4b85-801a-ab0894d6b4e6_Screenshot 2024-11-26 015748.png"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\8f2cb326-c5a4-4301-9ba9-9be82eacfb1b_tui-xach-balenciaga-10-400x400.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\8f2cb326-c5a4-4301-9ba9-9be82eacfb1b_tui-xach-balenciaga-10-400x400.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\921a1c23-633c-4d64-9af2-b19d183c9d4a_Screenshot 2024-11-28 215212.png",
       "PackagePath": "staticwebassets\\HinhAnh\\921a1c23-633c-4d64-9af2-b19d183c9d4a_Screenshot 2024-11-28 215212.png"
     },
@@ -385,6 +389,10 @@
       "PackagePath": "staticwebassets\\HinhAnh\\a4d881d1-f72e-4fed-8534-e72bcdd997f5_Screenshot 2024-11-25 000259.png"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\b3a5b633-03fd-4eda-bdd4-5445191c57e7_Screenshot 2024-11-25 000259.png",
       "PackagePath": "staticwebassets\\HinhAnh\\b3a5b633-03fd-4eda-bdd4-5445191c57e7_Screenshot 2024-11-25 000259.png"
     },
@@ -429,6 +437,10 @@
       "PackagePath": "staticwebassets\\HinhAnh\\f274c368-a58c-46b4-b66d-6e3c19f56360_Screenshot 2024-11-26 015748.png"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\f6a59412f7418faedec46a76c2398b3f-1.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\f6a59412f7418faedec46a76c2398b3f-1.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\fa7ee7dc-d4f7-466b-9667-44882a8ea49b_Screenshot 2024-11-25 000259.png",
       "PackagePath": "staticwebassets\\HinhAnh\\fa7ee7dc-d4f7-466b-9667-44882a8ea49b_Screenshot 2024-11-25 000259.png"
     },
@@ -441,8 +453,20 @@
       "PackagePath": "staticwebassets\\HinhAnh\\fce8654d-7b44-46d5-a306-450d9ffd3b24_Screenshot 2024-11-26 015748.png"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\images (1).jfif",
+      "PackagePath": "staticwebassets\\HinhAnh\\images (1).jfif"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\images (2).jfif",
+      "PackagePath": "staticwebassets\\HinhAnh\\images (2).jfif"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
       "PackagePath": "staticwebassets\\LayoutAdmin.html"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg",
+      "PackagePath": "staticwebassets\\anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\cart.html",
@@ -589,6 +613,10 @@
       "PackagePath": "staticwebassets\\detail.html"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\f6a59412f7418faedec46a76c2398b3f-1.jpg",
+      "PackagePath": "staticwebassets\\f6a59412f7418faedec46a76c2398b3f-1.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -663,6 +691,14 @@
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\fonts\\glyphicons-halflings-regular.woff2",
       "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images (1).jfif",
+      "PackagePath": "staticwebassets\\images (1).jfif"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images (2).jfif",
+      "PackagePath": "staticwebassets\\images (2).jfif"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\151b147a-9fca-4b85-a370-6e5c0e738633.jpg",

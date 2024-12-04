@@ -76,11 +76,21 @@ namespace ASMCshrp4_12345.Controllers
                 .Include(h => h.MaKhNavigation)
                 .Include(h => h.MaNvNavigation)
                 .FirstOrDefaultAsync(m => m.MaHoaDon == id);
+            //List<int?> Macombo = _context.Chitiethoadons?.Where(p => p.MaHoaDon.Equals(id)).Select(p => p.MaComBo_ThuocTinhSuyDien).FirstOrDefault();
+            var listTencombo = new List<string>();
+            //foreach (var macombo in Macombo)
+            //{
+            //    var findCombo = _context.ComBos.FirstOrDefault(p => p.MaComBo == macombo);
+            //    if (findCombo != null)
+            //    {
+            //        listTencombo.Add(findCombo.TenComBo);
+            //    }
+            //}
             if (hoadon == null)
             {
                 return NotFound();
             }
-
+            ViewBag.listTencombo = listTencombo;
             return View(hoadon);
         }
 

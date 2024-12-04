@@ -84,7 +84,7 @@
                     <div class="d-flex mb-3">
                         @* <small class="pt-1">(@combo.BinhLuans.Count() bình luận)</small> *@
                     </div>
-                    <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@combo.MaComBo">
+                    <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@combo.MaComBo" asp-route-isCombo="true" >
                         <div class="d-flex mb-4">
                             <strong class="text-dark mr-3">Bao gồm:</strong>
                             @foreach (var item in combo.CtComBos)
