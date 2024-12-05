@@ -67,7 +67,7 @@
                 <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                     <input type="radio" class="custom-control-input" name="selectedSize" value="@item.MaKichThuoc" id="size-@item.MaKichThuoc" onchange="submitForm()"
                     @(ViewBag.selectedSize.Contains(item.MaKichThuoc.ToString()) ? "checked" : "")>
-                    <label class="custom-control-label" for="size-@item.MaKichThuoc">@item.TenKichThuoc</label>
+                    <label class="custom-control-label" for="size-@item.MaKichThuoc">@item.KichThuoc1</label>
                 </div>
             }
         </div>
@@ -78,7 +78,6 @@
 <script>  
     function submitForm() {
         const form = document.getElementById('FilterForm');
-        form.submit();
-        
+        form.submit();      
     }  
 </script> 

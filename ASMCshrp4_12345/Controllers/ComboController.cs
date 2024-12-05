@@ -49,7 +49,7 @@ namespace ASMCshrp4_12345.Controllers
                     .Select(ct => new Chitietkichthuoc
                     {
                         MaKichThuoc = ct.MaKichThuoc,
-                        TenKichThuoc = ct.TenKichThuoc
+                        TenKichThuoc = ct.KichThuoc1
                     })
                     .ToListAsync(),
 
@@ -188,7 +188,7 @@ namespace ASMCshrp4_12345.Controllers
                     .Select(ct => new Chitietkichthuoc
                     {
                         MaKichThuoc = ct.MaKichThuoc,
-                        TenKichThuoc = ct.TenKichThuoc
+                        TenKichThuoc = ct.KichThuoc1
                     })
                     .ToListAsync(),
 

@@ -4,7 +4,19 @@
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
+@{
+    var danhSachCombo = (List<ASMCshrp4_12345.Models.ComBo>)ViewBag.DanhSachCombo;
+    // Phân tách danh sách theo MaComBo_ThuocTinhSuyDien
+    var chiTietHoadonKhacNull = Model.Chitiethoadons
+        .Where(ct => ct.MaComBo_ThuocTinhSuyDien != null) // Lọc các bản ghi không null
+        .GroupBy(ct => ct.MaComBo_ThuocTinhSuyDien) // Nhóm theo MaComBo_ThuocTinhSuyDien
+        .Select(g => g.First()) // Lấy bản ghi đầu tiên của mỗi nhóm
+        .ToList();
 
+    var chiTietHoadonNull = Model.Chitiethoadons
+        .Where(ct => ct.MaComBo_ThuocTinhSuyDien == null) // Lấy các bản ghi có MaComBo_ThuocTinhSuyDien là null
+        .ToList();
+}
 
 <h1>Chi Tiết Hóa Đơn @Model.MaHoaDon</h1>
 
@@ -48,21 +60,19 @@
                 <th>Mã Sản Phẩm/Combo</th>
                 <th>Tên Sản phẩm/Combo</th>
                 <th>Số Lượng Mua</th>
-                <th>Đơn Giá</th>
-                <th>Chất Liệu</th>
-                <th>Màu Sắc</th>
-                <th>Chất Liệu</th>
+                <th>Đơn Giá</th>             
                 <th>Tổng Tiền</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model.Chitiethoadons)
+            @foreach (var item in chiTietHoadonKhacNull.Concat(chiTietHoadonNull))
             {
                 <tr>
                     <td>
                         @if(item.MaComBo_ThuocTinhSuyDien != null)
                         {
                             @item.MaComBo_ThuocTinhSuyDien
+
                         }
                         else
                         {
@@ -72,14 +82,13 @@
                     <td>
                         @if(item.MaComBo_ThuocTinhSuyDien != null)
                         {
-                            foreach (var tencombo in ViewBag.listTencombo)
-                            {
-                                @(tencombo)
-                            }
+                            var tenCombo = danhSachCombo
+                            .FirstOrDefault(c => c.MaComBo == item.MaComBo_ThuocTinhSuyDien)?.TenComBo;
+                            @(tenCombo ?? "Combo không xác định")
                         }
                         else
                         {
-                            @(item.MaSpNavigation != null ? item.MaSpNavigation.TenSp : "N/A")
+                            @(item.MaSpNavigation != null ? item.MaSpNavigation.TenSp : "N/A") <span>(@item.MauSac_ThuocTinhSuyDien, @item.ChatLieu_ThuocTinhSuyDien, @item.KichThuoc_ThuocTinhSuyDien)</span>
                         }                        
                     </td>
                     <td>
@@ -94,15 +103,7 @@
                     </td>
                     <td>@item.DonGia.ToString("N2")</td>
 
-                    <td>
-                        @item.ChatLieu_ThuocTinhSuyDien
-                    </td>
-                    <td>
-                        @item.MauSac_ThuocTinhSuyDien
-                    </td>
-                    <td>
-                        @item.KichThuoc_ThuocTinhSuyDien
-                    </td>
+                    
                     <td>
                         @(item.SoLuongMua * item.DonGia)
                     </td>

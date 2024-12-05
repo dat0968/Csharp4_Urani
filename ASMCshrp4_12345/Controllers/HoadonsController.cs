@@ -76,21 +76,38 @@ namespace ASMCshrp4_12345.Controllers
                 .Include(h => h.MaKhNavigation)
                 .Include(h => h.MaNvNavigation)
                 .FirstOrDefaultAsync(m => m.MaHoaDon == id);
-            //List<int?> Macombo = _context.Chitiethoadons?.Where(p => p.MaHoaDon.Equals(id)).Select(p => p.MaComBo_ThuocTinhSuyDien).FirstOrDefault();
-            var listTencombo = new List<string>();
+            //var Macombo = _context.Chitiethoadons?.Where(p => p.MaHoaDon.Equals(id)).Select(p => p.MaComBo_ThuocTinhSuyDien);
+            //var listTencombo = new List<ComBo>();
             //foreach (var macombo in Macombo)
             //{
             //    var findCombo = _context.ComBos.FirstOrDefault(p => p.MaComBo == macombo);
             //    if (findCombo != null)
             //    {
-            //        listTencombo.Add(findCombo.TenComBo);
+            //        listTencombo.Add(findCombo);
             //    }
             //}
+            var danhSachCombo = await _context.ComBos.ToListAsync();
+
+            // Lọc các combo liên quan dựa trên dữ liệu đã tải về
+            var maComboLienQuan = hoadon.Chitiethoadons
+                .Where(ct => ct.MaComBo_ThuocTinhSuyDien != null)
+                .Select(ct => ct.MaComBo_ThuocTinhSuyDien.Value)
+                .Distinct()
+                .ToList();
+
+            // Lọc danh sách combo liên quan
+            var danhSachComboLienQuan = danhSachCombo
+                .Where(c => maComboLienQuan.Contains(c.MaComBo))
+                .ToList();
+
             if (hoadon == null)
             {
                 return NotFound();
             }
-            ViewBag.listTencombo = listTencombo;
+            ViewBag.danhSachCombo = danhSachComboLienQuan;
+
+
+
             return View(hoadon);
         }
 
@@ -140,16 +157,25 @@ namespace ASMCshrp4_12345.Controllers
                     
                     var daysDifference = (currentDate - ngayGiaoHangDateTime.Value).TotalDays;
 
-                    
+
                     if (hoadon.TinhTrang == "Hoàn tiền" && currentStatus == "Đã thanh toán")
                     {
                         if (daysDifference > 3)
                         {
-                            
+
                             TempData["ErrorMessage"] = "Trạng thái chỉ có hiệu lực với những đơn hàng 'Đã thanh toán' và thời gian hàng đã được giao tới tay người dùng không quá 3 ngày";
                             return View(hoadon);
                         }
                     }
+                    if(hoadon.TinhTrang == "Hoàn tiền" && currentStatus != "Đã thanh toán" ) {
+                        TempData["ErrorMessage"] = "Trạng thái chỉ có hiệu lực với những đơn hàng 'Đã thanh toán' và thời gian hàng đã được giao tới tay người dùng không quá 3 ngày";
+                        return View(hoadon);
+                    }
+                }
+                if (hoadon.TinhTrang == "Hoàn tiền" && currentStatus != "Đã thanh toán")
+                {
+                    TempData["ErrorMessage"] = "Trạng thái chỉ có hiệu lực với những đơn hàng 'Đã thanh toán' và thời gian hàng đã được giao tới tay người dùng không quá 3 ngày";
+                    return View(hoadon);
                 }
                 hoadon.TinhTrang = hoadon.TinhTrang;
 
@@ -157,7 +183,7 @@ namespace ASMCshrp4_12345.Controllers
                 {
                     hoadon.MaNv = currentEmployeeId;
                 }
-                if(hoadon.TinhTrang == "Đã giao")
+                if(hoadon.TinhTrang == "Đã giao" || hoadon.TinhTrang == "Đã thanh toán")
                 {
                     hoadon.ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now);
                 }

@@ -247,7 +247,21 @@ namespace ASMCshrp4_12345.Controllers
                     }
                     khachhang.Avatar = model.fileAvatar.FileName;
                 }
-               
+                else
+                {
+                    khachhang.Avatar = khachhang.Avatar;
+                }
+                khachhang.HoTen = model.HoTen;
+                khachhang.GioiTinh = model.GioiTinh;
+                khachhang.NgaySinh = model.NgaySinh;
+                khachhang.DiaChi = model.DiaChi;
+                khachhang.Cccd = model.Cccd;
+                khachhang.Sdt = model.Sdt;
+                khachhang.Email = model.Email;
+                khachhang.TenTaiKhoan = model.TenTaiKhoan;
+                khachhang.MatKhau = model.MatKhau;
+                khachhang.TinhTrang = model.TinhTrang;
+                khachhang.IsDelete = model.IsDelete;
                 TempData["SuccessMessage"] = "Cập nhật thông tin khách hàng thành công!";
                 _context.Update(khachhang);
                 await _context.SaveChangesAsync();
