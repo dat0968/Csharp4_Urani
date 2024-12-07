@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 
 namespace ASMCshrp4_12345.Controllers
 {
@@ -169,6 +171,100 @@ namespace ASMCshrp4_12345.Controllers
 
             TempData["SuccessMessage"] = "Đăng nhập thành công!";
             return RedirectToAction("Index", "Home", new { area = "" });
+        }
+
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> GuiMail(string Email)
+        {
+            var khachHang = _db.Khachhangs.FirstOrDefault(kh => kh.Email == Email);
+            var nhanvien = _db.Nhanviens.FirstOrDefault(nv => nv.Email == Email);
+
+            if (khachHang != null)
+            {
+                string MaXacNhan;
+                Random rnd = new Random();
+                MaXacNhan = rnd.Next(10000, 100000).ToString();
+
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                smtp.EnableSsl = true;
+                smtp.Port = 587;
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtp.Credentials = new NetworkCredential("sthe06714@gmail.com", "ezos qjgi xwet ulvt");
+
+                MailMessage mail = new MailMessage();
+                mail.To.Add(Email);
+                mail.From = new MailAddress("sthe06714@gmail.com");
+                mail.Subject = "Thông Báo Từ Urani Team  ";
+
+                string logoUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1224px-NASA_logo.svg.png";
+
+                mail.Body = "Kính gửi,<br>" +
+                            "Chúng tôi xác nhận bạn đã sử dụng quên mật khẩu của chúng tôi<br>" +
+                            "<strong><h2>Đây là mã xác nhận của bạn: " + MaXacNhan + "</h2></strong><br>" +
+                            "Xin vui lòng không cung cấp cho người khác<br>" +
+                            "Trân trọng.<br>" +
+                            "Đội ngũ hỗ trợ Urani" + "<br><br>" +
+                            "<img src='" + logoUrl + "' alt='Logo' />";
+                mail.IsBodyHtml = true;
+                await smtp.SendMailAsync(mail);
+                return Json(new { success = true, confirmationCode = MaXacNhan, responseText = "Email đã được gửi thành công!" });
+            }
+            if (nhanvien != null)
+            {
+                string MaXacNhan;
+                Random rnd = new Random();
+                MaXacNhan = rnd.Next().ToString();
+
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                smtp.EnableSsl = true;
+                smtp.Port = 587;
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtp.Credentials = new NetworkCredential("sthe06714@gmail.com", "ezos qjgi xwet ulvt");
+
+                MailMessage mail = new MailMessage();
+                mail.To.Add(Email);
+                mail.From = new MailAddress("sthe06714@gmail.com");
+                mail.Subject = "Thông Báo Từ Urani Team  ";
+
+                string logoUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/2048px-LEGO_logo.svg.png";
+
+                mail.Body = "Kính gửi,<br>" +
+                            "Chúng tôi xác nhận bạn đã sử dụng quên mật khẩu của chúng tôi<br>" +
+                            "<strong><h2>Đây là mã xác nhận của bạn: " + MaXacNhan + "</h2></strong><br>" +
+                            "Xin vui lòng không cung cấp cho người khác<br>" +
+                            "Trân trọng.<br>" +
+                            "Đội ngũ hỗ trợ Urani" + "<br><br>" +
+                            "<img src='" + logoUrl + "' alt='Logo' />";
+                mail.IsBodyHtml = true;
+                await smtp.SendMailAsync(mail);
+                return Json(new { success = true, confirmationCode = MaXacNhan, responseText = "Email đã được gửi thành công!" });
+            }
+
+            return Ok();
+        }
+        [HttpPost]
+        public IActionResult QuenMatKhau(string Email, string NewPassword)
+        {
+            var khachHang = _db.Khachhangs.FirstOrDefault(s => s.Email == Email);
+            var nhanvien = _db.Nhanviens.FirstOrDefault(s => s.Email == Email);
+            if (khachHang != null)
+            {
+                khachHang.MatKhau = NewPassword;
+                _db.Khachhangs.Update(khachHang);
+            }
+            if (nhanvien != null)
+            {
+                nhanvien.MatKhau = NewPassword;
+                _db.Nhanviens.Update(nhanvien);
+            }
+
+            _db.SaveChanges();
+            return Ok();
         }
 
         [HttpPost]
