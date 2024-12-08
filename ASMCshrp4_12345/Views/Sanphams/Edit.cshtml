@@ -12,7 +12,7 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
             <input type="hidden" asp-for="MaSp" />
             <div class="form-group">
                 <label asp-for="MaSp" class="control-label">Mã Sản Phẩm</label>
@@ -155,6 +155,57 @@
 </div>
 
 @section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function (e) {
+                let isValid = true;
+
+                // Kiểm tra Tên sản phẩm
+                const tenSp = document.querySelector('[name="TenSp"]');
+                if (!tenSp.value.trim()) {
+                    isValid = false;
+                    alert('Tên sản phẩm không được để trống.');
+                }
+
+                // Kiểm tra Số lượng bán
+                const soLuongBan = document.querySelector('[name="SoLuongBan"]');
+                if (!soLuongBan.value.trim() || isNaN(soLuongBan.value) || parseInt(soLuongBan.value) <= 0) {
+                    isValid = false;
+                    alert('Số lượng bán phải lớn hơn 0.');
+                }
+
+                // Kiểm tra Đơn giá bán
+                const donGiaBan = document.querySelector('[name="DonGiaBan"]');
+                if (!donGiaBan.value.trim() || isNaN(donGiaBan.value) || parseFloat(donGiaBan.value) <= 0) {
+                    isValid = false;
+                    alert('Đơn giá bán phải lớn hơn 0.');
+                }
+
+                // Kiểm tra Thương hiệu
+                const maThuongHieu = document.querySelector('[name="MaThuongHieu"]');
+                if (!maThuongHieu.value) {
+                    isValid = false;
+                    alert('Vui lòng chọn thương hiệu.');
+                }
+
+                // Kiểm tra Hình ảnh mới
+                const hinhFile = document.querySelector('[name="HinhFile"]');
+                if (hinhFile && hinhFile.files.length > 0) {
+                    const file = hinhFile.files[0];
+                    if (!file.type.startsWith('image/')) {
+                        isValid = false;
+                        alert('Vui lòng chọn một file hình ảnh hợp lệ.');
+                    }
+                }
+
+                // Nếu có lỗi, ngừng gửi form
+                if (!isValid) {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }

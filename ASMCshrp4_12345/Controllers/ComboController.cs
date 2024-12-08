@@ -131,7 +131,7 @@ namespace ASMCshrp4_12345.Controllers
                     _context.CtComBos.Add(chiTiet);
                 }
                 await _context.SaveChangesAsync();
-
+                TempData["SuccessMessage"] = "Thêm combo thành công";
                 return RedirectToAction("Index"); 
             }
 
@@ -316,6 +316,7 @@ namespace ASMCshrp4_12345.Controllers
                     }
                 }
                 await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Sửa combo thành công";
                 return RedirectToAction(nameof(Index));
             }
 
@@ -376,7 +377,7 @@ namespace ASMCshrp4_12345.Controllers
             _context.CtComBos.RemoveRange(ctComBoItems); 
             _context.ComBos.Remove(combo); 
             await _context.SaveChangesAsync();
-
+            TempData["SuccessMessage"] = "Xóa combo thành công";
             return RedirectToAction(nameof(Index)); 
         }
         

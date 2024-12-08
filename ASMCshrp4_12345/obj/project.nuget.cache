@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BmFmK5ityUg=",
+  "dgSpecHash": "Ec5uSXUo1RM=",
   "success": true,
-  "projectFilePath": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
+  "projectFilePath": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\ASMCshrp4_12345.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -7,12 +7,12 @@
 
 <h1>Cập nhật thông tin</h1>
 
-<form asp-action="EditNhanVien" method="post" enctype="multipart/form-data">
+<form asp-action="EditNhanVien" method="post" id="capNhatTT" enctype="multipart/form-data">
     <input asp-for="MaNv" type="hidden" />
 
     <div class="form-group">
         <label asp-for="HoTen" class="control-label">Họ và tên</label>
-        <input asp-for="HoTen" class="form-control" required/>
+        <input asp-for="HoTen" class="form-control" />
         <span asp-validation-for="HoTen" class="text-danger"></span>
     </div>
 
@@ -31,7 +31,7 @@
     <div class="form-group">
         <label asp-for="GioiTinh" class="control-label">Giới tính</label>
         <select asp-for="GioiTinh" class="form-control">
-            <option value="Nam" >Nam</option>
+            <option value="Nam">Nam</option>
             <option value="Nữ">Nữ</option>
         </select>
         <span asp-validation-for="GioiTinh" class="text-danger"></span>
@@ -39,31 +39,31 @@
 
     <div class="form-group">
         <label asp-for="NgaySinh" class="control-label">Ngày sinh</label>
-        <input asp-for="NgaySinh" type="date" class="form-control" required/>
+        <input asp-for="NgaySinh" type="date" class="form-control" required />
         <span asp-validation-for="NgaySinh" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="DiaChi" class="control-label">Địa chỉ</label>
-        <input asp-for="DiaChi" class="form-control" required/>
+        <input asp-for="DiaChi" class="form-control" />
         <span asp-validation-for="DiaChi" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="Cccd" class="control-label">CCCD</label>
-        <input asp-for="Cccd" class="form-control" required/>
+        <input asp-for="Cccd" class="form-control" />
         <span asp-validation-for="Cccd" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="Sdt" class="control-label">Số điện thoại</label>
-        <input asp-for="Sdt" class="form-control" required/>
+        <input asp-for="Sdt" class="form-control" />
         <span asp-validation-for="Sdt" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="Email" class="control-label">Email</label>
-        <input asp-for="Email" type="email" class="form-control" required/>
+        <input asp-for="Email" type="email" class="form-control" />
         <span asp-validation-for="Email" class="text-danger"></span>
     </div>
 
@@ -74,9 +74,7 @@
     </div>
 
     <input asp-for="Luong" type="hidden" />
-
     <input asp-for="VaiTro" type="hidden" />
-
     <input asp-for="TinhTrang" type="hidden" />
 
     <div class="form-group">
@@ -86,5 +84,72 @@
 </form>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        document.getElementById("capNhatTT").addEventListener("submit", function (e) {
+            let isValid = true;
+
+            // Reset tất cả thông báo lỗi trước khi kiểm tra lại
+            const errorMessages = document.querySelectorAll('.text-danger');
+            errorMessages.forEach(function (message) {
+                message.innerHTML = '';  // Xóa thông báo lỗi trước khi kiểm tra
+            });
+
+            // Kiểm tra Họ và tên
+            const hoTen = document.querySelector('[name="HoTen"]');
+            const hoTenError = document.querySelector('[data-valmsg-for="HoTen"]');
+            if (!hoTen.value.trim()) {
+                isValid = false;
+                hoTenError.innerHTML = 'Họ và tên không được để trống.';
+            }
+
+            // Kiểm tra Ngày sinh
+            const ngaySinh = document.querySelector('[name="NgaySinh"]');
+            const ngaySinhError = document.querySelector('[data-valmsg-for="NgaySinh"]');
+            if (!ngaySinh.value.trim()) {
+                isValid = false;
+                ngaySinhError.innerHTML = 'Ngày sinh không được để trống.';
+            }
+
+            // Kiểm tra Địa chỉ
+            const diaChi = document.querySelector('[name="DiaChi"]');
+            const diaChiError = document.querySelector('[data-valmsg-for="DiaChi"]');
+            if (!diaChi.value.trim()) {
+                isValid = false;
+                diaChiError.innerHTML = 'Địa chỉ không được để trống.';
+            }
+
+            // Kiểm tra CCCD
+            const cccd = document.querySelector('[name="Cccd"]');
+            const cccdError = document.querySelector('[data-valmsg-for="Cccd"]');
+            if (!cccd.value.trim()) {
+                isValid = false;
+                cccdError.innerHTML = 'CCCD không được để trống.';
+            }
+
+            // Kiểm tra Số điện thoại
+            const sdt = document.querySelector('[name="Sdt"]');
+            const sdtError = document.querySelector('[data-valmsg-for="Sdt"]');
+            const phoneRegex = /^\d{10}$/;
+            if (!sdt.value.trim() || !phoneRegex.test(sdt.value.trim())) {
+                isValid = false;
+                sdtError.innerHTML = 'Số điện thoại phải có 10 chữ số.';
+            }
+
+            // Kiểm tra Email
+            const email = document.querySelector('[name="Email"]');
+            const emailError = document.querySelector('[data-valmsg-for="Email"]');
+            if (!email.value.trim()) {
+                isValid = false;
+                emailError.innerHTML = 'Email không hợp lệ.';
+            }
+
+            // Nếu có lỗi, ngừng gửi form
+            if (!isValid) {
+                e.preventDefault();
+            }
+        });
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

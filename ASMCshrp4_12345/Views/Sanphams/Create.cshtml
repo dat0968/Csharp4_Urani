@@ -5,29 +5,30 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
+
 <h1>Thêm Sản Phẩm</h1>
 
 <hr />
 <div class="row">
     <div class="col-md-6">
-        <form asp-action="Create" asp-controller="Sanphams" enctype="multipart/form-data">
+        <form asp-action="Create" id="formThemSanPham" asp-controller="Sanphams" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
                 <label asp-for="TenSp" class="control-label">Tên Sản Phẩm</label>
-                <input asp-for="TenSp" class="form-control" />
+                <input asp-for="TenSp" class="form-control" name="txtTenSp" />
                 <span asp-validation-for="TenSp" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="SoLuongBan" class="control-label">Số Lượng Bán</label>
-                <input asp-for="SoLuongBan" class="form-control" />
+                <input asp-for="SoLuongBan" class="form-control" type="number" name="txtSl" min="1" value="1"/>
                 <span asp-validation-for="SoLuongBan" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="DonGiaBan" class="control-label">Đơn Giá Bán</label>
-                <input asp-for="DonGiaBan" class="form-control" />
+                <input asp-for="DonGiaBan" class="form-control" name="txtDonGia" />
                 <span asp-validation-for="DonGiaBan" class="text-danger"></span>
             </div>
 
@@ -140,8 +141,50 @@
 </div>
 
 @section Scripts {
+    <script>
+        document.getElementById("formThemSanPham").addEventListener("submit", function (e) {
+        // Ngăn form gửi dữ liệu nếu có lỗi
+        let hasError = false;
+
+        // Lấy form và các giá trị input từ form
+        const form = document.getElementById("formThemSanPham");
+        const tenSp = form.elements["txtTenSp"].value.trim();
+        const soLuongBan = form.elements["txtSl"].value;
+        const donGiaBan = form.elements["txtDonGia"].value.trim();
+
+        // Reset thông báo lỗi
+        document.querySelectorAll(".text-danger").forEach((el) => (el.textContent = ""));
+
+        // Kiểm tra Tên Sản Phẩm
+        if (!tenSp) {
+            form.elements["txtTenSp"].nextElementSibling.textContent = "Tên sản phẩm không được để trống.";
+            hasError = true;
+        }
+
+        // Kiểm tra Số Lượng Bán
+        if (!soLuongBan || Number(soLuongBan) <= 0) {
+            document.querySelector("[name='txtSl']").nextElementSibling.textContent =
+                "Số lượng bán phải là số lớn hơn 0.";
+            hasError = true;
+        }
+
+        // Kiểm tra Đơn Giá Bán
+        if (!donGiaBan || isNaN(donGiaBan) || parseFloat(donGiaBan) <= 0) {
+            form.elements["txtDonGia"].nextElementSibling.textContent =
+                "Đơn giá bán phải là số lớn hơn 0.";
+            hasError = true;
+        }
+
+        // Nếu có lỗi, ngăn form gửi
+        if (hasError) {
+            e.preventDefault();
+        }
+        });
+
+    </script>
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
     }
 
 }

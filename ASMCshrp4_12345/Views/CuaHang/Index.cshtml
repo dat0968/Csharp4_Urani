@@ -38,7 +38,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 pb-1 cart">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" style="width: 100px; height: 250px; border-radius: 10px; object-fit:cover;" src="~/HinhAnh/@hinhanhsanpham" alt="Combo">
+                                <img class="img-fluid w-100" style="width: 100px; height: 250px; border-radius: 10px; object-fit:cover;" src="@(string.IsNullOrEmpty(hinhanhsanpham) ? "/no-image-icon-23485.png" : "/HinhAnh/" + hinhanhsanpham)" alt="">
                                 <div class="product-action">
                                     <a asp-action="DetailCombo" asp-controller="CuaHang" asp-route-idcombo="@combo.MaComBo" class="btn btn-outline-dark btn-square">Xem Thêm</a>
                                 </div>
