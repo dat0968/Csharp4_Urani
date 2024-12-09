@@ -90,7 +90,8 @@
                 <dd class="col-sm-9">@Html.DisplayFor(model => model.SoLuongBan)</dd>
 
                 <dt class="col-sm-3">Đơn Giá Bán</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.DonGiaBan)</dd>
+                <dd class="col-sm-9">@Model.DonGiaBan.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</dd>
+
 
                 <dt class="col-sm-3">Hình Ảnh</dt>
                 <dd class="col-sm-9">

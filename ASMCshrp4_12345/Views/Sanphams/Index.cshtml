@@ -77,7 +77,7 @@
                 <td>@Html.DisplayFor(modelItem => item.MaSp)</td>
                 <td>@Html.DisplayFor(modelItem => item.TenSp)</td>
                 <td>@Html.DisplayFor(modelItem => item.SoLuongBan)</td>
-                <td>@Html.DisplayFor(modelItem => item.DonGiaBan)</td>
+                <td>@item.DonGiaBan.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</td>
                 <td>@Html.DisplayFor(modelItem => item.NgaySanXuat)</td>
                 <td>@Html.DisplayFor(modelItem => item.MaThuongHieuNavigation.TenThuongHieu )</td>
                 <td>@Html.DisplayFor(modelItem => item.MaNhaCcNavigation.TenNhaCc)</td>

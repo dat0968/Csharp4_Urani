@@ -61,8 +61,8 @@
 
 
 <h4>Top 5 Sản phẩm bán chạy:</h4>
-<table class="table table-bordered table-striped">
-    <thead class="thead-dark">
+<table class="table table-bordered ">
+    <thead class="">
         <tr>
             <th>Sản phẩm</th>
             <th>Số lượng bán</th>
@@ -75,7 +75,7 @@
             <tr>
                 <td>@item.TenSp</td>
                 <td>@item.SoLuongBan</td>
-                <td>@item.DonGia</td>
+                <td>@item.DonGia.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</td>
             </tr>
         }
     </tbody>

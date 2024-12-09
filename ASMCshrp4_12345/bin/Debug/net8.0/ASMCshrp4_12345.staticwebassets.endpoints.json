@@ -249,6 +249,88 @@
       ]
     },
     {
+      "Route": "HinhAnh/1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.23q1viugo8.jpg",
+      "AssetFile": "HinhAnh/1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "405968"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TiH7Ghc9zu4H1rA1O7QwtnAwCpys3TNrGiuIkXlaT5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 14:22:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "23q1viugo8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TiH7Ghc9zu4H1rA1O7QwtnAwCpys3TNrGiuIkXlaT5A="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.jpg",
+      "AssetFile": "HinhAnh/1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "405968"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TiH7Ghc9zu4H1rA1O7QwtnAwCpys3TNrGiuIkXlaT5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 14:22:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TiH7Ghc9zu4H1rA1O7QwtnAwCpys3TNrGiuIkXlaT5A="
+        }
+      ]
+    },
+    {
       "Route": "HinhAnh/1ff96f29-e2e4-4bc4-8c06-34aa52128d43_Screenshot 2024-11-24 231747.png",
       "AssetFile": "HinhAnh/1ff96f29-e2e4-4bc4-8c06-34aa52128d43_Screenshot 2024-11-24 231747.png",
       "Selectors": [],
@@ -737,6 +819,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-yRAidOI8K6MSusz1hbatpN07R+qBJQpdRRC2yWaw8bc="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.i1vly690so.jpg",
+      "AssetFile": "HinhAnh/5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "292551"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZlqqgDOCe6Qp4D/Cp+4GLTB3i7+jMb36PbMDh0x/Gmc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 14:22:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i1vly690so"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZlqqgDOCe6Qp4D/Cp+4GLTB3i7+jMb36PbMDh0x/Gmc="
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.jpg",
+      "AssetFile": "HinhAnh/5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "292551"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZlqqgDOCe6Qp4D/Cp+4GLTB3i7+jMb36PbMDh0x/Gmc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 14:22:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZlqqgDOCe6Qp4D/Cp+4GLTB3i7+jMb36PbMDh0x/Gmc="
         }
       ]
     },

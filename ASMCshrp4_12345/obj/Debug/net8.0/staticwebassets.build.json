@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WNcwmEwZ4WKXhUy+QvaXSr7pHk++qu164H974TF9UvQ=",
+  "Hash": "nzyCUl0nB/sM/0MGGrH6WokocPdPZr4A6LXTlp71A4I=",
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -1319,6 +1319,27 @@
       "OriginalItemSpec": "wwwroot\\HinhAnh\\0faedf41-8d0b-4284-a44c-61e2ec7aac38_Screenshot 2024-11-24 220400.png"
     },
     {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "23q1viugo8",
+      "Integrity": "TiH7Ghc9zu4H1rA1O7QwtnAwCpys3TNrGiuIkXlaT5A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.jpg"
+    },
+    {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\1ff96f29-e2e4-4bc4-8c06-34aa52128d43_Screenshot 2024-11-24 231747.png",
       "SourceId": "ASMCshrp4_12345",
       "SourceType": "Discovered",
@@ -1443,6 +1464,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\HinhAnh\\514a5742-426c-433e-b148-b7e664389db5_Screenshot 2024-11-26 015748.png"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i1vly690so",
+      "Integrity": "ZlqqgDOCe6Qp4D/Cp+4GLTB3i7+jMb36PbMDh0x/Gmc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.jpg"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\68fc7824-fbeb-49eb-a9c2-3b1010606a2e_Screenshot 2024-11-26 015732.png",
@@ -20286,6 +20328,88 @@
       ]
     },
     {
+      "Route": "HinhAnh/1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.23q1viugo8.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "405968"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TiH7Ghc9zu4H1rA1O7QwtnAwCpys3TNrGiuIkXlaT5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 14:22:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "23q1viugo8"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TiH7Ghc9zu4H1rA1O7QwtnAwCpys3TNrGiuIkXlaT5A="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\1500c82d-1e90-4e5f-842f-9e5e6bc66b85_AnhsanphamTest.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "405968"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TiH7Ghc9zu4H1rA1O7QwtnAwCpys3TNrGiuIkXlaT5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 14:22:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TiH7Ghc9zu4H1rA1O7QwtnAwCpys3TNrGiuIkXlaT5A="
+        }
+      ]
+    },
+    {
       "Route": "HinhAnh/1ff96f29-e2e4-4bc4-8c06-34aa52128d43_Screenshot 2024-11-24 231747.png",
       "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\1ff96f29-e2e4-4bc4-8c06-34aa52128d43_Screenshot 2024-11-24 231747.png",
       "Selectors": [],
@@ -20774,6 +20898,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-yRAidOI8K6MSusz1hbatpN07R+qBJQpdRRC2yWaw8bc="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.i1vly690so.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "292551"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZlqqgDOCe6Qp4D/Cp+4GLTB3i7+jMb36PbMDh0x/Gmc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 14:22:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i1vly690so"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZlqqgDOCe6Qp4D/Cp+4GLTB3i7+jMb36PbMDh0x/Gmc="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\5248753c-dc6f-4e02-993e-4c7e49806e6a_Anhphu1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "292551"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZlqqgDOCe6Qp4D/Cp+4GLTB3i7+jMb36PbMDh0x/Gmc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 14:22:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZlqqgDOCe6Qp4D/Cp+4GLTB3i7+jMb36PbMDh0x/Gmc="
         }
       ]
     },
