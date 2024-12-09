@@ -513,6 +513,10 @@
       "PackagePath": "staticwebassets\\HinhAnh\\images (2).jfif"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\LayoutAdmin.html",
       "PackagePath": "staticwebassets\\LayoutAdmin.html"
     },
@@ -1003,6 +1007,10 @@
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\img\\carousel-3.jpg",
       "PackagePath": "staticwebassets\\img\\carousel-3.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\img\\carousel.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel.jpg"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\img\\cat-1.jpg",
@@ -2903,6 +2911,10 @@
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\style.css",
       "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "PackagePath": "staticwebassets\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ASMCshrp4_12345.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -44,12 +44,9 @@ namespace ASMCshrp4_12345.Controllers
                 //tìm kiếm
                 if (!string.IsNullOrEmpty(tim))
                 {
-                    csharp4Context = csharp4Context.Where(s => s.TenSp.Contains(tim) ||
-                                                          s.Chitietchatlieus.Any(c => c.MaChatLieuNavigation.TenChatLieu.Contains(tim)) ||
-                                                          s.Chitietkichthuocs.Any(k => k.MaKichThuocNavigation.TenKichThuoc.Contains(tim)) ||
-                                                          s.Chitietmausacs.Any(p => p.MaMauNavigation.TenMau.Contains(tim)) ||
-                                                          s.MaNhaCcNavigation.TenNhaCc.Contains(tim) ||
-                                                          s.MaThuongHieuNavigation.TenThuongHieu.Contains(tim));
+                    csharp4Context = csharp4Context.Where(s => s.TenSp.Contains(tim)
+                                                          || s.MaSp.Contains(tim)
+                                                          );
                 }
 
                 // lọc theo giá

@@ -19,9 +19,9 @@ namespace ASMCshrp4_12345.Controllers
         {
             _context = context;
         }
-        public IActionResult Index(int page, int pageSize,
-            string? sortOrder, string? priceRange, string? selectedBrand, string? selectedColor,
-            string? selectedSize, string? searchTerm)
+        public async Task<IActionResult> Index(int page, int pageSize,
+    string? sortOrder, string? priceRange, string? selectedBrand, string? selectedColor,
+    string? selectedSize, string? searchTerm)
         {
             ViewBag.keywords = searchTerm;
             ViewBag.sortOrder = sortOrder == "price_asc" ? "price_desc" : "price_asc";
@@ -30,6 +30,7 @@ namespace ASMCshrp4_12345.Controllers
             ViewBag.selectedSize = selectedSize ?? "all";
             page = page < 1 ? 1 : page;
             pageSize = 6;
+
             var sanPhamQuery = _context.Sanphams.Where(p => p.IsDelete == false && p.Chitietchatlieus.Any() && p.Chitietkichthuocs.Any() && p.Chitietmausacs.Any())
                 .Include(s => s.Hinhanhs)
                 .Include(s => s.Chitietkichthuocs)
@@ -40,10 +41,10 @@ namespace ASMCshrp4_12345.Controllers
                 .ThenInclude(s => s.MaChatLieuNavigation)
                 .Include(s => s.BinhLuans)
                 .Include(s => s.CtComBos)
-                    .ThenInclude(s => s.MaComBoNavigation)
-                    .ThenInclude(combo => combo.AnhComBos)
+                .ThenInclude(s => s.MaComBoNavigation)
+                .ThenInclude(combo => combo.AnhComBos)
                 .AsQueryable();
-            
+
             // Tìm kiếm theo tên sản phẩm
             if (!string.IsNullOrEmpty(searchTerm))
             {
@@ -56,16 +57,19 @@ namespace ASMCshrp4_12345.Controllers
             {
                 sanPhamQuery = sanPhamQuery.Where(sp => sp.MaThuongHieu == selectedBrand);
             }
-            //Lọc theo màu sắc
+
+            // Lọc theo màu sắc
             if (!string.IsNullOrEmpty(selectedColor) && !selectedColor.Contains("all"))
             {
                 sanPhamQuery = sanPhamQuery.Where(sp => sp.Chitietmausacs.Any(p => selectedColor.Contains(p.MaMau.ToString())));
             }
+
             // Lọc theo kích thước
             if (!string.IsNullOrEmpty(selectedSize) && !selectedSize.Contains("all"))
             {
                 sanPhamQuery = sanPhamQuery.Where(sp => sp.Chitietkichthuocs.Any(p => selectedSize.Contains(p.MaKichThuoc.ToString())));
             }
+
             // Lọc theo khoảng giá
             if (!string.IsNullOrEmpty(priceRange))
             {
@@ -87,7 +91,6 @@ namespace ASMCshrp4_12345.Controllers
                         sanPhamQuery = sanPhamQuery.Where(sp => sp.DonGiaBan >= 40000000 && sp.DonGiaBan <= 50000000);
                         break;
                     default:
-                        sanPhamQuery = sanPhamQuery;
                         break;
                 }
             }
@@ -105,21 +108,26 @@ namespace ASMCshrp4_12345.Controllers
                     sanPhamQuery = sanPhamQuery.OrderBy(sp => sp.MaSp);
                     break;
             }
-            foreach (var sanPham in sanPhamQuery)
+
+            var sanPhamList = await sanPhamQuery.ToListAsync();
+
+            // Tính điểm rating trung bình từ tất cả bình luận (nếu có)
+            foreach (var sanPham in sanPhamList)
             {
-                // Tính điểm rating trung bình từ tất cả bình luận (nếu có)
                 if (sanPham.BinhLuans.Any())
                 {
-                    sanPham.Rating = sanPham.BinhLuans.Average(bl => bl.Rating);  
+                    sanPham.Rating = sanPham.BinhLuans.Average(bl => bl.Rating);
                 }
                 else
                 {
-                    sanPham.Rating = 0;  
+                    sanPham.Rating = 0;
                 }
             }
-            var sanPhams = sanPhamQuery.ToPagedList(page, pageSize);
+
+            var sanPhams = sanPhamList.ToPagedList(page, pageSize);
             return View(sanPhams);
         }
+
 
         public async Task<IActionResult> Details(string? id)
         {
@@ -127,6 +135,7 @@ namespace ASMCshrp4_12345.Controllers
             {
                 return NotFound();
             }
+
             var sanPham = await _context.Sanphams
                 .Include(s => s.Hinhanhs)
                 .Include(s => s.Chitietkichthuocs)
@@ -140,7 +149,7 @@ namespace ASMCshrp4_12345.Controllers
                 .Include(m => m.BinhLuans)
                     .ThenInclude(s => s.TraLoiBinhLuans)
                     .ThenInclude(s => s.MaNVNavigation)
-                    .Include(s => s.CtComBos)
+                .Include(s => s.CtComBos)
                     .ThenInclude(s => s.MaComBoNavigation)
                     .ThenInclude(combo => combo.AnhComBos)
                 .FirstOrDefaultAsync(m => m.MaSp == id);
@@ -149,28 +158,35 @@ namespace ASMCshrp4_12345.Controllers
             {
                 return NotFound();
             }
-            //
+
+            // Tính điểm rating trung bình cho sản phẩm
             sanPham.Rating = sanPham.BinhLuans.Any() ? sanPham.BinhLuans.Average(p => p.Rating) : 0;
-            var sanPhamTuongTu = _context.Sanphams.Where(p => p.MaThuongHieu == sanPham.MaThuongHieu && p.MaSp != sanPham.MaSp && p.IsDelete == false  )
+
+            var sanPhamTuongTu = await _context.Sanphams
+                .Where(p => p.MaThuongHieu == sanPham.MaThuongHieu && p.MaSp != sanPham.MaSp && p.IsDelete == false)
                 .Include(s => s.Hinhanhs)
                 .Include(s => s.Chitietkichthuocs)
-                .ThenInclude(s => s.MaKichThuocNavigation)
+                    .ThenInclude(s => s.MaKichThuocNavigation)
                 .Include(s => s.Chitietmausacs)
-                .ThenInclude(s => s.MaMauNavigation)
+                    .ThenInclude(s => s.MaMauNavigation)
                 .Include(s => s.Chitietchatlieus)
-                .ThenInclude(s => s.MaChatLieuNavigation)
+                    .ThenInclude(s => s.MaChatLieuNavigation)
                 .Include(s => s.BinhLuans)
-                .ToList();
+                .ToListAsync();
+
             foreach (var sp in sanPhamTuongTu)
             {
                 sp.Rating = sp.BinhLuans.Any()
                     ? sp.BinhLuans.Average(bl => bl.Rating)
                     : 0;
             }
+
             ViewBag.SanPhamTuongTu = sanPhamTuongTu;
             var sanPhams = new List<Sanpham> { sanPham };
+
             return View(sanPhams);
         }
+
         [HttpPost]
         public IActionResult SendRating(string MaSP, string NoiDung, int rating)
         {
@@ -208,23 +224,29 @@ namespace ASMCshrp4_12345.Controllers
             {
                 return NotFound();
             }
+
             var combo = await _context.ComBos
-                    .Include(s => s.CtComBos)
-                        .ThenInclude(sp => sp.MaSpNavigation)
-                    .Include(combo => combo.AnhComBos)
+                .Include(s => s.CtComBos)
+                    .ThenInclude(sp => sp.MaSpNavigation)
+                .Include(combo => combo.AnhComBos)
                 .FirstOrDefaultAsync(m => m.MaComBo == idcombo);
 
             if (combo == null)
             {
                 return NotFound();
             }
-            var comBoTuongTu = _context.ComBos.Where(p => p.MaComBo == combo.MaComBo && p.MaComBo != combo.MaComBo)
-                    .Include(s => s.CtComBos)
-                    .Include(combo => combo.AnhComBos)
-                .ToList();
+
+            var comBoTuongTu = await _context.ComBos
+                .Where(p => p.MaComBo != combo.MaComBo)
+                .Include(s => s.CtComBos)
+                .Include(combo => combo.AnhComBos)
+                .ToListAsync();
+
             ViewBag.comBoTuongTu = comBoTuongTu;
+
             var combos = new List<ComBo> { combo };
             return View(combos);
         }
+
     }
 }

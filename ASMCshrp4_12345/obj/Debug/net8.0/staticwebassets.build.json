@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2n+Q8AOHz7A7iwwOZfyw0yMFWy140h5qJ0wOItgh6ZI=",
+  "Hash": "RSns8NpgbUqa/td8CQ8PWgBlrlwu3Ojo7xcx3KGMHnA=",
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -3944,6 +3944,27 @@
       "OriginalItemSpec": "wwwroot\\HinhAnh\\SanPham\\vn-11134201-7qukw-lescmnup06dz29.jfif"
     },
     {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/tui-xach-lv-louis-vuitton-onthego-mau-nau-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v2xnxszdgs",
+      "Integrity": "Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg"
+    },
+    {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images (1).jfif",
       "SourceId": "ASMCshrp4_12345",
       "SourceType": "Discovered",
@@ -5223,6 +5244,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\zxzxzxz..jpg"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\img\\carousel.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "img/carousel#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "soijzd6wzy",
+      "Integrity": "XJy2piHRTY4qflv9xC9Z1HwxyEXIO+RX040/A1gv+3M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\carousel.jpg"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\img\\carousel-1.jpg",
@@ -15282,6 +15324,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\style.css"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "tui-xach-lv-louis-vuitton-onthego-mau-nau-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v2xnxszdgs",
+      "Integrity": "Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg"
     }
   ],
   "Endpoints": [
@@ -15390,7 +15453,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 09 Dec 2024 14:27:09 GMT"
+          "Value": "Mon, 09 Dec 2024 15:28:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15435,7 +15498,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 09 Dec 2024 14:27:09 GMT"
+          "Value": "Mon, 09 Dec 2024 15:28:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15480,7 +15543,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 09 Dec 2024 14:27:09 GMT"
+          "Value": "Mon, 09 Dec 2024 15:28:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15517,7 +15580,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 09 Dec 2024 14:27:09 GMT"
+          "Value": "Mon, 09 Dec 2024 15:28:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30620,6 +30683,88 @@
       ]
     },
     {
+      "Route": "HinhAnh/tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:01:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/tui-xach-lv-louis-vuitton-onthego-mau-nau-1.v2xnxszdgs.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:01:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v2xnxszdgs"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA="
+        }
+      ]
+    },
+    {
       "Route": "images (1).8ypg53k2yz.jfif",
       "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images (1).jfif",
       "Selectors": [],
@@ -35618,6 +35763,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-sWBYFasbpRE0h8ys70XSBNYhyuq0DHIUJotFFCw6FzE="
+        }
+      ]
+    },
+    {
+      "Route": "img/carousel.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\img\\carousel.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "191575"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XJy2piHRTY4qflv9xC9Z1HwxyEXIO+RX040/A1gv+3M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 15:27:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XJy2piHRTY4qflv9xC9Z1HwxyEXIO+RX040/A1gv+3M="
+        }
+      ]
+    },
+    {
+      "Route": "img/carousel.soijzd6wzy.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\img\\carousel.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "191575"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XJy2piHRTY4qflv9xC9Z1HwxyEXIO+RX040/A1gv+3M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 15:27:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "soijzd6wzy"
+        },
+        {
+          "Name": "label",
+          "Value": "img/carousel.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XJy2piHRTY4qflv9xC9Z1HwxyEXIO+RX040/A1gv+3M="
         }
       ]
     },
@@ -74896,6 +75123,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-SQdJ1KL4A+0HAYGyFXynF+Qzhl5/mCFDuxRF1Py3T4s="
+        }
+      ]
+    },
+    {
+      "Route": "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:01:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA="
+        }
+      ]
+    },
+    {
+      "Route": "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.v2xnxszdgs.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 15:01:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v2xnxszdgs"
+        },
+        {
+          "Name": "label",
+          "Value": "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nygx52TD+ZRrwW+zOyEddXMwReYQJZWf9xj3dkQiIcA="
         }
       ]
     }

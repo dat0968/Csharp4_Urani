@@ -120,10 +120,10 @@ public partial class Csharp4Context : DbContext
         );
 
         modelBuilder.Entity<Sanpham>().HasData(
-            new Sanpham { MaSp = "SP001", TenSp = "Túi Xách Gucci", SoLuongBan = 50, DonGiaBan = 15000000, MaThuongHieu = "TH001", Hinh = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg", MoTa = "Túi xách cao cấp thương hiệu Gucci.", NgaySanXuat = new DateOnly(2023, 1, 1), MaNhaCc = "NCC01", IsDelete = false },
-            new Sanpham { MaSp = "SP002", TenSp = "Túi Xách Louis Vuitton", SoLuongBan = 30, DonGiaBan = 20000000, MaThuongHieu = "TH002", Hinh = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg", MoTa = "Túi xách sang trọng của Louis Vuitton.", NgaySanXuat = new DateOnly(2023, 1, 5), MaNhaCc = "NCC02", IsDelete = false },
-            new Sanpham { MaSp = "SP003", TenSp = "Túi Xách Chanel", SoLuongBan = 25, DonGiaBan = 18000000, MaThuongHieu = "TH003", Hinh = "images.jfif", MoTa = "Túi xách đẹp và quý phái của Chanel.", NgaySanXuat = new DateOnly(2023, 1, 10), MaNhaCc = "NCC01", IsDelete = false },
-            new Sanpham { MaSp = "SP004", TenSp = "Túi Xách Prada", SoLuongBan = 40, DonGiaBan = 17000000, MaThuongHieu = "TH004", Hinh = "tui-xach-prada-chinh-hang-10.jpg", MoTa = "Túi xách thời trang của Prada.", NgaySanXuat = new DateOnly(2023, 1, 15), MaNhaCc = "NCC03", IsDelete = false },
+            new Sanpham { MaSp = "SP001", TenSp = "Túi Xách Gucci", SoLuongBan = 50, DonGiaBan = 150000, MaThuongHieu = "TH001", Hinh = "anh-mat-truoc-tui-gucci-marmont-sieu-cap-chup-gan.jpg", MoTa = "Túi xách cao cấp thương hiệu Gucci.", NgaySanXuat = new DateOnly(2023, 1, 1), MaNhaCc = "NCC01", IsDelete = false },
+            new Sanpham { MaSp = "SP002", TenSp = "Túi Xách Louis Vuitton", SoLuongBan = 30, DonGiaBan = 200000, MaThuongHieu = "TH002", Hinh = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg", MoTa = "Túi xách sang trọng của Louis Vuitton.", NgaySanXuat = new DateOnly(2023, 1, 5), MaNhaCc = "NCC02", IsDelete = false },
+            new Sanpham { MaSp = "SP003", TenSp = "Túi Xách Chanel", SoLuongBan = 25, DonGiaBan = 6000000, MaThuongHieu = "TH003", Hinh = "images.jfif", MoTa = "Túi xách đẹp và quý phái của Chanel.", NgaySanXuat = new DateOnly(2023, 1, 10), MaNhaCc = "NCC01", IsDelete = false },
+            new Sanpham { MaSp = "SP004", TenSp = "Túi Xách Prada", SoLuongBan = 40, DonGiaBan = 700000, MaThuongHieu = "TH004", Hinh = "tui-xach-prada-chinh-hang-10.jpg", MoTa = "Túi xách thời trang của Prada.", NgaySanXuat = new DateOnly(2023, 1, 15), MaNhaCc = "NCC03", IsDelete = false },
             new Sanpham { MaSp = "SP005", TenSp = "Túi Xách Michael Kors", SoLuongBan = 60, DonGiaBan = 12000000, MaThuongHieu = "TH005", Hinh = "tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-vanilla-satchel-crossbody-bag.jpg", MoTa = "Túi xách phong cách và tiện lợi của Michael Kors.", NgaySanXuat = new DateOnly(2023, 2, 1), MaNhaCc = "NCC02", IsDelete = false },
             new Sanpham { MaSp = "SP006", TenSp = "Túi Xách Hermès", SoLuongBan = 20, DonGiaBan = 30000000, MaThuongHieu = "TH006", Hinh = "images (1).jfif", MoTa = "Túi xách xa xỉ thương hiệu Hermès.", NgaySanXuat = new DateOnly(2023, 2, 5), MaNhaCc = "NCC01", IsDelete = false },
             new Sanpham { MaSp = "SP007", TenSp = "Túi Xách Coach", SoLuongBan = 45, DonGiaBan = 9500000, MaThuongHieu = "TH007", Hinh = "images (2).jfif", MoTa = "Túi xách tiện dụng của Coach.", NgaySanXuat = new DateOnly(2023, 2, 10), MaNhaCc = "NCC03", IsDelete = false },
@@ -318,14 +318,14 @@ public partial class Csharp4Context : DbContext
                 DiaChiNhanHang = "789 Đường C, Quận 3",
                 NgayTao = DateOnly.FromDateTime(DateTime.Now),
                 Httt = "COD",
-                TinhTrang = "Đã thanh toán",
+                TinhTrang = "Đã xác nhận",
                 MaNv = "NV003",
                 MaKh = "KH003",
                 MoTa = "Hóa đơn thứ ba",
                 Hoten = "Nguyễn Thị C",
                 Sdt = "0912345678",
                 ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(1)),
+                ThoiGianGiao = null,
             
             },
             new Hoadon
@@ -334,14 +334,14 @@ public partial class Csharp4Context : DbContext
                 DiaChiNhanHang = "321 Đường D, Quận 4",
                 NgayTao = DateOnly.FromDateTime(DateTime.Now),
                 Httt = "COD",
-                TinhTrang = "Đã thanh toán",
+                TinhTrang = "Đã xác nhận",
                 MaNv = "NV001",
                 MaKh = "KH004",
                 MoTa = "Hóa đơn thứ tư",
                 Hoten = "Lê Văn D",
                 Sdt = "0123456789",
                 ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(5)),
+                ThoiGianGiao = null,
           
             },
             new Hoadon
@@ -350,14 +350,14 @@ public partial class Csharp4Context : DbContext
                 DiaChiNhanHang = "654 Đường E, Quận 5",
                 NgayTao = DateOnly.FromDateTime(DateTime.Now),
                 Httt = "COD",
-                TinhTrang = "Đã thanh toán",
+                TinhTrang = "Đang giao hàng",
                 MaNv = "NV002",
                 MaKh = "KH005",
                 MoTa = "Hóa đơn thứ năm",
                 Hoten = "Nguyễn Văn E",
                 Sdt = "0987654321",
                 ThoiGianDat = DateOnly.FromDateTime(DateTime.Now),
-                ThoiGianGiao = DateOnly.FromDateTime(DateTime.Now.AddDays(2)),
+                ThoiGianGiao = null,
             
             },
             new Hoadon
@@ -366,7 +366,7 @@ public partial class Csharp4Context : DbContext
                 DiaChiNhanHang = "987 Đường F, Quận 6",
                 NgayTao = DateOnly.FromDateTime(DateTime.Now),
                 Httt = "COD",
-                TinhTrang = "Đã thanh toán",
+                TinhTrang = "Đã giao",
                 MaNv = "NV003",
                 MaKh = "KH006",
                 MoTa = "Hóa đơn thứ sáu",
@@ -398,7 +398,7 @@ public partial class Csharp4Context : DbContext
                 DiaChiNhanHang = "753 Đường H, Quận 8",
                 NgayTao = DateOnly.FromDateTime(DateTime.Now),
                 Httt = "COD",
-                TinhTrang = "Đã thanh toán",
+                TinhTrang = "Đã giao",
                 MaNv = "NV002",
                 MaKh = "KH008",
                 MoTa = "Hóa đơn thứ tám",
@@ -1024,29 +1024,52 @@ public partial class Csharp4Context : DbContext
           new ComBo
           {
               MaComBo = 1,
-              TenComBo = "Combo test",
-              SoLuong = 2,
+              TenComBo = "Combo mùa xuân",
+              SoLuong = 5,
               DonGia = 1000000
+          },
+          new ComBo
+          {
+              MaComBo = 2,
+              TenComBo = "Combo mùa đông",
+              SoLuong = 5,
+              DonGia = 1100000
+          },
+          new ComBo
+          {
+              MaComBo = 3,
+              TenComBo = "Combo mùa hè",
+              SoLuong = 5,
+              DonGia = 1200000
+          },
+          new ComBo
+          {
+              MaComBo = 4,
+              TenComBo = "Combo mùa thu",
+              SoLuong = 5,
+              DonGia = 1300000
           }
         );
         modelBuilder.Entity<CtComBo>().HasData(
-            new CtComBo
-            {
-                MaCtComBo = 1,
-                MaComBo = 1,
-                MaSp = "SP001",
-                SoLuong = 1,
-                DonGia = 600000
-            },
-            new CtComBo
-            {
-                MaCtComBo = 2,
-                MaComBo = 1,
-                MaSp = "SP002",
-                SoLuong = 1,
-                DonGia = 600000
-            }
+            new CtComBo { MaCtComBo = 3, MaComBo = 1, MaSp = "SP003", TenMau="Đỏ", TenKichThuoc= "20 x 15 x 10", TenChatLieu= "Da Thật", SoLuong = 1, DonGia = 700000 },
+            new CtComBo { MaCtComBo = 4, MaComBo = 1, MaSp = "SP004", TenMau = "Xanh", TenKichThuoc = "30 x 25 x 15", TenChatLieu = "Vải", SoLuong = 1, DonGia = 800000 },
+
+            new CtComBo { MaCtComBo = 5, MaComBo = 2, MaSp = "SP005", TenMau = "Xanh", TenKichThuoc = "30 x 25 x 15", TenChatLieu = "Da Thật", SoLuong = 1, DonGia = 900000 },
+            new CtComBo { MaCtComBo = 6, MaComBo = 2, MaSp = "SP006", TenMau = "Vàng", TenKichThuoc = "40 x 30 x 20", TenChatLieu = "Nhựa", SoLuong = 1, DonGia = 1000000 },
+
+            new CtComBo { MaCtComBo = 7, MaComBo = 3, MaSp = "SP007", TenMau = "Vàng", TenKichThuoc = "20 x 15 x 10", TenChatLieu = "Nhựa", SoLuong = 1, DonGia = 850000 },
+            new CtComBo { MaCtComBo = 8, MaComBo = 3, MaSp = "SP008", TenMau = "Trắng", TenKichThuoc = "40 x 30 x 20", TenChatLieu = "Vải", SoLuong = 1, DonGia = 950000 },
+
+            new CtComBo { MaCtComBo = 9, MaComBo = 4, MaSp = "SP009", TenMau = "Trắng", TenKichThuoc = "30 x 25 x 15", TenChatLieu = "Nhựa", SoLuong = 1, DonGia = 650000 },
+            new CtComBo { MaCtComBo = 10, MaComBo = 4, MaSp = "SP010", TenMau = "Đen", TenKichThuoc = "20 x 15 x 10", TenChatLieu = "Da Thật", SoLuong = 1, DonGia = 750000 }
         );
+        modelBuilder.Entity<AnhComBo>().HasData(
+            new AnhComBo { IdAnh = 1, MaComBo = 1, HinhAnh = "tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg" },
+            new AnhComBo { IdAnh = 2, MaComBo = 2, HinhAnh = "f6a59412f7418faedec46a76c2398b3f-1.jpg" },
+            new AnhComBo { IdAnh = 3, MaComBo = 3, HinhAnh = "8f2cb326-c5a4-4301-9ba9-9be82eacfb1b_tui-xach-balenciaga-10-400x400.jpg" },
+            new AnhComBo { IdAnh = 4, MaComBo = 4, HinhAnh = "images (2).jfif" }
+        );
+
 
         base.OnModelCreating(modelBuilder);
     }

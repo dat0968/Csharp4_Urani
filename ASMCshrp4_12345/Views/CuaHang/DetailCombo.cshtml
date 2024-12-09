@@ -109,19 +109,25 @@
                                             <td>@item.TenKichThuoc</td>
                                             <td>@item.TenChatLieu</td>
                                             <td>@item.SoLuong</td>
-                                            <td>@item.DonGia</td>
+                                            <td>@item.DonGia.ToString("#,##0") đ</td>
                                         </tr>
                                     }
                                 </tbody>
                             </table>
                         </div>
                         <div class="mt-3">
-                            <strong class="text-dark">Giá: @combo.DonGia.ToString("#,##0") đ</strong>
+                            <strong class="text-dark">
+                                Giá:
+                                <span class="text-danger" style="font-size: 1.2em; font-weight: bold;">
+                                    @combo.DonGia.ToString("#,##0") đ
+                                </span>
+                                <del class="text-muted" style="margin-left: 10px; font-size: 1em;">
+                                    @combo.CtComBos.Sum(item => item.DonGia * item.SoLuong).ToString("#,##0") đ
+                                </del>
+                            </strong>
                         </div>
+
                         <br />
-                       
-
-
                         <!--Nút tăng giảm số lượng-->
                         <div class="d-flex align-items-center mb-4">
                             <div class="input-group" style="width: 120px;">
@@ -196,6 +202,9 @@
 
         if (currentQuantity < maxQuantity) {
             quantityInput.value = currentQuantity + 1;
+        }
+        else {
+            alert(`Số lượng còn lại trong kho là: ${maxQuantity}`);
         }
     }
 

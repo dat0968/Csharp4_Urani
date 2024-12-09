@@ -21,7 +21,7 @@
                         <div class="d-flex align-items-center justify-content-center mt-2">
                             <h5>@item.DonGia.ToString("#,##0") đ</h5> <h6 class="text-muted ml-2">
                                 <del>
-                                    @(item.CtComBos?.Sum(item => item.MaSpNavigation.DonGiaBan * item.MaSpNavigation.SoLuongBan)) đ
+                                    @(item.CtComBos?.Sum(item => item.DonGia * item.SoLuong)) đ
                                 </del>
                             </h6>
                         </div>

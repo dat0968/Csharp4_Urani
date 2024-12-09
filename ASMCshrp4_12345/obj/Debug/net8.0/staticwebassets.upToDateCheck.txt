@@ -183,6 +183,7 @@ wwwroot\HinhAnh\SanPham\tui-xach-michael-kors-deo-cheo-dao-pho-nu-camille-small-
 wwwroot\HinhAnh\SanPham\tui-xach-prada-chinh-hang-10.jpg
 wwwroot\HinhAnh\SanPham\VjsIcBcEnNVuuuwnSOXWtIJdSpRWT28kbwxb3uCJ.jpg
 wwwroot\HinhAnh\SanPham\vn-11134201-7qukw-lescmnup06dz29.jfif
+wwwroot\HinhAnh\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg
 wwwroot\images (1).jfif
 wwwroot\images (2).jfif
 wwwroot\images\151b147a-9fca-4b85-a370-6e5c0e738633.jpg
@@ -244,6 +245,7 @@ wwwroot\images\logo\logo_icon.png
 wwwroot\images\pngtree-woman-is-wearing-red-dress-and-holding-a-handbag-picture-image_2479612.jpg
 wwwroot\images\tui-xach-nu-dep-sang-trong-1-1677689659.jpg
 wwwroot\images\zxzxzxz..jpg
+wwwroot\img\carousel.jpg
 wwwroot\img\carousel-1.jpg
 wwwroot\img\carousel-2.jpg
 wwwroot\img\carousel-3.jpg
@@ -723,3 +725,4 @@ wwwroot\scss\bootstrap\scss\vendor\_rfs.scss
 wwwroot\scss\style.scss
 wwwroot\shop.html
 wwwroot\style.css
+wwwroot\tui-xach-lv-louis-vuitton-onthego-mau-nau-1.jpg

@@ -23,9 +23,9 @@ namespace ASMCshrp4_12345.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            if(User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+            if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
             {
                 return RedirectToAction("Index", "ThongKe");
             }
@@ -33,29 +33,28 @@ namespace ASMCshrp4_12345.Controllers
             {
                 return RedirectToAction("Index", "Hoadons");
             }
-            var sanPhamNoiBat = from cthd in _context.Chitiethoadons
-                                join sp in _context.Sanphams on cthd.MaSp equals sp.MaSp
-                                where sp.IsDelete == false
-                                join dg in _context.Binhluans on sp.MaSp equals dg.MaSP into reviews
-                                group cthd by new { sp.TenSp, sp.MaSp, sp.DonGiaBan, sp.Hinh } into productGroup
-                                orderby productGroup.Sum(cthd => cthd.SoLuongMua) descending
-                                
-                                select new SanPhamNoiBat
-                                {
-                                    MaSp = productGroup.Key.MaSp,
-                                    TenSp = productGroup.Key.TenSp,
-                                    GiaBan = (double)productGroup.Key.DonGiaBan,
-                                    TongSoLuongMua = productGroup.Sum(pod => pod.SoLuongMua),
-                                    Hinh = productGroup.Key.Hinh,
-                                    sosaotrungbinh = productGroup.SelectMany(p => p.MaSpNavigation.BinhLuans).Any()
-                                    ? productGroup.SelectMany(p => p.MaSpNavigation.BinhLuans).Average(r => r.Rating): 0,
-                                    socomment = productGroup.SelectMany(p => p.MaSpNavigation.BinhLuans).Count()
-                                };
-                                
+
+            var sanPhamNoiBat = await (from cthd in _context.Chitiethoadons
+                                       join sp in _context.Sanphams on cthd.MaSp equals sp.MaSp
+                                       where sp.IsDelete == false
+                                       join dg in _context.Binhluans on sp.MaSp equals dg.MaSP into reviews
+                                       group cthd by new { sp.TenSp, sp.MaSp, sp.DonGiaBan, sp.Hinh } into productGroup
+                                       orderby productGroup.Sum(cthd => cthd.SoLuongMua) descending
+                                       select new SanPhamNoiBat
+                                       {
+                                           MaSp = productGroup.Key.MaSp,
+                                           TenSp = productGroup.Key.TenSp,
+                                           GiaBan = (double)productGroup.Key.DonGiaBan,
+                                           TongSoLuongMua = productGroup.Sum(pod => pod.SoLuongMua),
+                                           Hinh = productGroup.Key.Hinh,
+                                           sosaotrungbinh = productGroup.SelectMany(p => p.MaSpNavigation.BinhLuans).Any()
+                                            ? productGroup.SelectMany(p => p.MaSpNavigation.BinhLuans).Average(r => r.Rating) : 0,
+                                           socomment = productGroup.SelectMany(p => p.MaSpNavigation.BinhLuans).Count()
+                                       }).ToListAsync();
+
             return View(sanPhamNoiBat);
-
-
         }
+
 
         public IActionResult Privacy()
         {

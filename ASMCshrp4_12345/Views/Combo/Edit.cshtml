@@ -158,7 +158,7 @@
                     <td>
                         <input type="number" class="form-control" data-masp="@sp.MaSp" value="@sp.SoLuong" min="1" onchange="updateProductQuantity(this)" />
                     </td>
-                    <td>@(sp.GiaBan * sp.SoLuong).ToString("N0") VND</td>
+                    <td>@(sp.GiaBan * sp.SoLuong).ToString("N0") VND</td>   
                     <td>
                         <button type="button" class="btn btn-danger" onclick="removeProduct('@sp.MaSp')">Xóa</button>
                     </td>

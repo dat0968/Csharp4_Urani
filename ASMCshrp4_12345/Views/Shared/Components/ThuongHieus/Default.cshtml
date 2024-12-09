@@ -1,0 +1,7 @@
+﻿@model IEnumerable<ASMCshrp4_12345.Models.Thuonghieu>
+<div class="navbar-nav w-100">
+    @foreach(var thuonghieu in Model)
+    {
+        <a asp-action="Index" asp-controller="CuaHang" asp-route-selectedBrand="@thuonghieu.MaThuongHieu" class="nav-item nav-link">@thuonghieu.TenThuongHieu</a>
+    }
+</div>
