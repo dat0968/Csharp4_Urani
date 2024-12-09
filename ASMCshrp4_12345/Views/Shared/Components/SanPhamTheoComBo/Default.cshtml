@@ -9,7 +9,7 @@
                     <div class="product-img position-relative overflow-hidden">
                         <img style="width: 100px; height: 250px; border-radius: 10px; object-fit:cover" class="img-fluid w-100" src="~/HinhAnh/@item.AnhComBos?.FirstOrDefault()?.HinhAnh" alt="">
                         <div class="product-action">
-                            <a asp-action="Details" asp-controller="CuaHang" asp-route-id="@item.MaComBo" class="btn btn-outline-dark btn-square">Xem Thêm</a>
+                            <a asp-action="DetailCombo" asp-controller="CuaHang" asp-route-idcombo="@item.MaComBo" class="btn btn-outline-dark btn-square">Xem Thêm</a>
                             @* <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                         <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
                         <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
