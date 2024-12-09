@@ -47,7 +47,9 @@
                         <td>@donHang.DiaChiNhanHang</td>
                         <td>@donHang.NgayTao.ToString("dd/MM/yyyy")</td>
                         <td><button class="btn btn-primary xemChiTietDonHang" data-mahoadon="@donHang.MaHoaDon">Chi tiết đơn hàng</button></td>
-                        <td><button class="btn btn-primary ">Hủy đơn</button></td>
+                        <td>
+                            <a asp-action="HuyDon" asp-controller="HuyDon_HoanTien" asp-route-id="@donHang.MaHoaDon" class="btn btn-primary ">Hủy đơn</a>
+                        </td>
                     </tr>
                 }
             </tbody>
@@ -147,7 +149,11 @@
                         <td>@donHang.DiaChiNhanHang</td>
                         <td>@donHang.NgayTao.ToString("dd/MM/yyyy")</td>
                         <td><button class="btn btn-primary xemChiTietDonHang" data-mahoadon="@donHang.MaHoaDon">Chi tiết đơn hàng</button></td>
-                        <td><button class="btn btn-primary">Hoàn tiền</button></td>
+                        @if (DateTime.Now - (donHang.ThoiGianGiao.ToDateTime(new TimeOnly(0, 0))) < TimeSpan.FromDays(3))
+                        {
+                            <td><a asp-action="HoanTien" asp-controller="HuyDon_HoanTien" asp-route-id="@donHang.MaHoaDon" class="btn btn-primary">Hoàn tiền</a></td>
+                        }
+                        
                     </tr>
                 }
             </tbody>

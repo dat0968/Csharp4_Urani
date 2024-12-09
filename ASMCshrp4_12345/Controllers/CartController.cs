@@ -49,9 +49,7 @@ namespace ASMCshrp4_12345.Controllers
                     {
                         TempData["Message"] = $"Không tìm thấy combo có mã {id}";
                         return Redirect("/404");
-                    }
-                    
-
+                    }                  
                     else
                     {
                         item = new CartViewModel
@@ -530,7 +528,7 @@ namespace ASMCshrp4_12345.Controllers
                 DonHangsDaHuy = donHangsDaHuy,
                 DonHangsHoanTien = donHangsHoanTien
             };
-
+            
             return View(model);
 
         }

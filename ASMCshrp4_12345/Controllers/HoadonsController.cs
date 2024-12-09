@@ -210,7 +210,18 @@ namespace ASMCshrp4_12345.Controllers
             ViewData["MaNv"] = new SelectList(_context.Nhanviens, "MaNv", "MaNv", hoadon.MaNv);
             return View(hoadon);
         }
-
+        public IActionResult HuyDon(string id)
+        {
+            var findOrder = _context.Hoadons.Find(id);
+            if(findOrder != null)
+            {
+                findOrder.TinhTrang = "Đã hủy";
+                _context.Update(findOrder);
+                _context.SaveChanges();
+                TempData["SuccessMessage"] = "Hủy đơn hàng thành công";
+            }
+            return RedirectToAction("ThongTinDonHang", "Cart");
+        }
         public IActionResult ExportToExcel()
         {
             var hoadons = _context.Hoadons.ToList();
