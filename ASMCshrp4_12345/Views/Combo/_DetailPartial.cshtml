@@ -12,7 +12,7 @@
     </tr>
     <tr>
         <th>Đơn Giá:</th>
-        <td>@Model.DonGia.ToString("C")</td>
+        <td>@Model.DonGia.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</td>
     </tr>
     <tr>
         <th>Mô tả:</th>
@@ -66,7 +66,7 @@ else
                
                 <td>@sp.TenSp</td>
                 <td>@sp.SoLuong</td>
-                <td>@sp.GiaBan.ToString("C")</td>
+                <td>@sp.GiaBan.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</td>
                 <td>@sp.TenMau</td> 
                 <td>@sp.TenKichThuoc</td> 
                 <td>@sp.TenChatLieu</td> 

@@ -1,26 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\CSHARP_4\\ASMCshrp4_12345\\",
+  "WorkspaceRootPath": "D:\\FPT\\C#4\\ASM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\controllers\\huydon_hoantiencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\huydon_hoantiencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\thongke\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\thongke\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\hoadons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\hoadons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\sanphams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\sanphams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\cart\\thongtindonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\combo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\combo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\combo\\_detailpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\combo\\_detailpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\cart\\thongtindonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\cart\\thongtindonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\controllers\\hoadonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\hoadonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\cart\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\cart\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asm\\asmcshrp4_12345\\views\\hoadons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\hoadons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +50,119 @@
       "DocumentGroups": [
         {
           "DockedWidth": 320,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\ThongKe\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\ThongKe\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\ThongKe\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\ThongKe\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAD8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:34:54.594Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Sanphams\\Details.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwFwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:32:57.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Sanphams\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Sanphams\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Sanphams\\Index.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwE8AAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:31:36.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_DetailPartial.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Combo\\_DetailPartial.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Combo\\_DetailPartial.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Combo\\_DetailPartial.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Combo\\_DetailPartial.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAEQAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:25:40.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Combo\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Combo\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Combo\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Combo\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:10:21.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAC0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:04:56.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChiTietDonHang.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Cart\\ChiTietDonHang.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Cart\\ChiTietDonHang.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Cart\\ChiTietDonHang.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Cart\\ChiTietDonHang.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:03:02.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\appsettings.json",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\appsettings.json",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\appsettings.json",
+              "RelativeToolTip": "ASMCshrp4_12345\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-09T09:41:16.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Hoadons\\Edit.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Hoadons\\Edit.cshtml",
               "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Hoadons\\Edit.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Hoadons\\Edit.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Hoadons\\Edit.cshtml",
               "RelativeToolTip": "ASMCshrp4_12345\\Views\\Hoadons\\Edit.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -51,60 +171,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ThongTinDonHang.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Cart\\ThongTinDonHang.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Cart\\ThongTinDonHang.cshtml",
               "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Cart\\ThongTinDonHang.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Cart\\ThongTinDonHang.cshtml*",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Cart\\ThongTinDonHang.cshtml*",
-              "ViewState": "AgIAAIkAAAAAAAAAAIAwwJkAAAB5AAAAAAAAAA==",
+              "ToolTip": "D:\\FPT\\C#4\\ASM\\ASMCshrp4_12345\\Views\\Cart\\ThongTinDonHang.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Cart\\ThongTinDonHang.cshtml",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAAALsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-09T05:15:21.524Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 391,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HuyDon_HoanTienController.cs",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\HuyDon_HoanTienController.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\HuyDon_HoanTienController.cs",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\HuyDon_HoanTienController.cs*",
-              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\HuyDon_HoanTienController.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAswB4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T05:40:07.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HoadonsController.cs",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\HoadonsController.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\HoadonsController.cs",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\HoadonsController.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\HoadonsController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T05:20:42.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\CartController.cs",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\CartController.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAPEBAAAAAAAAAAAuwPMBAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T05:15:40.861Z",
               "EditorCaption": ""
             }
           ]
