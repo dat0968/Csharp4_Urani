@@ -105,6 +105,10 @@
       "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\27478286-596f-4a87-8072-f6e8269b4ae6.jpg"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\3df48b3e-638c-4e6c-a9e9-99eda305b669.jpg",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\3df48b3e-638c-4e6c-a9e9-99eda305b669.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\40bd6b51-573e-472d-a282-0a9af722cb5e.jpg",
       "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\40bd6b51-573e-472d-a282-0a9af722cb5e.jpg"
     },
@@ -155,6 +159,10 @@
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\b84f5049-a5c5-46bd-b96c-b70d338d09c4.jpg",
       "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\b84f5049-a5c5-46bd-b96c-b70d338d09c4.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\cbfb7a87-7da7-4e73-8336-e0314d4c480f.png",
+      "PackagePath": "staticwebassets\\HinhAnh\\KhachHang\\cbfb7a87-7da7-4e73-8336-e0314d4c480f.png"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\dc1a5ec3-6da1-4a23-96e6-990096665a11.jpg",
@@ -637,6 +645,10 @@
       "PackagePath": "staticwebassets\\css\\style.min.css"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\css\\style_LRF.css",
+      "PackagePath": "staticwebassets\\css\\style_LRF.css"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\detail.html",
       "PackagePath": "staticwebassets\\detail.html"
     },
@@ -805,6 +817,10 @@
       "PackagePath": "staticwebassets\\images\\f5a17d53-f3aa-4486-ac21-d28cb63b0cd1.jpg"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\istockphoto-1096439462-1024x1024.jpg",
+      "PackagePath": "staticwebassets\\images\\istockphoto-1096439462-1024x1024.jpg"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\landing_page\\stack-of-three-black-hot-stones-spa-salon-vector-16122479.jpg",
       "PackagePath": "staticwebassets\\images\\landing_page\\stack-of-three-black-hot-stones-spa-salon-vector-16122479.jpg"
     },
@@ -947,6 +963,14 @@
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\logo\\logo_icon.png",
       "PackagePath": "staticwebassets\\images\\logo\\logo_icon.png"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\pngtree-woman-is-wearing-red-dress-and-holding-a-handbag-picture-image_2479612.jpg",
+      "PackagePath": "staticwebassets\\images\\pngtree-woman-is-wearing-red-dress-and-holding-a-handbag-picture-image_2479612.jpg"
+    },
+    {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\tui-xach-nu-dep-sang-trong-1-1677689659.jpg",
+      "PackagePath": "staticwebassets\\images\\tui-xach-nu-dep-sang-trong-1-1677689659.jpg"
     },
     {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\zxzxzxz..jpg",

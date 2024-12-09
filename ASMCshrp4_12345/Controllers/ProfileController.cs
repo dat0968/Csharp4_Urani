@@ -55,8 +55,48 @@ namespace ASMCshrp4_12345.Controllers
                 }
             }
 
+            if (!string.IsNullOrEmpty(updatedKhachhang.Cccd) && !System.Text.RegularExpressions.Regex.IsMatch(updatedKhachhang.Cccd, @"^\d{9,12}$"))
+            {
+                TempData["ErrorMessage"] = "CCCD phải là chuỗi số, tối đa 12 chữ số.";
+                return View(updatedKhachhang);
+            }
 
-   
+            if (!string.IsNullOrEmpty(updatedKhachhang.Sdt) && !System.Text.RegularExpressions.Regex.IsMatch(updatedKhachhang.Sdt, @"^\d{10,11}$"))
+            {
+                TempData["ErrorMessage"] = "Số điện thoại phải là chuỗi số, tối đa 10 chữ số";
+                return View(updatedKhachhang);
+            }
+
+            if (!string.IsNullOrEmpty(updatedKhachhang.Email) && !System.Text.RegularExpressions.Regex.IsMatch(updatedKhachhang.Email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                TempData["ErrorMessage"] = "Email không hợp lệ.";
+                return View(updatedKhachhang);
+            }
+
+            if (dob.HasValue && dob.Value > today)
+            {
+                TempData["ErrorMessage"] = "Ngày sinh không thể là ngày trong tương lai.";
+                return View(updatedKhachhang);
+            }
+
+            if (Avatar != null && Avatar.Length > 0)
+            {
+  
+                var validFileTypes = new[] { "image/jpeg", "image/png" };
+                if (!validFileTypes.Contains(Avatar.ContentType))
+                {
+                    TempData["ErrorMessage"] = "Chỉ cho phép tệp ảnh JPG hoặc PNG.";
+                    return View(updatedKhachhang);
+                }
+
+              
+                if (Avatar.Length > 5 * 1024 * 1024)
+                {
+                    TempData["ErrorMessage"] = "Tệp ảnh không được lớn hơn 5MB.";
+                    return View(updatedKhachhang);
+                }
+            }
+
             var khachhang = _context.Khachhangs.FirstOrDefault(kh => kh.MaKh == updatedKhachhang.MaKh);
       
             if (khachhang.MaKh != null)

@@ -15,7 +15,7 @@
     <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
 }
 
-@using (Html.BeginForm("Editprofile", "Profile", FormMethod.Post, new { enctype = "multipart/form-data" }))
+@using (Html.BeginForm("Editprofile", "Profile", FormMethod.Post, new { enctype = "multipart/form-data", id = "editProfileForm" }))
 {
     @Html.AntiForgeryToken()
 
@@ -99,6 +99,24 @@
 }
 
 <script>
+
+    function validateInput(inputId) {
+        var input = document.getElementById(inputId);
+        var value = input.value;
+
+        // Kiểm tra nếu giá trị chứa ký tự đặc biệt hoặc số âm
+        if (/[^0-9]/.test(value)) {
+            alert('Chỉ cho phép nhập số không có ký tự đặc biệt.');
+            input.focus();
+            return false;
+        }
+        if (parseInt(value) < 0) {
+            alert('Số điện thoại hoặc CCCD không thể là số âm.');
+            input.focus();
+            return false;
+        }
+        
+
     document.getElementById("editProfileForm").onsubmit = function (event) {
         var ngaySinh = document.getElementById("NgaySinh").value;
         var dob = new Date(ngaySinh);
@@ -115,6 +133,17 @@
             return false;
         }
     };
+
+
+    document.getElementById("editProfileForm").onsubmit = function (event) {
+        var sdtValid = validateInput('Sdt');
+        var cccdValid = validateInput('Cccd');
+        var ageValid = checkAge();
+
+        if (!sdtValid || !cccdValid || !ageValid) {
+            event.preventDefault(); // Ngừng submit nếu không hợp lệ
+        }
+    }
 
 </script>
 

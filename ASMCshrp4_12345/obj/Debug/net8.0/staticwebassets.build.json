@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "a7OONp7IxdSUn/KxwzglvxtslJZt6gZAM2lSlFhxhFo=",
+  "Hash": "WNcwmEwZ4WKXhUy+QvaXSr7pHk++qu164H974TF9UvQ=",
   "Source": "ASMCshrp4_12345",
   "BasePath": "_content/ASMCshrp4_12345",
   "Mode": "Default",
@@ -661,8 +661,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kxhixgv9za",
-      "Integrity": "SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps=",
+      "Fingerprint": "ssaubghp0l",
+      "Integrity": "LA0Sf7Ani2I33FCBKozwDfE1eeWPwLBam51hR4GWeL0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Login.css"
@@ -813,6 +813,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.min.css"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\css\\style_LRF.css",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "css/style_LRF#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gjlduf2nod",
+      "Integrity": "TAi8gedRXI0qrjQdSh6kHebJMKIukskhWiiva4UPVXQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style_LRF.css"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\detail.html",
@@ -2243,6 +2264,27 @@
       "OriginalItemSpec": "wwwroot\\HinhAnh\\KhachHang\\27478286-596f-4a87-8072-f6e8269b4ae6.jpg"
     },
     {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\3df48b3e-638c-4e6c-a9e9-99eda305b669.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/KhachHang/3df48b3e-638c-4e6c-a9e9-99eda305b669#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l4luly1fxe",
+      "Integrity": "dZP3BBL2uQ8g992FkYoQALfnWzIvxlYYUxAGCSBlndw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\KhachHang\\3df48b3e-638c-4e6c-a9e9-99eda305b669.jpg"
+    },
+    {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\40bd6b51-573e-472d-a282-0a9af722cb5e.jpg",
       "SourceId": "ASMCshrp4_12345",
       "SourceType": "Discovered",
@@ -2514,6 +2556,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\HinhAnh\\KhachHang\\b84f5049-a5c5-46bd-b96c-b70d338d09c4.jpg"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\cbfb7a87-7da7-4e73-8336-e0314d4c480f.png",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "HinhAnh/KhachHang/cbfb7a87-7da7-4e73-8336-e0314d4c480f#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2atd3rbn6b",
+      "Integrity": "enTlt5fQqTs3PDcreuj0tx1cVftB8NRAi7+YuSkuLeA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\HinhAnh\\KhachHang\\cbfb7a87-7da7-4e73-8336-e0314d4c480f.png"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\dc1a5ec3-6da1-4a23-96e6-990096665a11.jpg",
@@ -4238,6 +4301,27 @@
       "OriginalItemSpec": "wwwroot\\images\\Hinh-nen-anime-cute-20-1.jpg"
     },
     {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\istockphoto-1096439462-1024x1024.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "images/istockphoto-1096439462-1024x1024#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6sxjqboinp",
+      "Integrity": "Omh93uJP5XT8EVw8dko1b+l9qf+qVFPcLTBO8RUZ/rA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\istockphoto-1096439462-1024x1024.jpg"
+    },
+    {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\landing_page\\stack-of-three-black-hot-stones-spa-salon-vector-16122479.jpg",
       "SourceId": "ASMCshrp4_12345",
       "SourceType": "Discovered",
@@ -4992,6 +5076,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo\\logo_icon.png"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\pngtree-woman-is-wearing-red-dress-and-holding-a-handbag-picture-image_2479612.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "images/pngtree-woman-is-wearing-red-dress-and-holding-a-handbag-picture-image_2479612#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhxbpw0y56",
+      "Integrity": "UjdvYwXzRk9U68lKCFmPv5wqw23znwDAYMTmRFYz79g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pngtree-woman-is-wearing-red-dress-and-holding-a-handbag-picture-image_2479612.jpg"
+    },
+    {
+      "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\tui-xach-nu-dep-sang-trong-1-1677689659.jpg",
+      "SourceId": "ASMCshrp4_12345",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\",
+      "BasePath": "_content/ASMCshrp4_12345",
+      "RelativePath": "images/tui-xach-nu-dep-sang-trong-1-1677689659#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cobufs8g2n",
+      "Integrity": "ZIp1d7YlkxuCbAjyBzVwRcOm1h+aj4VDGaWl7AMwIUo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tui-xach-nu-dep-sang-trong-1-1677689659.jpg"
     },
     {
       "Identity": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\zxzxzxz..jpg",
@@ -15180,7 +15306,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Dec 2024 16:59:19 GMT"
+          "Value": "Mon, 09 Dec 2024 05:08:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15225,7 +15351,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Dec 2024 16:59:19 GMT"
+          "Value": "Mon, 09 Dec 2024 05:08:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15270,7 +15396,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Dec 2024 16:59:19 GMT"
+          "Value": "Mon, 09 Dec 2024 05:08:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15307,7 +15433,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Dec 2024 16:59:19 GMT"
+          "Value": "Mon, 09 Dec 2024 05:08:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17546,7 +17672,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "694"
+          "Value": "736"
         },
         {
           "Name": "Content-Type",
@@ -17554,11 +17680,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps=\""
+          "Value": "\"LA0Sf7Ani2I33FCBKozwDfE1eeWPwLBam51hR4GWeL0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 07:22:14 GMT"
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17568,12 +17694,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps="
+          "Value": "sha256-LA0Sf7Ani2I33FCBKozwDfE1eeWPwLBam51hR4GWeL0="
         }
       ]
     },
     {
-      "Route": "css/Login.kxhixgv9za.css",
+      "Route": "css/Login.ssaubghp0l.css",
       "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\css\\Login.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -17583,7 +17709,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "694"
+          "Value": "736"
         },
         {
           "Name": "Content-Type",
@@ -17591,11 +17717,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps=\""
+          "Value": "\"LA0Sf7Ani2I33FCBKozwDfE1eeWPwLBam51hR4GWeL0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 07:22:14 GMT"
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17605,7 +17731,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kxhixgv9za"
+          "Value": "ssaubghp0l"
         },
         {
           "Name": "label",
@@ -17613,7 +17739,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SFxDR2niWAgUGxP55aGX5JJTq47ddqzs9losoBq0Wps="
+          "Value": "sha256-LA0Sf7Ani2I33FCBKozwDfE1eeWPwLBam51hR4GWeL0="
         }
       ]
     },
@@ -18188,6 +18314,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-cKV2NHJJi1Y62F4bZ68MFCtpaVH3q22A0MaHotEvQIk="
+        }
+      ]
+    },
+    {
+      "Route": "css/style_LRF.css",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\css\\style_LRF.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TAi8gedRXI0qrjQdSh6kHebJMKIukskhWiiva4UPVXQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TAi8gedRXI0qrjQdSh6kHebJMKIukskhWiiva4UPVXQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/style_LRF.gjlduf2nod.css",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\css\\style_LRF.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TAi8gedRXI0qrjQdSh6kHebJMKIukskhWiiva4UPVXQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gjlduf2nod"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style_LRF.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TAi8gedRXI0qrjQdSh6kHebJMKIukskhWiiva4UPVXQ="
         }
       ]
     },
@@ -23768,6 +23976,88 @@
       ]
     },
     {
+      "Route": "HinhAnh/KhachHang/3df48b3e-638c-4e6c-a9e9-99eda305b669.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\3df48b3e-638c-4e6c-a9e9-99eda305b669.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55858"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dZP3BBL2uQ8g992FkYoQALfnWzIvxlYYUxAGCSBlndw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dZP3BBL2uQ8g992FkYoQALfnWzIvxlYYUxAGCSBlndw="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/3df48b3e-638c-4e6c-a9e9-99eda305b669.l4luly1fxe.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\3df48b3e-638c-4e6c-a9e9-99eda305b669.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55858"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dZP3BBL2uQ8g992FkYoQALfnWzIvxlYYUxAGCSBlndw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l4luly1fxe"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/3df48b3e-638c-4e6c-a9e9-99eda305b669.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dZP3BBL2uQ8g992FkYoQALfnWzIvxlYYUxAGCSBlndw="
+        }
+      ]
+    },
+    {
       "Route": "HinhAnh/KhachHang/40bd6b51-573e-472d-a282-0a9af722cb5e.dlvv7mryp0.jpg",
       "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\40bd6b51-573e-472d-a282-0a9af722cb5e.jpg",
       "Selectors": [],
@@ -24830,6 +25120,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/cbfb7a87-7da7-4e73-8336-e0314d4c480f.2atd3rbn6b.png",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\cbfb7a87-7da7-4e73-8336-e0314d4c480f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15372"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"enTlt5fQqTs3PDcreuj0tx1cVftB8NRAi7+YuSkuLeA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2atd3rbn6b"
+        },
+        {
+          "Name": "label",
+          "Value": "HinhAnh/KhachHang/cbfb7a87-7da7-4e73-8336-e0314d4c480f.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-enTlt5fQqTs3PDcreuj0tx1cVftB8NRAi7+YuSkuLeA="
+        }
+      ]
+    },
+    {
+      "Route": "HinhAnh/KhachHang/cbfb7a87-7da7-4e73-8336-e0314d4c480f.png",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\HinhAnh\\KhachHang\\cbfb7a87-7da7-4e73-8336-e0314d4c480f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15372"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"enTlt5fQqTs3PDcreuj0tx1cVftB8NRAi7+YuSkuLeA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-enTlt5fQqTs3PDcreuj0tx1cVftB8NRAi7+YuSkuLeA="
         }
       ]
     },
@@ -31558,6 +31930,88 @@
       ]
     },
     {
+      "Route": "images/istockphoto-1096439462-1024x1024.6sxjqboinp.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\istockphoto-1096439462-1024x1024.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Omh93uJP5XT8EVw8dko1b+l9qf+qVFPcLTBO8RUZ/rA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6sxjqboinp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/istockphoto-1096439462-1024x1024.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Omh93uJP5XT8EVw8dko1b+l9qf+qVFPcLTBO8RUZ/rA="
+        }
+      ]
+    },
+    {
+      "Route": "images/istockphoto-1096439462-1024x1024.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\istockphoto-1096439462-1024x1024.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Omh93uJP5XT8EVw8dko1b+l9qf+qVFPcLTBO8RUZ/rA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Omh93uJP5XT8EVw8dko1b+l9qf+qVFPcLTBO8RUZ/rA="
+        }
+      ]
+    },
+    {
       "Route": "images/landing_page/stack-of-three-black-hot-stones-spa-salon-vector-16122479.je39be651x.jpg",
       "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\landing_page\\stack-of-three-black-hot-stones-spa-salon-vector-16122479.jpg",
       "Selectors": [],
@@ -34506,6 +34960,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-DIK2pt5VQNYxJi16Iwm/wxE6CPg/XFpdIIIBeRuXPbQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/pngtree-woman-is-wearing-red-dress-and-holding-a-handbag-picture-image_2479612.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\pngtree-woman-is-wearing-red-dress-and-holding-a-handbag-picture-image_2479612.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "567087"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UjdvYwXzRk9U68lKCFmPv5wqw23znwDAYMTmRFYz79g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UjdvYwXzRk9U68lKCFmPv5wqw23znwDAYMTmRFYz79g="
+        }
+      ]
+    },
+    {
+      "Route": "images/pngtree-woman-is-wearing-red-dress-and-holding-a-handbag-picture-image_2479612.uhxbpw0y56.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\pngtree-woman-is-wearing-red-dress-and-holding-a-handbag-picture-image_2479612.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "567087"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UjdvYwXzRk9U68lKCFmPv5wqw23znwDAYMTmRFYz79g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhxbpw0y56"
+        },
+        {
+          "Name": "label",
+          "Value": "images/pngtree-woman-is-wearing-red-dress-and-holding-a-handbag-picture-image_2479612.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UjdvYwXzRk9U68lKCFmPv5wqw23znwDAYMTmRFYz79g="
+        }
+      ]
+    },
+    {
+      "Route": "images/tui-xach-nu-dep-sang-trong-1-1677689659.cobufs8g2n.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\tui-xach-nu-dep-sang-trong-1-1677689659.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZIp1d7YlkxuCbAjyBzVwRcOm1h+aj4VDGaWl7AMwIUo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cobufs8g2n"
+        },
+        {
+          "Name": "label",
+          "Value": "images/tui-xach-nu-dep-sang-trong-1-1677689659.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZIp1d7YlkxuCbAjyBzVwRcOm1h+aj4VDGaWl7AMwIUo="
+        }
+      ]
+    },
+    {
+      "Route": "images/tui-xach-nu-dep-sang-trong-1-1677689659.jpg",
+      "AssetFile": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\images\\tui-xach-nu-dep-sang-trong-1-1677689659.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZIp1d7YlkxuCbAjyBzVwRcOm1h+aj4VDGaWl7AMwIUo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 05:06:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZIp1d7YlkxuCbAjyBzVwRcOm1h+aj4VDGaWl7AMwIUo="
         }
       ]
     },
