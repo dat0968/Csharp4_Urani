@@ -2485,6 +2485,10 @@
       "PackagePath": "staticwebassets\\modules\\zingchart-zoom.min.js"
     },
     {
+      "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\no-image-icon-23485.png",
+      "PackagePath": "staticwebassets\\no-image-icon-23485.png"
+    },
+    {
       "Id": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\wwwroot\\online-shop-website-template.jpg",
       "PackagePath": "staticwebassets\\online-shop-website-template.jpg"
     },

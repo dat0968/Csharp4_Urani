@@ -618,6 +618,7 @@ wwwroot\modules\zingchart-wordcloud.min.js
 wwwroot\modules\zingchart-xy.min.js
 wwwroot\modules\zingchart-yx.min.js
 wwwroot\modules\zingchart-zoom.min.js
+wwwroot\no-image-icon-23485.png
 wwwroot\online-shop-website-template.jpg
 wwwroot\scss\bootstrap\scss\_alert.scss
 wwwroot\scss\bootstrap\scss\_badge.scss
