@@ -30,8 +30,8 @@
         <div class="col-md-3 mb-3">
             <select name="filterPaymentMethod" class="form-control">
                 <option value="" selected="@(string.IsNullOrEmpty(ViewData["CurrentPaymentFilter"]?.ToString()))">Tất cả</option>
-                <option value="Tiền mặt" selected="@(ViewData["CurrentPaymentFilter"]?.ToString() == "Tiền mặt")">Tiền mặt</option>
-                <option value="bank" selected="@(ViewData["CurrentPaymentFilter"]?.ToString() == "bank")">bank</option>
+                <option value="COD" selected="@(ViewData["CurrentPaymentFilter"]?.ToString() == "COD")">COD</option>
+                <option value="VNPay" selected="@(ViewData["CurrentPaymentFilter"]?.ToString() == "VNPay")">VNPay</option>
             </select>
         </div>
 
