@@ -1,12 +1,15 @@
 ﻿@model ASMCshrp4_12345.ViewModels.ComboViewModel
+
 @{
     ViewData["Title"] = "Thêm Combo";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <script>
-        let selectedProducts = [];
+    // Mảng lưu trữ danh sách sản phẩm đã chọn
+    let selectedProducts = [];
 
+    // Xử lý khi chọn hoặc bỏ chọn sản phẩm
     function toggleProduct(checkbox) {
         const maSp = checkbox.getAttribute('data-masp');
         const tenSp = checkbox.getAttribute('data-tensp');
@@ -16,16 +19,25 @@
         const TenMau = document.querySelector(`.product-TenMau[data-masp="${maSp}"]`).value;
         const TenKichThuoc = document.querySelector(`.product-TenKichThuoc[data-masp="${maSp}"]`).value;
         const TenChatLieu = document.querySelector(`.product-TenChatLieu[data-masp="${maSp}"]`).value;
-        // Kiểm tra nếu checkbox được chọn
-       if (checkbox.checked) {
+
+        if (checkbox.checked) {
+        // Kiểm tra nếu thiếu thông tin thì không cho thêm sản phẩm
+            if (!TenMau || !TenKichThuoc || !TenChatLieu) {
+                alert('Vui lòng chọn đầy đủ Màu Sắc, Kích Thước và Chất Liệu trước khi thêm sản phẩm!');
+                checkbox.checked = false; // Bỏ chọn checkbox
+                return;
+            }
         selectedProducts.push({ maSp, tenSp, giaBan, soLuong, TenMau, TenKichThuoc, TenChatLieu, IsSelected: true });
-        } else {
-        selectedProducts = selectedProducts.filter(sp => sp.maSp !== maSp);
+        } 
+        else 
+        {
+            selectedProducts = selectedProducts.filter(sp => sp.maSp !== maSp);
         }
 
         updateSelectedProductsTable();
     }
 
+    // Cập nhật số lượng sản phẩm
     function updateProductQuantity(input) {
         const maSp = input.getAttribute('data-masp');
         const soLuong = parseInt(input.value) || 1;
@@ -36,19 +48,24 @@
         updateSelectedProductsTable();
     }
 
-       function updateProductAttribute(select, attribute) {
+    // Cập nhật các thuộc tính (màu, kích thước, chất liệu)
+    function updateProductAttribute(select, attribute) {
         const maSp = select.getAttribute('data-masp');
         const value = select.value;
         const product = selectedProducts.find(sp => sp.maSp === maSp);
 
         if (product) {
-            product[attribute] = value;  // Cập nhật tên màu, kích thước hoặc chất liệu
+            product[attribute] = value;
         }
-
+         // Cảnh báo nếu thiếu thông tin
+        if (!product.TenMau || !product.TenKichThuoc || !product.TenChatLieu) {
+            alert('Vui lòng chọn đầy đủ Màu Sắc, Kích Thước và Chất Liệu!');
+        }
         updateSelectedProductsTable();
     }
 
-        function updateSelectedProductsTable() {
+    // Cập nhật bảng hiển thị danh sách sản phẩm đã chọn
+    function updateSelectedProductsTable() {
         const tableBody = document.getElementById('selectedProductsTable').querySelector('tbody');
         tableBody.innerHTML = '';
         let tongGiaGoc = 0;
@@ -59,12 +76,11 @@
 
             const row = `
                 <tr>
-                    
                     <td>${sp.tenSp}</td>
                     <td>${sp.soLuong}</td>
-                    <td>${sp.TenMau || 'N/A'}</td>  <!-- Hiển thị tên màu -->
-                    <td>${sp.TenKichThuoc || 'N/A'}</td>   <!-- Hiển thị tên kích thước -->
-                    <td>${sp.TenChatLieu || 'N/A'}</td>  <!-- Hiển thị tên chất liệu -->
+                    <td>${sp.TenMau || 'N/A'}</td>
+                    <td>${sp.TenKichThuoc || 'N/A'}</td>
+                    <td>${sp.TenChatLieu || 'N/A'}</td>
                     <td>${thanhTien.toLocaleString()} VND</td>
                 </tr>
             `;
@@ -75,22 +91,32 @@
         document.getElementById('SanPhamList').value = JSON.stringify(selectedProducts);
     }
 
-    document.querySelector('form').addEventListener('submit', function(event) {
+    // Kiểm tra dữ liệu trước khi submit
+    document.querySelector('form').addEventListener('submit', function (event) {
         if (selectedProducts.length === 0) {
             event.preventDefault();
             alert('Vui lòng chọn ít nhất một sản phẩm!');
+            return;
+        }
+
+        const incompleteProducts = selectedProducts.filter(sp =>
+            !sp.TenMau || sp.TenMau.trim() === "" ||
+            !sp.TenKichThuoc || sp.TenKichThuoc.trim() === "" ||
+            !sp.TenChatLieu || sp.TenChatLieu.trim() === ""
+        );
+
+        if (incompleteProducts.length > 0) {
+            event.preventDefault();
+            alert('Vui lòng chọn đầy đủ Màu Sắc, Kích Thước và Chất Liệu cho tất cả sản phẩm đã chọn!');
+            return;
         }
     });
-        var Model = {
-        MauSacList: @Html.Raw(Json.Serialize(Model.MauSacList)),
-        KichThuocList: @Html.Raw(Json.Serialize(Model.KichThuocList)),
-        ChatLieuList: @Html.Raw(Json.Serialize(Model.ChatLieuList))
-    };
 </script>
 
 <br />
 
 <form asp-action="Create" method="post" enctype="multipart/form-data">
+    <!-- Thông tin Combo -->
     <div class="form-group">
         <label for="TenComBo">Tên Combo</label>
         <input type="text" class="form-control" id="TenComBo" name="TenComBo" required />
@@ -98,16 +124,19 @@
 
     <div class="form-group">
         <label for="SoLuong">Số Lượng</label>
-        <input type="number" class="form-control" id="SoLuong" name="SoLuong" required />
+        <input type="number" class="form-control" id="SoLuong" name="SoLuong" required min="1" value="1" />
     </div>
+
     <div>
         <label for="HinhAnhList">Hình Ảnh:</label>
         <input asp-for="HinhAnhList" type="file" multiple />
     </div>
+
     <div>
         <label for="MoTa">Mô Tả:</label>
-        <textarea asp-for="MoTa" class="form-control"></textarea> <!-- Trường nhập mô tả -->
+        <textarea asp-for="MoTa" class="form-control"></textarea>
     </div>
+
     <br />
     <!-- Nút mở modal chọn sản phẩm -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selectProductsModal">
@@ -219,8 +248,6 @@
 
     <!-- Hiển thị tổng giá gốc -->
     <h5>Tổng giá gốc: <span id="tongGiaGoc">0</span> VND</h5>
-
-    <!-- Ẩn danh sách sản phẩm đã chọn để gửi về server -->
     <input type="hidden" id="SanPhamList" name="SanPhamList" />
 
     <div class="form-group">
@@ -229,5 +256,6 @@
     </div>
 
     <button type="submit" class="btn btn-success mt-3">Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Quay lại</a>
 </form>
 

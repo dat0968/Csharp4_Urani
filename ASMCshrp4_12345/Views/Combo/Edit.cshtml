@@ -179,6 +179,7 @@
     </div>
 
     <button type="submit" class="btn btn-success mt-3">Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Quay lại</a>
 </form>
 
 <script>
@@ -186,6 +187,17 @@
 
     // Thêm sản phẩm vào danh sách
     function addProduct(masp, tensp, giaban) {
+        const color = document.querySelector(`.product-TenMau[data-masp="${masp}"]`).value;
+        const size = document.querySelector(`.product-TenKichThuoc[data-masp="${masp}"]`).value;
+        const material = document.querySelector(`.product-TenChatLieu[data-masp="${masp}"]`).value;
+
+        // Kiểm tra xem các thuộc tính có được chọn đầy đủ không
+        if (!color || !size || !material) {
+            alert("Vui lòng chọn đủ màu sắc, kích thước và chất liệu cho sản phẩm.");
+            const checkbox = document.querySelector(`.product-checkbox[data-masp="${masp}"]`);
+            checkbox.checked = false; // Bỏ chọn ô checkbox
+            return; // Dừng lại nếu thiếu thuộc tính
+        }
         const existingProduct = selectedProducts.find(p => p.MaSp === masp);
         if (!existingProduct) {
             selectedProducts.push({
