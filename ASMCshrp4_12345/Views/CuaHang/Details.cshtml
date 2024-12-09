@@ -332,6 +332,9 @@
         if (currentQuantity < maxQuantity) {
             quantityInput.value = currentQuantity + 1;
         }
+        else {
+            alert(`Số lượng còn lại trong kho là: ${maxQuantity}`);
+        }
     }
 
     function decreaseQuantity() {

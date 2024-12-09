@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\CSHARP_4\\ASMCshrp4_12345\\",
+  "WorkspaceRootPath": "D:\\FPT\\C#4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\controllers\\huydon_hoantiencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\huydon_hoantiencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asmcshrp4_12345\\views\\cuahang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\cuahang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\hoadons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\hoadons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asmcshrp4_12345\\views\\cuahang\\detailcombo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\cuahang\\detailcombo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\views\\cart\\thongtindonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\cart\\thongtindonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asmcshrp4_12345\\views\\combo\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\combo\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\controllers\\hoadonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\hoadonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asmcshrp4_12345\\views\\cuahang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\cuahang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|f:\\csharp_4\\asmcshrp4_12345\\asmcshrp4_12345\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asmcshrp4_12345\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|d:\\fpt\\c#4\\asmcshrp4_12345\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B9B1246-A306-47CD-8803-856F1ACC8BBC}|ASMCshrp4_12345\\ASMCshrp4_12345.csproj|solutionrelative:asmcshrp4_12345\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,79 +37,83 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\Combo\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Combo\\Edit.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\Combo\\Edit.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Combo\\Edit.cshtml",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAAK0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T14:51:03.89Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\CuaHang\\Details.cshtml",
+              "ViewState": "AgIAAD4BAAAAAAAAAAAAAFABAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T15:14:24.461Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Hoadons\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Hoadons\\Edit.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Hoadons\\Edit.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Hoadons\\Edit.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAAjAAAAAAAAAA==",
+              "Title": "DetailCombo.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\CuaHang\\DetailCombo.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\CuaHang\\DetailCombo.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\CuaHang\\DetailCombo.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\CuaHang\\DetailCombo.cshtml",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAcwM8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T05:37:14.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ThongTinDonHang.cshtml",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Cart\\ThongTinDonHang.cshtml",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Cart\\ThongTinDonHang.cshtml",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Views\\Cart\\ThongTinDonHang.cshtml",
-              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Cart\\ThongTinDonHang.cshtml",
-              "ViewState": "AgIAAIkAAAAAAAAAAIAwwJkAAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T05:15:21.524Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 391,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HuyDon_HoanTienController.cs",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\HuyDon_HoanTienController.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\HuyDon_HoanTienController.cs",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\HuyDon_HoanTienController.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\HuyDon_HoanTienController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAswB4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T05:40:07.833Z",
+              "WhenOpened": "2024-12-09T14:47:22.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HoadonsController.cs",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\HoadonsController.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\HoadonsController.cs",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\HoadonsController.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\HoadonsController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T05:20:42.172Z",
-              "EditorCaption": ""
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\CuaHang\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T14:47:19.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAMoAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T14:45:30.903Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Controllers\\CartController.cs",
-              "ToolTip": "F:\\CSHARP_4\\ASMCshrp4_12345\\ASMCshrp4_12345\\Controllers\\CartController.cs",
-              "RelativeToolTip": "ASMCshrp4_12345\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAPEBAAAAAAAAAAAuwPMBAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T05:15:40.861Z",
-              "EditorCaption": ""
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\FPT\\C#4\\ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ASMCshrp4_12345\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAACfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T14:44:22.429Z"
             }
           ]
         }
