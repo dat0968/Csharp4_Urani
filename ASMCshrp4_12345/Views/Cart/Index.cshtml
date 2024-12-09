@@ -90,13 +90,26 @@
                             <td class="align-middle">
                                 <div class="d-flex align-items-center mb-4">
                                     <div class="input-group" style="width: 120px;">
-                                        <div class="input-group-prepend">
-                                            <button class="btn btn-yellow" type="button" onclick="updateQuantity('@item.MaHh', '@item.Mau', '@item.KichThuoc', '@item.ChatLieu', -1)">-</button>
-                                        </div>
-                                        <input readonly type="number" id="quantity_@item.MaHh" name="quantity" class="form-control text-center" value="@item.SoLuong" min="1" max="@item.SoluongAvailable" onchange="updateQuantity('@item.MaHh', '@item.Mau', '@item.KichThuoc', '@item.ChatLieu', this.value)">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-yellow" type="button" onclick="updateQuantity('@item.MaHh', '@item.Mau', '@item.KichThuoc', '@item.ChatLieu', 1)">+</button>
-                                        </div>
+                                        @if(item.isCombo == false)
+                                        {
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-yellow" type="button" onclick="updateQuantity('@item.MaHh', '@item.Mau', '@item.KichThuoc', '@item.ChatLieu', -1)">-</button>
+                                            </div>
+                                            <input readonly type="number" id="quantity_@item.MaHh" name="quantity" class="form-control text-center" value="@item.SoLuong" min="1" max="@item.SoluongAvailable" onchange="updateQuantity('@item.MaHh', '@item.Mau', '@item.KichThuoc', '@item.ChatLieu', this.value)">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-yellow" type="button" onclick="updateQuantity('@item.MaHh', '@item.Mau', '@item.KichThuoc', '@item.ChatLieu', 1)">+</button>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-yellow" type="button" onclick="updateQuantity('@item.MaHh', '', '', '', -1, true)">-</button>
+                                            </div>
+                                            <input readonly type="number" id="quantity_@item.MaHh" name="quantity" class="form-control text-center" value="@item.SoLuong" min="1" max="@item.SoluongAvailable" onchange="updateQuantity('@item.MaHh', '', '', '', this.value, true)">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-yellow" type="button" onclick="updateQuantity('@item.MaHh', '', '', '', 1, true)">+</button>
+                                            </div>
+                                        }
                                     </div>
                                 </div>
                             </td>
@@ -145,7 +158,7 @@
 <!-- Cart End -->
 
 <script>
-    function updateQuantity(id, color, size, chatlieu, quantityChange) {
+    function updateQuantity(id, color, size, chatlieu, quantityChange, isCombo) {
         var quantityInput = document.getElementById("quantity_" + id);
         
         var maxQuantity = parseInt(quantityInput.getAttribute("max"));
@@ -170,7 +183,8 @@
                 size: size,
                 color: color,
                 chatlieu: chatlieu,
-                quantity: newQuantity
+                quantity: newQuantity,
+                isCombo: isCombo
             },
             success: function(response) {
                 // Cập nhật lại giỏ hàng hoặc thông báo cho người dùng

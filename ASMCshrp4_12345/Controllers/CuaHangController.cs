@@ -23,6 +23,7 @@ namespace ASMCshrp4_12345.Controllers
             string? sortOrder, string? priceRange, string? selectedBrand, string? selectedColor,
             string? selectedSize, string? searchTerm)
         {
+            ViewBag.keywords = searchTerm;
             ViewBag.sortOrder = sortOrder == "price_asc" ? "price_desc" : "price_asc";
             ViewBag.priceRange = priceRange ?? "all";
             ViewBag.selectedColor = selectedColor ?? "all";
